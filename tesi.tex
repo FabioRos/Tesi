@@ -1,0 +1,121 @@
+\documentclass[10pt, a4paper,twoside]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+%\usepackage[default]{lato}
+%\usepackage[T1]{fontenc}
+%
+%\usepackage[rm,light]{roboto}
+%\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+%
+%\usepackage{xcolor}
+%\usepackage{sectsty}
+%
+%\definecolor{MyBlue}{rgb}{0.08,0.465,0.633}
+%\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+%
+%\chapterfont{\color{cyan}}  % sets colour of chapters
+%\sectionfont{\color{MyBlue}} 
+%\subsectionfont{\color{MyBlue}} 
+%\subsubsectionfont{\color{MyBlue}} 
+%
+
+
+\usepackage[a4paper, width=145mm, margin=3cm]{geometry}
+\usepackage[hypcap]{caption}
+%\usepackage{indentfirst}
+%\usepackage{longtable}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+%\usepackage{dirtree}
+\usepackage{float}
+\usepackage{tabu}
+
+\usepackage{listings}
+\usepackage{lastpage}
+\usepackage{array,booktabs}
+\usepackage{subcaption}
+
+\usepackage{color}
+
+\usepackage[toc,nonumberlist,nopostdot]{glossaries}
+
+\hypersetup{
+    linktoc=all,
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\fancypagestyle{roman}{
+    \hypersetup{linkcolor=black}
+    \pagenumbering{Roman}
+    \fancyhf{}
+    \fancyfoot[LE,RO]{\thepage{}}
+}
+
+\fancypagestyle{plain}{
+    \hypersetup{linkcolor=blue}
+    \pagenumbering{arabic}
+    \fancyhf{}
+    \fancyfoot[LE,RO]{\thepage{}}
+}
+
+\newcommand{\newparagraph}[1]{ \paragraph{#1} \mbox{} \newline}
+%opening
+\title{Sistema esperto a supporto dell'asseverazione in cantiere}
+\author{Fabio Ros}
+%\input{tex/glossario.tex}
+
+\begin{document}
+
+	% Frontespizio
+	\pagestyle{empty}
+	\input{tex/titlepage.tex}
+	% indice
+	\newpage
+	\cleardoublepage
+	\input{tex/introduzione.tex}	
+	\cleardoublepage
+	\pagestyle{roman}
+    \setcounter{page}{3}
+	%\input{tex/abstract.tex}
+	\cleardoublepage
+	%\input{tex/ringraziamenti.tex}
+	\cleardoublepage
+	\tableofcontents
+	\clearpage
+	\listoffigures
+	\listoftables
+	\cleardoublepage
+
+	\pagestyle{plain}
+	%\input{tex/introduzione.tex}
+	\cleardoublepage
+	%\input{tex/progetto.tex}
+	\cleardoublepage
+	%\input{tex/tecnologie.tex}
+	\cleardoublepage
+	%\input{tex/sviluppo.tex}
+	\cleardoublepage
+	%\input{tex/verifica.tex}
+	\cleardoublepage
+	%\input{tex/conclusioni.tex}
+	\cleardoublepage
+
+	\appendix
+	%\input{tex/database.tex}
+	\clearpage
+	%\input{tex/backend.tex}
+	\cleardoublepage
+
+	%\printglossaries
+
+\end{document}
