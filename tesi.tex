@@ -3,14 +3,33 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
+\usepackage{soulutf8}
+\usepackage[babel]{csquotes}
+%\usepackage{natbib}
+
+
+ %highlight
+\usepackage{color,soul}
+
 
 %\usepackage[default]{lato}
 %\usepackage[T1]{fontenc}
 %
 %\usepackage[rm,light]{roboto}
 %\usepackage[T1]{fontenc}
-\usepackage[default]{sourcesanspro}
-\usepackage[T1]{fontenc}
+
+
+
+
+
+
+%\usepackage[default]{sourcesanspro}
+%\usepackage[T1]{fontenc}
+
+
+
+
+
 
 %
 %\usepackage{xcolor}
@@ -40,6 +59,25 @@
 \usepackage{tabu}
 
 \usepackage{listings}
+
+\lstset{frame=tb,
+  language=Ruby,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
 \usepackage{lastpage}
 \usepackage{array,booktabs}
 \usepackage{subcaption}
@@ -68,42 +106,41 @@
     \fancyfoot[LE,RO]{\thepage{}}
 }
 
+
 \newcommand{\newparagraph}[1]{ \paragraph{#1} \mbox{} \newline}
 %opening
-\title{Sistema esperto a supporto dell'asseverazione in cantiere}
+\title{ Titolo }
 \author{Fabio Ros}
 %\input{tex/glossario.tex}
 
 \begin{document}
 
+
 	% Frontespizio
 	\pagestyle{empty}
 	\input{tex/titlepage.tex}
-	% indice
-	\newpage
 	\cleardoublepage
-	\input{tex/introduzione.tex}	
-	\cleardoublepage
+		% indice
 	\pagestyle{roman}
-    \setcounter{page}{3}
-	%\input{tex/abstract.tex}
-	\cleardoublepage
-	%\input{tex/ringraziamenti.tex}
-	\cleardoublepage
+	\setcounter{page}{3}
 	\tableofcontents
 	\clearpage
 	\listoffigures
 	\listoftables
 	\cleardoublepage
+	\input{tex/abstract.tex}
+	\cleardoublepage
+	%\input{tex/ringraziamenti.tex}
+	\cleardoublepage
 
 	\pagestyle{plain}
-	%\input{tex/introduzione.tex}
+	\input{tex/introduzione.tex}
 	\cleardoublepage
-	%\input{tex/progetto.tex}
+	\input{tex/pianificazione_del_lavoro.tex}
 	\cleardoublepage
-	%\input{tex/tecnologie.tex}
+	\input{tex/tecnologie_e_strumenti.tex}
 	\cleardoublepage
-	%\input{tex/sviluppo.tex}
+	\input{tex/sviluppo.tex}
 	\cleardoublepage
 	%\input{tex/verifica.tex}
 	\cleardoublepage
@@ -111,11 +148,15 @@
 	\cleardoublepage
 
 	\appendix
+	\input{tex/appendice_migrazioni.tex}
+	
+	
 	%\input{tex/database.tex}
 	\clearpage
 	%\input{tex/backend.tex}
 	\cleardoublepage
 
 	%\printglossaries
-
+	%\bibliography{tex/bibliografia}
+	%\bibliographystyle{plainnat}
 \end{document}

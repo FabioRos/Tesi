@@ -1,0 +1,23 @@
+\section{Migrazioni}
+
+ \label{App:AppendiceMigrazioni}
+Una migrazione è un file nel quale viene indicato cosa cambia nella struttura del database rispetto allo stato precedente ad essa e le variazioni ai dati ad essa conseguente.  Questo permette a tutti gli sviluppatori di avere lo stato della struttura del database sempre aggiornato.
+Qui di seguito un esempio di migrazione che crea una tabella Bookmark (nel metodo statico up), e specifica cosa fare in caso di annullamento della migrazione (nel metodo statico down).
+\begin{lstlisting}
+class CreateBookmarks < ActiveRecord::Migration
+  def self.up
+    create_table :bookmarks do |t|
+      t.string :url
+      t.string :title
+      t.text :description
+      
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :bookmarks
+  end
+end
+\end{lstlisting}
+Una volta eseguita la migrazione verrà creata una tabella Bookmarks con i tre campi \textit{url}, \textit{title} e \textit{description}.
