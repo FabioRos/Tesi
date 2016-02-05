@@ -126,15 +126,65 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\item La grafica di ActiveAdmin risulta datata, è quindi spesso necessario riprogettare la veste grafica del pannello di amministrazione fornito di default.
 \end{itemize}
 \subsubsection{I18n}
+	\hl{ NUOVA SEZIONE}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=4cm]{Pics/i8n-logo.png}
+			\caption{Logo di I18n}
+			\label{fig:I18NLogo}
+		\end{center}
+	\end{figure}
+	I18n è l'abbreviazione della parola "internationalization", deriva dal suo spelling che interpone 18 lettere tra la "i" iniziale e la "n" finale. \\ 
+	Lo scopo è gestire la distribuzione del software in diverse lingue. Il meccanismo prevede un codice identificativo per ogni stringa da visualizzare, che assumerà un diverso valore per ogni traduzione. \\
+	In Ruby, esiste una apposita gemma, denominata appunto \textit{I18N}, che fornisce le direttive per adottare correttamente questo approccio. \\
+	Spesso il concetto di internazionalizzazione, viene associato a quello di localizzazione che è l'insieme dei processi di adattamento di un software , pensato e progettato per un mercato e contesto predefinito, in modo specifico ad altre nazione e culture. \\
+	Tutte le informazioni di pertinenza di una lingua sono raccolti in un gruppo di parametri chiamato \textit{locale}.
 \paragraph{Vantaggi}
+	\begin{itemize}
+		\item Grazie alla gemma \textit{i18n} , è possibile riutilizzare il codice responsabile della logica di business dell'applicazione e localizzare le stringhe per ogni lingua;
+		\item L'aggiunta di nuove lingue richiede solo lo sforzo riguardante la traduzione ed eventuali conversioni nelle unità di misura appropriate;
+		\item È possibile riutilizzare in contesti diversi le stringhe già definite, evitando quindi di introdurre errori di battitura;
+		\item L'aggiunta di nuove lingue non provoca alcuna modifica nell'applicazione esistente, ma solo l'aggiunta del file in formato \texttt{yml} con le traduzioni.
+	\end{itemize}
 \paragraph{Svantaggi}
-\subsection{jRuby}
+	\begin{itemize}
+		\item La scrittura di codice con questo approccio richiede generalmente più tempo se il software esiste in una sola lingua.
+	\end{itemize}
+\subsection{JRuby}
+	\hl{NUOVA SEZIONE}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=4cm]{Pics/jruby-logo.png}
+			\caption{Logo di JRuby}
+			\label{fig:JRubyLogo}
+		\end{center}
+	\end{figure}
+	JRuby è un'implementazione in Java del linguaggio di programmazione Ruby. \\
+	Sebbene non siano coperte tutte le implementazioni delle librerie standard offerte da Ruby, è comunque possibile utilizzare tutti la maggior parte delle funzionalità del  linguaggio.
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item JRuby è un software completamente gratuito;
+	\item Gira su una JVM, quindi è possibile integrare l'interprete Ruby in una applicazione Java ed, allo stesso tempo, scrivere direttamente codice Java.
+\end{itemize}
+\paragraph{Svantaggi}
+	\begin{itemize}
+		\item È possibile incontrare situazioni in cui si necessita di una libreria che non è stata implementata;
+		\item L'utilizzo di JRuby provoca un significativo appesantimento del software ed un conseguente peggioramento delle performance. 
+	\end{itemize}
+\subsection{Drools}
+	\hl{NUOVA SEZIONE}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=7cm]{Pics/drools-logo.png}
+			\caption{Logo di Drools}
+			\label{fig:DroolsLogo}
+		\end{center}
+	\end{figure}
+	
+	
 \paragraph{Vantaggi}
 \paragraph{Svantaggi}
 \subsection{Java}
-\paragraph{Vantaggi}
-\paragraph{Svantaggi}
-\subsection{Drools}
 \paragraph{Vantaggi}
 \paragraph{Svantaggi}
 \subsection{Foundation}
