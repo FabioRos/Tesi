@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  5 FEB 2016 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  12 FEB 2016 09:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,6 +324,220 @@ Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/A
+B)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count98
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count99
+\c@listtotal=\count100
+\c@listcount=\count101
+\c@liststart=\count102
+\c@liststop=\count103
+\c@citecount=\count104
+\c@citetotal=\count105
+\c@multicitecount=\count106
+\c@multicitetotal=\count107
+\c@instcount=\count108
+\c@maxnames=\count109
+\c@minnames=\count110
+\c@maxitems=\count111
+\c@minitems=\count112
+\c@citecounter=\count113
+\c@savedcitecounter=\count114
+\c@uniquelist=\count115
+\c@uniquename=\count116
+\c@refsection=\count117
+\c@refsegment=\count118
+\c@maxextratitle=\count119
+\c@maxextratitleyear=\count120
+\c@maxextrayear=\count121
+\c@maxextraalpha=\count122
+\c@abbrvpenalty=\count123
+\c@highnamepenalty=\count124
+\c@lownamepenalty=\count125
+\c@maxparens=\count126
+\c@parenlevel=\count127
+\blx@tempcnta=\count128
+\blx@tempcntb=\count129
+\blx@tempcntc=\count130
+\blx@maxsection=\count131
+\blx@maxsegment@0=\count132
+\blx@notetype=\count133
+\blx@parenlevel@text=\count134
+\blx@parenlevel@foot=\count135
+\blx@sectionciteorder@0=\count136
+\labelnumberwidth=\skip44
+\labelalphawidth=\skip45
+\biblabelsep=\skip46
+\bibitemsep=\skip47
+\bibnamesep=\skip48
+\bibinitsep=\skip49
+\bibparsep=\skip50
+\bibhang=\skip51
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count137
+\c@maxcomprange=\count138
+\c@mincompwidth=\count139
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count140
+\c@savedafterword=\count141
+\c@annotator=\count142
+\c@savedannotator=\count143
+\c@author=\count144
+\c@savedauthor=\count145
+\c@bookauthor=\count146
+\c@savedbookauthor=\count147
+\c@commentator=\count148
+\c@savedcommentator=\count149
+\c@editor=\count150
+\c@savededitor=\count151
+\c@editora=\count152
+\c@savededitora=\count153
+\c@editorb=\count154
+\c@savededitorb=\count155
+\c@editorc=\count156
+\c@savededitorc=\count157
+\c@foreword=\count158
+\c@savedforeword=\count159
+\c@holder=\count160
+\c@savedholder=\count161
+\c@introduction=\count162
+\c@savedintroduction=\count163
+\c@namea=\count164
+\c@savednamea=\count165
+\c@nameb=\count166
+\c@savednameb=\count167
+\c@namec=\count168
+\c@savednamec=\count169
+\c@translator=\count170
+\c@savedtranslator=\count171
+\c@shortauthor=\count172
+\c@savedshortauthor=\count173
+\c@shorteditor=\count174
+\c@savedshorteditor=\count175
+\c@labelname=\count176
+\c@savedlabelname=\count177
+\c@institution=\count178
+\c@savedinstitution=\count179
+\c@lista=\count180
+\c@savedlista=\count181
+\c@listb=\count182
+\c@savedlistb=\count183
+\c@listc=\count184
+\c@savedlistc=\count185
+\c@listd=\count186
+\c@savedlistd=\count187
+\c@liste=\count188
+\c@savedliste=\count189
+\c@listf=\count190
+\c@savedlistf=\count191
+\c@location=\count192
+\c@savedlocation=\count193
+\c@organization=\count194
+\c@savedorganization=\count195
+\c@origlocation=\count196
+\c@savedoriglocation=\count197
+\c@origpublisher=\count198
+\c@savedorigpublisher=\count199
+\c@publisher=\count200
+\c@savedpublisher=\count201
+\c@language=\count202
+\c@savedlanguage=\count203
+\c@pageref=\count204
+\c@savedpageref=\count205
+\shorthandwidth=\skip52
+\shortjournalwidth=\skip53
+\shortserieswidth=\skip54
+\shorttitlewidth=\skip55
+\shortauthorwidth=\skip56
+\shorteditorwidth=\skip57
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count206
+\c@textcitetotal=\count207
+\c@textcitemaxnames=\count208
+\c@biburlnumpenalty=\count209
+\c@biburlucpenalty=\count210
+\c@biburllcpenalty=\count211
+\c@smartand=\count212
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count213
+\c@bbx:relatedtotal=\count214
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
@@ -334,11 +548,7 @@ Package color Info: Driver file: pdftex.def on input line 142.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count98
+\Gread@gobject=\count215
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -354,9 +564,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count99
-\Gm@cntv=\count100
-\c@Gm@tempcnt=\count101
+\Gm@cnth=\count216
+\Gm@cntv=\count217
+\c@Gm@tempcnt=\count218
 \Gm@bindingoffset=\dimen107
 \Gm@wd@mp=\dimen108
 \Gm@odd@mp=\dimen109
@@ -385,7 +595,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen120
 \caption@hangindent=\dimen121
 )
-\c@ContinuedFloat=\count102
+\c@ContinuedFloat=\count219
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -421,7 +631,7 @@ Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -447,19 +657,16 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
 \@linkdim=\dimen124
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\Hy@linkcounter=\count220
+\Hy@pagecounter=\count221
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count222
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -471,15 +678,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count106
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count223
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen125
-\Fld@menulength=\count107
+\Fld@menulength=\count224
 \Field@Width=\dimen126
 \Fld@charsize=\dimen127
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -491,35 +693,35 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count225
+\c@Item=\count226
+\c@Hfootnote=\count227
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+\Fld@listcount=\count228
+\c@bookmark@seq@number=\count229
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip44
+\Hy@SectionHShift=\skip58
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip45
-\f@ncyO@elh=\skip46
-\f@ncyO@erh=\skip47
-\f@ncyO@olh=\skip48
-\f@ncyO@orh=\skip49
-\f@ncyO@elf=\skip50
-\f@ncyO@erf=\skip51
-\f@ncyO@olf=\skip52
-\f@ncyO@orf=\skip53
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
@@ -527,7 +729,7 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count113
+\c@float@type=\count230
 \float@exts=\toks24
 \float@box=\box27
 \@float@everytoks=\toks25
@@ -541,22 +743,22 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen128
 \extrarowheight=\dimen129
 \NC@list=\toks26
-\extratabsurround=\skip54
-\backup@length=\skip55
+\extratabsurround=\skip68
+\backup@length=\skip69
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box29
-\sift@deathcycles=\count114
+\sift@deathcycles=\count231
 \@vwid@loff=\dimen130
 \@vwid@roff=\dimen131
 )
-\c@taburow=\count115
-\tabu@nbcols=\count116
-\tabu@cnt=\count117
-\tabu@Xcol=\count118
-\tabu@alloc=\count119
-\tabu@nested=\count120
+\c@taburow=\count232
+\tabu@nbcols=\count233
+\tabu@cnt=\count266
+\tabu@Xcol=\count267
+\tabu@alloc=\count268
+\tabu@nested=\count269
 \tabu@target=\dimen132
 \tabu@spreadtarget=\dimen133
 \tabu@naturalX=\dimen134
@@ -572,26 +774,26 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@arstrutbox=\box31
 \tabu@hleads=\box32
 \tabu@vleads=\box33
-\tabu@cellskip=\skip56
+\tabu@cellskip=\skip70
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count121
+\lst@mode=\count270
 \lst@gtempboxa=\box34
 \lst@token=\toks29
-\lst@length=\count122
+\lst@length=\count271
 \lst@currlwidth=\dimen141
-\lst@column=\count123
-\lst@pos=\count124
+\lst@column=\count272
+\lst@pos=\count273
 \lst@lostspace=\dimen142
 \lst@width=\dimen143
-\lst@newlines=\count125
-\lst@lineno=\count126
+\lst@newlines=\count274
+\lst@lineno=\count275
 \lst@maxwidth=\dimen144
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count127
-\lst@skipnumbers=\count128
+\c@lstnumber=\count276
+\lst@skipnumbers=\count277
 \lst@framebox=\box35
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -620,25 +822,22 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen152
 \cmidrulekern=\dimen153
 \defaultaddspace=\dimen154
-\@cmidla=\count129
-\@cmidlb=\count130
+\@cmidla=\count278
+\@cmidlb=\count279
 \@aboverulesep=\dimen155
 \@belowrulesep=\dimen156
-\@thisruleclass=\count131
-\@lastruleclass=\count132
+\@thisruleclass=\count280
+\@lastruleclass=\count281
 \@thisrulewidth=\dimen157
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count133
-\c@subtable=\count134
+\c@subfigure=\count282
+\c@subtable=\count283
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2015/03/16 v4.15 (NLCT)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
@@ -647,7 +846,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count135
+\XKV@depth=\count284
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
@@ -666,7 +865,7 @@ Package: datatool-base 2014/06/10 v2.22 (NLCT)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip57
+\@mathmargin=\skip71
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -684,13 +883,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count136
+\inf@bad=\count285
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count137
-\leftroot@=\count138
+\uproot@=\count286
+\leftroot@=\count287
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count139
-\DOTSCASE@=\count140
+\classnum@=\count288
+\DOTSCASE@=\count289
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -699,15 +898,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen160
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count141
-\c@MaxMatrixCols=\count142
+\macc@depth=\count290
+\c@MaxMatrixCols=\count291
 \dotsspace@=\muskip11
-\c@parentequation=\count143
-\dspbrk@lvl=\count144
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
 \tag@help=\toks35
-\row@=\count145
-\column@=\count146
-\maxfields@=\count147
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
 \andhelp@=\toks36
 \eqnshift@=\dimen161
 \alignsep@=\dimen162
@@ -716,15 +915,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen165
 \lineht@=\dimen166
 \@envbody=\toks37
-\multlinegap=\skip58
-\multlinetaggap=\skip59
+\multlinegap=\skip72
+\multlinetaggap=\skip73
 \mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count148
+\c@su@anzahl=\count297
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2013/08/29 v2.17 (NLCT)
@@ -735,19 +934,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count149
+\actioncount=\count298
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count150
-\FP@xia=\count151
-\FP@xib=\count152
-\FP@xfa=\count153
-\FP@xfb=\count154
-\FP@rega=\count155
-\FP@regb=\count156
-\FP@regs=\count157
-\FP@times=\count158
+\FP@xs=\count299
+\FP@xia=\count300
+\FP@xib=\count301
+\FP@xfa=\count302
+\FP@xfb=\count303
+\FP@rega=\count304
+\FP@regb=\count305
+\FP@regs=\count306
+\FP@times=\count307
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -766,7 +965,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count159
+\FPseed=\count308
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -778,14 +977,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks39
-\@dtl@tmpcount=\count160
-\dtl@tmplength=\skip60
-\dtl@sortresult=\count161
-\@dtl@numgrpsepcount=\count162
-\@dtl@datatype=\count163
-\dtl@codeA=\count164
-\dtl@codeB=\count165
-\@dtl@foreach@level=\count166
+\@dtl@tmpcount=\count309
+\dtl@tmplength=\skip74
+\dtl@sortresult=\count310
+\@dtl@numgrpsepcount=\count311
+\@dtl@datatype=\count312
+\dtl@codeA=\count313
+\dtl@codeB=\count314
+\@dtl@foreach@level=\count315
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
@@ -804,9 +1003,9 @@ uage-mappings.tex))
 lian.ldf
 File: glossaries-italian.ldf 2014/11/23 v1.0
 )
-\gls@level=\count167
+\gls@level=\count316
 \@gls@tmpb=\toks40
-\gls@tmplen=\skip61
+\gls@tmplen=\skip75
 \glskeylisttok=\toks41
 \glslabeltok=\toks42
 \glsshorttok=\toks43
@@ -819,42 +1018,42 @@ Package: glossary-hypernav 2013/11/14 v4.0 (NLCT)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
 ty
 Package: glossary-list 2015/02/03 v4.13 (NLCT)
-\glslistdottedwidth=\skip62
+\glslistdottedwidth=\skip76
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
 ty
 Package: glossary-long 2013/11/14 v4.0 (NLCT)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip63
-\LTright=\skip64
-\LTpre=\skip65
-\LTpost=\skip66
-\LTchunksize=\count168
+\LTleft=\skip77
+\LTright=\skip78
+\LTpre=\skip79
+\LTpost=\skip80
+\LTchunksize=\count317
 \LTcapwidth=\dimen167
 \LT@head=\box38
 \LT@firsthead=\box39
 \LT@foot=\box40
 \LT@lastfoot=\box41
-\LT@cols=\count169
-\LT@rows=\count170
-\c@LT@tables=\count171
-\c@LT@chunks=\count172
+\LT@cols=\count318
+\LT@rows=\count319
+\c@LT@tables=\count320
+\c@LT@chunks=\count321
 \LT@p@ftn=\toks45
 )
-\glsdescwidth=\skip67
-\glspagelistwidth=\skip68
+\glsdescwidth=\skip81
+\glspagelistwidth=\skip82
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-super.
 sty
 Package: glossary-super 2013/11/14 v4.0 (NLCT)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count173
+\c@tracingst=\count322
 \ST@wd=\dimen168
-\ST@rightskip=\skip69
-\ST@leftskip=\skip70
-\ST@parfillskip=\skip71
+\ST@rightskip=\skip83
+\ST@leftskip=\skip84
+\ST@parfillskip=\skip85
 \ST@pageleft=\dimen169
 \ST@headht=\dimen170
 \ST@tailht=\dimen171
@@ -870,43 +1069,65 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2015/02/03 v4.13 (NLCT)
-\glstreeindent=\skip72
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 94.
+\glstreeindent=\skip86
+)) (./glossario/glossario.tex
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `tesi.glo'.
+
+Package glossaries Info: Writing glossary file tesi.glo on input line 3.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 96.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./tesi.aux)
+Package biblatex Info: Trying to load language 'italian'...
+Package biblatex Info: ... file 'italian.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+File: italian.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
+)
+(./tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Info: Redefining \it@ocap on input line 116.
-LaTeX Info: Redefining \it@ccap on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Info: Redefining \it@ocap on input line 118.
+LaTeX Info: Redefining \it@ccap on input line 118.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `tesi.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'tesi.bbl' found.
+ (./tesi.bbl)
+Package biblatex Info: Reference section=0 on input line 118.
+Package biblatex Info: Reference segment=0 on input line 118.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count174
+\scratchcounter=\count323
 \scratchdimen=\dimen179
 \scratchbox=\box43
-\nofMPsegments=\count175
-\nofMParguments=\count176
+\nofMPsegments=\count324
+\nofMParguments=\count325
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count177
+\MPscratchCnt=\count326
 \MPscratchDim=\dimen180
-\MPnumerator=\count178
-\makeMPintoPDFobject=\count179
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
 \everyMPtoPDFconversion=\toks47
 )
 *geometry* driver: auto-detecting
@@ -970,7 +1191,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 116.
+Package hyperref Info: Link coloring ON on input line 118.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -978,22 +1199,22 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count180
+\c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 116.
-LaTeX Info: Redefining \pageref on input line 116.
-LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 118.
+LaTeX Info: Redefining \pageref on input line 118.
+LaTeX Info: Redefining \nameref on input line 118.
 
 (./tesi.out) (./tesi.out)
-\@outlinefile=\write3
-\openout3 = `tesi.out'.
+\@outlinefile=\write6
+\openout6 = `tesi.out'.
 
-\c@lstlisting=\count181
+\c@lstlisting=\count330
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 116.
+(lastpage)             ! on input line 118.
  (./tex/titlepage.tex
-<Pics/logo-unipd.png, id=233, 943.525pt x 949.5475pt>
+<Pics/logo-unipd.png, id=268, 943.525pt x 949.5475pt>
 File: Pics/logo-unipd.png Graphic file (type png)
 
 <use Pics/logo-unipd.png>
@@ -1001,26 +1222,28 @@ Package pdftex.def Info: Pics/logo-unipd.png used on input line 24.
 (pdftex.def)             Requested size: 197.90134pt x 199.16928pt.
  [1
 
+\openout4 = `tesi.ist'.
+
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Pics/
 logo-unipd.png>]) [2
 
 ] (./tesi.toc
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 22.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 45.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [3])
-\tf@toc=\write4
-\openout4 = `tesi.toc'.
+\tf@toc=\write7
+\openout7 = `tesi.toc'.
 
  [4]
 (./tesi.lof)
-\tf@lof=\write5
-\openout5 = `tesi.lof'.
+\tf@lof=\write8
+\openout8 = `tesi.lof'.
 
  (./tesi.lot)
-\tf@lot=\write6
-\openout6 = `tesi.lot'.
+\tf@lot=\write9
+\openout9 = `tesi.lot'.
 
  [5
 
@@ -1030,13 +1253,13 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 ]
 (./tex/introduzione.tex
-<Pics/logo_moku.jpg, id=447, 383.93437pt x 155.07938pt>
+<Pics/logo_moku.jpg, id=501, 383.93437pt x 155.07938pt>
 File: Pics/logo_moku.jpg Graphic file (type jpg)
 
 <use Pics/logo_moku.jpg>
 Package pdftex.def Info: Pics/logo_moku.jpg used on input line 5.
 (pdftex.def)             Requested size: 112.70311pt x 45.52458pt.
- <Pics/scrum.png, id=448, 1093.686pt x 429.2838pt>
+ <Pics/scrum.png, id=502, 1093.686pt x 429.2838pt>
 File: Pics/scrum.png Graphic file (type png)
 
 <use Pics/scrum.png>
@@ -1050,28 +1273,28 @@ l.30
       [1
 
  <./Pics/logo_moku.jpg> <./Pics/scrum.png>]
-<Pics/atlassian_logo.png, id=456, 488.82625pt x 103.38625pt>
+<Pics/atlassian_logo.png, id=510, 488.82625pt x 103.38625pt>
 File: Pics/atlassian_logo.png Graphic file (type png)
 
 <use Pics/atlassian_logo.png>
 Package pdftex.def Info: Pics/atlassian_logo.png used on input line 35.
 (pdftex.def)             Requested size: 147.98413pt x 31.2982pt.
 
-<Pics/jira_logo.png, id=457, 430.60875pt x 223.83624pt>
+<Pics/jira_logo.png, id=511, 430.60875pt x 223.83624pt>
 File: Pics/jira_logo.png Graphic file (type png)
 
 <use Pics/jira_logo.png>
 Package pdftex.def Info: Pics/jira_logo.png used on input line 45.
 (pdftex.def)             Requested size: 76.62576pt x 39.83368pt.
 
-<Pics/confluence_logo.jpeg, id=458, 594.22pt x 85.31876pt>
+<Pics/confluence_logo.jpeg, id=512, 594.22pt x 85.31876pt>
 File: Pics/confluence_logo.jpeg Graphic file (type jpg)
 
 <use Pics/confluence_logo.jpeg>
 Package pdftex.def Info: Pics/confluence_logo.jpeg used on input line 59.
 (pdftex.def)             Requested size: 138.70781pt x 19.91684pt.
 
-<Pics/bitbucket_logo.png, id=459, 479.7925pt x 105.39375pt>
+<Pics/bitbucket_logo.png, id=513, 479.7925pt x 105.39375pt>
 File: Pics/bitbucket_logo.png Graphic file (type png)
 
 <use Pics/bitbucket_logo.png>
@@ -1083,20 +1306,20 @@ been already used, duplicate ignored
                    \relax 
 l.73 
       [2 <./Pics/atlassian_logo.png> <./Pics/jira_logo.png (PNG copy)> <./Pics/
-confluence_logo.jpeg>] <Pics/slack_logo.png, id=465, 421.575pt x 120.45pt>
+confluence_logo.jpeg>] <Pics/slack_logo.png, id=518, 421.575pt x 120.45pt>
 File: Pics/slack_logo.png Graphic file (type png)
 
 <use Pics/slack_logo.png>
 Package pdftex.def Info: Pics/slack_logo.png used on input line 81.
 (pdftex.def)             Requested size: 99.58475pt x 28.45274pt.
- <Pics/errbit_logo.png, id=466, 256.96pt x 256.96pt>
+ <Pics/errbit_logo.png, id=519, 256.96pt x 256.96pt>
 File: Pics/errbit_logo.png Graphic file (type png)
 
 <use Pics/errbit_logo.png>
 Package pdftex.def Info: Pics/errbit_logo.png used on input line 94.
 (pdftex.def)             Requested size: 39.8323pt x 39.83368pt.
 
-<Pics/airbrake_logo.png, id=467, 415.5525pt x 132.495pt>
+<Pics/airbrake_logo.png, id=520, 415.5525pt x 132.495pt>
 File: Pics/airbrake_logo.png Graphic file (type png)
 
 <use Pics/airbrake_logo.png>
@@ -1122,40 +1345,43 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 ] (./tex/tecnologie_e_strumenti.tex
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 8.
-<Pics/gitflow.png, id=504, 660.4675pt x 465.74pt>
+<Pics/gitflow.png, id=557, 660.4675pt x 465.74pt>
 File: Pics/gitflow.png Graphic file (type png)
  <use Pics/gitflow.png>
 Package pdftex.def Info: Pics/gitflow.png used on input line 11.
 (pdftex.def)             Requested size: 341.43306pt x 240.77197pt.
 
-[9 <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=511, 401.5pt x 401.5pt>
+[9 <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=564, 401.5pt x 401.5pt>
 File: Pics/rubymine_logo.png Graphic file (type png)
 
 <use Pics/rubymine_logo.png>
 Package pdftex.def Info: Pics/rubymine_logo.png used on input line 43.
 (pdftex.def)             Requested size: 113.81102pt x 113.80992pt.
  [10 <./Pics/rubymine_logo.png (PNG copy)>]
-<Pics/ActiveAdmin_logo.png, id=522, 469.755pt x 114.4275pt>
+
+LaTeX Warning: Citation 'eco:tesi' on page 11 undefined on input line 87.
+
+<Pics/ActiveAdmin_logo.png, id=575, 469.755pt x 114.4275pt>
 File: Pics/ActiveAdmin_logo.png Graphic file (type png)
 
 <use Pics/ActiveAdmin_logo.png>
 Package pdftex.def Info: Pics/ActiveAdmin_logo.png used on input line 113.
 (pdftex.def)             Requested size: 170.71652pt x 41.58496pt.
  [11]
-<Pics/i8n-logo.png, id=532, 501.875pt x 503.8825pt>
+<Pics/i8n-logo.png, id=586, 501.875pt x 503.8825pt>
 File: Pics/i8n-logo.png Graphic file (type png)
  <use Pics/i8n-logo.png>
 Package pdftex.def Info: Pics/i8n-logo.png used on input line 132.
 (pdftex.def)             Requested size: 113.81102pt x 114.26054pt.
 
 [12 <./Pics/ActiveAdmin_logo.png> <./Pics/i8n-logo.png>]
-<Pics/jruby-logo.png, id=542, 501.875pt x 501.875pt>
+<Pics/jruby-logo.png, id=596, 501.875pt x 501.875pt>
 File: Pics/jruby-logo.png Graphic file (type png)
  <use Pics/jruby-logo.png>
 Package pdftex.def Info: Pics/jruby-logo.png used on input line 157.
 (pdftex.def)             Requested size: 113.81102pt x 113.80533pt.
 
-<Pics/drools-logo.png, id=543, 602.25pt x 180.675pt>
+<Pics/drools-logo.png, id=597, 602.25pt x 180.675pt>
 File: Pics/drools-logo.png Graphic file (type png)
 
 <use Pics/drools-logo.png>
@@ -1171,53 +1397,90 @@ x) [15
 
 ] [18
 
+] (./tex/appendice_inference.tex) [19] [20
 
-] 
+]
+(./tex/appendice_sistemi_esperti.tex
+
+LaTeX Warning: Citation 'eco:tesi' on page 21 undefined on input line 68.
+
+) [21] [22]
+No file tesi.gls.
+
+LaTeX Warning: Empty bibliography on input line 167.
+
+
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
-(./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
-Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 2D00D6536E4D23E1621BD826FF898945;3938.
+[23
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
+ (./tesi.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
+
+
+Package rerunfilecheck Warning: File `tesi.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tesi.out':
+(rerunfilecheck)             Before: 6C53BB37C997C03D1C4C55DB3587B4EB;4548
+(rerunfilecheck)             After:  7A737A9574FD7CB538D25D7003A96DD9;4561.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                tesi
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'tesi.run.xml'.
+\openout1 = `tesi.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 16236 strings out of 493089
- 240962 string characters out of 6134841
- 427100 words of memory out of 5000000
- 19206 multiletter control sequences out of 15000+600000
- 24445 words of font info for 52 fonts, out of 8000000 for 9000
+ 24122 strings out of 493089
+ 387483 string characters out of 6134841
+ 898269 words of memory out of 5000000
+ 27011 multiletter control sequences out of 15000+600000
+ 24758 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,75p,1792b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (26 pages, 1030141 bytes).
+ 46i,12n,75p,1828b,1410s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:Angular} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sftt0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (31 pages, 1071800 bytes).
 PDF statistics:
- 721 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
- 151 named destinations out of 1000 (max. 500000)
- 537 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 812 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 609 words of extra memory for PDF output out of 10000 (max. 10000000)
 

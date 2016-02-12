@@ -1,0 +1,34 @@
+\section{Inferenza e Motori di inferenza}
+\hl{NUOVA SEZIONE}
+ \label{App:AppendiceInference}
+ Con  il termine inferenza, si intende il processo con il quale da una preposizione vera, si passa ad una seconda proposizione la cui verità è derivata dal contenuto della prima. \\
+ La definizione di questo processo si ha mediante regole di inferenza che, al soddisfacimento delle condizioni (\textit{antecedent}), traggono la conclusione o inferiscono quello che è definito nella seconda parte della regola detta (\textit{consequent}).
+ Questo genere di approccio assume maggior significato se applicato contemporaneamente ad un insieme di fatti o circostanze. \\
+ Un motore inferenziale (\textit{inference engine}), è quindi un software il cui algoritmo simula le modalità con cui la mente umana trae delle conclusioni logiche attraverso il ragionamento.
+ Le due modalità con cui si opera in questi contesti sono principalmente le seguenti:
+
+\begin{itemize}
+	\item \textbf{forward chaining} \\
+	 Rappresenta il ragionamento di tipo deduttivo, ovvero permette di partire da principi di carattere generale per estrarne uno o più di carattere particolare.\\
+	 L'approccio utilizzato è quello di iniziare con i dati già disponibili ed usare le regole di inferenza per estrarne di nuovi fino a quando non si è raggiunto l'obiettivo fissato.\\
+	 Un inference engine che usa il forward chaining, itera sulle regole di inferenza eseguendo quelle che hanno disposizione tutte le informazioni per poter calcolare i nuovi dati  e fermandosi quando è stato raggiunto l'obiettivo fissato.  \\
+	 A differenza del backward chaining, questo è un approccio orientato ai dati ed effettua i \textit{"ragionamenti"} al fine di ottenere delle risposte. \\
+	 È consigliabile rispetto al backward chaining nelle situazioni in i dati cambiano frequentemente, perché in seguito alla modifica, alla cancellazione ed alla immissione di nuovi dati, viene innescato il processo di inferenza mantenendo il sistema dilazionando il costo computazionale nel tempo.
+ 
+ \item \textbf{backward chaining} \\
+		 Rappresenta il ragionamento di tipo induttivo, ovvero dall'analisi di informazioni di carattere particolare si ricavano informazioni carattere generale. \\
+		 Nella pratica, si considerano una serie di obiettivi e si cerca tra i dati disponibili se ce ne sono di disponibili tali da supportare tutti gli obiettivi fissati.\\
+		 Un motore inferenziale utilizza questo approccio cercando tra le regole di inferenza finché non ne individua una che abbia il consequent che soddisfa l'obiettivo.
+		 Se non è provata la verità dell'antecedent della regola individuata, allora l'antecedent stesso diventa un nuovo obiettivo poiché, una volta soddisfatto, sarà soddisfatto anche l'obiettivo precedentemente individuato.  
+		 
+		 
+		 
+		 
+		 
+		
+		 
+		 \gls{Angular}
+\end{itemize} 
+ 
+ 
+ 

@@ -55,3 +55,12 @@
 \BOOKMARK [1][-]{section.10}{Glossario}{}% 55
 \BOOKMARK [1][-]{section.11}{Bibliografia}{}% 56
 \BOOKMARK [1][-]{appendix.Alph1}{Migrazioni}{}% 57
+\BOOKMARK [1][-]{appendix.Alph2}{Inferenza e Motori di inferenza}{}% 58
+\BOOKMARK [1][-]{appendix.Alph3}{Sistemi Esperti}{}% 59
+\BOOKMARK [1][-]{appendix.Alph4}{Fnzionamento di Drools}{}% 60
+\BOOKMARK [2][-]{subsection.Alph4.1}{Algoritmo RETE}{appendix.Alph4}% 61
+\BOOKMARK [2][-]{subsection.Alph4.2}{Production Memory}{appendix.Alph4}% 62
+\BOOKMARK [2][-]{subsection.Alph4.3}{Working Memory}{appendix.Alph4}% 63
+\BOOKMARK [2][-]{subsection.Alph4.4}{Agenda}{appendix.Alph4}% 64
+\BOOKMARK [2][-]{subsection.Alph4.5}{Hybrid Reasoning}{appendix.Alph4}% 65
+\BOOKMARK [1][-]{subsection.Alph4.5}{Riferimenti bibliografici}{}% 66

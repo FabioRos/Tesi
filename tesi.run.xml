@@ -78,5 +78,8 @@
     <requires type="dynamic">
       <file>tesi.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>Bibliografia/bibliografia.bib</file>
+    </requires>
   </external>
 </requests>

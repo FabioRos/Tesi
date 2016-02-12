@@ -5,6 +5,8 @@
 \usepackage[italian]{babel}
 \usepackage{soulutf8}
 \usepackage[babel]{csquotes}
+\usepackage[backend = biber]{biblatex}
+\addbibresource{Bibliografia/bibliografia.bib}
 %\usepackage{natbib}
 
 
@@ -85,7 +87,7 @@
 \usepackage{color}
 
 \usepackage[toc,nonumberlist,nopostdot]{glossaries}
-
+\loadglsentries{glossario/glossario}
 \hypersetup{
     linktoc=all,
     colorlinks=true,
@@ -111,7 +113,7 @@
 %opening
 \title{ Titolo }
 \author{Fabio Ros}
-%\input{tex/glossario.tex}
+
 
 \begin{document}
 
@@ -149,6 +151,10 @@
 
 	\appendix
 	\input{tex/appendice_migrazioni.tex}
+	\cleardoublepage
+	\input{tex/appendice_inference.tex}
+	\cleardoublepage
+	\input{tex/appendice_sistemi_esperti.tex}
 	
 	
 	%\input{tex/database.tex}
@@ -156,7 +162,9 @@
 	%\input{tex/backend.tex}
 	\cleardoublepage
 
-	%\printglossaries
+	\printglossaries
+	\addcontentsline{toc}{section}{\refname}
+	\printbibliography
 	%\bibliography{tex/bibliografia}
 	%\bibliographystyle{plainnat}
 \end{document}
