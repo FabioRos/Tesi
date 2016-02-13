@@ -18,10 +18,11 @@
  
  I sistemi esperti si dividono in due categorie principali: basati su regole oppure su alberi. 
  Per la realizzazione del progetto di stage è stato utilizzato \textit{Drools}, che si basa su regole. Non verranno quindi trattati su questa tesi i sistemi basati su alberi.\\
- I sistemi esperti basati su regole sono dei programmi composti da regole della forma \texttt{IF condizioni THEN azione}. La parte condizionale viene detta Left Hand Side (LHS), mentre quella relativa all'azione viene detta Right Hand Side (RHS).\\
- Le regole vengono verificate ogni volta che i dati subiscono un cambiamento. Questo avviene mediante l'introduzione di nuovi fatti.\\
+ I sistemi esperti basati su regole sono dei programmi composti da regole della forma \texttt{IF condizioni THEN azione}.\\
+  La parte condizionale viene detta Left Hand Side (LHS), mentre quella relativa all'azione viene detta Right Hand Side (RHS).\\
+ Le regole vengono valutate ad ogni variazione sui dati che avviene sempre mediante l'introduzione di nuovi fatti.\\
  Esempio:
-	 Fatti 
+	 Fatti :
 	 \begin{itemize}
 	 	\item Mal di Testa
 	 	\item Raffreddore
@@ -38,32 +39,6 @@
 %portare nella sezione tecnologie
 
 
-\section{Fnzionamento di Drools} 
-
-
- \subsection{Algoritmo RETE}
- L'algoritmo RETE è stati inventato da Charles Forgy nel 1978-79.. \\
- Può essere separato in due parti:
- \begin{itemize}
- 	\item Compilazione delle regole;
- 	\item Esecuzione runtime.
- \end{itemize}
- Questo algoritmo prevede l'utilizzo di una sorta di rete che filtra i dati mano a mano che essi la attraversano. I nodi all'inizio della rete avranno, con probabilità molto alta, un numero elevato di match. 
- Mano a mano che si scende in profondità, le corrispondenze tenderanno sempre più a diminuire di numero. In fondo alla rete, troveremo i nodi terminali. \\
-Il funzionamento prevede la creazione di un nodo radice, attraverso il quale tutti gli oggetti entrano nella rete. Ogni oggetto, dopo essere passato per il nodo radice, viene subito indirizzato verso un altro nodo chiamato \textit{ObjectTypeNode} che ha lo scopo di assicurare che ogni nodo venga inoltrato verso nodi che sanno gestire oggetti con un tipo compatibile a quello dell'oggetto in analisi\footnote{Tecnicamente questo passaggio avviene mediante l0'invocazione dell'operatore \texttt{instanceof} di Java.}.\\
-Gli ObjectTypeNode, possono propagare gli oggetti verso tre tipologie di nodi:
-\begin{itemize}
-	\item AlphaNodes
-	\item LeftIUnputAdapterNodes
-	\item BetaNodes
-\end{itemize}
- 
- \subsection{Production Memory}
- 
- \subsection{Working Memory}
- 
- \subsection{Agenda}
- 
  \subsection{Hybrid Reasoning}
  Drools usa prima uno poi l'altro \textcite{eco:tesi} \\
- TODO
+ TODO?

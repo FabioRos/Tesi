@@ -181,9 +181,53 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\end{center}
 	\end{figure}
 	Drools è un Business Rules Management System (BRMS) basato su forward and backward chaining inference (vedi \autoref{App:AppendiceInference}). 
+		
+	\subsubsection{Algoritmo RETE}
+	L'algoritmo RETE è stati inventato da Charles Forgy nel 1978-79. \\
+	Può essere separato in due parti:
+	\begin{itemize}
+		\item Compilazione delle regole;
+		\item Esecuzione runtime.
+	\end{itemize}
+	Questo algoritmo prevede l'utilizzo di una sorta di rete che filtra i dati mano a mano che essi la attraversano. I nodi all'inizio della rete avranno, con probabilità molto alta, un numero elevato di match. 
+	Mano a mano che si scende in profondità, le corrispondenze tenderanno sempre più a diminuire di numero. In fondo alla rete, troveremo i nodi terminali. \\
+	Il funzionamento (vedi  \autoref{fig:DroolsRuleEvalFlow})prevede la creazione di un nodo radice, attraverso il quale tutti gli oggetti entrano nella rete. Ogni oggetto, dopo essere passato per il nodo radice, viene subito indirizzato verso un altro nodo chiamato \textit{ObjectTypeNode} che ha lo scopo di assicurare che ogni nodo venga inoltrato verso nodi che sanno gestire oggetti con un tipo compatibile a quello dell'oggetto in analisi\footnote{Tecnicamente questo passaggio avviene mediante l'invocazione dell'operatore \texttt{instanceof} di Java.}.\\
+	Gli ObjectTypeNode,  propagano gli oggetti verso dei nodi detti \textit{AlphaNodes}, ognuno dei quali verifica una condizione. \\
+	Tramite altre due tipologie di nodi (\textit{JoinNode} e \textit{NotNode}), si verificano condizioni che coinvolgono oggetti di diverso tipo, per poi giungere infine ai nodi terminali. \\
+	Una volta raggiunto un nodo terminale, si ha la garanzia che la regola è stata soddisfatta e viene eseguita l'azione descritta nella RHS corrispondente.
+	%valutare se andare in profondità o meno
 	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm,height=12cm,keepaspectratio]{Pics/drools_rule_flow_example.png}
+			\caption{Esempio di flusso di valutazione di una regola Drools.}
+			\label{fig:DroolsRuleEvalFlow}
+		\end{center}
+	\end{figure}
+	
+	\subsubsection{Architettura}
+	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}): Production memory, Working memory ed Inference Engine. Quest'ultimo si compone di due sotto componenti: Pattern matcher ed Agenda.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/drools_abstract_structure.png}
+			\caption{Architettura di Drools}
+			\label{fig:DroolsArchitecture}
+		\end{center}
+	\end{figure}
+	
+	\begin{itemize}
+		\item \textbf{Production memory:} \\ Componente che contiene tutte le regole che compongono la Knowledge Base (KB);
+		\item  \textbf{Working memory: } \\ Componente che contiene tutti i fatti. In Drools, i fatti sono degli oggetti Java. \\  Si chiama working memory, poiché  è possibile effettuare operazioni di modifica, inserimento e rimozione dei fatti che contiene;
+		\item \textbf{Inference engine: } \\ Macrocomponente che ha la responsabilità di valutare i fatti della working memory sulla base della Knowleddge Base presente in Production memory. Per fare ciò si avvale di due sottocomponenti:
+		\begin{itemize}
+			\item \textbf{Pattern matcher: } \\ Componente che ha lo scopo di verificare, quando richiamata dall'inference engine, quali regole hanno la condizione presente nella LHS soddifatta dai fatti presenti nella working memory al momento dell'invocazione. Verranno poi eseguite le azioni  presenti nella RHS di tali regole;
+			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole che soddisfano la condizione nella loro LHS  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
+		\end{itemize}
+	\end{itemize}
 \paragraph{Vantaggi}
+	Facile gestione e mantenimento della verità
 \paragraph{Svantaggi}
+	Pesante interazione con rails -> JRuby e creazione dei modelli per reflection + classe act as fact
 \subsection{Java}
 \paragraph{Vantaggi}
 \paragraph{Svantaggi}

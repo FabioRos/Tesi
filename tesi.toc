@@ -86,118 +86,114 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5}Drools}{13}{subsection.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{14}{section*.34}
+\contentsline {subsubsection}{\numberline {4.5.1}Algoritmo RETE}{14}{subsubsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{14}{section*.35}
+\contentsline {subsubsection}{\numberline {4.5.2}Architettura}{15}{subsubsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Java}{14}{subsection.4.6}
+\contentsline {paragraph}{Vantaggi}{15}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{14}{section*.36}
+\contentsline {paragraph}{Svantaggi}{15}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{14}{section*.37}
+\contentsline {subsection}{\numberline {4.6}Java}{15}{subsection.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}Foundation}{14}{subsection.4.7}
+\contentsline {paragraph}{Vantaggi}{15}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{14}{section*.38}
+\contentsline {paragraph}{Svantaggi}{15}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{14}{section*.39}
+\contentsline {subsection}{\numberline {4.7}Foundation}{16}{subsection.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8}jQuery}{14}{subsection.4.8}
+\contentsline {paragraph}{Vantaggi}{16}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{14}{section*.40}
+\contentsline {paragraph}{Svantaggi}{16}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{14}{section*.41}
+\contentsline {subsection}{\numberline {4.8}jQuery}{16}{subsection.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.9}selectize.js}{14}{subsection.4.9}
+\contentsline {paragraph}{Vantaggi}{16}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{14}{section*.42}
+\contentsline {paragraph}{Svantaggi}{16}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{14}{section*.43}
+\contentsline {subsection}{\numberline {4.9}selectize.js}{16}{subsection.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Analisi del prodotto esistente}{15}{section.5}
+\contentsline {paragraph}{Vantaggi}{16}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Architettura del software}{15}{subsection.5.1}
+\contentsline {paragraph}{Svantaggi}{16}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Definizione dei casi d'uso}{15}{section.6}
+\contentsline {section}{\numberline {5}Analisi del prodotto esistente}{17}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Legenda}{15}{subsection.6.1}
+\contentsline {subsection}{\numberline {5.1}Architettura del software}{17}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}UC 1}{15}{subsection.6.2}
+\contentsline {section}{\numberline {6}Definizione dei casi d'uso}{17}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}UC 1.1}{15}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.1}Legenda}{17}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}UC 1.2}{15}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.2}UC 1}{17}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}UC 1.2.1}{15}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.3}UC 1.1}{17}{subsection.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}UC 2}{15}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.4}UC 1.2}{17}{subsection.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}UC ...}{15}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.5}UC 1.2.1}{17}{subsection.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Sviluppo}{15}{section.7}
+\contentsline {subsection}{\numberline {6.6}UC 2}{17}{subsection.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{15}{subsection.7.1}
+\contentsline {subsection}{\numberline {6.7}UC ...}{17}{subsection.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{15}{subsubsection.7.1.1}
+\contentsline {section}{\numberline {7}Sviluppo}{17}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{15}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{17}{subsection.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{15}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{17}{subsubsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{15}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{17}{subsubsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Nuove componenti}{15}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{17}{subsubsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{15}{subsubsection.7.3.1}
+\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{17}{subsection.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{15}{section*.44}
+\contentsline {subsection}{\numberline {7.3}Nuove componenti}{17}{subsection.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{15}{section*.45}
+\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{17}{subsubsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{15}{section*.46}
+\contentsline {paragraph}{Requisiti}{17}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{15}{subsubsection.7.3.2}
+\contentsline {paragraph}{Progettazione}{17}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{15}{section*.47}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{15}{section*.48}
+\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{17}{subsubsection.7.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{15}{section*.49}
+\contentsline {paragraph}{Requisiti}{17}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{15}{subsubsection.7.3.3}
+\contentsline {paragraph}{Progettazione}{17}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{15}{section*.50}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{15}{section*.51}
+\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{17}{subsubsection.7.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{15}{section*.52}
+\contentsline {paragraph}{Requisiti}{17}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Regole Drools}{16}{subsection.7.4}
+\contentsline {paragraph}{Progettazione}{17}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Verifica e validazione}{16}{section.8}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Considerazioni finali}{16}{section.9}
+\contentsline {subsection}{\numberline {7.4}Regole Drools}{18}{subsection.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Glossario}{16}{section.10}
+\contentsline {section}{\numberline {8}Verifica e validazione}{18}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Bibliografia}{16}{section.11}
+\contentsline {section}{\numberline {9}Considerazioni finali}{18}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Migrazioni}{17}{appendix.Alph1}
+\contentsline {section}{\numberline {10}Glossario}{18}{section.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{19}{appendix.Alph2}
+\contentsline {section}{\numberline {11}Bibliografia}{18}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Sistemi Esperti}{21}{appendix.Alph3}
+\contentsline {section}{\numberline {A}Migrazioni}{19}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Fnzionamento di Drools}{21}{appendix.Alph4}
+\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{21}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.1}Algoritmo RETE}{21}{subsection.Alph4.1}
+\contentsline {section}{\numberline {C}Sistemi Esperti}{23}{appendix.Alph3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.2}Production Memory}{22}{subsection.Alph4.2}
+\contentsline {subsection}{\numberline {C.1}Hybrid Reasoning}{23}{subsection.Alph3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.3}Working Memory}{22}{subsection.Alph4.3}
+\contentsline {section}{Glossario}{25}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.4}Agenda}{22}{subsection.Alph4.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.5}Hybrid Reasoning}{22}{subsection.Alph4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Riferimenti bibliografici}{23}{subsection.Alph4.5}
+\contentsline {section}{Riferimenti bibliografici}{25}{section*.56}
