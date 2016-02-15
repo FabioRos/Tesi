@@ -2,26 +2,26 @@
 \hl{NUOVA SEZIONE}
  \label{App:AppendiceSistemiEsperti}
  
- Un sistema esperto è un programma che cerca di riprodurre le prestazioni di una o più persone esperte in un determinato campo di attività. \\
+ Un sistema esperto è un programma che cerca di riprodurre le capacità di decisione di una o più persone esperte in un determinato campo di attività. \\
  Per il corretto funzionamento, è necessario che siano fornite procedure di inferenza sufficienti alla risoluzione dei problemi alla quale si vuole fornire risposta. \\
- Un sistema esperto, è sempre in grado di esibire i passaggi logici che hanno portato ad una particolare decisione.
+ Un sistema esperto è sempre in grado di esibire i passaggi logici che hanno portato ad una particolare decisione. \\
  Le principali componenti sono: 
  \begin{itemize}
- 	\item \textbf{Base di conoscenza(Knowledge Base):}\\
-	 	Componente che contiene tutto ciò che serve al sistema per prendere le decisioni (e non i dati); 
-	\item \textbf{Motore inferenziale}\\
+ 	\item \textbf{Base di conoscenza (Knowledge Base)}\\
+	 	Componente che contiene tutte le regole necessarie al sistema per prendere le decisioni; non contiene i dati; 
+	\item \textbf{Motore inferenziale} \\
 	  (vedi \autoref{App:AppendiceInference});
-	\item \textbf{Interfaccia Utente}
+	\item \textbf{Interfaccia Utente} \\
 		Componente che permette l'interazione fra il soggetto umano ed il software che deve dare risposta ad un suo particolare problema.
  \end{itemize}
  
  
- I sistemi esperti si dividono in due categorie principali: basati su regole oppure su alberi. 
- Per la realizzazione del progetto di stage è stato utilizzato \textit{Drools}, che si basa su regole. Non verranno quindi trattati su questa tesi i sistemi basati su alberi.\\
+ I sistemi esperti si dividono in due categorie principali: quelli basati su regole e quelli basati su alberi. 
+ Per la realizzazione del progetto di stage è stato utilizzato \textit{Drools}, un framework per la realizzazione di sistemi esperti basati su regole. Non verranno quindi trattati su questa tesi i sistemi basati su alberi.\\
  I sistemi esperti basati su regole sono dei programmi composti da regole della forma \texttt{IF condizioni THEN azione}.\\
   La parte condizionale viene detta Left Hand Side (LHS), mentre quella relativa all'azione viene detta Right Hand Side (RHS).\\
  Le regole vengono valutate ad ogni variazione sui dati che avviene sempre mediante l'introduzione di nuovi fatti.\\
- Esempio:
+ Esempio: \\
 	 Fatti :
 	 \begin{itemize}
 	 	\item Mal di Testa

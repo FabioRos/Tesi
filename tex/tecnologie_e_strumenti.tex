@@ -83,16 +83,14 @@ La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando
 \subsubsection{ActiveRecord}
 
 \label{sec:ActiveRecord}
-Active Record è il modulo di Ruby on Rails che gestisce la persistenza dei dati seguendo il pattern Active-Record di Martin Fowler 
-\cite{eco:tesi}
-, il quale si serve di un database.
-Esso prevede:
+Active Record è il modulo di Ruby on Rails che gestisce la persistenza dei dati seguendo il pattern \textit{Active Record }di Martin Fowler\footnote{La spiegazione dettagliata del pattern Active Record di Martin Fowler è descritta all'indirizzo \url{http://www.martinfowler.com/eaaCatalog/activeRecord.html}. }. 
+Il modulo ActiveRecord di Rails si serve di un database e prevede:
 \begin{itemize}
 \item Ogni tabella del database relazionale è gestita attraverso una classe;
 \item Una singola istanza della classe corrisponde ad una riga (record) nella tabella associata;
 \item Alla creazione di una nuova istanza viene creata una nuova riga all'interno della tabella che viene aggiornata ad ogni modifica dell'istanza associata.
 \end{itemize}
-Le colonne della tabella sono rappresentate come attributi della classe.
+Le colonne della tabella \hl{rappresentano gli} attributi della classe.
 
 \paragraph{Vantaggi} 
 \begin{itemize}
@@ -181,32 +179,9 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\end{center}
 	\end{figure}
 	Drools è un Business Rules Management System (BRMS) basato su forward and backward chaining inference (vedi \autoref{App:AppendiceInference}). 
-		
-	\subsubsection{Algoritmo RETE}
-	L'algoritmo RETE è stati inventato da Charles Forgy nel 1978-79. \\
-	Può essere separato in due parti:
-	\begin{itemize}
-		\item Compilazione delle regole;
-		\item Esecuzione runtime.
-	\end{itemize}
-	Questo algoritmo prevede l'utilizzo di una sorta di rete che filtra i dati mano a mano che essi la attraversano. I nodi all'inizio della rete avranno, con probabilità molto alta, un numero elevato di match. 
-	Mano a mano che si scende in profondità, le corrispondenze tenderanno sempre più a diminuire di numero. In fondo alla rete, troveremo i nodi terminali. \\
-	Il funzionamento (vedi  \autoref{fig:DroolsRuleEvalFlow})prevede la creazione di un nodo radice, attraverso il quale tutti gli oggetti entrano nella rete. Ogni oggetto, dopo essere passato per il nodo radice, viene subito indirizzato verso un altro nodo chiamato \textit{ObjectTypeNode} che ha lo scopo di assicurare che ogni nodo venga inoltrato verso nodi che sanno gestire oggetti con un tipo compatibile a quello dell'oggetto in analisi\footnote{Tecnicamente questo passaggio avviene mediante l'invocazione dell'operatore \texttt{instanceof} di Java.}.\\
-	Gli ObjectTypeNode,  propagano gli oggetti verso dei nodi detti \textit{AlphaNodes}, ognuno dei quali verifica una condizione. \\
-	Tramite altre due tipologie di nodi (\textit{JoinNode} e \textit{NotNode}), si verificano condizioni che coinvolgono oggetti di diverso tipo, per poi giungere infine ai nodi terminali. \\
-	Una volta raggiunto un nodo terminale, si ha la garanzia che la regola è stata soddisfatta e viene eseguita l'azione descritta nella RHS corrispondente.
-	%valutare se andare in profondità o meno
-	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=12cm,height=12cm,keepaspectratio]{Pics/drools_rule_flow_example.png}
-			\caption{Esempio di flusso di valutazione di una regola Drools.}
-			\label{fig:DroolsRuleEvalFlow}
-		\end{center}
-	\end{figure}
 	
 	\subsubsection{Architettura}
-	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}): Production memory, Working memory ed Inference Engine. Quest'ultimo si compone di due sotto componenti: Pattern matcher ed Agenda.
+	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}):\textit{ Production memory}, \textit{Working memory} ed \textit{Inference Engine}. Quest'ultimo si compone di due sotto componenti: \textit{Pattern matcher} ed \textit{Agenda}.
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=12cm]{Pics/drools_abstract_structure.png}
@@ -218,25 +193,25 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\begin{itemize}
 		\item \textbf{Production memory:} \\ Componente che contiene tutte le regole che compongono la Knowledge Base (KB);
 		\item  \textbf{Working memory: } \\ Componente che contiene tutti i fatti. In Drools, i fatti sono degli oggetti Java. \\  Si chiama working memory, poiché  è possibile effettuare operazioni di modifica, inserimento e rimozione dei fatti che contiene;
-		\item \textbf{Inference engine: } \\ Macrocomponente che ha la responsabilità di valutare i fatti della working memory sulla base della Knowleddge Base presente in Production memory. Per fare ciò si avvale di due sottocomponenti:
+		\item \textbf{Inference engine: } \\ Macrocomponente che ha la responsabilità di valutare i fatti della working memory sulla base della Knowledge Base presente in Production memory. Per fare ciò si avvale di due sottocomponenti:
 		\begin{itemize}
-			\item \textbf{Pattern matcher: } \\ Componente che ha lo scopo di verificare, quando richiamata dall'inference engine, quali regole hanno la condizione presente nella LHS soddifatta dai fatti presenti nella working memory al momento dell'invocazione. Verranno poi eseguite le azioni  presenti nella RHS di tali regole;
-			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole che soddisfano la condizione nella loro LHS  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
+			\item \textbf{Pattern matcher: } \\ Componente che ha lo scopo di verificare, quando richiamata dall'inference engine, quali regole soddisfano la condizione presente nella LHS sulla base dei fatti presenti nella working memory al momento dell'invocazione. Verranno poi eseguite le azioni  presenti nella RHS di tali regole. Per fare ciò in modo efficiente con molti dati, viene utilizzato l'algoritmo Rete, brevemente denscritto nell'\autoref{App:AppendiceAlgoritmoRete};
+			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole soddisfano la condizione nella loro LHS  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
 		\end{itemize}
 	\end{itemize}
 \paragraph{Vantaggi}
-	Facile gestione e mantenimento della verità
+	\begin{itemize}
+		\item In sistemi con grandi quantità di dati e vincoli, un approccio di questo tipo facilita notevolmente il mantenimento della verità ed il controllo sui dati inseriti. La definizione dei vincoli e l'aggiornamento degli stessi, risulta molto meno oneroso e di più facile verifica;
+		\item L'elaborazione, risulta essere più veloce e performante rispetto ad un approccio tradizionale.
+	\end{itemize}
 \paragraph{Svantaggi}
-	Pesante interazione con rails -> JRuby e creazione dei modelli per reflection + classe act as fact
-\subsection{Java}
-\paragraph{Vantaggi}
-\paragraph{Svantaggi}
+	\begin{itemize}
+		\item Per poter integrare questo sistema con Ruby on Rails é necessario utilizzare jRuby ed implementare in Java, le classi corrispondenti ai modelli sui quali si vogliono definire delle regole. Tecnicamente, qusto si fa con dei file di template java.erb di Rails che ottengono le informazioni riguardo classi e membri mediante \gls{reflection};
+		\item Per lavorare in modo efficace con questa tecnologia, è necessario investire molto tempo per conoscerne a fondo tutte le sfaccettature.
+	\end{itemize}
 \subsection{Foundation}
 \paragraph{Vantaggi}
 \paragraph{Svantaggi}
 \subsection{jQuery}
-\paragraph{Vantaggi}
-\paragraph{Svantaggi}
-\subsection{selectize.js}
 \paragraph{Vantaggi}
 \paragraph{Svantaggi}
