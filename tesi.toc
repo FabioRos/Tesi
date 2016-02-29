@@ -94,94 +94,94 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6}Foundation}{15}{subsection.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{15}{section*.37}
+\contentsline {paragraph}{Vantaggi}{15}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{15}{section*.38}
+\contentsline {paragraph}{Svantaggi}{16}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}jQuery}{15}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.7}jQuery}{16}{subsection.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vantaggi}{15}{section*.39}
+\contentsline {paragraph}{Vantaggi}{16}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Svantaggi}{15}{section*.40}
+\contentsline {paragraph}{Svantaggi}{17}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Analisi del prodotto esistente}{17}{section.5}
+\contentsline {section}{\numberline {5}Analisi del prodotto esistente}{19}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Architettura del software}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Architettura del software}{19}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Definizione dei casi d'uso}{17}{section.6}
+\contentsline {subsubsection}{\numberline {5.1.1}Architettura ad alto livello}{19}{subsubsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Legenda}{17}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Architettura a basso livello}{20}{subsubsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}UC 1}{17}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Flusso dei dati ed interazione}{22}{subsubsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}UC 1.1}{17}{subsection.6.3}
+\contentsline {section}{\numberline {6}Definizione dei casi d'uso}{23}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}UC 1.2}{17}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.1}Legenda}{23}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}UC 1.2.1}{17}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.2}UC 1}{23}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}UC 2}{17}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.3}UC 1.1}{23}{subsection.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}UC ...}{17}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.4}UC 1.2}{23}{subsection.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Sviluppo}{17}{section.7}
+\contentsline {subsection}{\numberline {6.5}UC 1.2.1}{23}{subsection.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{17}{subsection.7.1}
+\contentsline {subsection}{\numberline {6.6}UC 2}{23}{subsection.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{17}{subsubsection.7.1.1}
+\contentsline {subsection}{\numberline {6.7}UC ...}{23}{subsection.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{17}{subsubsection.7.1.2}
+\contentsline {section}{\numberline {7}Sviluppo}{23}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{17}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{23}{subsection.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{17}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{23}{subsubsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Nuove componenti}{17}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{23}{subsubsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{17}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{23}{subsubsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{17}{section*.41}
+\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{23}{subsection.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{17}{section*.42}
+\contentsline {subsection}{\numberline {7.3}Nuove componenti}{23}{subsection.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.43}
+\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{23}{subsubsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{17}{subsubsection.7.3.2}
+\contentsline {paragraph}{Requisiti}{23}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{17}{section*.44}
+\contentsline {paragraph}{Progettazione}{23}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{17}{section*.45}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.46}
+\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{23}{subsubsection.7.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{17}{subsubsection.7.3.3}
+\contentsline {paragraph}{Requisiti}{23}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{17}{section*.47}
+\contentsline {paragraph}{Progettazione}{23}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{17}{section*.48}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{17}{section*.49}
+\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{23}{subsubsection.7.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Regole Drools}{18}{subsection.7.4}
+\contentsline {paragraph}{Requisiti}{23}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Verifica e validazione}{18}{section.8}
+\contentsline {paragraph}{Progettazione}{23}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Considerazioni finali}{18}{section.9}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Glossario}{18}{section.10}
+\contentsline {subsection}{\numberline {7.4}Regole Drools}{23}{subsection.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Bibliografia}{18}{section.11}
+\contentsline {section}{\numberline {8}Verifica e validazione}{23}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Migrazioni}{19}{appendix.Alph1}
+\contentsline {section}{\numberline {9}Considerazioni finali}{23}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{21}{appendix.Alph2}
+\contentsline {section}{\numberline {A}Migrazioni}{25}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Sistemi Esperti}{23}{appendix.Alph3}
+\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{27}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1}Hybrid Reasoning}{23}{subsection.Alph3.1}
+\contentsline {section}{\numberline {C}Sistemi Esperti}{29}{appendix.Alph3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Algoritmo RETE}{25}{appendix.Alph4}
+\contentsline {section}{\numberline {D}Algoritmo RETE}{31}{appendix.Alph4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Glossario}{27}{section*.51}
+\contentsline {section}{Glossario}{33}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Riferimenti bibliografici}{27}{section*.52}
+\contentsline {section}{Riferimenti bibliografici}{33}{section*.58}

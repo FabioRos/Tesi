@@ -60,12 +60,12 @@ Rubymine è un IDE prodotto da jetBrains, disegnato appositamente per lo svilupp
 \subsection{Ruby on Rails}
 
 Ruby on Rails, è un framework open source per lo sviluppo di applicazioni web.
-La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando a tutti gli effetti un framework full-stack; è dunque possibile realizzare sia la parte di backend che quella di frontend.
+La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando a tutti gli effetti un framework full-stack; è dunque possibile realizzare sia la parte di backend che quella di \gls{front-end}.
 \paragraph{Vantaggi}
 \begin{itemize}
 	\item Risorse e componenti sono integrati in modo tale che i collegamenti non debbano mai essere impostati manualmente, ma in modo automatico;
 	\item È possibile lavorare utilizzando ActiveRecord, descritto nella sezione \ref{sec:ActiveRecord}. Questo è un grosso vantaggio perché velocizza la stesura del codice e risponde bene ai cambiamenti. Nel progetto svolto \hl{, l'utilizzo di ActiveRecord} è un fattore determinante poiché è necessario che il software sia sempre conforme alle normative vigenti che cambiano nel tempo;
-	\item \hl{È possibile disaccoppiare il backend ed il frontend} perché in rails il routing delle risorse è gestito con una interfaccia REST;
+	\item \hl{È possibile disaccoppiare il backend ed il} \gls{front-end} perché in rails il routing delle risorse è gestito con una interfaccia REST;
 	\item Sono inoltre messi a disposizione i seguenti ambienti per uno stesso software, al fine di creare una separazione nel progetto:
 		\begin{itemize}
 		\item development 
@@ -210,8 +210,63 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item Per lavorare in modo efficace con questa tecnologia, è necessario investire molto tempo per conoscerne a fondo tutte le sfaccettature.
 	\end{itemize}
 \subsection{Foundation}
+	\hl{Sezione nuovissima}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=7cm]{Pics/logo-foundation.png}
+				\caption{Logo di Foundation}
+				\label{fig:FoundationLogo}
+			\end{center}
+		\end{figure}
+	Foundation è una collezione di \gls{framework} per lo sviluppo della componente \gls{front-end} di applicazioni web realizzata da Zurb. \\ In particolare è composto da tre pacchetti:
+	\begin{itemize}
+		\item \textbf{Foundation for Sites: } per la realizzazione di siti web;
+		\item \textbf{Foundation for Emails: } per la realizzazione di email formattate in html;
+		\item \textbf{Foundation for Apps: } per la realizzazione di applicazioni web.
+	\end{itemize}
+	La struttura di ogni \gls{framework} è modulare e consiste essenzialmente di fogli di stile in formato \gls{SASS} - \gls{SCSS}. \\
+	Per limitare il peso dei fogli di stile, è possibile selezionare  le sole componenti di cui si necessita al momento del download e saranno le sole presenti nel pacchetto da includere nel sito o da scaricare con un \gls{CDN}. \\
+	Come la maggioranza dei framework per il \gls{front-end} moderni, Foundation fornisce un sistema di posizionamento dei componenti a griglia. Sono previste dodici colonne visibili una accanto all'altra a partire dalla larghezza dello schermo di 940 pixel. Il numero di colonne viene adattato automaticamente a seconda dello spazio a disposizione rendendo il sito, l'applicazione o l'email responsive. 
 \paragraph{Vantaggi}
+	\begin{itemize}
+		\item Oltre ai comuni elementi HTML, sono messi a disposizione componenti aggiuntivi per la realizzazione delle sezioni di interfaccia maggiormente usate, ad esempio: 
+		\begin{itemize}
+			\item Gruppi di bottoni;
+			\item Menu a tendina;
+			\item \gls{Breadcrumb};
+			\item Messaggi formattati per avvisi, errori, aiuto.
+		\end{itemize}\item Foundation permette di realizzare interfacce grafiche accattivanti senza dedicare eccessivo tempo alla loro implementazione;
+		\item Questa collezione di framework è stata testata sui principali Browser ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
+	\end{itemize}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=15cm]{Pics/foundation5_compatibilita.png}
+			\caption{Compatibilità di Foundation 5.5}
+			\label{fig:FoundationCompatibilita}
+		\end{center}
+	\end{figure}
 \paragraph{Svantaggi}
+	\begin{itemize}
+		\item Per utilizzare questo framework, è necessario investire del tempo per apprenderne appieno le caratteristiche.
+	\end{itemize}
 \subsection{jQuery}
+	\hl{Sezione nuovissima}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=7cm]{Pics/jquery_logo.png}
+			\caption{Logo di jQuery}
+			\label{fig:jQueryLogo}
+		\end{center}
+	\end{figure}
+	jQuery è una libreria \gls{javascript} per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}, la gestione degli eventi e semplificare la gestione delle chiamate \gls{Ajax}.
 \paragraph{Vantaggi}
+	\begin{itemize}
+		\item Permette di eseguire chiamate \gls{Ajax} in modo veloce, rendendo così l'applicazione web più dinamica;
+		\item Velocizza l'accesso e la gestione degli elementi del DOM delle pagine HTML;
+		\item jQuery è stata testata sui principali \gls{browser};
+		\item Permette di semplificare e ridurre il codice, velocizzando il raggiungimento degli obiettivi. 
+	\end{itemize}
 \paragraph{Svantaggi}
+	\begin{itemize}
+		\item È sempre necessario importare tutto il pacchetto. Tuttavia, la versione compressa, occupa poco meno di 100 KiloBite. 
+\end{itemize}

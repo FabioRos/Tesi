@@ -2235,7 +2235,6 @@
     <bcf:datasource type="file" datatype="bibtex">Bibliografia/bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">eco:tesi</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
