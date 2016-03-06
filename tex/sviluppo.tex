@@ -24,7 +24,7 @@ Il software espone una collezione di oltre 400 domande. Sulla base delle rispost
 Il software è gestito mediante tecnologia \gls{SaaS}, un modello di distribuzione del software applicativo dove il fornitore del software si occupa della sua implementazione e manutenzione. Il servizio viene erogato al cliente mediante una applicazione web fruibile via internet. \\ 
 L'applicazione web risiede fisicamente su una macchina virtuale della piattaforma cloud \gls{AWS}, al fine di evitare oneri e spese di gestione di una infrastruttura informatica dedicata e garantire la scalabilità del servizio.\\
 
-Come è possibile osservare da \autoref{fig:Architettura}, ogni istanza di macchina virtuale contiene clone dell'intera architettura. È stata scelta questa soluzione perché è prevista la possibilità di vendere il pacchetto a più utenti che possono fungere da distributori.\\
+Come è possibile osservare da \autoref{fig:Architettura}, ogni istanza di macchina virtuale contiene un clone dell'intera architettura. È stata scelta questa soluzione perché è prevista la possibilità di vendere il pacchetto a più utenti che possono fungere da distributori.\\
 Ogni istanza è composta da tre componenti principali:
 \begin{itemize}
 	\item \textit{Rule Engine;}
@@ -32,7 +32,7 @@ Ogni istanza è composta da tre componenti principali:
 	\item \textit{Storage.}
 \end{itemize}
 Il routing delle richieste viene effettuato con un \gls{reverse proxy}, nello specifico \textit{NGINX}. \\
-In particolare Ruby on Rails permette nativamente di creare e versionare i database a seconda dell'ambiente nel quale si opera (\textit{development, test, staging e production}). Questa caratteristica è tornata molto utile per lo sviluppo dal momento che è stato possibile fare test accurati senza intaccare i dati in produzione o utilizzare la console in sandbox di Rails che presenta criticità nella consistenza dei dati. \\
+In particolare Ruby on Rails permette nativamente di creare e versionare i database a seconda dell'ambiente nel quale si opera (\textit{development, test, staging e production}). Questa caratteristica è tornata molto utile per lo sviluppo dal momento che è stato possibile fare test accurati senza intaccare i dati in produzione o utilizzare la console in sandbox di Rails la quale presenta criticità nella consistenza dei dati. \\
 La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord} di Ruby on Rails (descritto nella sezione \ref{sec:ActiveRecord}) salvando le informazioni su un database \textit{ PostgreSQL}.
 \begin{figure}[H]
 	\begin{center}
@@ -72,7 +72,7 @@ Sono stati implementati, inoltre numerosi \gls{concern} per modularizzare le fun
 
 
 \paragraph*{Relazioni tra domande, risposte ed allarmi}\mbox{} \\
-\hl{sezione nuovissima}
+\hl{sezione nuovissima}\\
 Particolarmente degna di nota è l'associazione di una risposta o di un \textit{allarme} alla relativa risorsa. Per fare ciò si è utilizzato l'approccio di Rails per il supporto alle associazioni polimorfe, come si può vedere da  \autoref{fig:DiagrammaClassiAssociazioniPolimorfe}.\\
 Nello specifico, indicando il tipo e l'id della risorsa interessata, l'accesso avviene tramite valutazione della classe e ricerca del relativo \textit{id}. \\
 Si può pensare, ad esempio, all'allarme scatenato alla scadenza di un estintore. \\
@@ -85,23 +85,25 @@ La Risposta (\textit{Answer}) avrà i due campi \texttt{answerable\_type} ed \te
 	\end{center}
 \end{figure}
 
-\paragraph*{Integrazione tra Ruby on Rails e Drools}\mbox{} \\
+\subsubsection{Integrazione tra Ruby on Rails e Drools}\mbox{} \\
 \hl{TODO scrivere meglio}
-Il codice scritto in Ruby on Rails è interpretato da jRuby. jRuby, essendo un interprete scritto in Java di Ruby, gira su una JVM.\\
-Drools è un rule engine scritto in Java e per funzionare ha bisogno di oggetti java (nella forma \gls{JavaBean} o \gls{POJO}). Queste informazioni entrano a fare parte della \textit{working memory} sotto forma di \textit{fatti}.\\
-Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concern} chiamato \textit{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella working memory e vengono generati, mediante i template di Rails (\gls{ERB}), le classi Java corrispondenti.
+Il codice è stato scritto per la maggior parte utilizzando Ruby on Rails ma il rule engine (Drools) è un framework scritto in Java. I due linguaggi non sono nativamente compatibili. \\
+Per ovviare a questo problema, è stato utilizzato JRuby, un interprete del linguaggio Ruby scritto in Java, quindi in esecuzione su una \gls{JVM}. \\
+Per il corretto funzionamento di Drools, è necessario inserire le informazioni nella \textit{working memory} come \textit{"fatti"} che sono richiesti come oggetti di tipo \gls{JavaBean} o \gls{POJO}.\\
+Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concern} chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{working memory }e vengono generati, mediante reflection utilizzando i template di Rails (\gls{ERB}), le classi Java corrispondenti.
 
 
 
 
-\paragraph*{Criticità incontrate}\mbox{} \\
-\hl{SPOSTARE NELLA SEZIONE IN CUI SCRIVO QUELLO CHE HO FATTO IO}
-\hl{INSERIRE IL REMOTE TRUE NELLE VISTE}
+%\paragraph*{Criticità incontrate}\mbox{} \\
+%\hl{SPOSTARE NELLA SEZIONE IN CUI SCRIVO QUELLO CHE HO FATTO IO}
+%\hl{INSERIRE IL REMOTE TRUE NELLE VISTE}
 
 
 
 
 \subsubsection{Flusso dei dati ed interazione}
+\hl{Sezione nuovissima}
  Un aspetto che merita di essere esaminato è il flusso con il quale vengono generate e valutate domande e risposte  (\autoref{fig:DiagrammaAttivitaRisposte}).
 \begin{figure}[H]
 	\begin{center}
@@ -113,7 +115,7 @@ Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concer
 
 Nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{working memory}. \\
 Nel caso un cui venga generata o aggiornata un'istanza di modello, può essere necessario l'inserimento di alcune domande ad essa direttamente correlate.\\
-Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda i un apposito questionario. Se tale informazione non è specificata viene sollevato un allarme.\\
+Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda in un apposito questionario generato ad ogni associazione di un estintore ad un cantiere. Se tale informazione non è specificata viene sollevato un allarme.\\
 Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o modifica di una istanza di modello, il passo successivo è rappresentato dalla valutazione delle informazioni inserite sulla base della \textit{Knowledge Base}. \\
 È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la LHS sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. 
 Un esempio di regola è il seguente:
@@ -136,7 +138,7 @@ end
 	\item \$i contiene tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
 \end{itemize}
 Le corrispondenze di questa regola sono tutti gli individui individui che svolgono una qualunque mansione per la quale non sono correttamente formati.\\
-Al verificarsi di queste condizioni, viene generato un allarme da un apposito handler il cui contenuto è specificato dalla stampa nella RHS.
+Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla RHS.
 
 
 

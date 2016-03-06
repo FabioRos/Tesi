@@ -112,7 +112,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.2}Architettura a basso livello}{20}{subsubsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3}Flusso dei dati ed interazione}{22}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3}Integrazione tra Ruby on Rails e Drools}{22}{subsubsection.5.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.4}Flusso dei dati ed interazione}{22}{subsubsection.5.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Definizione dei casi d'uso}{24}{section.6}
 \defcounter {refsection}{0}\relax 
@@ -146,27 +148,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{24}{subsubsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{24}{section*.50}
+\contentsline {paragraph}{Requisiti}{24}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{24}{section*.51}
+\contentsline {paragraph}{Progettazione}{25}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.52}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.50}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{25}{subsubsection.7.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{25}{section*.53}
+\contentsline {paragraph}{Requisiti}{25}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{25}{section*.54}
+\contentsline {paragraph}{Progettazione}{25}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.55}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.53}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{25}{subsubsection.7.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Requisiti}{25}{section*.56}
+\contentsline {paragraph}{Requisiti}{25}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Progettazione}{25}{section*.57}
+\contentsline {paragraph}{Progettazione}{25}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.58}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{25}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.4}Regole Drools}{25}{subsection.7.4}
 \defcounter {refsection}{0}\relax 
@@ -182,6 +184,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {D}Algoritmo RETE}{33}{appendix.Alph4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Glossario}{35}{section*.60}
+\contentsline {section}{Glossario}{35}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Riferimenti bibliografici}{35}{section*.61}
+\contentsline {section}{Riferimenti bibliografici}{35}{section*.59}
