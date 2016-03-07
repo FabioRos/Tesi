@@ -1,6 +1,6 @@
 all: clean
 	@ pdflatex tesi.tex
-	# @ bibtex tesi
+	@ bibtex tesi
 	@ makeglossaries tesi
 	@ pdflatex tesi.tex
 	@ pdflatex tesi.tex

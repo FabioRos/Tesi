@@ -1,5 +1,11 @@
+\glossaryentry{ATECO?\glossentry{ATECO}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{DVR?\glossentry{DVR}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{front-end?\glossentry{front-end}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{front-end?\glossentry{front-end}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{REST?\glossentry{REST}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{LHS?\glossentry{LHS}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{RHS?\glossentry{RHS}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{LHS?\glossentry{LHS}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{Reflection?\glossentry{reflection}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{Framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{front-end?\glossentry{front-end}|setentrycounter[]{page}\glsnumberformat}{15}
@@ -18,7 +24,7 @@
 \glossaryentry{DVR?\glossentry{DVR}|setentrycounter[]{page}\glsnumberformat}{19}
 \glossaryentry{SaaS?\glossentry{SaaS}|setentrycounter[]{page}\glsnumberformat}{19}
 \glossaryentry{AWS?\glossentry{AWS}|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{reverse proxy?\glossentry{reverse proxy}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Reverse proxy?\glossentry{reverse proxy}|setentrycounter[]{page}\glsnumberformat}{19}
 \glossaryentry{MVC?\glossentry{MVC}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{REST?\glossentry{REST}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{asseverazione?\glossentry{asseverazione}|setentrycounter[]{page}\glsnumberformat}{20}
@@ -31,4 +37,8 @@
 \glossaryentry{POJO?\glossentry{POJO}|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{concern?\glossentry{concern}|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{ERB?\glossentry{ERB}|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{ISTAT?\glossentry{ISTAT}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{LHS?\glossentry{LHS}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{RHS?\glossentry{RHS}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{LHS?\glossentry{LHS}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{RHS?\glossentry{RHS}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{RHS?\glossentry{RHS}|setentrycounter[]{page}\glsnumberformat}{33}

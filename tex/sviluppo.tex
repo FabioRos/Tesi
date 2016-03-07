@@ -3,7 +3,7 @@
 \hl{sezione nuovissima}
 
 Al momento dell'arrivo in azienda è già presente una versione alpha del software. \\
-Sono attualmente supportate le aziende con i codici \gls{ATECO} in ambito edilizio, permettendo di gestire le informazioni relative a:
+Sono attualmente supportate le aziende con i codici \gls{ATECO}\G\ in ambito edilizio, permettendo di gestire le informazioni relative a:
 \begin{itemize}
 	\item Sedi;
 	\item Cantieri;
@@ -11,7 +11,7 @@ Sono attualmente supportate le aziende con i codici \gls{ATECO} in ambito ediliz
 	\item Organigramma aziendale;
 	\item Abitabilità;
 	\item Certificato di prevenzione degli incendi;
-	\item \gls{DVR} e documentazione collaterale ad esso.
+	\item \gls{DVR}\G\ e documentazione collaterale ad esso.
 \end{itemize}
 Il software espone una collezione di oltre 400 domande. Sulla base delle risposte a queste domande ed alle informazioni relative alle entità sopra indicate, vengono verificate alcuni vincoli mediante delle regole del sistema esperto.
 
@@ -21,8 +21,8 @@ Il software espone una collezione di oltre 400 domande. Sulla base delle rispost
 \subsection{Architettura del software}
 \subsubsection{Architettura ad alto livello}
 \hl{sezione nuovissima}
-Il software è gestito mediante tecnologia \gls{SaaS}, un modello di distribuzione del software applicativo dove il fornitore del software si occupa della sua implementazione e manutenzione. Il servizio viene erogato al cliente mediante una applicazione web fruibile via internet. \\ 
-L'applicazione web risiede fisicamente su una macchina virtuale della piattaforma cloud \gls{AWS}, al fine di evitare oneri e spese di gestione di una infrastruttura informatica dedicata e garantire la scalabilità del servizio.\\
+Il software è gestito mediante tecnologia \gls{SaaS}\G\, un modello di distribuzione del software applicativo dove il fornitore del software si occupa della sua implementazione e manutenzione. Il servizio viene erogato al cliente mediante una applicazione web fruibile via internet. \\ 
+L'applicazione web risiede fisicamente su una macchina virtuale della piattaforma cloud \gls{AWS}\G\, al fine di evitare oneri e spese di gestione di una infrastruttura informatica dedicata e garantire la scalabilità del servizio.\\
 
 Come è possibile osservare da \autoref{fig:Architettura}, ogni istanza di macchina virtuale contiene un clone dell'intera architettura. È stata scelta questa soluzione perché è prevista la possibilità di vendere il pacchetto a più utenti che possono fungere da distributori.\\
 Ogni istanza è composta da tre componenti principali:
@@ -31,7 +31,7 @@ Ogni istanza è composta da tre componenti principali:
 	\item \textit{Database;}
 	\item \textit{Storage.}
 \end{itemize}
-Il routing delle richieste viene effettuato con un \gls{reverse proxy}, nello specifico \textit{NGINX}. \\
+Il routing delle richieste viene effettuato con un \gls{reverse proxy}\G\, nello specifico \textit{NGINX}. \\
 In particolare Ruby on Rails permette nativamente di creare e versionare i database a seconda dell'ambiente nel quale si opera (\textit{development, test, staging e production}). Questa caratteristica è tornata molto utile per lo sviluppo dal momento che è stato possibile fare test accurati senza intaccare i dati in produzione o utilizzare la console in sandbox di Rails la quale presenta criticità nella consistenza dei dati. \\
 La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord} di Ruby on Rails (descritto nella sezione \ref{sec:ActiveRecord}) salvando le informazioni su un database \textit{ PostgreSQL}.
 \begin{figure}[H]
@@ -44,10 +44,10 @@ La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord
 \hl{SPIEGARE MEGLIO}
 \subsubsection{Architettura a basso livello}
 \hl{sezione nuovissima}
-L'applicazione web è organizzata secondo il pattern \gls{MVC}. Per il raggiungimento delle viste e l'accesso alle informazioni necessarie al corretto funzionamento dell'applicazione è stata implementata una interfaccia \gls{REST}. \\
+L'applicazione web è organizzata secondo il pattern \gls{MVC}\G\. Per il raggiungimento delle viste e l'accesso alle informazioni necessarie al corretto funzionamento dell'applicazione è stata implementata una interfaccia \gls{REST}\G\. \\
 \hl{Mettere diagramma delle classi approssimativo}\\
 Il sistema ha come entità principale il modello \texttt{Company} al quale sono riferite, direttamente o indirettamente, tutte le risorse.\\ 
-Sono poi presenti numerosi modelli relativi alle entità che partecipano alla procedura di \gls{asseverazione}.
+Sono poi presenti numerosi modelli relativi alle entità che partecipano alla procedura di \gls{asseverazione}\G\.
 I modelli più significativi sono:
 \begin{itemize} 
 	\item \texttt{Alert} per rappresentare gli allarmi;
@@ -67,7 +67,7 @@ I modelli più significativi sono:
 	\item \texttt{Training} per rappresentare un corso.
 \end{itemize}	
 Per ciascun modello, sono stati realizzati opportuni \textit{controller} e \textit{viste}. \\
-Sono stati implementati, inoltre numerosi \gls{concern} per modularizzare le funzionalità indipendenti dalla singola classe ed allo stesso tempo riutilizzabili da altre classi. Ad esempio, ogni modello che, se istanziato, provoca un aumento del numero delle domande in attesa di risposta, include un apposito \gls{concern} per l'aggiornamento di un contatore dedicato a tale scopo. Per l'aggiornamento del valore, il \gls{concern} ricava il nome della classe mediante \gls{reflection} sulla base dell'oggetto corrente ed incrementa il valore automaticamente del numero di domande correlate al tipo individuato.\\
+Sono stati implementati, inoltre numerosi \gls{concern}\G\ per modularizzare le funzionalità indipendenti dalla singola classe ed allo stesso tempo riutilizzabili da altre classi. Ad esempio, ogni modello che, se istanziato, provoca un aumento del numero delle domande in attesa di risposta, include un apposito \gls{concern}\G\ per l'aggiornamento di un contatore dedicato a tale scopo. Per l'aggiornamento del valore, il \gls{concern}\G\ ricava il nome della classe mediante \gls{reflection}\G\ sulla base dell'oggetto corrente ed incrementa il valore automaticamente del numero di domande correlate al tipo individuato.\\
 \hl{[TODO finire di spiegare l'architettura ]}\\
 
 
@@ -88,9 +88,9 @@ La Risposta (\textit{Answer}) avrà i due campi \texttt{answerable\_type} ed \te
 \subsubsection{Integrazione tra Ruby on Rails e Drools}\mbox{} \\
 \hl{TODO scrivere meglio}
 Il codice è stato scritto per la maggior parte utilizzando Ruby on Rails ma il rule engine (Drools) è un framework scritto in Java. I due linguaggi non sono nativamente compatibili. \\
-Per ovviare a questo problema, è stato utilizzato JRuby, un interprete del linguaggio Ruby scritto in Java, quindi in esecuzione su una \gls{JVM}. \\
-Per il corretto funzionamento di Drools, è necessario inserire le informazioni nella \textit{working memory} come \textit{"fatti"} che sono richiesti come oggetti di tipo \gls{JavaBean} o \gls{POJO}.\\
-Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concern} chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{working memory }e vengono generati, mediante reflection utilizzando i template di Rails (\gls{ERB}), le classi Java corrispondenti.
+Per ovviare a questo problema, è stato utilizzato JRuby, un interprete del linguaggio Ruby scritto in Java, quindi in esecuzione su una \gls{JVM}\G\. \\
+Per il corretto funzionamento di Drools, è necessario inserire le informazioni nella \textit{Working Memory} come \textit{"fatti"} che sono richiesti come oggetti di tipo \gls{JavaBean}\G\ o \gls{POJO}\G\.\\
+Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concern}\G\ chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{Working Memory} e vengono generati, mediante reflection utilizzando i template di Rails (\gls{ERB}\G), le classi Java corrispondenti.
 
 
 
@@ -113,11 +113,11 @@ Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concer
 	\end{center}
 \end{figure}
 
-Nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{working memory}. \\
+Nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{Working Memory}. \\
 Nel caso un cui venga generata o aggiornata un'istanza di modello, può essere necessario l'inserimento di alcune domande ad essa direttamente correlate.\\
 Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda in un apposito questionario generato ad ogni associazione di un estintore ad un cantiere. Se tale informazione non è specificata viene sollevato un allarme.\\
 Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o modifica di una istanza di modello, il passo successivo è rappresentato dalla valutazione delle informazioni inserite sulla base della \textit{Knowledge Base}. \\
-È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la LHS sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. 
+È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la \gls{LHS}\G\ sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. 
 Un esempio di regola è il seguente:
 
 \hl{TODO TABULAZIONI O LISTING CON AMBIENTE JAVA}
@@ -138,7 +138,7 @@ end
 	\item \$i contiene tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
 \end{itemize}
 Le corrispondenze di questa regola sono tutti gli individui individui che svolgono una qualunque mansione per la quale non sono correttamente formati.\\
-Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla RHS.
+Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
 
 
 

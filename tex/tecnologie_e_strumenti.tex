@@ -2,6 +2,7 @@
 \subsection{Git}
 
 Git è un sistema di controllo di versione sviluppato per facilitare la cooperazione nello sviluppo di software. Questo software di versionamento è gratuito ed open-source;  è stato sritto  da \textit{Linus Torvalds} per lo sviluppo del kernel linux nel 2005 ed attualmente mantenuto da \textit{Junio Hamano}. \\
+\hl{TODO Aggiungere riferimento bibliografico}
 Questo strumento permette di sottomettere al server le modifiche e lasciare ad esso l'onere di verificare se la versione appena inoltrata va in conflitto con quella esistente indicando esattamente in quale punto si è presentato il problema. \\
 Viene data la possibilità di generare diversi rami (\textit{branch}) con l'intento di differenziare una nuova versione del codice (\textit{fork}) o per lo sviluppo di una nuova funzionalità, mentre nel primo caso il ramo diverge dal ramo da quale ha origine, nel secondo caso il \textit{branch} ha come fine il ricongiungimento con la sorgente da cui proviene una volta soddisfatto il suo contratto. È proprio da questa idea che nasce il concetto di \texttt{git-flow}.
 
@@ -27,7 +28,7 @@ Sono previste inoltre altre tre tipologie di branch:
 \end{itemize}
 \paragraph{Vantaggi} 
 \begin{itemize}
-	\item Permette di mantenere una storia \hl{chiara e concisa} del progetto poiché tutti i commit parziali avvengono nei branch di tipo feature.  Nel ramo develop, saranno presenti solo commit derivanti dalla fusione di rami di tipo feature che soddisfano pienamente il contratto per i quali sono stati creati;
+	\item Permette di mantenere una storia chiara e concisa del progetto poiché tutti i commit parziali avvengono nei branch di tipo feature.  Nel ramo develop, saranno presenti solo commit derivanti dalla fusione di rami di tipo feature che soddisfano pienamente il contratto per i quali sono stati creati;
 	\item Evita di creare confusione nel repository con commit parziali potenzialmente dannosi e, dualmente, evitare le situazioni in cui lo sviluppo avviene localmente con un solo commit di grosse dimensioni al compimento del contratto del requisito perdendo i vantaggi dello storico dei commit offerti da git.
 \end{itemize}
 \paragraph{Svantaggi}
@@ -60,12 +61,12 @@ Rubymine è un IDE prodotto da jetBrains, disegnato appositamente per lo svilupp
 \subsection{Ruby on Rails}
 
 Ruby on Rails, è un framework open source per lo sviluppo di applicazioni web.
-La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando a tutti gli effetti un framework full-stack; è dunque possibile realizzare sia la parte di backend che quella di \gls{front-end}.
+La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando a tutti gli effetti un framework full-stack; è dunque possibile realizzare sia la parte di backend che quella di \gls{front-end}\G.
 \paragraph{Vantaggi}
 \begin{itemize}
 	\item Risorse e componenti sono integrati in modo tale che i collegamenti non debbano mai essere impostati manualmente, ma in modo automatico;
-	\item È possibile lavorare utilizzando ActiveRecord, descritto nella sezione \ref{sec:ActiveRecord}. Questo è un grosso vantaggio perché velocizza la stesura del codice e risponde bene ai cambiamenti. Nel progetto svolto \hl{, l'utilizzo di ActiveRecord} è un fattore determinante poiché è necessario che il software sia sempre conforme alle normative vigenti che cambiano nel tempo;
-	\item \hl{È possibile disaccoppiare il backend ed il} \gls{front-end} perché in rails il routing delle risorse è gestito con una interfaccia REST;
+	\item È possibile lavorare utilizzando ActiveRecord, descritto nella sezione \ref{sec:ActiveRecord}. Questo è un grosso vantaggio perché velocizza la stesura del codice e risponde bene ai cambiamenti. Nel progetto svolto, l'utilizzo di ActiveRecord è un fattore determinante poiché è necessario che il software sia sempre conforme alle normative vigenti che cambiano nel tempo;
+	\item È possibile disaccoppiare il backend ed il \gls{front-end}\G\ perché in Rails il routing delle risorse è gestito con una interfaccia \gls{REST}\G\;
 	\item Sono inoltre messi a disposizione i seguenti ambienti per uno stesso software, al fine di creare una separazione nel progetto:
 		\begin{itemize}
 		\item development 
@@ -77,7 +78,7 @@ La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando
 \end{itemize}
 \paragraph{Svantaggi}
 	\begin{itemize}
-		\item Ruby on rails è meno performante rispetto ad altri linguaggi, ad esempio Java o Scala, ma di un ordine di grandezza non influente su progetti di medie dimensioni. 
+		\item Ruby on Rails è meno performante rispetto ad altri linguaggi, ad esempio Java o Scala, ma di un ordine di grandezza non influente su progetti di medie dimensioni. 
 	\end{itemize} 
 		
 \subsubsection{ActiveRecord}
@@ -90,7 +91,7 @@ Il modulo ActiveRecord di Rails si serve di un database e prevede:
 \item Una singola istanza della classe corrisponde ad una riga (record) nella tabella associata;
 \item Alla creazione di una nuova istanza viene creata una nuova riga all'interno della tabella che viene aggiornata ad ogni modifica dell'istanza associata.
 \end{itemize}
-Le colonne della tabella \hl{rappresentano gli} attributi della classe.
+Le colonne della tabella rappresentano gli attributi della classe.
 
 \paragraph{Vantaggi} 
 \begin{itemize}
@@ -124,7 +125,6 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\item La grafica di ActiveAdmin risulta datata, è quindi spesso necessario riprogettare la veste grafica del pannello di amministrazione fornito di default.
 \end{itemize}
 \subsubsection{I18n}
-	\hl{ NUOVA SEZIONE}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=4cm]{Pics/i8n-logo.png}
@@ -149,7 +149,6 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item La scrittura di codice con questo approccio richiede generalmente più tempo se il software esiste in una sola lingua.
 	\end{itemize}
 \subsection{JRuby}
-	\hl{NUOVA SEZIONE}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=4cm]{Pics/jruby-logo.png}
@@ -170,7 +169,8 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item L'utilizzo di JRuby provoca un significativo appesantimento del software ed un conseguente peggioramento delle performance. 
 	\end{itemize}
 \subsection{Drools}
-	\hl{NUOVA SEZIONE}
+\hl{CORREZIONE GAGGI : sistemare in tutto il documento Working Memory, Production Memory e Knowledge Base con le iniziali maiuscole. }
+\hl{CORREZIONE GAGGI : RHS e LHS Glossario e rimando ad appendice. }
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=7cm]{Pics/drools-logo.png}
@@ -191,14 +191,15 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\end{figure}
 	
 	\begin{itemize}
-		\item \textbf{Production memory:} \\ Componente che contiene tutte le regole che compongono la Knowledge Base (KB);
-		\item  \textbf{Working memory: } \\ Componente che contiene tutti i fatti. In Drools, i fatti sono degli oggetti Java. \\  Si chiama working memory, poiché  è possibile effettuare operazioni di modifica, inserimento e rimozione dei fatti che contiene;
-		\item \textbf{Inference engine: } \\ Macrocomponente che ha la responsabilità di valutare i fatti della working memory sulla base della Knowledge Base presente in Production memory. Per fare ciò si avvale di due sottocomponenti:
+		\item \textbf{Production Memory:} \\ Componente che contiene tutte le regole che compongono la Knowledge Base (KB);
+		\item  \textbf{Working Memory: } \\ Componente che contiene tutti i fatti. In Drools, i fatti sono degli oggetti Java. \\  Si chiama \textit{Working Memory}, poiché  è possibile effettuare operazioni di modifica, inserimento e rimozione dei fatti che contiene;
+		\item \textbf{Inference engine: } \\ Macrocomponente che ha la responsabilità di valutare i fatti della \textit{Working Memory} sulla base della Knowledge Base presente in \textit{Production Memory}. Per fare ciò si avvale di due sottocomponenti:
 		\begin{itemize}
-			\item \textbf{Pattern matcher: } \\ Componente che ha lo scopo di verificare, quando richiamata dall'inference engine, quali regole soddisfano la condizione presente nella LHS sulla base dei fatti presenti nella working memory al momento dell'invocazione. Verranno poi eseguite le azioni  presenti nella RHS di tali regole. Per fare ciò in modo efficiente con molti dati, viene utilizzato l'algoritmo Rete, brevemente denscritto nell'\autoref{App:AppendiceAlgoritmoRete};
-			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole soddisfano la condizione nella loro LHS  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
+			\item \textbf{Pattern matcher: } \\ Componente che ha lo scopo di verificare, quando richiamata dall'inference engine, quali regole soddisfano la condizione presente nella \gls{LHS}\G\ sulla base dei fatti presenti nella  \textit{Working Memory} al momento dell'invocazione. Verranno poi eseguite le azioni  presenti nella \gls{RHS}\G\ di tali regole. Per fare ciò in modo efficiente con molti dati, viene utilizzato l'algoritmo Rete, brevemente descritto nell'\autoref{App:AppendiceAlgoritmoRete};
+			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole soddisfano la condizione nella loro \gls{LHS}\G\  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
 		\end{itemize}
 	\end{itemize}
+	\citet{eco:tesi}
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item In sistemi con grandi quantità di dati e vincoli, un approccio di questo tipo facilita notevolmente il mantenimento della verità ed il controllo sui dati inseriti. La definizione dei vincoli e l'aggiornamento degli stessi, risulta molto meno oneroso e di più facile verifica;
@@ -206,7 +207,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\end{itemize}
 \paragraph{Svantaggi}
 	\begin{itemize}
-		\item Per poter integrare questo sistema con Ruby on Rails é necessario utilizzare jRuby ed implementare in Java, le classi corrispondenti ai modelli sui quali si vogliono definire delle regole. Tecnicamente, qusto si fa con dei file di template java.erb di Rails che ottengono le informazioni riguardo classi e membri mediante \gls{reflection};
+		\item Per poter integrare questo sistema con Ruby on Rails é necessario utilizzare jRuby ed implementare in Java, le classi corrispondenti ai modelli sui quali si vogliono definire delle regole. Tecnicamente, qusto si fa con dei file di template java.erb di Rails che ottengono le informazioni riguardo classi e membri mediante \gls{reflection}\G\;
 		\item Per lavorare in modo efficace con questa tecnologia, è necessario investire molto tempo per conoscerne a fondo tutte le sfaccettature.
 	\end{itemize}
 \subsection{Foundation}
@@ -218,22 +219,22 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 				\label{fig:FoundationLogo}
 			\end{center}
 		\end{figure}
-	Foundation è una collezione di \gls{framework} per lo sviluppo della componente \gls{front-end} di applicazioni web realizzata da Zurb. \\ In particolare è composto da tre pacchetti:
+	Foundation è una collezione di \gls{framework}\G\ per lo sviluppo della componente \gls{front-end} di applicazioni web realizzata da Zurb. \\ In particolare è composto da tre pacchetti:
 	\begin{itemize}
 		\item \textbf{Foundation for Sites: } per la realizzazione di siti web;
 		\item \textbf{Foundation for Emails: } per la realizzazione di email formattate in html;
 		\item \textbf{Foundation for Apps: } per la realizzazione di applicazioni web.
 	\end{itemize}
-	La struttura di ogni \gls{framework} è modulare e consiste essenzialmente di fogli di stile in formato \gls{SASS} - \gls{SCSS}. \\
-	Per limitare il peso dei fogli di stile, è possibile selezionare  le sole componenti di cui si necessita al momento del download e saranno le sole presenti nel pacchetto da includere nel sito o da scaricare con un \gls{CDN}. \\
-	Come la maggioranza dei framework per il \gls{front-end} moderni, Foundation fornisce un sistema di posizionamento dei componenti a griglia. Sono previste dodici colonne visibili una accanto all'altra a partire dalla larghezza dello schermo di 940 pixel. Il numero di colonne viene adattato automaticamente a seconda dello spazio a disposizione rendendo il sito, l'applicazione o l'email responsive. 
+	La struttura di ogni \gls{framework}\G\ è modulare e consiste essenzialmente di fogli di stile in formato \gls{SASS}\G\ - \gls{SCSS}\G\. \\
+	Per limitare il peso dei fogli di stile, è possibile selezionare  le sole componenti di cui si necessita al momento del download e saranno le sole presenti nel pacchetto da includere nel sito o da scaricare con un \gls{CDN}\G\. \\
+	Come la maggioranza dei framework per il \gls{front-end}\G\ moderni, Foundation fornisce un sistema di posizionamento dei componenti a griglia. Sono previste dodici colonne visibili una accanto all'altra a partire dalla larghezza dello schermo di 940 pixel. Il numero di colonne viene adattato automaticamente a seconda dello spazio a disposizione rendendo il sito, l'applicazione o l'email responsive. 
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item Oltre ai comuni elementi HTML, sono messi a disposizione componenti aggiuntivi per la realizzazione delle sezioni di interfaccia maggiormente usate, ad esempio: 
 		\begin{itemize}
 			\item Gruppi di bottoni;
 			\item Menu a tendina;
-			\item \gls{Breadcrumb};
+			\item \gls{Breadcrumb}\G\;
 			\item Messaggi formattati per avvisi, errori, aiuto.
 		\end{itemize}\item Foundation permette di realizzare interfacce grafiche accattivanti senza dedicare eccessivo tempo alla loro implementazione;
 		\item Questa collezione di framework è stata testata sui principali Browser ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
@@ -258,12 +259,12 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\label{fig:jQueryLogo}
 		\end{center}
 	\end{figure}
-	jQuery è una libreria \gls{javascript} per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}, la gestione degli eventi e semplificare la gestione delle chiamate \gls{Ajax}.
+	jQuery è una libreria \gls{javascript}\G\ per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}\G\, la gestione degli eventi e semplificare la gestione delle chiamate \gls{Ajax}\G.
 \paragraph{Vantaggi}
 	\begin{itemize}
-		\item Permette di eseguire chiamate \gls{Ajax} in modo veloce, rendendo così l'applicazione web più dinamica;
+		\item Permette di eseguire chiamate \gls{Ajax}\G\ in modo veloce, rendendo così l'applicazione web più dinamica;
 		\item Velocizza l'accesso e la gestione degli elementi del DOM delle pagine HTML;
-		\item jQuery è stata testata sui principali \gls{browser};
+		\item jQuery è stata testata sui principali \gls{browser}\G;
 		\item Permette di semplificare e ridurre il codice, velocizzando il raggiungimento degli obiettivi. 
 	\end{itemize}
 \paragraph{Svantaggi}

@@ -5,9 +5,9 @@
 \usepackage[italian]{babel}
 \usepackage{soulutf8}
 \usepackage[babel]{csquotes}
-\usepackage[backend = biber]{biblatex}
-\addbibresource{Bibliografia/bibliografia.bib}
-%\usepackage{natbib}
+%\usepackage[backend = biber]{biblatex}
+%\addbibresource{bibliografia.bib}
+\usepackage{natbib}
 
 
  %highlight
@@ -90,6 +90,10 @@
 
 \usepackage[toc,nonumberlist,nopostdot]{glossaries}
 \loadglsentries{glossario/glossario}
+
+\def \G{{\small $_G$}}
+\renewcommand*{\glstextformat}[1]{\textcolor{black}{#1}}
+
 \hypersetup{
     linktoc=all,
     colorlinks=true,
@@ -169,7 +173,7 @@
 
 	\printglossaries
 	\addcontentsline{toc}{section}{\refname}
-	\printbibliography
-	%\bibliography{tex/bibliografia}
-	%\bibliographystyle{plainnat}
+	%\printbibliography
+	\bibliography{bibliografia}
+	\bibliographystyle{plainnat}
 \end{document}
