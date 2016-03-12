@@ -66,7 +66,7 @@ La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando
 \begin{itemize}
 	\item Risorse e componenti sono integrati in modo tale che i collegamenti non debbano mai essere impostati manualmente, ma in modo automatico;
 	\item È possibile lavorare utilizzando ActiveRecord, descritto nella sezione \ref{sec:ActiveRecord}. Questo è un grosso vantaggio perché velocizza la stesura del codice e risponde bene ai cambiamenti. Nel progetto svolto, l'utilizzo di ActiveRecord è un fattore determinante poiché è necessario che il software sia sempre conforme alle normative vigenti che cambiano nel tempo;
-	\item È possibile disaccoppiare il backend ed il \gls{front-end}\G\ perché in Rails il routing delle risorse è gestito con una interfaccia \gls{REST}\G\;
+	\item È possibile disaccoppiare il backend ed il \gls{front-end}\G\ perché in Rails il routing delle risorse è gestito con una interfaccia \gls{REST}\G;
 	\item Sono inoltre messi a disposizione i seguenti ambienti per uno stesso software, al fine di creare una separazione nel progetto:
 		\begin{itemize}
 		\item development 
@@ -84,7 +84,8 @@ La sua architettura si basa sul pattern Model-View-Controller (MVC), realizzando
 \subsubsection{ActiveRecord}
 
 \label{sec:ActiveRecord}
-Active Record è il modulo di Ruby on Rails che gestisce la persistenza dei dati seguendo il pattern \textit{Active Record }di Martin Fowler\footnote{La spiegazione dettagliata del pattern Active Record di Martin Fowler è descritta all'indirizzo \url{http://www.martinfowler.com/eaaCatalog/activeRecord.html}. }. 
+Active Record è il modulo di Ruby on Rails che gestisce la persistenza dei dati seguendo il pattern \textit{Active Record }di   %\cite{martinfowler:activerecord} .
+Martin Fowler\footnote{La spiegazione dettagliata del pattern Active Record di Martin Fowler è descritta all'indirizzo \url{http://www.martinfowler.com/eaaCatalog/activeRecord.html}. }. \\
 Il modulo ActiveRecord di Rails si serve di un database e prevede:
 \begin{itemize}
 \item Ogni tabella del database relazionale è gestita attraverso una classe;
@@ -169,8 +170,6 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item L'utilizzo di JRuby provoca un significativo appesantimento del software ed un conseguente peggioramento delle performance. 
 	\end{itemize}
 \subsection{Drools}
-\hl{CORREZIONE GAGGI : sistemare in tutto il documento Working Memory, Production Memory e Knowledge Base con le iniziali maiuscole. }
-\hl{CORREZIONE GAGGI : RHS e LHS Glossario e rimando ad appendice. }
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=7cm]{Pics/drools-logo.png}
@@ -178,10 +177,10 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\label{fig:DroolsLogo}
 		\end{center}
 	\end{figure}
-	Drools è un Business Rules Management System (BRMS) basato su forward and backward chaining inference (vedi \autoref{App:AppendiceInference}). 
-	
+	Drools è un Business Rules Management System (BRMS) basato su forward and backward chaining inference (vedi \autoref{App:AppendiceInference}). \\
+	\hl{Questo strumento permette di definire delle regole che, al soddisfacimento delle condizioni iniziali, permettono a Drools di prendere delle decisioni e di conseguenza determinare in che modo il software deve agire.}
 	\subsubsection{Architettura}
-	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}):\textit{ Production memory}, \textit{Working memory} ed \textit{Inference Engine}. Quest'ultimo si compone di due sotto componenti: \textit{Pattern matcher} ed \textit{Agenda}.
+	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}):\textit{ Production Memory}, \textit{Working Memory} ed \textit{Inference Engine}. Quest'ultimo si compone di due sotto componenti: \textit{Pattern matcher} ed \textit{Agenda}.
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=12cm]{Pics/drools_abstract_structure.png}
@@ -199,7 +198,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\item \textbf{Agenda: } \\ Ha lo scopo di risolvere i conflitti tra le regole. Essi avvengono nel momento in cui più regole soddisfano la condizione nella loro \gls{LHS}\G\  con gli stessi fatti. \\ In questi casi, interviene l'Agenda che decide un ordine di esecuzione tra le regole che vanno in conflitto.
 		\end{itemize}
 	\end{itemize}
-	\citet{eco:tesi}
+	
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item In sistemi con grandi quantità di dati e vincoli, un approccio di questo tipo facilita notevolmente il mantenimento della verità ed il controllo sui dati inseriti. La definizione dei vincoli e l'aggiornamento degli stessi, risulta molto meno oneroso e di più facile verifica;
@@ -207,7 +206,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\end{itemize}
 \paragraph{Svantaggi}
 	\begin{itemize}
-		\item Per poter integrare questo sistema con Ruby on Rails é necessario utilizzare jRuby ed implementare in Java, le classi corrispondenti ai modelli sui quali si vogliono definire delle regole. Tecnicamente, qusto si fa con dei file di template java.erb di Rails che ottengono le informazioni riguardo classi e membri mediante \gls{reflection}\G\;
+		\item Per poter integrare questo sistema con Ruby on Rails é necessario utilizzare jRuby ed implementare in Java, le classi corrispondenti ai modelli sui quali si vogliono definire delle regole. Tecnicamente, qusto si fa con dei file di template java.erb di Rails che ottengono le informazioni riguardo classi e membri mediante \gls{reflection}\G;
 		\item Per lavorare in modo efficace con questa tecnologia, è necessario investire molto tempo per conoscerne a fondo tutte le sfaccettature.
 	\end{itemize}
 \subsection{Foundation}
@@ -219,25 +218,25 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 				\label{fig:FoundationLogo}
 			\end{center}
 		\end{figure}
-	Foundation è una collezione di \gls{framework}\G\ per lo sviluppo della componente \gls{front-end} di applicazioni web realizzata da Zurb. \\ In particolare è composto da tre pacchetti:
+	Foundation è una collezione di \gls{framework}\G\ per lo sviluppo della componente \gls{front-end}\G\ di applicazioni web. \\ In particolare è composto da tre pacchetti:
 	\begin{itemize}
 		\item \textbf{Foundation for Sites: } per la realizzazione di siti web;
 		\item \textbf{Foundation for Emails: } per la realizzazione di email formattate in html;
 		\item \textbf{Foundation for Apps: } per la realizzazione di applicazioni web.
 	\end{itemize}
-	La struttura di ogni \gls{framework}\G\ è modulare e consiste essenzialmente di fogli di stile in formato \gls{SASS}\G\ - \gls{SCSS}\G\. \\
-	Per limitare il peso dei fogli di stile, è possibile selezionare  le sole componenti di cui si necessita al momento del download e saranno le sole presenti nel pacchetto da includere nel sito o da scaricare con un \gls{CDN}\G\. \\
-	Come la maggioranza dei framework per il \gls{front-end}\G\ moderni, Foundation fornisce un sistema di posizionamento dei componenti a griglia. Sono previste dodici colonne visibili una accanto all'altra a partire dalla larghezza dello schermo di 940 pixel. Il numero di colonne viene adattato automaticamente a seconda dello spazio a disposizione rendendo il sito, l'applicazione o l'email responsive. 
+	La struttura di ogni \gls{framework}\G\ è modulare e consiste essenzialmente di fogli di stile in formato \gls{SASS}\G\ - \gls{SCSS}\G. \\
+	Per limitare il peso dei fogli di stile, è possibile selezionare  le sole componenti di cui si necessita al momento del download: saranno le sole presenti nel pacchetto da includere nel sito o da scaricare con un \gls{CDN}\G. \\
+	Come la maggioranza dei \gls{framework}\G\ moderni per il \gls{front-end}\G\, Foundation fornisce un sistema di posizionamento a griglia dei componenti. Sono previste dodici colonne, visibili una accanto all'altra quando la larghezza dello schermo è maggiore di 940 pixel. Il numero di colonne viene adattato automaticamente a seconda dello spazio a disposizione, rendendo il sito, l'applicazione o l'email responsive. 
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item Oltre ai comuni elementi HTML, sono messi a disposizione componenti aggiuntivi per la realizzazione delle sezioni di interfaccia maggiormente usate, ad esempio: 
 		\begin{itemize}
 			\item Gruppi di bottoni;
 			\item Menu a tendina;
-			\item \gls{Breadcrumb}\G\;
+			\item \gls{Breadcrumb}\G;
 			\item Messaggi formattati per avvisi, errori, aiuto.
 		\end{itemize}\item Foundation permette di realizzare interfacce grafiche accattivanti senza dedicare eccessivo tempo alla loro implementazione;
-		\item Questa collezione di framework è stata testata sui principali Browser ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
+		\item Questa collezione di \gls{framework}\G\ è stata testata sui principali \gls{browser}\G\ ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
 	\end{itemize}
 	\begin{figure}[H]
 		\begin{center}
@@ -248,7 +247,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 	\end{figure}
 \paragraph{Svantaggi}
 	\begin{itemize}
-		\item Per utilizzare questo framework, è necessario investire del tempo per apprenderne appieno le caratteristiche.
+		\item Per utilizzare questo \gls{framework}\G\ è necessario investire del tempo per apprenderne appieno le caratteristiche.
 	\end{itemize}
 \subsection{jQuery}
 	\hl{Sezione nuovissima}
@@ -259,12 +258,12 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\label{fig:jQueryLogo}
 		\end{center}
 	\end{figure}
-	jQuery è una libreria \gls{javascript}\G\ per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}\G\, la gestione degli eventi e semplificare la gestione delle chiamate \gls{Ajax}\G.
+	jQuery è una libreria \gls{javascript}\G\ per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}\G  e semplificare la gestione delle chiamate \gls{Ajax}\G le degli eventi.
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item Permette di eseguire chiamate \gls{Ajax}\G\ in modo veloce, rendendo così l'applicazione web più dinamica;
-		\item Velocizza l'accesso e la gestione degli elementi del DOM delle pagine HTML;
-		\item jQuery è stata testata sui principali \gls{browser}\G;
+		\item Velocizza l'accesso e la gestione degli elementi del \gls{DOM}\G\ delle pagine \gls{HTML}\G;
+		\item È stata testata sui principali \gls{browser}\G;
 		\item Permette di semplificare e ridurre il codice, velocizzando il raggiungimento degli obiettivi. 
 	\end{itemize}
 \paragraph{Svantaggi}
