@@ -1,9 +1,7 @@
-
 \section{Analisi del prodotto esistente}
-\hl{sezione nuovissima}
 
-Al momento dell'arrivo in azienda è già presente una versione alpha del software. \\
-Sono attualmente supportate le aziende con i codici \gls{ATECO}\G\ in ambito edilizio, permettendo di gestire le informazioni relative a:
+Al momento dell'arrivo in azienda \hl{era} già presente una versione alpha del software. \\
+\hl{Le aziende che il prodotto si prefigge di supportare in questa fase, sono quelle con} i codici \gls{ATECO}\G\ in ambito edilizio. \hl{In particolare, al mio arrivo erano gestite} le informazioni relative a:
 \begin{itemize}
 	\item Sedi;
 	\item Cantieri;
@@ -13,14 +11,10 @@ Sono attualmente supportate le aziende con i codici \gls{ATECO}\G\ in ambito edi
 	\item Certificato di prevenzione degli incendi;
 	\item \gls{DVR}\G\ e documentazione collaterale ad esso.
 \end{itemize}
-Il software espone una collezione di oltre 400 domande. Sulla base delle risposte a queste domande ed alle informazioni relative alle entità sopra indicate, vengono verificate alcuni vincoli mediante delle regole del sistema esperto.
-
-
-\hl{[TODO ]}
+Il software espone\hl{va} una collezione di oltre 400 domande. Sulla base delle risposte a queste domande ed alle informazioni relative alle entità sopra indicate, \hl{venivano} verificati alcuni vincoli mediante regole del sistema esperto.
 
 \subsection{Architettura del software}
 \subsubsection{Architettura ad alto livello}
-\hl{sezione nuovissima}
 Il software è gestito mediante tecnologia \gls{SaaS}\G, un modello di distribuzione del software applicativo dove il fornitore del software si occupa della sua implementazione e manutenzione. Il servizio viene erogato al cliente mediante una applicazione web fruibile via internet. \\ 
 L'applicazione web risiede fisicamente su una macchina virtuale della piattaforma cloud \gls{AWS}\G, al fine di evitare oneri e spese di gestione di una infrastruttura informatica dedicata e garantire la scalabilità del servizio.\\
 
@@ -45,7 +39,6 @@ La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord
 \end{figure}
 
 \subsubsection{Architettura a basso livello}
-\hl{sezione nuovissima}
 L'applicazione web è organizzata secondo il pattern \gls{MVC}\G. Per il raggiungimento delle viste e l'accesso alle informazioni necessarie al corretto funzionamento dell'applicazione è stata implementata una interfaccia \gls{REST}\G. \\
 Il sistema ha come entità principale il modello \texttt{Company} al quale sono riferite, direttamente o indirettamente, tutte le risorse.\\ 
 Sono poi presenti numerosi modelli relativi alle entità che partecipano alla procedura di \gls{asseverazione}\G.
@@ -69,13 +62,8 @@ I modelli più significativi sono:
 \end{itemize}	
 Per ciascun modello, sono stati realizzati opportuni \textit{controller} e \textit{viste}. \\
 Sono stati implementati, inoltre numerosi \gls{concern}\G\ per modularizzare le funzionalità indipendenti dalla singola classe ed allo stesso tempo riutilizzabili da altre classi. Ad esempio, ogni modello che, se istanziato, provoca un aumento del numero delle domande in attesa di risposta, include un apposito \gls{concern}\G\ per l'aggiornamento di un contatore dedicato a tale scopo. Per il calcolo del valore, il \gls{concern}\G\ ricava il nome della classe dell'oggetto corrente mediante \gls{reflection}\G\ ed incrementa automaticamente il valore del numero di domande correlate al tipo individuato.\\
-\hl{[TODO finire di spiegare l'architettura ]}\\
-
-
-
 
 \paragraph*{Relazioni tra domande, risposte ed allarmi}\mbox{} \\
-\hl{sezione nuovissima}\\
 Le risposte sono direttamente collegate alle domande ed ad una entità. Quando un utente risponde ad una domanda, viene aggiornato il recod relativo a quella risposta. A seguito di un inserimento o aggiornamento di una risposta, interviene Drools che valuta se le informazioni inserite rispettano tutti i vincoli previsti, altrimenti viene sollevato un allarme. \\ Per questioni di efficienza, gli allarmi relativi al vincolo di presenza  di una risposta, vengono gestiti direttamente dalle funzionalità di validazione di Rails.\\
 Come per le answer, anche gli allarmi sono sempre collegati ad una risorsa, che di default è l'azienda corrente, ma può assumere come valore una qualsiasi istanza di un modello, purché non sia nulla.
 Particolarmente degna di nota è l'associazione di una risposta o di un \textit{allarme} alla relativa risorsa. Per fare ciò si è utilizzato l'approccio standard di Rails per il supporto alle associazioni polimorfe. \\  Come si può vedere da  \autoref{fig:DiagrammaClassiAssociazioniPolimorfe}, indicando il tipo e l'id della risorsa interessata, l'accesso avviene tramite valutazione della classe e ricerca del relativo \textit{id}. \\
@@ -90,11 +78,11 @@ La Risposta (\textit{Answer}) avrà i due campi \texttt{answerable\_type} ed \te
 \end{figure}
 
 \subsubsection{Integrazione tra Ruby on Rails e Drools}\mbox{} \\
-\hl{TODO scrivere meglio}
+
 Il codice è stato scritto per la maggior parte utilizzando Ruby on Rails ma il rule engine (Drools) è un \gls{framework}\G\ scritto in Java. I due linguaggi non sono nativamente compatibili. \\
 Per ovviare a questo problema, è stato utilizzato JRuby, un interprete del linguaggio Ruby scritto in Java, quindi in esecuzione su una \gls{JVM}\G\. \\
 Per il corretto funzionamento di Drools, è necessario inserire le informazioni nella \textit{Working Memory} come \textit{"fatti"} che sono richiesti come oggetti di tipo \gls{JavaBean}\G\ o \gls{POJO}\G.\\
-Per far cooperare i due ambienti, è stato implementato un apposito  \gls{concern}\G\ chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{Working Memory} e vengono generati, mediante reflection utilizzando i template di Rails (\gls{ERB}\G), le classi Java corrispondenti.
+Per far cooperare i due ambienti, è stato implementato un apposito \gls{concern}\G\ chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{Working Memory} e vengono generati, mediante \gls{reflection} utilizzando i template di Rails (\gls{ERB}\G), le classi Java corrispondenti.
 
 
 
@@ -124,7 +112,7 @@ Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o 
 È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la \gls{LHS}\G\ sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. 
 Un esempio di regola è il seguente:
 
-\hl{TODO TABULAZIONI O LISTING CON AMBIENTE JAVA}
+
 \begin{verbatim}
 rule "Individuo ricopre una mansione per la quale non è formato"
 	when

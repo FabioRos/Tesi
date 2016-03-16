@@ -2,7 +2,6 @@
 \subsection{Git}
 
 Git è un sistema di controllo di versione sviluppato per facilitare la cooperazione nello sviluppo di software. Questo software di versionamento è gratuito ed open-source;  è stato sritto  da \textit{Linus Torvalds} per lo sviluppo del kernel linux nel 2005 ed attualmente mantenuto da \textit{Junio Hamano}. \\
-\hl{TODO Aggiungere riferimento bibliografico}
 Questo strumento permette di sottomettere al server le modifiche e lasciare ad esso l'onere di verificare se la versione appena inoltrata va in conflitto con quella esistente indicando esattamente in quale punto si è presentato il problema. \\
 Viene data la possibilità di generare diversi rami (\textit{branch}) con l'intento di differenziare una nuova versione del codice (\textit{fork}) o per lo sviluppo di una nuova funzionalità, mentre nel primo caso il ramo diverge dal ramo da quale ha origine, nel secondo caso il \textit{branch} ha come fine il ricongiungimento con la sorgente da cui proviene una volta soddisfatto il suo contratto. È proprio da questa idea che nasce il concetto di \texttt{git-flow}.
 
@@ -178,7 +177,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\end{center}
 	\end{figure}
 	Drools è un Business Rules Management System (BRMS) basato su forward and backward chaining inference (vedi \autoref{App:AppendiceInference}). \\
-	\hl{Questo strumento permette di definire delle regole che, al soddisfacimento delle condizioni iniziali, permettono a Drools di prendere delle decisioni e di conseguenza determinare in che modo il software deve agire.}
+	Questo strumento permette di definire delle regole che, al soddisfacimento delle condizioni iniziali, permettono a Drools di prendere delle decisioni e di conseguenza determinare in che modo il software deve agire.
 	\subsubsection{Architettura}
 	Ad alto livello, Drools si può vedere come tre componenti che cooperano (vedi  \autoref{fig:DroolsArchitecture}):\textit{ Production Memory}, \textit{Working Memory} ed \textit{Inference Engine}. Quest'ultimo si compone di due sotto componenti: \textit{Pattern matcher} ed \textit{Agenda}.
 	\begin{figure}[H]
@@ -210,7 +209,6 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item Per lavorare in modo efficace con questa tecnologia, è necessario investire molto tempo per conoscerne a fondo tutte le sfaccettature.
 	\end{itemize}
 \subsection{Foundation}
-	\hl{Sezione nuovissima}
 		\begin{figure}[H]
 			\begin{center}
 				\includegraphics[width=7cm]{Pics/logo-foundation.png}
@@ -236,7 +234,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\item \gls{Breadcrumb}\G;
 			\item Messaggi formattati per avvisi, errori, aiuto.
 		\end{itemize}\item Foundation permette di realizzare interfacce grafiche accattivanti senza dedicare eccessivo tempo alla loro implementazione;
-		\item Questa collezione di \gls{framework}\G\ è stata testata sui principali \gls{browser}\G\ ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
+		\item \hl{La collezione di }\gls{framework}\G\ \hl{che compone Foundation} è stata testata sui principali \gls{browser}\G\ ottenendo ottimi risultati (vedi \autoref{fig:FoundationCompatibilita} per il dettaglio sulla versione utilizzata, la 5.5).
 	\end{itemize}
 	\begin{figure}[H]
 		\begin{center}
@@ -250,7 +248,6 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 		\item Per utilizzare questo \gls{framework}\G\ è necessario investire del tempo per apprenderne appieno le caratteristiche.
 	\end{itemize}
 \subsection{jQuery}
-	\hl{Sezione nuovissima}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=7cm]{Pics/jquery_logo.png}
@@ -258,7 +255,7 @@ ActiveAdmin è una libreria (Gemma) di Ruby on Rails che permette di creare un s
 			\label{fig:jQueryLogo}
 		\end{center}
 	\end{figure}
-	jQuery è una libreria \gls{javascript}\G\ per applicazioni web. Nasce con l'obiettivo di velocizzare l'attraversamento del \gls{DOM}\G  e semplificare la gestione delle chiamate \gls{Ajax}\G le degli eventi.
+	jQuery è una libreria \gls{javascript}\G\ per applicazioni web. Nasce con l'obiettivo di velocizzare \hl{la gestione} del \gls{DOM}\G\  e \hl{semplificare l'utilizzo} delle chiamate \gls{Ajax}\G\ e degli eventi.
 \paragraph{Vantaggi}
 	\begin{itemize}
 		\item Permette di eseguire chiamate \gls{Ajax}\G\ in modo veloce, rendendo così l'applicazione web più dinamica;
