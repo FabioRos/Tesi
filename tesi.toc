@@ -65,30 +65,30 @@
 \contentsline {subsection}{\numberline {6.6}UC 2}{22}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}UC ...}{22}{subsection.6.7}
 \contentsline {section}{\numberline {7}Sviluppo}{22}{section.7}
-\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{22}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{22}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{22}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{22}{subsubsection.7.1.3}
-\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{22}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Nuove componenti}{22}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{22}{subsubsection.7.3.1}
-\contentsline {paragraph}{Requisiti}{22}{section*.48}
-\contentsline {paragraph}{Progettazione}{22}{section*.49}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.50}
-\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{23}{subsubsection.7.3.2}
-\contentsline {paragraph}{Requisiti}{23}{section*.51}
-\contentsline {paragraph}{Progettazione}{23}{section*.52}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.53}
-\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{23}{subsubsection.7.3.3}
-\contentsline {paragraph}{Requisiti}{23}{section*.54}
-\contentsline {paragraph}{Progettazione}{23}{section*.55}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{23}{section*.56}
-\contentsline {subsection}{\numberline {7.4}Regole Drools}{23}{subsection.7.4}
-\contentsline {section}{\numberline {8}Verifica e validazione}{23}{section.8}
-\contentsline {section}{\numberline {9}Considerazioni finali}{23}{section.9}
-\contentsline {section}{\numberline {A}Migrazioni}{25}{appendix.Alph1}
-\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{27}{appendix.Alph2}
-\contentsline {section}{\numberline {C}Sistemi Esperti}{29}{appendix.Alph3}
-\contentsline {section}{\numberline {D}Algoritmo RETE}{31}{appendix.Alph4}
-\contentsline {section}{Glossario}{33}{section*.58}
-\contentsline {section}{Riferimenti bibliografici}{34}{section*.59}
+\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{23}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{23}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{26}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{26}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{26}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Nuove componenti}{26}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{26}{subsubsection.7.3.1}
+\contentsline {paragraph}{Requisiti}{26}{section*.55}
+\contentsline {paragraph}{Progettazione}{26}{section*.56}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{26}{section*.57}
+\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{26}{subsubsection.7.3.2}
+\contentsline {paragraph}{Requisiti}{26}{section*.58}
+\contentsline {paragraph}{Progettazione}{26}{section*.59}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{26}{section*.60}
+\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{26}{subsubsection.7.3.3}
+\contentsline {paragraph}{Requisiti}{26}{section*.61}
+\contentsline {paragraph}{Progettazione}{26}{section*.62}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{26}{section*.63}
+\contentsline {subsection}{\numberline {7.4}Regole Drools}{27}{subsection.7.4}
+\contentsline {section}{\numberline {8}Verifica e validazione}{27}{section.8}
+\contentsline {section}{\numberline {9}Considerazioni finali}{27}{section.9}
+\contentsline {section}{\numberline {A}Migrazioni}{29}{appendix.Alph1}
+\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{31}{appendix.Alph2}
+\contentsline {section}{\numberline {C}Sistemi Esperti}{33}{appendix.Alph3}
+\contentsline {section}{\numberline {D}Algoritmo RETE}{35}{appendix.Alph4}
+\contentsline {section}{Glossario}{37}{section*.65}
+\contentsline {section}{Riferimenti bibliografici}{38}{section*.66}

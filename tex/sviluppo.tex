@@ -96,7 +96,7 @@ Per far cooperare i due ambienti, è stato implementato un apposito \gls{concern
 
 \subsubsection{Flusso dei dati ed interazione}
 \hl{Sezione nuovissima}
- Un aspetto che merita di essere esaminato è il flusso con il quale vengono generate e valutate domande e risposte  (\autoref{fig:DiagrammaAttivitaRisposte}).
+ Un aspetto che merita di essere esaminato è il flusso con il quale vengono generate e valutate domande e risposte .
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=8cm]{Pics/diagramma_attivita_risposte.png}
@@ -105,7 +105,7 @@ Per far cooperare i due ambienti, è stato implementato un apposito \gls{concern
 	\end{center}
 \end{figure}
 
-Nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{Working Memory}. \\
+Come è possibile osservare dalla \autoref{fig:DiagrammaAttivitaRisposte}, nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{Working Memory}. \\
 Nel caso un cui venga generata o aggiornata un'istanza di modello, può essere necessario l'inserimento di alcune domande ad essa direttamente correlate.\\
 Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda in un apposito questionario generato ad ogni associazione di un estintore ad un cantiere. Se tale informazione non è specificata viene sollevato un allarme.\\
 Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o modifica di una istanza di modello, il passo successivo è rappresentato dalla valutazione delle informazioni inserite sulla base della \textit{Knowledge Base}. \\
@@ -144,9 +144,104 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 	\subsection{UC ...}
 
 \section{Sviluppo}
+\hl{nuova sezione} \\
+\hl{scrivere meglio}
+A partire dalle specifiche fornite dal committente, è stata svolta una accurata analisi per scomporre il questionario di oltre mille domande in questionari di dimensione minore e direttamente correlati alla risorsa di pertinenza.\\
+In particolare sono state oggetto di analisi le seguenti componenti:
+\begin{itemize}
+	\item \textit{Figure di sistema;}
+	\item \textit{Dispositivi di protezione individuale;}
+	\item \textit{Mansioni;}
+	\item \textit{Formazioni;}
+	\item \textit{Questionari;}
+	\item \textit{Segnalazioni;}
+	\item \textit{Procedure;}
+	\item \textit{Dispositivi di protezione collettivi.}
+\end{itemize}
+Per ogni componente, è stato realizzato o restaurato il modello corrispondente, aggiornate le viste che ne facevano uso. Sono state implementate inoltre le regole Drools per verificare la conformità delle informazioni inserite alle norme vigenti in ambito di sicurezza.
 \subsection{Refactor delle componenti esistenti}
 	
+	
 \subsubsection{Refactor della componente: \textit{Figure di sistema}}
+	Con figure di sistema si intendono tutte le cariche che hanno la responsabilità di garantire la sicurezza in azienda. \\
+	Come specificato dal testo unico della salute e sicurezza sul lavoro (D.lgs. 81/2008), esse sono: 
+	\begin{itemize}
+		\item Datore di lavoro;
+		\item Dirigente;
+		\item Preposto;
+		\item Medico Competente;
+		\item Responsabile del servizio di prevenzione e Protezione (RSPP);
+		\item Addetto al servizio di prevenzione e Protezione (ASPP);
+		\item Responsabile dei Lavoratori per la Sicurezza (RLS);
+		\item Lavoratore.
+	\end{itemize}
+	L'operato delle figure sopra elencate deve essere supervisionato da un \textit{Organo di vigilanza}.
+	Dal punto di vista implementativo, sono stati creati dei modelli per gestire le relazioni tra gli individui e i ruoli che possono ricoprire. \\
+	Questo approccio si è rivelato molto vantaggioso perché ha permesso di associare ogni classe rappresentante un ruolo, alle formazioni minime che un individuo deve possedere per poter ricoprire quella carica. 
+	\paragraph*{Requisiti}
+	Erano posti come requisiti l'inserimento, modifica e cancellazione di tutte le figure di sistema. Era inoltre richiesto che venisse predisposto un questionario per ogni tipologia di figura di sistema. Ad ogni domanda deve essere possibile dare una risposta che, se non conforme alle norme vigenti, deve segnalare la situazione con un allarme.\\
+	A seguire il diagramma dei casi d'uso relativo alla gestione degli RSPP (\autoref{fig:UC1RSPP}).
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=14cm]{Pics/UC1_FigureDiSistema_RSPP.png}
+				\caption{Diagramma dei casi d'uso relativo all'inserimento degli RSPP}
+				\label{fig:UC1RSPP}
+			\end{center}
+		\end{figure}
+	\hl{inserire screen nuova versione}
+	
+	\paragraph*{Situazione precedente al refactor}
+	La situazione iniziale prevedeva che la classe \textit{Individual} avesse  un attributo booleano per ogni tipologia di figura di sistema. \\
+	Si è reso necessario un refactor dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
+	Un esempio è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione può verificarsi se i due cantieri sono allocati nello stesso periodo ma nel primo si lavora il mattino, mentre nel secondo di pomeriggio.\\
+	
+	\paragraph*{Modifiche apportate}
+	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\
+	Questa soluzione (\autoref{fig:DiagrammaDelleClassiIndividualRoles}) soddisfa appieno tutte le specifiche.
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=14cm]{Pics/UMLClassiFigureDiSistema.png}
+				\caption{
+					Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.}
+				\label{fig:DiagrammaDelleClassiIndividualRoles}
+			\end{center}
+		\end{figure}
+	
+	\hl{TODO MODIFICARE DIAGRAMMA DELLE CLASSI-> ROLE, NON ROLES}
+	
+	Per facilitare l'inserimento delle informazioni relative alla selezione dei dipendenti, è stata utilizzata la libreria \textit{Selectize.js} per rendere i form più gradevoli dal punto di vista grafico e per permettere l'autocompletamento (vedi \autoref{fig:ScreenOrganodiVigilanza} ). \\ 
+	Una criticità si è presentata nell'inserimento dinamico delle figure che possono essere presenti con molteplicità maggiore di uno. In particolare gli RSPP e gli ASPP presentano l'ulteriore complicazione rappresentata dal fatto che possono essere sia membri interni all'azienda, sia esterni. \\
+	In entrambi i casi, la situazione è stata gestita mediante chiamate \gls{Ajax}, evitando quindi di dover ricaricare la pagina ad ogni inserimento e generando un record della classe \textit{Individual}  identificato da un particolare flag (\texttt{is\_external}) nel caso si tratti di una figura esterna all'azienda.\\
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/screen_organo_di_vigianza_con_autocompletamento.png}
+			\caption{
+				Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza}
+			\label{fig:ScreenOrganodiVigilanza}
+		\end{center}
+	\end{figure}
+	
+	Ad ogni figura di sistema è stato associato un questionario nel quale sono specificate le informazioni in merito alla carica, tra tutte la data di accettazione e scadenza dell''incarico.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/RemoteTrueRSPP.png}
+			\caption{
+				Schermata relativa all'inserimento di un RSPP.}
+			\label{fig:ScreenRSPP}
+		\end{center}
+	\end{figure}	
+		\hl{TODO Aggiungere Link Modifica Finto}
+	 Tecnicamente, l'associazione ad un questionario avviene generando tutte le risposte ad esso relative.\\
+	  Per ogni risposta saranno preimpostati i seguenti valori:
+	  \begin{itemize}
+		  \item \texttt{response:} \texttt{nil};
+		  \item \texttt{answerable\_type:} \texttt{"IndividualRoles"};
+		  \item \texttt{answerable\_id:} codice identificativo dell'istanza specifica di \texttt{"IndividualRoles"}.
+	  \end{itemize}
+
+	Facendo Riferimento alla \autoref{fig:ScreenRSPP} e  supponendo che \textit{Aldo Bianchi} non sia attualmente presente nel database, alla pressione del tasto invio verrà generato un nuovo \textit{Individual} relativo ad \textit{Aldo Bianchi}. Successivamente verrà generato un questionario con le domande relative agli RSPP in relazione ad \textit{Aldo Bianchi}.
+	
 \subsubsection{Refactor della componente: \textit{Dispositivi di protezione individuale}}
 \subsubsection{Refactor della componente: \textit{Mansioni e formazioni correlate}}
 \subsection{Refactor della componente: \textit{Questionari}}

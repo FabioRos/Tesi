@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  16 MAR 2016 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  18 MAR 2016 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,13 +1038,13 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 ]
 (./tex/introduzione.tex
-<Pics/logo_moku.jpg, id=509, 383.93437pt x 155.07938pt>
+<Pics/logo_moku.jpg, id=522, 383.93437pt x 155.07938pt>
 File: Pics/logo_moku.jpg Graphic file (type jpg)
 
 <use Pics/logo_moku.jpg>
 Package pdftex.def Info: Pics/logo_moku.jpg used on input line 5.
 (pdftex.def)             Requested size: 112.70311pt x 45.52458pt.
- <Pics/scrum.png, id=510, 1093.686pt x 429.2838pt>
+ <Pics/scrum.png, id=523, 1093.686pt x 429.2838pt>
 File: Pics/scrum.png Graphic file (type png)
 
 <use Pics/scrum.png>
@@ -1058,28 +1058,28 @@ l.30
       [1
 
  <./Pics/logo_moku.jpg> <./Pics/scrum.png>]
-<Pics/atlassian_logo.png, id=518, 488.82625pt x 103.38625pt>
+<Pics/atlassian_logo.png, id=531, 488.82625pt x 103.38625pt>
 File: Pics/atlassian_logo.png Graphic file (type png)
 
 <use Pics/atlassian_logo.png>
 Package pdftex.def Info: Pics/atlassian_logo.png used on input line 35.
 (pdftex.def)             Requested size: 147.98413pt x 31.2982pt.
 
-<Pics/jira_logo.png, id=519, 430.60875pt x 223.83624pt>
+<Pics/jira_logo.png, id=532, 430.60875pt x 223.83624pt>
 File: Pics/jira_logo.png Graphic file (type png)
 
 <use Pics/jira_logo.png>
 Package pdftex.def Info: Pics/jira_logo.png used on input line 45.
 (pdftex.def)             Requested size: 76.62576pt x 39.83368pt.
 
-<Pics/confluence_logo.jpeg, id=520, 594.22pt x 85.31876pt>
+<Pics/confluence_logo.jpeg, id=533, 594.22pt x 85.31876pt>
 File: Pics/confluence_logo.jpeg Graphic file (type jpg)
 
 <use Pics/confluence_logo.jpeg>
 Package pdftex.def Info: Pics/confluence_logo.jpeg used on input line 59.
 (pdftex.def)             Requested size: 138.70781pt x 19.91684pt.
 
-<Pics/bitbucket_logo.png, id=521, 479.7925pt x 105.39375pt>
+<Pics/bitbucket_logo.png, id=534, 479.7925pt x 105.39375pt>
 File: Pics/bitbucket_logo.png Graphic file (type png)
 
 <use Pics/bitbucket_logo.png>
@@ -1091,20 +1091,20 @@ been already used, duplicate ignored
                    \relax 
 l.73 
       [2 <./Pics/atlassian_logo.png> <./Pics/jira_logo.png (PNG copy)> <./Pics/
-confluence_logo.jpeg>] <Pics/slack_logo.png, id=526, 421.575pt x 120.45pt>
+confluence_logo.jpeg>] <Pics/slack_logo.png, id=539, 421.575pt x 120.45pt>
 File: Pics/slack_logo.png Graphic file (type png)
 
 <use Pics/slack_logo.png>
 Package pdftex.def Info: Pics/slack_logo.png used on input line 81.
 (pdftex.def)             Requested size: 99.58475pt x 28.45274pt.
- <Pics/errbit_logo.png, id=527, 256.96pt x 256.96pt>
+ <Pics/errbit_logo.png, id=540, 256.96pt x 256.96pt>
 File: Pics/errbit_logo.png Graphic file (type png)
 
 <use Pics/errbit_logo.png>
 Package pdftex.def Info: Pics/errbit_logo.png used on input line 94.
 (pdftex.def)             Requested size: 39.8323pt x 39.83368pt.
 
-<Pics/airbrake_logo.png, id=528, 415.5525pt x 132.495pt>
+<Pics/airbrake_logo.png, id=541, 415.5525pt x 132.495pt>
 File: Pics/airbrake_logo.png Graphic file (type png)
 
 <use Pics/airbrake_logo.png>
@@ -1130,54 +1130,54 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 ] (./tex/tecnologie_e_strumenti.tex
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 8.
-<Pics/gitflow.png, id=566, 660.4675pt x 465.74pt>
+<Pics/gitflow.png, id=579, 660.4675pt x 465.74pt>
 File: Pics/gitflow.png Graphic file (type png)
  <use Pics/gitflow.png>
 Package pdftex.def Info: Pics/gitflow.png used on input line 11.
 (pdftex.def)             Requested size: 341.43306pt x 240.77197pt.
 
-[9 <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=573, 401.5pt x 401.5pt>
+[9 <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=586, 401.5pt x 401.5pt>
 File: Pics/rubymine_logo.png Graphic file (type png)
 
 <use Pics/rubymine_logo.png>
 Package pdftex.def Info: Pics/rubymine_logo.png used on input line 43.
 (pdftex.def)             Requested size: 113.81102pt x 113.80992pt.
  [10 <./Pics/rubymine_logo.png (PNG copy)>]
-<Pics/ActiveAdmin_logo.png, id=589, 469.755pt x 114.4275pt>
+<Pics/ActiveAdmin_logo.png, id=603, 469.755pt x 114.4275pt>
 File: Pics/ActiveAdmin_logo.png Graphic file (type png)
 
 <use Pics/ActiveAdmin_logo.png>
 Package pdftex.def Info: Pics/ActiveAdmin_logo.png used on input line 112.
 (pdftex.def)             Requested size: 170.71652pt x 41.58496pt.
  [11]
-<Pics/i8n-logo.png, id=607, 501.875pt x 503.8825pt>
+<Pics/i8n-logo.png, id=620, 501.875pt x 503.8825pt>
 File: Pics/i8n-logo.png Graphic file (type png)
  <use Pics/i8n-logo.png>
 Package pdftex.def Info: Pics/i8n-logo.png used on input line 130.
 (pdftex.def)             Requested size: 113.81102pt x 114.26054pt.
 
 [12 <./Pics/ActiveAdmin_logo.png> <./Pics/i8n-logo.png>]
-<Pics/jruby-logo.png, id=617, 501.875pt x 501.875pt>
+<Pics/jruby-logo.png, id=630, 501.875pt x 501.875pt>
 File: Pics/jruby-logo.png Graphic file (type png)
  <use Pics/jruby-logo.png>
 Package pdftex.def Info: Pics/jruby-logo.png used on input line 154.
 (pdftex.def)             Requested size: 113.81102pt x 113.80533pt.
 
-<Pics/drools-logo.png, id=618, 602.25pt x 180.675pt>
+<Pics/drools-logo.png, id=631, 602.25pt x 180.675pt>
 File: Pics/drools-logo.png Graphic file (type png)
 
 <use Pics/drools-logo.png>
 Package pdftex.def Info: Pics/drools-logo.png used on input line 174.
 (pdftex.def)             Requested size: 199.16928pt x 59.74974pt.
  [13 <./Pics/jruby-logo.png> <./Pics/drools-logo.png>] <Pics/drools_abstract_st
-ructure.png, id=630, 433.62pt x 240.9pt>
+ructure.png, id=643, 433.62pt x 240.9pt>
 File: Pics/drools_abstract_structure.png Graphic file (type png)
 
 <use Pics/drools_abstract_structure.png>
 Package pdftex.def Info: Pics/drools_abstract_structure.png used on input line 
 185.
 (pdftex.def)             Requested size: 341.43306pt x 189.69504pt.
- [14 <./Pics/drools_abstract_structure.png>] <Pics/logo-foundation.png, id=644,
+ [14 <./Pics/drools_abstract_structure.png>] <Pics/logo-foundation.png, id=657,
  395.4775pt x 127.47626pt>
 File: Pics/logo-foundation.png Graphic file (type png)
 
@@ -1185,7 +1185,7 @@ File: Pics/logo-foundation.png Graphic file (type png)
 Package pdftex.def Info: Pics/logo-foundation.png used on input line 214.
 (pdftex.def)             Requested size: 199.16928pt x 64.19896pt.
 
-<Pics/foundation5_compatibilita.png, id=657, 843.15pt x 571.13374pt>
+<Pics/foundation5_compatibilita.png, id=670, 843.15pt x 571.13374pt>
 File: Pics/foundation5_compatibilita.png Graphic file (type png)
 
 <use Pics/foundation5_compatibilita.png>
@@ -1193,7 +1193,7 @@ Package pdftex.def Info: Pics/foundation5_compatibilita.png used on input line
 241.
 (pdftex.def)             Requested size: 426.79134pt x 289.10437pt.
  [15 <./Pics/logo-foundation.png>]
-<Pics/jquery_logo.png, id=674, 2073.7475pt x 547.04375pt>
+<Pics/jquery_logo.png, id=687, 2073.7475pt x 547.04375pt>
 File: Pics/jquery_logo.png Graphic file (type png)
 
 <use Pics/jquery_logo.png>
@@ -1205,7 +1205,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-<Pics/architettura.png, id=703, 657.45625pt x 783.92876pt>
+<Pics/architettura.png, id=716, 657.45625pt x 783.92876pt>
 File: Pics/architettura.png Graphic file (type png)
 
 <use Pics/architettura.png>
@@ -1223,7 +1223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--65
  []
 
 
-<Pics/diagramma_classi_associazioni_polimorfe.png, id=729, 1251.67625pt x 502.8
+<Pics/diagramma_classi_associazioni_polimorfe.png, id=742, 1251.67625pt x 502.8
 7875pt>
 File: Pics/diagramma_classi_associazioni_polimorfe.png Graphic file (type png)
  <use Pics/diagramma_classi_associazioni_polimorfe.png>
@@ -1236,7 +1236,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 [19 <./Pics/diagramma_classi_associazioni_polimorfe.png>]
-<Pics/diagramma_attivita_risposte.png, id=745, 439.6425pt x 1038.88126pt>
+<Pics/diagramma_attivita_risposte.png, id=757, 439.6425pt x 1038.88126pt>
 File: Pics/diagramma_attivita_risposte.png Graphic file (type png)
 
 <use Pics/diagramma_attivita_risposte.png>
@@ -1249,47 +1249,93 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [20]
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
- [21 <./Pics/diagramma_attivita_risposte.png>] [22]) [23] [24
+ [21 <./Pics/diagramma_attivita_risposte.png>] [22]
+<Pics/UC1_FigureDiSistema_RSPP.png, id=779, 782.925pt x 766.36313pt>
+File: Pics/UC1_FigureDiSistema_RSPP.png Graphic file (type png)
+
+<use Pics/UC1_FigureDiSistema_RSPP.png>
+Package pdftex.def Info: Pics/UC1_FigureDiSistema_RSPP.png used on input line 1
+86.
+(pdftex.def)             Requested size: 398.33858pt x 389.91623pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+
+ []
+
+<Pics/UMLClassiFigureDiSistema.png, id=788, 620.3175pt x 204.765pt>
+File: Pics/UMLClassiFigureDiSistema.png Graphic file (type png)
+
+<use Pics/UMLClassiFigureDiSistema.png>
+Package pdftex.def Info: Pics/UMLClassiFigureDiSistema.png used on input line 2
+03.
+(pdftex.def)             Requested size: 398.33858pt x 131.48969pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./Pics/UC1_FigureDiSistema_RSPP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+
+ []
+
+
+<Pics/screen_organo_di_vigianza_con_autocompletamento.png, id=798, 716.6775pt x
+ 573.14125pt>
+File: Pics/screen_organo_di_vigianza_con_autocompletamento.png Graphic file (ty
+pe png)
+ <use Pics/screen_organo_di_vigianza_con_autocompletamento.png>
+Package pdftex.def Info: Pics/screen_organo_di_vigianza_con_autocompletamento.p
+ng used on input line 218.
+(pdftex.def)             Requested size: 341.43306pt x 273.0495pt.
+
+<Pics/RemoteTrueRSPP.png, id=799, 640.3925pt x 274.02374pt>
+File: Pics/RemoteTrueRSPP.png Graphic file (type png)
+
+<use Pics/RemoteTrueRSPP.png>
+Package pdftex.def Info: Pics/RemoteTrueRSPP.png used on input line 228.
+(pdftex.def)             Requested size: 341.43306pt x 146.1016pt.
+ [25 <./Pics/UMLClassiFigureDiSistema.png> <./Pics/screen_organo_di_vigianza_co
+n_autocompletamento.png>]) [26 <./Pics/RemoteTrueRSPP.png>] [27] [28
+
+] (./tex/appendice_migrazioni.tex) [29
+
+
+] [30
 
 ]
-(./tex/appendice_migrazioni.tex) [25
+(./tex/appendice_inference.tex) [31] [32
 
+] (./tex/appendice_sistemi_esperti.tex) [33] [34
 
-] [26
-
-] (./tex/appendice_inference.tex)
-[27] [28
-
-] (./tex/appendice_sistemi_esperti.tex) [29] [30
-
-]
-(./tex/appendice_algoritmo_rete.tex
-<Pics/drools_rule_flow_example.png, id=835, 445.665pt x 741.77126pt>
+] (./tex/appendice_algoritmo_rete.tex
+<Pics/drools_rule_flow_example.png, id=880, 445.665pt x 741.77126pt>
 File: Pics/drools_rule_flow_example.png Graphic file (type png)
 
 <use Pics/drools_rule_flow_example.png>
 Package pdftex.def Info: Pics/drools_rule_flow_example.png used on input line 2
 0.
 (pdftex.def)             Requested size: 205.13759pt x 341.43398pt.
- [31 <./Pics/drools_rule_flow_example.png>]) [32] (./tesi.gls [33
+ [35 <./Pics/drools_rule_flow_example.png>]) [36] (./tesi.gls [37
 
 
 ]) 
 AED: lastpage setting LastPage
-[34]
+[38]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: D66FC79C05419D69D49B6D5BF51BD647;4457.
+(rerunfilecheck)             Checksum: BB475255F5F074EA6CD9CF7B0111431D;4457.
  ) 
 Here is how much of TeX's memory you used:
- 19982 strings out of 493089
- 310383 string characters out of 6134841
- 480096 words of memory out of 5000000
- 22868 multiletter control sequences out of 15000+600000
+ 20017 strings out of 493089
+ 311392 string characters out of 6134841
+ 480518 words of memory out of 5000000
+ 22888 multiletter control sequences out of 15000+600000
  23982 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,75p,1828b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1318,10 +1364,10 @@ s/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (42 pages, 1561203 bytes).
+Output written on tesi.pdf (46 pages, 1712940 bytes).
 PDF statistics:
- 979 PDF objects out of 1000 (max. 8388607)
- 859 compressed objects within 9 object streams
- 209 named destinations out of 1000 (max. 500000)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1030 PDF objects out of 1200 (max. 8388607)
+ 898 compressed objects within 9 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 645 words of extra memory for PDF output out of 10000 (max. 10000000)
 
