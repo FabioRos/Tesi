@@ -133,15 +133,133 @@ Le corrispondenze di questa regola sono tutti gli individui individui che svolgo
 Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
 
 
+\cleardoublepage
 
 \section{Definizione dei casi d'uso}
+\hl{Nuovo capitolo}
 	\subsection{Legenda}
-	\subsection{UC 1}
-	\subsection{UC 1.1}
-	\subsection{UC 1.2}
-	\subsection{UC 1.2.1}
-	\subsection{UC 2}	
-	\subsection{UC ...}
+	\begin{itemize}
+		\item \texttt{Utente autenticato:} Utente che ha effettuato con successo il login nel sistema;
+		\item \texttt{UC:} Sigla utilizzata come abbreviazione per indicare un caso d'uso (\textit{Use Case}).
+	\end{itemize}
+	
+	\subsection{Tracciamento Casi d'uso - Requisiti}
+		\hl{TODO}
+	\subsection{Caso d'uso UCP - Scenario Principale }
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=14cm]{Pics/Diagramma_generale_dei_casi_d_uso.png}
+			\caption{
+				Diagramma dei casi d'uso generale.}
+			\label{fig:DiagrammaGeneraleCasiDuso}
+		\end{center}
+	\end{figure}	
+	
+	\begin{itemize}
+		\item \textbf{Scopo:} Il diagramma generale dei casi d'uso UCP (\autoref{fig:DiagrammaGeneraleCasiDuso}), ha lo scopo di rappresentare ad alto livello i casi d'uso necessari al soddisfacimento di tutti i requisiti. \\
+		In particolare un utente che abbia effettuato con successo il login nel sistema, deve poter gestire: figure di sistema; dispositivi di protezione individuali, mansioni, formazioni, questionari, procedure; segnalazioni e dispositivi di protezione collettivi.
+		A seguire la spiegazione e l'esplosione in sotto casi d'uso per ognuno dei casi d'uso sopra elencati.
+		\item \textbf{Attori Coinvolti:} Utente Autenticato;
+		\item \textbf{Flusso principale degli eventi:} 
+			\begin{itemize}
+				\item \textit{Gestione delle Figure di sistema (\hyperref[section:UC1]{UC1});}
+				\item \textit{Gestione dei Dispositivi di Protezione individuale (\hyperref[section:UC2]{UC2});}
+				\item \textit{Gestione delle mansioni (\hyperref[section:UC3]{UC3});}
+				\item \textit{Gestione delle formazioni (\hyperref[section:UC4]{UC4});}
+				\item \textit{Gestione dei questionari (\hyperref[section:UC5]{UC5});}
+				\item \textit{Gestione delle procedure (\hyperref[section:UC6]{UC6});}
+				\item \textit{Gestione delle segnalazioni (\hyperref[section:UC7]{UC7})}
+				\item \textit{Gestione dei dispositivi di protezione collettivi (\hyperref[section:UC8]{UC8}).}
+			\end{itemize}
+	\end{itemize}
+	
+
+	\subsection{UC1 Gestione Figure di sistema}
+	\label{section:UC1}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=14cm]{Pics/UC1GestioneFigureDiSistema.png}
+			\caption{
+				Diagramma dei casi d'uso UC1 - Figure di sistema.}
+			\label{fig:UC1GestioneFigureDiSistema}
+		\end{center}
+	\end{figure}
+	\begin{itemize}
+		\item \textbf{Scopo:} Il diagramma generale dei casi d'uso UC1 (\autoref{fig:UC1GestioneFigureDiSistema}), ha lo scopo di rappresentare ad alto livello i casi d'uso necessari al soddisfacimento di tutti i requisiti rigruardanti le figure di sistema;
+		\item \textbf{Attori Coinvolti:} Utente Autenticato;
+		\item \textbf{Flusso principale degli eventi:} 
+		\begin{itemize}
+			\item \textit{Gestione degli RSPP (\hyperref[section:UC1_1]{UC1.1});}
+			\item \textit{Gestione degli ASPP (UC1.2);}
+			\item \textit{Gestione dei preposti (UC1.3);}
+			\item \textit{Gestione del medico competente (UC1.4);}
+			\item \textit{Gestione del datore di lavoro (UC1.5);}
+			\item \textit{Gestione dei dirigenti (UC1.6);}
+			\item \textit{Gestione degli RLS (UC1.7).}
+		\end{itemize}
+	\end{itemize}
+		
+	\subsection{UC1.1 Gestione RSPP}
+	\label{section:UC1_1}
+	Tutte le figure di sistema presentano requisiti analoghi. Per evitare di affaticare la lettura con sezioni ridondanti è stato scelto di riportare soltanto il diagramma dei casi d'uso riguardante gli RSPP. Si intende che per tutte le altre figure di sistema il diagramma sia analogo. 
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=14cm]{Pics/UC1_1_FigureDiSistema_RSPP.png}
+				\caption{Diagramma dei casi d'uso relativo all'inserimento degli RSPP}
+				\label{fig:UC1_1RSPP}
+			\end{center}
+		\end{figure}
+		\begin{itemize}
+			\item \textbf{Scopo:} Il diagramma relativo alla gestione degli RSPP (\autoref{fig:DiagrammaGeneraleCasiDuso}), ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione degli rspp. \\
+			In particolare un utente che abbia effettuato con successo il login nel sistema, deve poter inserire, rimuovere, modificare  RSPP. Deve essere messo in condizione inoltre di Visualizzare un questionario relativo ad uno specifico RSPP, rispondendo alle domande riportate su di esso. In caso di errore, deve essere sollevato un allarme che comunica la domanda esatta ed un messaggio esplicativo.
+			\item \textbf{Attori Coinvolti:} Utente Autenticato;
+			\item \textbf{Flusso principale degli eventi:} 
+			\begin{itemize}
+				\item \textit{Inserimento RSPP (UC1.1.1);}
+				\item \textit{Modifica RSPP(UC1.1.2);}
+				\item \textit{Rimozione RSPP (UC1.1.3);}
+				\item \textit{Visualizzazione del questionario associato ad un RSPP (UC1.1.4);}
+				\item \textit{Inserimento di una risposta ad una domanda del questionario (UC1.1.5);}
+				\item \textit{Modifica di una risposta ad una domanda del questionario relativo ad un RSPP (UC1.1.6);}
+				\item \textit{ Visualizzazione allarme relativo ad una risposta errata ad una domanda del questionario (UC1.1.7).}
+			\end{itemize}
+		\end{itemize}
+			
+	\subsection{UC2 Gestione Dispositivi di Protezione Individuale}
+		\label{section:UC2}
+		\hl{TODO}
+	\subsection{UC3 Gestione  mansioni}
+		\label{section:UC3}
+		\hl{TODO}
+	\subsection{UC4 Gestione formazioni}
+		\label{section:UC4}
+		\hl{TODO}
+	\subsection{UC5 Gestione questionari}
+		\label{section:UC5}	
+		\hl{TODO}
+	\subsection{UC6 Gestione procedure}
+		\label{section:UC6}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=12cm]{Pics/UC6GestioneProcedure.png}
+					\caption{Diagramma dei casi d'uso relativo alla gestione delle procedure.}
+					\label{fig:UC6_Procedure}
+				\end{center}
+			\end{figure}
+		\hl{TODO}
+	\subsection{UC7 Gestione segnalazioni}
+		\label{section:UC7}	
+		\hl{TODO}
+	\subsection{UC8 Gestione Dispositivi di Protezione Collettivi}
+		\label{section:UC8}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=12cm]{Pics/UC8GestioneDispositiviProtezioneCollettivi.png}
+				\caption{Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).}
+				\label{fig:UC2_DPC}
+			\end{center}
+		\end{figure}
+		\hl{TODO}
 
 \section{Sviluppo}
 \hl{nuova sezione} \\
@@ -172,32 +290,32 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 		\item Medico Competente;
 		\item Responsabile del servizio di prevenzione e Protezione (RSPP);
 		\item Addetto al servizio di prevenzione e Protezione (ASPP);
-		\item Responsabile dei Lavoratori per la Sicurezza (RLS);
-		\item Lavoratore.
+		\item Responsabile dei Lavoratori per la Sicurezza (RLS).
 	\end{itemize}
 	L'operato delle figure sopra elencate deve essere supervisionato da un \textit{Organo di vigilanza}.
-	Dal punto di vista implementativo, sono stati creati dei modelli per gestire le relazioni tra gli individui e i ruoli che possono ricoprire. \\
-	Questo approccio si è rivelato molto vantaggioso perché ha permesso di associare ogni classe rappresentante un ruolo, alle formazioni minime che un individuo deve possedere per poter ricoprire quella carica. 
-	\paragraph*{Requisiti}
-	Erano posti come requisiti l'inserimento, modifica e cancellazione di tutte le figure di sistema. Era inoltre richiesto che venisse predisposto un questionario per ogni tipologia di figura di sistema. Ad ogni domanda deve essere possibile dare una risposta che, se non conforme alle norme vigenti, deve segnalare la situazione con un allarme.\\
-	A seguire il diagramma dei casi d'uso relativo alla gestione degli RSPP (\autoref{fig:UC1RSPP}).
-		\begin{figure}[H]
-			\begin{center}
-				\includegraphics[width=14cm]{Pics/UC1_FigureDiSistema_RSPP.png}
-				\caption{Diagramma dei casi d'uso relativo all'inserimento degli RSPP}
-				\label{fig:UC1RSPP}
-			\end{center}
-		\end{figure}
-	\hl{inserire screen nuova versione}
+
+	\paragraph*{Situazione precedente al refactor} 
 	
-	\paragraph*{Situazione precedente al refactor}
 	La situazione iniziale prevedeva che la classe \textit{Individual} avesse  un attributo booleano per ogni tipologia di figura di sistema. \\
 	Si è reso necessario un refactor dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
 	Un esempio è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione può verificarsi se i due cantieri sono allocati nello stesso periodo ma nel primo si lavora il mattino, mentre nel secondo di pomeriggio.\\
 	
-	\paragraph*{Modifiche apportate}
-	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\
-	Questa soluzione (\autoref{fig:DiagrammaDelleClassiIndividualRoles}) soddisfa appieno tutte le specifiche.
+	\paragraph*{Requisiti}
+		
+	Erano posti come requisiti l'inserimento, modifica e cancellazione di tutte le figure di sistema. Era inoltre richiesto che venisse predisposto un questionario per ogni tipologia di figura di sistema. \\
+	Ad ogni domanda deve essere possibile dare una risposta che, se non conforme alle norme vigenti, deve segnalare la situazione con un allarme.\\
+	
+	Il diagramma dei casi d'uso per ogni figura di sistema è riconducibile a quello relativo agli RSPP (vedi  \autoref{fig:UC1_1RSPP}).
+	\hl{inserire screen nuova versione}
+	
+	
+	\paragraph{Modifiche apportate}
+	
+	
+	
+	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\	Questo approccio si è rivelato molto vantaggioso perché ha permesso di associare ogni classe rappresentante un ruolo, alle formazioni minime che un individuo deve possedere per poter ricoprire quella carica. \\
+	Questa soluzione (\autoref{fig:DiagrammaDelleClassiIndividualRoles}) soddisfa appieno tutti ri requisiti.
+	
 		\begin{figure}[H]
 			\begin{center}
 				\includegraphics[width=14cm]{Pics/UMLClassiFigureDiSistema.png}
@@ -207,7 +325,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 			\end{center}
 		\end{figure}
 	
-	\hl{TODO MODIFICARE DIAGRAMMA DELLE CLASSI-> ROLE, NON ROLES}
+	\hl{TODO MODIFICARE DIAGRAMMA DELLE CLASSI-> ROLE, NON ROLES, Utente Loggato}
 	
 	Per facilitare l'inserimento delle informazioni relative alla selezione dei dipendenti, è stata utilizzata la libreria \textit{Selectize.js} per rendere i form più gradevoli dal punto di vista grafico e per permettere l'autocompletamento (vedi \autoref{fig:ScreenOrganodiVigilanza} ). \\ 
 	Una criticità si è presentata nell'inserimento dinamico delle figure che possono essere presenti con molteplicità maggiore di uno. In particolare gli RSPP e gli ASPP presentano l'ulteriore complicazione rappresentata dal fatto che possono essere sia membri interni all'azienda, sia esterni. \\
