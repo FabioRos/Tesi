@@ -66,39 +66,39 @@
 \contentsline {subsubsection}{\numberline {6.6.1}UC2.1 Gestione delle tipologie di DPI dal pannello di amministrazione }{26}{subsubsection.6.6.1}
 \contentsline {subsubsection}{\numberline {6.6.2}UC2.2 Gestione dei DPI assegnati ai dipendenti}{27}{subsubsection.6.6.2}
 \contentsline {subsection}{\numberline {6.7}UC3 Gestione mansioni}{27}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}UC4 Gestione formazioni}{27}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.8}UC4 Gestione formazioni}{28}{subsection.6.8}
 \contentsline {subsubsection}{\numberline {6.8.1}UC4.1 Gestione delle formazioni dal pannello di amministrazione }{28}{subsubsection.6.8.1}
 \contentsline {subsubsection}{\numberline {6.8.2}UC4.2 Gestione delle formazioni dei dipendenti e del datore di lavoro }{28}{subsubsection.6.8.2}
 \contentsline {subsection}{\numberline {6.9}UC5 Gestione questionari}{29}{subsection.6.9}
 \contentsline {subsection}{\numberline {6.10}UC6 Gestione procedure}{29}{subsection.6.10}
-\contentsline {subsection}{\numberline {6.11}UC7 Gestione segnalazioni}{29}{subsection.6.11}
-\contentsline {subsection}{\numberline {6.12}UC8 Gestione Dispositivi di Protezione Collettivi}{29}{subsection.6.12}
-\contentsline {section}{\numberline {7}Sviluppo}{30}{section.7}
-\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{30}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{30}{subsubsection.7.1.1}
-\contentsline {paragraph}{Modifiche apportate}{31}{section*.58}
-\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{33}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{33}{subsubsection.7.1.3}
-\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{33}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Nuove componenti}{33}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{33}{subsubsection.7.3.1}
-\contentsline {paragraph}{Requisiti}{33}{section*.62}
-\contentsline {paragraph}{Progettazione}{33}{section*.63}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{33}{section*.64}
-\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{33}{subsubsection.7.3.2}
-\contentsline {paragraph}{Requisiti}{33}{section*.65}
-\contentsline {paragraph}{Progettazione}{33}{section*.66}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{33}{section*.67}
-\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{33}{subsubsection.7.3.3}
-\contentsline {paragraph}{Requisiti}{33}{section*.68}
-\contentsline {paragraph}{Progettazione}{33}{section*.69}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{33}{section*.70}
-\contentsline {subsection}{\numberline {7.4}Regole Drools}{33}{subsection.7.4}
-\contentsline {section}{\numberline {8}Verifica e validazione}{33}{section.8}
-\contentsline {section}{\numberline {9}Considerazioni finali}{33}{section.9}
+\contentsline {subsection}{\numberline {6.11}UC7 Gestione segnalazioni}{30}{subsection.6.11}
+\contentsline {subsection}{\numberline {6.12}UC8 Gestione Dispositivi di Protezione Collettivi}{31}{subsection.6.12}
+\contentsline {section}{\numberline {7}Sviluppo}{31}{section.7}
+\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{31}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{31}{subsubsection.7.1.1}
+\contentsline {paragraph}{Modifiche apportate}{32}{section*.59}
+\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{34}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{34}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.2}Refactor della componente: \textit {Questionari}}{34}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Nuove componenti}{34}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}\textit {Segnalazioni}}{34}{subsubsection.7.3.1}
+\contentsline {paragraph}{Requisiti}{34}{section*.63}
+\contentsline {paragraph}{Progettazione}{34}{section*.64}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{34}{section*.65}
+\contentsline {subsubsection}{\numberline {7.3.2}\textit {Procedure}}{34}{subsubsection.7.3.2}
+\contentsline {paragraph}{Requisiti}{34}{section*.66}
+\contentsline {paragraph}{Progettazione}{34}{section*.67}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{34}{section*.68}
+\contentsline {subsubsection}{\numberline {7.3.3}\textit {Dispositivi di protezione collettivi}}{34}{subsubsection.7.3.3}
+\contentsline {paragraph}{Requisiti}{34}{section*.69}
+\contentsline {paragraph}{Progettazione}{34}{section*.70}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{34}{section*.71}
+\contentsline {subsection}{\numberline {7.4}Regole Drools}{34}{subsection.7.4}
+\contentsline {section}{\numberline {8}Verifica e validazione}{34}{section.8}
+\contentsline {section}{\numberline {9}Considerazioni finali}{34}{section.9}
 \contentsline {section}{\numberline {A}Migrazioni}{35}{appendix.Alph1}
 \contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{37}{appendix.Alph2}
 \contentsline {section}{\numberline {C}Sistemi Esperti}{39}{appendix.Alph3}
 \contentsline {section}{\numberline {D}Algoritmo RETE}{41}{appendix.Alph4}
-\contentsline {section}{Glossario}{43}{section*.72}
-\contentsline {section}{Riferimenti bibliografici}{44}{section*.73}
+\contentsline {section}{Glossario}{43}{section*.73}
+\contentsline {section}{Riferimenti bibliografici}{44}{section*.74}
