@@ -139,8 +139,9 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 \hl{Nuovo capitolo}
 	\subsection{Legenda}
 	\begin{itemize}
-		\item \texttt{Utente autenticato:} Utente che ha effettuato con successo il login nel sistema;
-		\item \texttt{UC:} Sigla utilizzata come abbreviazione per indicare un caso d'uso (\textit{Use Case}).
+		\item \texttt{UC:} Sigla utilizzata come abbreviazione per indicare un caso d'uso (\textit{Use Case});
+		\item \texttt{Utente amministratore:} Utente che ha effettuato con successo il login nel sistema con privilegi da amministratore;
+		\item \texttt{Utente autenticato:} Utente che ha effettuato con successo il login nel sistema.
 	\end{itemize}
 	
 	\subsection{Tracciamento Casi d'uso - Requisiti}
@@ -225,9 +226,32 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 			\end{itemize}
 		\end{itemize}
 			
-	\subsection{UC2 Gestione Dispositivi di Protezione Individuale}
+	\subsection{UC2 Gestione Dispositivi di Protezione Individuale (DPI)}
 		\label{section:UC2}
 		\hl{TODO}
+		\subsubsection{UC2.1 Gestione tipologie di DPI dal pannello di amministrazione }
+		\hl{TODO}
+			\label{section:UC2_1}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministrazione.png}
+					\caption{
+						Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.}
+					\label{fig:UC2_1GestioneDPIAmministrazione}
+				\end{center}
+			\end{figure}
+		
+		\subsubsection{UC2.2 Gestione dei DPI assegnati ai dipendenti}
+		\hl{TODO}
+			\label{section:UC2_2}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{Pics/UC2_2DPIDipendenti.png}
+					\caption{
+						Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.}
+					\label{fig:UC2_2GestioneDPIDipendenti}
+				\end{center}
+			\end{figure}
 	\subsection{UC3 Gestione  mansioni}
 		\label{section:UC3}
 		\hl{TODO}
@@ -349,8 +373,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 			\label{fig:ScreenRSPP}
 		\end{center}
 	\end{figure}	
-		\hl{TODO Aggiungere Link Modifica Finto}
-	 Tecnicamente, l'associazione ad un questionario avviene generando tutte le risposte ad esso relative.\\
+	  L'associazione ad un questionario avviene generando tutte le risposte ad esso relative.\\
 	  Per ogni risposta saranno preimpostati i seguenti valori:
 	  \begin{itemize}
 		  \item \texttt{response:} \texttt{nil};

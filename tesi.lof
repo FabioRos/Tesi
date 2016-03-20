@@ -25,9 +25,11 @@
 \contentsline {figure}{\numberline {23}{\ignorespaces Diagramma dei casi d'uso generale.\relax }}{23}{figure.caption.48}
 \contentsline {figure}{\numberline {24}{\ignorespaces Diagramma dei casi d'uso UC1 - Figure di sistema.\relax }}{24}{figure.caption.49}
 \contentsline {figure}{\numberline {25}{\ignorespaces Diagramma dei casi d'uso relativo all'inserimento degli RSPP\relax }}{25}{figure.caption.50}
-\contentsline {figure}{\numberline {26}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle procedure.\relax }}{26}{figure.caption.51}
-\contentsline {figure}{\numberline {27}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).\relax }}{27}{figure.caption.52}
-\contentsline {figure}{\numberline {28}{\ignorespaces Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.\relax }}{28}{figure.caption.56}
-\contentsline {figure}{\numberline {29}{\ignorespaces Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza\relax }}{29}{figure.caption.57}
-\contentsline {figure}{\numberline {30}{\ignorespaces Schermata relativa all'inserimento di un RSPP.\relax }}{29}{figure.caption.58}
-\contentsline {figure}{\numberline {31}{\ignorespaces Esempio di flusso di valutazione di una regola Drools.\relax }}{37}{figure.caption.68}
+\contentsline {figure}{\numberline {26}{\ignorespaces Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.\relax }}{26}{figure.caption.51}
+\contentsline {figure}{\numberline {27}{\ignorespaces Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.\relax }}{27}{figure.caption.52}
+\contentsline {figure}{\numberline {28}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle procedure.\relax }}{27}{figure.caption.53}
+\contentsline {figure}{\numberline {29}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).\relax }}{28}{figure.caption.54}
+\contentsline {figure}{\numberline {30}{\ignorespaces Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.\relax }}{29}{figure.caption.58}
+\contentsline {figure}{\numberline {31}{\ignorespaces Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza\relax }}{30}{figure.caption.59}
+\contentsline {figure}{\numberline {32}{\ignorespaces Schermata relativa all'inserimento di un RSPP.\relax }}{30}{figure.caption.60}
+\contentsline {figure}{\numberline {33}{\ignorespaces Esempio di flusso di valutazione di una regola Drools.\relax }}{39}{figure.caption.70}
