@@ -147,6 +147,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 	\subsection{Tracciamento Casi d'uso - Requisiti}
 		\hl{TODO}
 	\subsection{Caso d'uso UCP - Scenario Principale }
+	\hl{nuova sezione} \\
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=14cm]{Pics/Diagramma_generale_dei_casi_d_uso.png}
@@ -177,6 +178,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 
 	\subsection{UC1 Gestione Figure di sistema}
 	\label{section:UC1}
+	\hl{Nuova sezione}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=14cm]{Pics/UC1GestioneFigureDiSistema.png}
@@ -202,6 +204,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 		
 	\subsection{UC1.1 Gestione RSPP}
 	\label{section:UC1_1}
+	\hl{Nuova sezione}
 	Tutte le figure di sistema presentano requisiti analoghi. Per evitare di affaticare la lettura con sezioni ridondanti è stato scelto di riportare soltanto il diagramma dei casi d'uso riguardante gli RSPP. Si intende che per tutte le altre figure di sistema il diagramma sia analogo. 
 		\begin{figure}[H]
 			\begin{center}
@@ -226,12 +229,15 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 			\end{itemize}
 		\end{itemize}
 			
-	\subsection{UC2 Gestione Dispositivi di Protezione Individuale (DPI)}
+	\subsection{UC2 Gestione dei Dispositivi di Protezione Individuale (DPI)}
 		\label{section:UC2}
-		\hl{TODO}
-		\subsubsection{UC2.1 Gestione tipologie di DPI dal pannello di amministrazione }
-		\hl{TODO}
+		\hl{Nuova sezione}
+		La gestione dei  \gls{DPI}\G\ va suddivisa in due scenari distinti. Il primo scenario è relativo alla gestione delle tipologie di \gls{DPI}\G\ disponibili da parte degli utenti amministratori. Il secondo scenario riguarda la gestione dei \gls{DPI}\G\ che compongono la dotazione personale di un dipendente. \\
+		Seguono i diagrammi dei casi d'uso dei \gls{DPI}\G\ relativi agli scenari sopra indicati.
+
+		\subsubsection{UC2.1 Gestione delle tipologie di DPI dal pannello di amministrazione }
 			\label{section:UC2_1}
+			\hl{Nuova sezione}
 			\begin{figure}[H]
 				\begin{center}
 					\includegraphics[width=10cm]{Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministrazione.png}
@@ -240,42 +246,106 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 					\label{fig:UC2_1GestioneDPIAmministrazione}
 				\end{center}
 			\end{figure}
+			\begin{itemize}
+				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC2_1GestioneDPIAmministrazione}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle tipologie dei \gls{DPI}\G\. \\ Un utente amministratore deve poter gestire in modo autonomo e mettere a disposizione degli utilizzatori del sistema le tipologie di \gls{DPI}\G\ che ritiene più opportune.
+				\item \textbf{Attori Coinvolti:} Utente Amministratore;
+				\item \textbf{Flusso principale degli eventi:} 
+				\begin{itemize}
+					\item \textit{Inserimento tipologia di \gls{DPI}\G\ (UC2.1.1);}
+					\item \textit{Rimozione tipologia di \gls{DPI}\G\ (UC2.1.2);}
+					\item \textit{Modifica tipologia di \gls{DPI}\G\ (UC2.1.3).}
+				\end{itemize}
+			\end{itemize}
 		
 		\subsubsection{UC2.2 Gestione dei DPI assegnati ai dipendenti}
-		\hl{TODO}
+		\hl{Nuova sezione}
 			\label{section:UC2_2}
 			\begin{figure}[H]
 				\begin{center}
-					\includegraphics[width=10cm]{Pics/UC2_2DPIDipendenti.png}
+					\includegraphics[width=12cm]{Pics/UC2_2DPIDipendenti.png}
 					\caption{
-						Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.}
+						Diagramma dei casi d'uso UC2.2 - Gestione dei DPI relativi ad un dipendente.}
 					\label{fig:UC2_2GestioneDPIDipendenti}
 				\end{center}
 			\end{figure}
+			\begin{itemize}
+				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC2_2GestioneDPIDipendenti}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione dei \gls{DPI}\G\ dati in dotazione ai dipendenti. \\ Un utente autenticato deve poter assegnare o rimuovere \gls{DPI}\G\ ad ogni dipendente. Deve essere possibile assegnare \gls{DPI}\G\ con molteplicità variabile, scegliendo la tipologia da una lista predefinita (Sezione: \ref{section:UC2_1}).\\
+				Per ogni \gls{DPI}\G\ deve essere possibile rispondere ad un questionario;
+				\item \textbf{Attori Coinvolti:} Utente Autenticato;
+				\item \textbf{Flusso principale degli eventi:} 
+				\begin{itemize}
+					\item \textit{Aggiunta di un \gls{DPI}\G\ alla dotazione di un dipendente (UC2.2.1);}
+					\item \textit{Rimozione di un \gls{DPI}\G\ dalla dotazione di un dipendente  (UC2.2.2);}
+					\item \textit{Gestione del questionario relativo ad un \gls{DPI}\G\ assegnato ad un dipendente (UC2.2.3).}
+				\end{itemize}
+			\end{itemize}
 	\subsection{UC3 Gestione  mansioni}
 		\label{section:UC3}
-		\hl{TODO}
+		\hl{Nuova sezione}
+		\hl{TODO: Chiedere se va bene o se è preferibile riportare la descrizione anche in questo contesto}\\
+		Le mansioni rappresentano le attività che un individuo interno all'azienda è abilitato a svolgere.\\
+		L'associazione agli individui e la gestione delle mansioni disponibili è stato eseguito allo stesso modo dei \gls{DPI}\G. \\
+		Per evitare di affaticare la lettura con sezioni ridondanti è stato scelto di riportare soltanto il diagramma dei casi d'uso riguardante i \gls{DPI}\G. Si intende che per le mansioni il diagramma e la spiegazione del caso d'uso sia analogo alla sezione \ref{section:UC2_2} . 
 	\subsection{UC4 Gestione formazioni}
 		\label{section:UC4}
-		\hl{TODO}
+		\hl{Nuova sezione}
+		Con il termine formazione si intende una certificazione relativa ad un corso abilitante ad una o più mansioni.\\
+		La gestione delle formazioni è del tutto simile a quella dei \gls{DPI}\G, fatta eccezione per la gestione delle scadenze. È richiesto infatti che un utente amministratore possa assegnare un periodo di validità della formazione in mesi dal pannello di controllo. Un utente autenticato deve visualizzare un allarme nel momento in cui una formazione sia scaduta.
+	\subsubsection{UC4.1 Gestione delle formazioni dal pannello di amministrazione }
+		\hl{TODO: Chiedere se va bene o se è preferibile riportare la descrizione anche in questo contesto}\\
+		\hl{Nuova sezione}\\
+		Tutte le considerazioni della sezione \ref{section:UC2_2} valgono anche per le formazioni. \\
+		A differenza dei \gls{DPI}\G\ va inserita una informazione aggiuntiva obbligatoria: il periodo di validità della formazione. \\
+		Il diagramma dei casi d'uso è del tutto analogo a quello della  \autoref{fig:UC2_1GestioneDPIAmministrazione}.
+	\subsubsection{UC4.2 Gestione delle formazioni dei dipendenti e del datore di lavoro }
+		\hl{nuova sezione}\\
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=16cm]{Pics/UC4_2GestioneFormazioni.png}
+				\caption{Diagramma dei casi d'uso relativo alla gestione delle formazioni di un dipendente.}
+				\label{fig:UC4_2_Formazioni}
+			\end{center}
+		\end{figure}
+		
+		\begin{itemize}
+			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC4_2_Formazioni}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle formazioni relative ad un qualunque membro dell'azienda. \\ 
+			
+			Un utente autenticato deve poter assegnare o rimuovere formazioni ad ogni dipendente. 
+			Ogni formazione relativa ad un dipendente deve essere dotata rispondere ad un questionario. La scadenza della formazione deve essere segnalata trenta giorni prima della data ultima con un allarme.
+			\item \textbf{Attori Coinvolti:} Utente Autenticato;
+			\item \textbf{Flusso principale degli eventi:} 
+			\begin{itemize}
+				\item \textit{Aggiunta di una formazione ad un membro dell'azienda indicando descrizione e data (UC4.2.1);}
+				\item \textit{Rimozione di una formazione ad un membro dell'azienda(UC4.2.2);}
+				\item \textit{Modifica di una formazione ad un membro dell'azienda(UC4.2.3);}
+				\item \textit{Visualizzazione delle formazioni relative ad un membro dell'azienda(UC4.2.4);}
+				\item \textit{Visualizzazione dell'allarme relativo alla scadenza di una formazione in possesso di un membro dell'azienda (UC4.2.5);}
+				\item \textit{Gestione del questionario relativo ad una formazione in possesso di un membro dell'azienda (UC4.2.6).}
+			\end{itemize}
+		\end{itemize}
+		
+
+		
 	\subsection{UC5 Gestione questionari}
 		\label{section:UC5}	
 		\hl{TODO}
 	\subsection{UC6 Gestione procedure}
 		\label{section:UC6}
-			\begin{figure}[H]
-				\begin{center}
-					\includegraphics[width=12cm]{Pics/UC6GestioneProcedure.png}
-					\caption{Diagramma dei casi d'uso relativo alla gestione delle procedure.}
-					\label{fig:UC6_Procedure}
-				\end{center}
-			\end{figure}
+		\hl{Nuova sezione}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=12cm]{Pics/UC6GestioneProcedure.png}
+				\caption{Diagramma dei casi d'uso relativo alla gestione delle procedure.}
+				\label{fig:UC6_Procedure}
+			\end{center}
+		\end{figure}
 		\hl{TODO}
 	\subsection{UC7 Gestione segnalazioni}
 		\label{section:UC7}	
 		\hl{TODO}
 	\subsection{UC8 Gestione Dispositivi di Protezione Collettivi}
 		\label{section:UC8}
+		\hl{Nuova sezione}
 		\begin{figure}[H]
 			\begin{center}
 				\includegraphics[width=12cm]{Pics/UC8GestioneDispositiviProtezioneCollettivi.png}
@@ -285,9 +355,11 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 		\end{figure}
 		\hl{TODO}
 
+
+% FINE DEGLI USE CASE
+
 \section{Sviluppo}
 \hl{nuova sezione} \\
-\hl{scrivere meglio}
 A partire dalle specifiche fornite dal committente, è stata svolta una accurata analisi per scomporre il questionario di oltre mille domande in questionari di dimensione minore e direttamente correlati alla risorsa di pertinenza.\\
 In particolare sono state oggetto di analisi le seguenti componenti:
 \begin{itemize}
@@ -305,6 +377,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	
 	
 \subsubsection{Refactor della componente: \textit{Figure di sistema}}
+\hl{Nuova sezione}
 	Con figure di sistema si intendono tutte le cariche che hanno la responsabilità di garantire la sicurezza in azienda. \\
 	Come specificato dal testo unico della salute e sicurezza sul lavoro (D.lgs. 81/2008), esse sono: 
 	\begin{itemize}
