@@ -32,7 +32,7 @@ In particolare Ruby on Rails permette nativamente di creare e versionare i datab
 La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord} di Ruby on Rails (descritto nella sezione \ref{sec:ActiveRecord}) il quale salva le informazioni su un database \textit{ PostgreSQL}.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{Pics/architettura.png}
+		\includegraphics[width=16cm]{Pics/architettura.png}
 		\caption{Architettura del sistema}
 		\label{fig:Architettura}
 	\end{center}
@@ -93,9 +93,9 @@ Per far cooperare i due ambienti, è stato implementato un apposito \gls{concern
 
 
 
-
+\newpage
 \subsubsection{Flusso dei dati ed interazione}
-\hl{Sezione nuovissima}
+
  Un aspetto che merita di essere esaminato è il flusso con il quale vengono generate e valutate domande e risposte .
 \begin{figure}[H]
 	\begin{center}
@@ -145,7 +145,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 	\end{itemize}
 	
 	\subsection{Tracciamento Casi d'uso - Requisiti}
-		\hl{TODO}
+		\hl{TODO: Tabella tracciamento Requisiti  - Casi d'uso}
 	\subsection{Caso d'uso UCP - Scenario Principale }
 	\hl{nuova sezione} \\
 	\begin{figure}[H]
@@ -176,7 +176,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 	\end{itemize}
 	
 
-	\subsection{UC1 Gestione Figure di sistema}
+	\subsection{UC1 Gestione delle Figure di sistema}
 	\label{section:UC1}
 	\hl{Nuova sezione}
 	\begin{figure}[H]
@@ -202,7 +202,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 		\end{itemize}
 	\end{itemize}
 		
-	\subsection{UC1.1 Gestione RSPP}
+	\subsection{UC1.1 Gestione degli RSPP}
 	\label{section:UC1_1}
 	\hl{Nuova sezione}
 	Tutte le figure di sistema presentano requisiti analoghi. Per evitare di affaticare la lettura con sezioni ridondanti è stato scelto di riportare soltanto il diagramma dei casi d'uso riguardante gli RSPP. Si intende che per tutte le altre figure di sistema il diagramma sia analogo. 
@@ -214,7 +214,7 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 			\end{center}
 		\end{figure}
 		\begin{itemize}
-			\item \textbf{Scopo:} Il diagramma relativo alla gestione degli RSPP (\autoref{fig:DiagrammaGeneraleCasiDuso}), ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione degli rspp. \\
+			\item \textbf{Scopo:} Il diagramma relativo alla gestione degli RSPP (\autoref{fig:DiagrammaGeneraleCasiDuso}), ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione degli RSPP. \\
 			In particolare un utente che abbia effettuato con successo il login nel sistema, deve poter inserire, rimuovere, modificare  RSPP. Deve essere messo in condizione inoltre di Visualizzare un questionario relativo ad uno specifico RSPP, rispondendo alle domande riportate su di esso. In caso di errore, deve essere sollevato un allarme che comunica la domanda esatta ed un messaggio esplicativo.
 			\item \textbf{Attori Coinvolti:} Utente Autenticato;
 			\item \textbf{Flusso principale degli eventi:} 
@@ -222,13 +222,13 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 				\item \textit{L'utente autenticato inserisce un RSPP (UC1.1.1);}
 				\item \textit{L'utente autenticato modifica un RSPP(UC1.1.2);}
 				\item \textit{L'utente autenticato rimuove un RSPP (UC1.1.3);}
-				\item \textit{L'utente autenticato viualizza il questionario associato ad un RSPP (UC1.1.4);}
+				\item \textit{L'utente autenticato visualizza il questionario associato ad un RSPP (UC1.1.4);}
 				\item \textit{L'utente autenticato inserisce una risposta ad una domanda del questionario (UC1.1.5);}
 				\item \textit{L'utente autenticato modifica di una risposta ad una domanda del questionario relativo ad un RSPP (UC1.1.6);}
 				\item \textit{ L'utente autenticato visualizza un allarme relativo ad una risposta errata ad una domanda del questionario (UC1.1.7).}
 			\end{itemize}
 		\end{itemize}
-			
+	\newpage	
 	\subsection{UC2 Gestione dei Dispositivi di Protezione Individuale (DPI)}
 		\label{section:UC2}
 		\hl{Nuova sezione}
@@ -240,23 +240,24 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 			\hl{Nuova sezione}
 			\begin{figure}[H]
 				\begin{center}
-					\includegraphics[width=10cm]{Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministrazione.png}
+					\includegraphics[width=12cm]{Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministrazione.png}
 					\caption{
 						Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.}
 					\label{fig:UC2_1GestioneDPIAmministrazione}
 				\end{center}
 			\end{figure}
 			\begin{itemize}
-				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC2_1GestioneDPIAmministrazione}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle tipologie dei \gls{DPI}\G\. \\ Un utente amministratore deve poter gestire in modo autonomo e mettere a disposizione degli utilizzatori del sistema le tipologie di \gls{DPI}\G\ che ritiene più opportune.
+				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC2_1GestioneDPIAmministrazione}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle tipologie dei \gls{DPI}\G.
+				 \\ Un utente amministratore deve poter gestire in modo autonomo le tipologie di \gls{DPI}\G\ che ritiene più opportune e metterle a disposizione degli utilizzatori del sistema.
 				\item \textbf{Attori Coinvolti:} Utente Amministratore;
 				\item \textbf{Flusso principale degli eventi:} 
 				\begin{itemize}
 					\item \textit{L'utente amministratore inserisce una tipologia di \gls{DPI}\G\ (UC2.1.1);}
 					\item \textit{L'utente amministratore rimuove una tipologia di \gls{DPI}\G\ (UC2.1.2);}
-					\item \textit{L'utente amministratore modifica una tipologia di \gls{DPI}\G\ (UC2.1.3).}
+					\item \textit{L'utente amministratore modifica una tipologia di \gls{DPI}\G\ (UC2.1.3);}
+					\item \textit{L'utente amministratore visualizza tutte le tipologie di \gls{DPI}\G\ (UC2.1.3).}
 				\end{itemize}
 			\end{itemize}
-		
 		\subsubsection{UC2.2 Gestione dei DPI assegnati ai dipendenti}
 		\hl{Nuova sezione}
 			\label{section:UC2_2}
@@ -276,31 +277,33 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 				\begin{itemize}
 					\item \textit{L'utente autenticato aggiunge un \gls{DPI}\G\ alla dotazione di un dipendente (UC2.2.1);}
 					\item \textit{L'utente autenticato rimuove un \gls{DPI}\G\ dalla dotazione di un dipendente  (UC2.2.2);}
-					\item \textit{L'utente autenticato gestisce il questionario relativo ad un \gls{DPI}\G\ assegnato ad un dipendente (UC2.2.3).}
+					\item \textit{L'utente autenticato gestisce il questionario relativo ad un \gls{DPI}\G\ assegnato ad un dipendente (UC2.2.3);}
+					\item \textit{L'utente autenticato visualizza tutti i \gls{DPI}\G\ assegnati ad un dipendente (UC2.2.4).}
 				\end{itemize}
 			\end{itemize}
-			
-	\subsection{UC3 Gestione  mansioni}
+	\newpage		
+	\subsection{UC3 Gestione  delle mansioni}
 		\label{section:UC3}
-		\hl{Nuova sezione}
-		\hl{TODO: Chiedere se va bene o se è preferibile riportare la descrizione anche in questo contesto}\\
+		\hl{Nuova sezione}\\
+		\hl{Va bene un approccio di questo tipo oppure è preferibile riportare la descrizione anche in contesti come questo?}\\
 		Le mansioni rappresentano le attività che un individuo interno all'azienda è abilitato a svolgere.\\
 		L'associazione agli individui e la gestione delle mansioni disponibili è stato eseguito allo stesso modo dei \gls{DPI}\G. \\
 		Per evitare di affaticare la lettura con sezioni ridondanti è stato scelto di riportare soltanto il diagramma dei casi d'uso riguardante i \gls{DPI}\G. Si intende che per le mansioni il diagramma e la spiegazione del caso d'uso sia analogo alla sezione \ref{section:UC2_2}.
-		 
-	\subsection{UC4 Gestione formazioni}
+	
+	\newpage 
+	\subsection{UC4 Gestione delle formazioni}
 		\label{section:UC4}
 		\hl{Nuova sezione}
 		Con il termine formazione si intende una certificazione relativa ad un corso abilitante ad una o più mansioni.\\
 		La gestione delle formazioni è del tutto simile a quella dei \gls{DPI}\G, fatta eccezione per la gestione delle scadenze. È richiesto infatti che un utente amministratore possa assegnare un periodo di validità della formazione in mesi dal pannello di controllo. Un utente autenticato deve visualizzare un allarme nel momento in cui una formazione sia scaduta.
 		
 	\subsubsection{UC4.1 Gestione delle formazioni dal pannello di amministrazione }
-		\hl{TODO: Chiedere se va bene o se è preferibile riportare la descrizione anche in questo contesto}\\
+
 		\hl{Nuova sezione}\\
 		Tutte le considerazioni della sezione \ref{section:UC2_2} valgono anche per le formazioni. \\
 		A differenza dei \gls{DPI}\G\ va inserita una informazione aggiuntiva obbligatoria: il periodo di validità della formazione. \\
 		Il diagramma dei casi d'uso è del tutto analogo a quello della  \autoref{fig:UC2_1GestioneDPIAmministrazione}.
-		
+	
 	\subsubsection{UC4.2 Gestione delle formazioni dei dipendenti e del datore di lavoro }
 		\hl{nuova sezione}\\
 		\begin{figure}[H]
@@ -314,7 +317,8 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 		\begin{itemize}
 			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC4_2_Formazioni}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle formazioni relative ad un qualunque membro dell'azienda. \\ 
 			Un utente autenticato deve poter assegnare o rimuovere formazioni ad ogni dipendente. 
-			Ogni formazione relativa ad un dipendente deve essere dotata rispondere ad un questionario. La scadenza della formazione deve essere segnalata trenta giorni prima della data ultima con un allarme.
+			Ogni formazione relativa ad un dipendente deve essere dotata di un questionario. \\ 
+			La scadenza della formazione deve essere segnalata trenta giorni prima della data ultima mediante un allarme.
 			\item \textbf{Attori Coinvolti:} Utente Autenticato;
 			\item \textbf{Flusso principale degli eventi:} 
 			\begin{itemize}
@@ -323,20 +327,46 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 				\item \textit{L'utente autenticato modifica una formazione ad un membro dell'azienda (UC4.2.3);}
 				\item \textit{L'utente autenticato visualizza le formazioni relative ad un membro dell'azienda (UC4.2.4);}
 				\item \textit{L'utente autenticato visualizza l'allarme relativo alla scadenza di una formazione in possesso di un membro dell'azienda (UC4.2.5);}
-				\item \textit{L'utente autenticato inserisce gestisce il questionario relativo ad una formazione in possesso di un membro dell'azienda (UC4.2.6).}
+				\item \textit{L'utente autenticato gestisce il questionario relativo ad una formazione in possesso di un membro dell'azienda (UC4.2.6).}
 			\end{itemize}
 		\end{itemize}
 		
-		
-	\subsection{UC5 Gestione questionari}
+	\newpage	
+	\subsection{UC5 Gestione dei questionari}
 		\label{section:UC5}	
-		\hl{TODO}
-	\subsection{UC6 Gestione procedure}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=15cm]{Pics/UC5QuestionarioUtenteAutenticato.png}
+					\caption{Diagramma dei casi d'uso relativo alla gestione di un questionario.}
+					\label{fig:UC5_Qestionari}
+				\end{center}
+			\end{figure}
+			
+			\begin{itemize}
+				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC5_Qestionari}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento dei requisiti riguardanti la gestione di un questionario di pertinenza di un utente autenticato. \\ 
+				Gli utenti amministratori devono poter gestire le domande poste nei questionari da un pannello d'amministrazione. Questo aspetto non è stato trattato in dettaglio poiché analogo a quanto descritto nella sezione \ref{section:UC2_1}.
+				\item \textbf{Attori Coinvolti:} Utente Autenticato;
+				\item \textbf{Flusso principale degli eventi:} 
+				\begin{itemize}
+					\item \textit{L'utente autenticato risponde per la prima volta ad una domanda (UC5.1);}
+					\begin{itemize}
+						\item \textit{Viene mostrato un messaggio d'errore se la risposta fornita non è corretta (UC5.4);}
+					\end{itemize}
+					\item \textit{L'utente autenticato modifica una risposta ad una domanda (UC5.2);}
+					\begin{itemize}
+						\item \textit{Viene mostrato un messaggio d'errore se la risposta fornita non è corretta (UC5.4);}
+					\end{itemize}
+					\item \textit{L'utente autenticato visualizza tutte le risposte al questionario (UC5.3). Se è la prima volta che lo apre, le risposte saranno tutte vuote.}
+				\end{itemize}
+			\end{itemize}
+	
+	\newpage		
+	\subsection{UC6 Gestione delle procedure}
 		\label{section:UC6}
 		\hl{Nuova sezione}
 		Le procedure rappresentano un aspetto di primaria importanza e si suddividono in due categorie: di prassi e di sistema. \\
-		Le procedure si prassi derivano direttamente da un documento fornito dall'\gls{INAIL}. Queste procedure sono state individuate dall'analisi delle cause di infortunio maggiormente frequenti rilevate dall'\gls{INAIL} nel tempo allo scopo di migliorare la sicurezza dei lavoratori.
-		Le procedure di sistema, invece, sono stese dall'azienda e fanno parte del \gls{DVR}. 
+		Le procedure si prassi derivano direttamente da un documento fornito dall'\gls{INAIL}\G. Queste procedure sono state individuate dall'analisi delle cause di infortunio maggiormente frequenti rilevate dall'\gls{INAIL}\G nel tempo allo scopo di migliorare la sicurezza dei lavoratori.
+		Le procedure di sistema, invece, sono stese dall'azienda e fanno parte del \gls{DVR}\G. 
 		\begin{figure}[H]
 			\begin{center}
 				\includegraphics[width=12cm]{Pics/UC6GestioneProcedure.png}
@@ -350,18 +380,18 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 				
 				Un utente autenticato deve poter gestire procedure ad ogni dipendente. \\
 				Ogni procedura, di sistema, deve essere dotata di Descrizione, Codifica e informazioni relative alle revisioni delle quali è stata oggetto nel tempo.\\
-				Le procedure di prassi sono state gestite con un questionario (vedi sezione: \ref{section:UC5}) in quanto derivanti direttamente da una lista di domande proveniente dall'\gls{INAIL};
+				Le procedure di prassi sono state gestite con un questionario (vedi sezione: \ref{section:UC5}) in quanto derivanti direttamente da una lista di domande proveniente dall'\gls{INAIL}\G;
 				\item \textbf{Attori Coinvolti:} Utente Autenticato;
 				\item \textbf{Flusso principale degli eventi:} 
 				\begin{itemize}
-					\item \textit{L'utente autenticato gestisce delle procedure di sistema(UC6.1);}
+					\item \textit{L'utente autenticato gestisce le procedure di sistema(UC6.1);}
 					\begin{itemize}
 						\item \textit{L'utente autenticato inserisce una nuova procedura di sistema(UC6.1.1);}
 						\item \textit{L'utente autenticato modifica una procedura di sistema(UC6.1.2);}
 						\item \textit{L'utente autenticato rimuove una procedura di sistema(UC6.1.3);}
 						\item \textit{L'utente autenticato visualizza tutte le procedure di sistema(UC6.1.4).}
 					\end{itemize}
-					\item \textit{L'utente autenticato gestisce delle procedure di prassi (UC6.2);}
+					\item \textit{L'utente autenticato gestisce le procedure di prassi (UC6.2);}
 					\begin{itemize}
 						\item \textit{L'utente autenticato inserisce una nuova procedura di prassi (UC6.2.1);}
 						\item \textit{L'utente autenticato modifica una procedura di prassi (UC6.2.2);}
@@ -370,7 +400,9 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 					\end{itemize}
 				\end{itemize}
 			\end{itemize}
-	\subsection{UC7 Gestione segnalazioni}
+			
+	\newpage
+	\subsection{UC7 Gestione delle segnalazioni}
 		\label{section:UC7}	
 		Le segnalazioni sono delle comunicazioni ufficiali indirizzate all'organo di vigilanza. Esse sono dotate di: descrizione, segnalante, data di comunicazione del segnalante all'alta direzione, data di comunicazione dall'alta direzione all'organo di vigilanza, data di risposta dell'organo di vigilanza al soggetto interessato.\\
 		\begin{figure}[H]
@@ -393,22 +425,43 @@ Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto 
 			\end{itemize}
 		\end{itemize}
 		
-		
-	\subsection{UC8 Gestione Dispositivi di Protezione Collettivi}
+	\newpage	
+	\subsection{UC8 Gestione dei Dispositivi di Protezione Collettivi}
 		\label{section:UC8}
 		\hl{Nuova sezione}
 		\begin{figure}[H]
 			\begin{center}
 				\includegraphics[width=12cm]{Pics/UC8GestioneDispositiviProtezioneCollettivi.png}
 				\caption{Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).}
-				\label{fig:UC2_DPC}
+				\label{fig:UC8_DPC}
 			\end{center}
 		\end{figure}
-		\hl{TODO}
+		
+		\begin{itemize}
+			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC8_DPC}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione dei \gls{DPC}\G\ all'interno dell'azienda. \\ 
+			\item \textbf{Attori Coinvolti:} Utente Autenticato;
+			\item \textbf{Flusso principale degli eventi:} 
+			\begin{itemize}
+				\item \textit{L'utente autenticato gestisce gli estintori(UC8.1);}
+				\begin{itemize}
+					\item \textit{L'utente autenticato inserisce un nuovo estintore (UC8.1.1);}
+					\item \textit{L'utente autenticato modifica un estintore(UC8.1.2);}
+					\item \textit{L'utente autenticato rimuove un estintore (UC8.1.3);}
+					\item \textit{L'utente autenticato visualizza tutti gli estintori (UC8.1.4).}
+				\end{itemize}
+				\item \textit{L'utente autenticato gestisce le cassette di primo soccorso (UC8.2);}
+				\begin{itemize}
+					\item \textit{L'utente autenticato inserisce una nuova cassetta di primo soccorso (UC8.2.1);}
+					\item \textit{L'utente autenticato modifica una cassetta di primo soccorso (UC8.2.2);}
+					\item \textit{L'utente autenticato rimuove una cassetta di primo soccorso (UC8.2.3);}
+					\item \textit{L'utente autenticato visualizza tutte le cassette di primo soccorso (UC8.2.4).}
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
 
 
 % FINE DEGLI USE CASE
-
+\cleardoublepage
 \section{Sviluppo}
 \hl{nuova sezione} \\
 A partire dalle specifiche fornite dal committente, è stata svolta una accurata analisi per scomporre il questionario di oltre mille domande in questionari di dimensione minore e direttamente correlati alla risorsa di pertinenza.\\
@@ -428,7 +481,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	
 	
 \subsubsection{Refactor della componente: \textit{Figure di sistema}}
-\hl{Nuova sezione}
+\hl{Nuova sezione}\\
 	Con figure di sistema si intendono tutte le cariche che hanno la responsabilità di garantire la sicurezza in azienda. \\
 	Come specificato dal testo unico della salute e sicurezza sul lavoro (D.lgs. 81/2008), esse sono: 
 	\begin{itemize}
@@ -442,43 +495,54 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	\end{itemize}
 	L'operato delle figure sopra elencate deve essere supervisionato da un \textit{Organo di vigilanza}.
 
-	\paragraph*{Situazione precedente al refactor} 
+	\paragraph*{Situazione precedente al refactor} \mbox{} \\
 	
 	La situazione iniziale prevedeva che la classe \textit{Individual} avesse  un attributo booleano per ogni tipologia di figura di sistema. \\
 	Si è reso necessario un refactor dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
-	Un esempio è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione può verificarsi se i due cantieri sono allocati nello stesso periodo ma nel primo si lavora il mattino, mentre nel secondo di pomeriggio.\\
+	Un esempio di tale problema è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione si può verificare se i due cantieri sono allocati nello stesso periodo e nel primo si lavora il mattino, mentre nel secondo di pomeriggio oppure a giorni alterni.\\
+	I questionari relativi a a tutte le figure di sistema erano presentati in una pagina contenente tutte le domande. I problemi che tale soluzione procurava erano sostanzialmente due: era possibile gestire al più un individuo per ogni ruolo e le domande a cui rispondere in una sola sezione erano più di centocinquanta.
 	
-	\paragraph*{Requisiti}
-		
+	\paragraph*{Requisiti}\mbox{} \\
 	Erano posti come requisiti l'inserimento, modifica e cancellazione di tutte le figure di sistema. Era inoltre richiesto che venisse predisposto un questionario per ogni tipologia di figura di sistema. \\
 	Ad ogni domanda deve essere possibile dare una risposta che, se non conforme alle norme vigenti, deve segnalare la situazione con un allarme.\\
-	
 	Il diagramma dei casi d'uso per ogni figura di sistema è riconducibile a quello relativo agli RSPP (vedi  \autoref{fig:UC1_1RSPP}).
-	\hl{inserire screen nuova versione}
-	
-	
-	\paragraph{Modifiche apportate}
-	
-	
-	
-	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\	Questo approccio si è rivelato molto vantaggioso perché ha permesso di associare ogni classe rappresentante un ruolo, alle formazioni minime che un individuo deve possedere per poter ricoprire quella carica. \\
-	Questa soluzione (\autoref{fig:DiagrammaDelleClassiIndividualRoles}) soddisfa appieno tutti ri requisiti.
-	
+
+	\paragraph*{Modifiche apportate}\mbox{} \\
+	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\
+	Questo approccio si è rivelato molto vantaggioso perché ha permesso di associare ogni classe rappresentante un ruolo, alle formazioni minime che un individuo deve possedere per poter ricoprire quella carica. \\
+	Questa soluzione (\autoref{fig:DiagrammaDelleClassiIndividualRoles}) soddisfa appieno tutti ri requisiti.\\
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=14cm]{Pics/UMLClassiFigureDiSistema.png}
+				\includegraphics[width=12cm]{Pics/UMLClassiFigureDiSistema.png}
 				\caption{
 					Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.}
 				\label{fig:DiagrammaDelleClassiIndividualRoles}
 			\end{center}
 		\end{figure}
-	
-	\hl{TODO MODIFICARE DIAGRAMMA DELLE CLASSI-> ROLE, NON ROLES, Utente Loggato}
-	
+	Obiettivo primario del refactor è stato centralizzare tutte le informazioni relative alle figure di sistema ed i loro questionari in un unica sezione. 
+	La schermata presente nella  \autoref{fig:ScreenPrincipaleFigureDiSistema} vuole rappresentare il risultato del lavoro svolto per le figure riguardanti l'azienda. \\
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=12cm]{Pics/ScreenFigureDiSistemaProspetto.png}
+				\caption{
+					Schermata iniziale della sezione \textit{Figure di sistema}.}
+				\label{fig:ScreenPrincipaleFigureDiSistema}
+			\end{center}
+		\end{figure}
+	È stato implementato inoltre un pannello dedicato alla gestione delle figure impiegate in specifiche sedi o cantieri. In questo modo è sempre possibile allocare gli individui nei luoghi d'interesse senza vincoli di molteplicità.\\
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/ScreenfigureDiCantiere.png}
+			\caption{
+				Schermata iniziale della sezione \textit{Pannnello di gestione delle figure impegnate in sedi e cantieri.}.}
+			\label{fig:ScreenPrincipaleFigureSediCantieri}
+		\end{center}
+	\end{figure}
+
 	Per facilitare l'inserimento delle informazioni relative alla selezione dei dipendenti, è stata utilizzata la libreria \textit{Selectize.js} per rendere i form più gradevoli dal punto di vista grafico e per permettere l'autocompletamento (vedi \autoref{fig:ScreenOrganodiVigilanza} ). \\ 
 	Una criticità si è presentata nell'inserimento dinamico delle figure che possono essere presenti con molteplicità maggiore di uno. In particolare gli RSPP e gli ASPP presentano l'ulteriore complicazione rappresentata dal fatto che possono essere sia membri interni all'azienda, sia esterni. \\
 	In entrambi i casi, la situazione è stata gestita mediante chiamate \gls{Ajax}, evitando quindi di dover ricaricare la pagina ad ogni inserimento e generando un record della classe \textit{Individual}  identificato da un particolare flag (\texttt{is\_external}) nel caso si tratti di una figura esterna all'azienda.\\
-	
+	\newpage
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=12cm]{Pics/screen_organo_di_vigianza_con_autocompletamento.png}
@@ -507,22 +571,27 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 
 	Facendo Riferimento alla \autoref{fig:ScreenRSPP} e  supponendo che \textit{Aldo Bianchi} non sia attualmente presente nel database, alla pressione del tasto invio verrà generato un nuovo \textit{Individual} relativo ad \textit{Aldo Bianchi}. Successivamente verrà generato un questionario con le domande relative agli RSPP in relazione ad \textit{Aldo Bianchi}.
 	
+\newpage
 \subsubsection{Refactor della componente: \textit{Dispositivi di protezione individuale}}
+\newpage
 \subsubsection{Refactor della componente: \textit{Mansioni e formazioni correlate}}
-\subsection{Refactor della componente: \textit{Questionari}}
+\newpage
+\subsubsection{Refactor della componente: \textit{Questionari}}
 
-
+\newpage
 \subsection{Nuove componenti}
 \subsubsection{\textit{Segnalazioni}}
 %parlare del fatto che sono ufficiali e che sollevano il segnalante dalla responsabilità se era sua
 	\paragraph{Requisiti}
 	\paragraph{Progettazione}
 	\paragraph{Criticità incontrate}
+\newpage
 \subsubsection{\textit{Procedure}}
 	\paragraph{Requisiti}
 	\paragraph{Progettazione}
 	\paragraph{Criticità incontrate}
 		%più controller e viste associate allo stessa categoria, uno ha il modello l'altro il questionario
+\newpage
 \subsubsection{\textit{Dispositivi di protezione collettivi}}
 	\paragraph{Requisiti}
 	\paragraph{Progettazione}
@@ -530,8 +599,10 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 		%remote true
 		
 
-
+\newpage
 \subsection{Regole Drools}
-	
+
+\newpage
 \section{Verifica e validazione}
+\newpage
 \section{Considerazioni finali}
