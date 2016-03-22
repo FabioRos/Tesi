@@ -17,87 +17,84 @@
 \contentsline {subsection}{\numberline {2.1}Il prodotto esistente}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Obiettivi dello stage}{5}{subsection.2.2}
 \contentsline {section}{\numberline {3}Pianificazione del lavoro}{7}{section.3}
-\contentsline {section}{\numberline {4}Tecnologie e strumenti}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Git}{9}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}\texttt {git-flow}}{9}{subsubsection.4.1.1}
-\contentsline {paragraph}{Vantaggi}{10}{section*.15}
-\contentsline {paragraph}{Svantaggi}{10}{section*.16}
-\contentsline {subsection}{\numberline {4.2}Rubymine}{10}{subsection.4.2}
-\contentsline {paragraph}{Vantaggi}{10}{section*.18}
-\contentsline {paragraph}{Svantaggi}{10}{section*.19}
-\contentsline {subsection}{\numberline {4.3}Ruby on Rails}{11}{subsection.4.3}
-\contentsline {paragraph}{Vantaggi}{11}{section*.20}
-\contentsline {paragraph}{Svantaggi}{11}{section*.21}
-\contentsline {subsubsection}{\numberline {4.3.1}ActiveRecord}{11}{subsubsection.4.3.1}
-\contentsline {paragraph}{Vantaggi}{11}{section*.22}
-\contentsline {paragraph}{Svantaggi}{11}{section*.23}
-\contentsline {subsubsection}{\numberline {4.3.2}ActiveAdmin}{12}{subsubsection.4.3.2}
-\contentsline {paragraph}{Vantaggi}{12}{section*.25}
-\contentsline {paragraph}{Svantaggi}{12}{section*.26}
-\contentsline {subsubsection}{\numberline {4.3.3}I18n}{12}{subsubsection.4.3.3}
-\contentsline {paragraph}{Vantaggi}{12}{section*.28}
-\contentsline {paragraph}{Svantaggi}{13}{section*.29}
-\contentsline {subsection}{\numberline {4.4}JRuby}{13}{subsection.4.4}
-\contentsline {paragraph}{Vantaggi}{13}{section*.31}
-\contentsline {paragraph}{Svantaggi}{13}{section*.32}
-\contentsline {subsection}{\numberline {4.5}Drools}{13}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Architettura}{14}{subsubsection.4.5.1}
-\contentsline {paragraph}{Vantaggi}{14}{section*.35}
-\contentsline {paragraph}{Svantaggi}{15}{section*.36}
-\contentsline {subsection}{\numberline {4.6}Foundation}{15}{subsection.4.6}
-\contentsline {paragraph}{Vantaggi}{15}{section*.38}
-\contentsline {paragraph}{Svantaggi}{16}{section*.40}
-\contentsline {subsection}{\numberline {4.7}jQuery}{16}{subsection.4.7}
-\contentsline {paragraph}{Vantaggi}{16}{section*.42}
-\contentsline {paragraph}{Svantaggi}{16}{section*.43}
-\contentsline {section}{\numberline {5}Analisi del prodotto esistente}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Architettura del software}{17}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Architettura ad alto livello}{17}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Architettura a basso livello}{18}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Integrazione tra Ruby on Rails e Drools}{20}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Flusso dei dati ed interazione}{21}{subsubsection.5.1.4}
-\contentsline {section}{\numberline {6}Definizione dei casi d'uso}{23}{section.6}
-\contentsline {subsection}{\numberline {6.1}Legenda}{23}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Tracciamento Casi d'uso - Requisiti}{23}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Caso d'uso UCP - Scenario Principale }{23}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}UC1 Gestione delle Figure di sistema}{24}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}UC1.1 Gestione degli RSPP}{25}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}UC2 Gestione dei Dispositivi di Protezione Individuale (DPI)}{27}{subsection.6.6}
-\contentsline {subsubsection}{\numberline {6.6.1}UC2.1 Gestione delle tipologie di DPI dal pannello di amministrazione }{27}{subsubsection.6.6.1}
-\contentsline {subsubsection}{\numberline {6.6.2}UC2.2 Gestione dei DPI assegnati ai dipendenti}{28}{subsubsection.6.6.2}
-\contentsline {subsection}{\numberline {6.7}UC3 Gestione delle mansioni}{29}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}UC4 Gestione delle formazioni}{30}{subsection.6.8}
-\contentsline {subsubsection}{\numberline {6.8.1}UC4.1 Gestione delle formazioni dal pannello di amministrazione }{30}{subsubsection.6.8.1}
-\contentsline {subsubsection}{\numberline {6.8.2}UC4.2 Gestione delle formazioni dei dipendenti e del datore di lavoro }{30}{subsubsection.6.8.2}
-\contentsline {subsection}{\numberline {6.9}UC5 Gestione dei questionari}{32}{subsection.6.9}
-\contentsline {subsection}{\numberline {6.10}UC6 Gestione delle procedure}{33}{subsection.6.10}
-\contentsline {subsection}{\numberline {6.11}UC7 Gestione delle segnalazioni}{34}{subsection.6.11}
-\contentsline {subsection}{\numberline {6.12}UC8 Gestione dei Dispositivi di Protezione Collettivi}{35}{subsection.6.12}
-\contentsline {section}{\numberline {7}Sviluppo}{37}{section.7}
-\contentsline {subsection}{\numberline {7.1}Refactor delle componenti esistenti}{37}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Refactor della componente: \textit {Figure di sistema}}{37}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Refactor della componente: \textit {Dispositivi di protezione individuale}}{42}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}Refactor della componente: \textit {Mansioni e formazioni correlate}}{43}{subsubsection.7.1.3}
-\contentsline {subsubsection}{\numberline {7.1.4}Refactor della componente: \textit {Questionari}}{44}{subsubsection.7.1.4}
-\contentsline {subsection}{\numberline {7.2}Nuove componenti}{45}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}\textit {Segnalazioni}}{45}{subsubsection.7.2.1}
-\contentsline {paragraph}{Requisiti}{45}{section*.66}
-\contentsline {paragraph}{Progettazione}{45}{section*.67}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{45}{section*.68}
-\contentsline {subsubsection}{\numberline {7.2.2}\textit {Procedure}}{46}{subsubsection.7.2.2}
-\contentsline {paragraph}{Requisiti}{46}{section*.69}
-\contentsline {paragraph}{Progettazione}{46}{section*.70}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{46}{section*.71}
-\contentsline {subsubsection}{\numberline {7.2.3}\textit {Dispositivi di protezione collettivi}}{47}{subsubsection.7.2.3}
-\contentsline {paragraph}{Requisiti}{47}{section*.72}
-\contentsline {paragraph}{Progettazione}{47}{section*.73}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{47}{section*.74}
-\contentsline {subsection}{\numberline {7.3}Regole Drools}{48}{subsection.7.3}
-\contentsline {section}{\numberline {8}Verifica e validazione}{49}{section.8}
-\contentsline {section}{\numberline {9}Considerazioni finali}{50}{section.9}
-\contentsline {section}{\numberline {A}Migrazioni}{51}{appendix.Alph1}
-\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{53}{appendix.Alph2}
-\contentsline {section}{\numberline {C}Sistemi Esperti}{55}{appendix.Alph3}
-\contentsline {section}{\numberline {D}Algoritmo RETE}{57}{appendix.Alph4}
-\contentsline {section}{Glossario}{59}{section*.76}
-\contentsline {section}{Riferimenti bibliografici}{60}{section*.77}
+\contentsline {section}{\numberline {4}Analisi dei requisiti}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Requisiti}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Definizione dei casi d'uso}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Legenda}{11}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Caso d'uso UCP - Scenario Principale }{11}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}UC1 Gestione delle Figure di sistema}{12}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}UC1.1 Gestione degli RSPP}{13}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}UC2 Gestione dei DPI}{15}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}UC3 Gestione delle mansioni}{17}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}UC4 Gestione delle formazioni}{18}{subsubsection.4.2.7}
+\contentsline {subsubsection}{\numberline {4.2.8}UC5 Gestione dei questionari}{20}{subsubsection.4.2.8}
+\contentsline {subsubsection}{\numberline {4.2.9}UC6 Gestione delle procedure}{21}{subsubsection.4.2.9}
+\contentsline {subsubsection}{\numberline {4.2.10}UC7 Gestione delle segnalazioni}{22}{subsubsection.4.2.10}
+\contentsline {subsubsection}{\numberline {4.2.11}UC8 Gestione dei Dispositivi di Protezione Collettivi}{23}{subsubsection.4.2.11}
+\contentsline {section}{\numberline {5}Tecnologie e strumenti}{25}{section.5}
+\contentsline {subsection}{\numberline {5.1}Git}{25}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}\texttt {git-flow}}{25}{subsubsection.5.1.1}
+\contentsline {paragraph}{Vantaggi}{26}{section*.29}
+\contentsline {paragraph}{Svantaggi}{26}{section*.30}
+\contentsline {subsection}{\numberline {5.2}Rubymine}{26}{subsection.5.2}
+\contentsline {paragraph}{Vantaggi}{26}{section*.32}
+\contentsline {paragraph}{Svantaggi}{26}{section*.33}
+\contentsline {subsection}{\numberline {5.3}Ruby on Rails}{27}{subsection.5.3}
+\contentsline {paragraph}{Vantaggi}{27}{section*.34}
+\contentsline {paragraph}{Svantaggi}{27}{section*.35}
+\contentsline {subsubsection}{\numberline {5.3.1}ActiveRecord}{27}{subsubsection.5.3.1}
+\contentsline {paragraph}{Vantaggi}{27}{section*.36}
+\contentsline {paragraph}{Svantaggi}{27}{section*.37}
+\contentsline {subsubsection}{\numberline {5.3.2}ActiveAdmin}{28}{subsubsection.5.3.2}
+\contentsline {paragraph}{Vantaggi}{28}{section*.39}
+\contentsline {paragraph}{Svantaggi}{28}{section*.40}
+\contentsline {subsubsection}{\numberline {5.3.3}I18n}{28}{subsubsection.5.3.3}
+\contentsline {paragraph}{Vantaggi}{28}{section*.42}
+\contentsline {paragraph}{Svantaggi}{29}{section*.43}
+\contentsline {subsection}{\numberline {5.4}JRuby}{29}{subsection.5.4}
+\contentsline {paragraph}{Vantaggi}{29}{section*.45}
+\contentsline {paragraph}{Svantaggi}{29}{section*.46}
+\contentsline {subsection}{\numberline {5.5}Drools}{29}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Architettura}{30}{subsubsection.5.5.1}
+\contentsline {paragraph}{Vantaggi}{30}{section*.49}
+\contentsline {paragraph}{Svantaggi}{31}{section*.50}
+\contentsline {subsection}{\numberline {5.6}Foundation}{31}{subsection.5.6}
+\contentsline {paragraph}{Vantaggi}{31}{section*.52}
+\contentsline {paragraph}{Svantaggi}{32}{section*.54}
+\contentsline {subsection}{\numberline {5.7}jQuery}{32}{subsection.5.7}
+\contentsline {paragraph}{Vantaggi}{32}{section*.56}
+\contentsline {paragraph}{Svantaggi}{32}{section*.57}
+\contentsline {section}{\numberline {6}Analisi del prodotto esistente}{33}{section.6}
+\contentsline {subsection}{\numberline {6.1}Architettura del software}{33}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Architettura ad alto livello}{33}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Architettura a basso livello}{34}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Integrazione tra Ruby on Rails e Drools}{36}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Flusso dei dati ed interazione}{37}{subsubsection.6.1.4}
+\contentsline {section}{\numberline {7}Sviluppo}{39}{section.7}
+\contentsline {subsection}{\numberline {7.1}Riprogettazione delle componenti esistenti}{39}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Riprogettazione della componente: \textit {Figure di sistema}}{39}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Riprogettazione della componente: \textit {Dispositivi di protezione individuale}}{44}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Riprogettazione della componente: \textit {Mansioni e formazioni correlate}}{45}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.4}Riprogettazione della componente: \textit {Questionari}}{46}{subsubsection.7.1.4}
+\contentsline {subsection}{\numberline {7.2}Nuove componenti}{47}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}\textit {Segnalazioni}}{47}{subsubsection.7.2.1}
+\contentsline {paragraph}{Requisiti}{47}{section*.70}
+\contentsline {paragraph}{Progettazione}{47}{section*.71}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{47}{section*.72}
+\contentsline {subsubsection}{\numberline {7.2.2}\textit {Procedure}}{48}{subsubsection.7.2.2}
+\contentsline {paragraph}{Requisiti}{48}{section*.73}
+\contentsline {paragraph}{Progettazione}{48}{section*.74}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{48}{section*.75}
+\contentsline {subsubsection}{\numberline {7.2.3}\textit {Dispositivi di protezione collettivi}}{49}{subsubsection.7.2.3}
+\contentsline {paragraph}{Requisiti}{49}{section*.76}
+\contentsline {paragraph}{Progettazione}{49}{section*.77}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{49}{section*.78}
+\contentsline {subsection}{\numberline {7.3}Regole Drools}{50}{subsection.7.3}
+\contentsline {section}{\numberline {8}Verifica e validazione}{51}{section.8}
+\contentsline {section}{\numberline {9}Considerazioni finali}{52}{section.9}
+\contentsline {section}{\numberline {A}Migrazioni}{53}{appendix.Alph1}
+\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{55}{appendix.Alph2}
+\contentsline {section}{\numberline {C}Sistemi Esperti}{57}{appendix.Alph3}
+\contentsline {section}{\numberline {D}Algoritmo RETE}{59}{appendix.Alph4}
+\contentsline {section}{Glossario}{61}{section*.80}
+\contentsline {section}{Riferimenti bibliografici}{62}{section*.81}
