@@ -1,142 +1,5 @@
-\section{Analisi del prodotto esistente}
+\section{Progettazione e codifica}
 
-Al momento dell'arrivo in azienda era già presente una versione alpha del software. \\
-Le aziende che il prodotto si prefigge di supportare in questa fase, sono quelle con i codici \gls{ATECO}\G\ in ambito edilizio. In particolare, al mio arrivo erano gestite le informazioni relative a:
-\begin{itemize}
-	\item Sedi;
-	\item Cantieri;
-	\item Dipendenti;
-	\item Organigramma aziendale;
-	\item Abitabilità;
-	\item Certificato di prevenzione degli incendi;
-	\item \gls{DVR}\G\ e documentazione collaterale ad esso.
-\end{itemize}
-Il software esponeva una collezione di oltre 400 domande. Sulla base delle risposte a queste domande ed alle informazioni relative alle entità sopra indicate, venivano verificati alcuni vincoli mediante regole del sistema esperto.
-
-\subsection{Architettura del software}
-\subsubsection{Architettura ad alto livello}
-Il software è gestito mediante tecnologia \gls{SaaS}\G, un modello di distribuzione del software applicativo dove il fornitore del software si occupa della sua implementazione e manutenzione. Il servizio viene erogato al cliente mediante una applicazione web fruibile via internet. \\ 
-L'applicazione web risiede fisicamente su una macchina virtuale della piattaforma cloud \gls{AWS}\G, al fine di evitare oneri e spese di gestione di una infrastruttura informatica dedicata e garantire la scalabilità del servizio.\\
-
-Come è possibile osservare nella \autoref{fig:Architettura}, ogni istanza di macchina virtuale contiene un clone dell'intera architettura. È stata scelta questa soluzione perché è prevista la possibilità di vendere il pacchetto a più utenti che possono fungere da distributori.\\
-Ogni istanza è composta da quattro componenti principali:
-\begin{itemize}
-	\item \textit{Rule Engine;}
-	\item \textit{Database;}
-	\item \textit{Web Application;}
-	\item \textit{Storage.}
-\end{itemize}
-La componente \textit{Storage}, in particolare, è stata dedicata al salvataggio di documenti in formato PDF esportabili in ogni momento da ogni azienda. Questa funzionalità non è ancora stata implementata. \\
-Il routing delle richieste viene effettuato con un \gls{reverse proxy}\G, nello specifico \textit{NGINX}. \\
-In particolare Ruby on Rails permette nativamente di creare e versionare i database a seconda dell'ambiente nel quale si opera (\textit{development, test, staging e production}). Questa caratteristica è tornata molto utile per lo sviluppo, dal momento che è stato possibile fare test accurati senza intaccare i dati in produzione. Inoltre ciò rende possibile evitare di utilizzare la console in sandbox di Rails, la quale presenta criticità nella consistenza dei dati visibili da shell ripetto a quelli visibili da \gls{browser}\G. \\
-La persistenza dei dati è stata gestita mediante il modulo \texttt{ActiveRecord} di Ruby on Rails (descritto nella sezione \ref{sec:ActiveRecord}) il quale salva le informazioni su un database \textit{ PostgreSQL}.
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=16cm]{Pics/architettura.png}
-		\caption{Architettura del sistema}
-		\label{fig:Architettura}
-	\end{center}
-\end{figure}
-
-\subsubsection{Architettura a basso livello}
-L'applicazione web è organizzata secondo il pattern \gls{MVC}\G. Per il raggiungimento delle viste e l'accesso alle informazioni necessarie al corretto funzionamento dell'applicazione è stata implementata una interfaccia \gls{REST}\G. \\
-Il sistema ha come entità principale il modello \texttt{Company} al quale sono riferite, direttamente o indirettamente, tutte le risorse.\\ 
-Sono poi presenti numerosi modelli relativi alle entità che partecipano alla procedura di \gls{asseverazione}\G.
-I modelli più significativi sono:
-\begin{itemize} 
-	\item \texttt{Alert} per rappresentare gli allarmi;
-	\item \texttt{Answer} per rappresentare le risposte alle domande;
-	\item \texttt{Company} per rappresentare una azienda;
-	\item \texttt{ConstructionSite} per rappresentare un cantiere;
-	\item \texttt{Dpi} per rappresentare un dispositivo di protezione individuale;
-	\item \texttt{Duty} per rappresentare una mansione;
-	\item \texttt{FireExtinguisher}  per rappresentare un estintore;
-	\item \texttt{FirstAidBox} per rappresentare una cassetta di primo soccorso;
-	\item \texttt{Individual} per rappresentare una persona;
-	\item \texttt{Location} per rappresentare un edificio aziendale, ovvero una sede operativa, una sede amministrativa, una sede legale oppure un magazzino;
-	\item \texttt{Machine, LiftingEquipment, ElectricTool}  per rappresentare un mezzo oppure uno strumento presente nel parco macchine;
-	\item \texttt{MedicalVisit} per rappresentare una visita medica;
-	\item \texttt{Procedure} per rappresentare una procedura aziendale, sia essa di prassi o di sistema;
-	\item \texttt{Question} per rappresentare una domanda;
-	\item \texttt{Training} per rappresentare un corso.
-\end{itemize}	
-Per ciascun modello, sono stati realizzati opportuni \textit{controller} e \textit{viste}. \\
-Sono stati implementati, inoltre numerosi \gls{concern}\G\ per modularizzare le funzionalità indipendenti dalla singola classe ed allo stesso tempo riutilizzabili da altre classi. Ad esempio, ogni modello che, se istanziato, provoca un aumento del numero delle domande in attesa di risposta, include un apposito \gls{concern}\G\ per l'aggiornamento di un contatore dedicato a tale scopo. Per il calcolo del valore, il \gls{concern}\G\ ricava il nome della classe dell'oggetto corrente mediante \gls{reflection}\G\ ed incrementa automaticamente il valore del numero di domande correlate al tipo individuato.\\
-
-\paragraph*{Relazioni tra domande, risposte ed allarmi}\mbox{} \\
-Le risposte sono direttamente collegate alle domande ed ad una entità. Quando un utente risponde ad una domanda, viene aggiornato il recod relativo a quella risposta. A seguito di un inserimento o aggiornamento di una risposta, interviene Drools che valuta se le informazioni inserite rispettano tutti i vincoli previsti, altrimenti viene sollevato un allarme. \\ Per questioni di efficienza, gli allarmi relativi al vincolo di presenza  di una risposta, vengono gestiti direttamente dalle funzionalità di validazione di Rails.\\
-Come per le answer, anche gli allarmi sono sempre collegati ad una risorsa, che di default è l'azienda corrente, ma può assumere come valore una qualsiasi istanza di un modello, purché non sia nulla.
-Particolarmente degna di nota è l'associazione di una risposta o di un \textit{allarme} alla relativa risorsa. Per fare ciò si è utilizzato l'approccio standard di Rails per il supporto alle associazioni polimorfe. \\  Come si può vedere da  \autoref{fig:DiagrammaClassiAssociazioniPolimorfe}, indicando il tipo e l'id della risorsa interessata, l'accesso avviene tramite valutazione della classe e ricerca del relativo \textit{id}. \\
-Si può pensare, ad esempio, all'allarme scatenato alla scadenza di un estintore. \\
-La Risposta (\textit{Answer}) avrà i due campi \texttt{answerable\_type} ed \texttt{answerable\_id} impostati rispettivamente a \textit{"FireExtinguisher"} ed al suo \textit{id}.  L'allarme avrà un riferimento alla domanda per la quale è stata data una risposta. In questo modo è possibile conoscere il punto esatto dove dirottare l'utente al click sull'allarme per raggiungere il punto di non conformità. Questo aspetto è stato considerato di fondamentale importanza poiché la mole delle informazioni nel software è molto grande, è quindi necessario fornire il maggior numero di strumenti possibili all'utente per facilitarne la navigazione e l'orientamento nel sistema.
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=14cm]{Pics/diagramma_classi_associazioni_polimorfe.png}
-		\caption{Diagramma delle classi delle associazioni polimorfe di Risposte ed Allarmi.}
-		\label{fig:DiagrammaClassiAssociazioniPolimorfe}
-	\end{center}
-\end{figure}
-
-\subsubsection{Integrazione tra Ruby on Rails e Drools}\mbox{} \\
-
-Il codice è stato scritto per la maggior parte utilizzando Ruby on Rails ma il rule engine (Drools) è un \gls{framework}\G\ scritto in Java. I due linguaggi non sono nativamente compatibili. \\
-Per ovviare a questo problema, è stato utilizzato JRuby, un interprete del linguaggio Ruby scritto in Java, quindi in esecuzione su una \gls{JVM}\G\. \\
-Per il corretto funzionamento di Drools, è necessario inserire le informazioni nella \textit{Working Memory} come \textit{"fatti"} che sono richiesti come oggetti di tipo \gls{JavaBean}\G\ o \gls{POJO}\G.\\
-Per far cooperare i due ambienti, è stato implementato un apposito \gls{concern}\G\ chiamato \texttt{"act\_as\_fact"}. Questo modulo viene incluso nelle classi delle quali è necessario tenere traccia nella \textit{Working Memory} e vengono generati, mediante \gls{reflection} utilizzando i template di Rails (\gls{ERB}\G), le classi Java corrispondenti.
-
-
-
-
-%\paragraph*{Criticità incontrate}\mbox{} \\
-%\hl{SPOSTARE NELLA SEZIONE IN CUI SCRIVO QUELLO CHE HO FATTO IO}
-%\hl{INSERIRE IL REMOTE TRUE NELLE VISTE}
-
-
-
-\newpage
-\subsubsection{Flusso dei dati ed interazione}
-
- Un aspetto che merita di essere esaminato è il flusso con il quale vengono generate e valutate domande e risposte .
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=8cm]{Pics/diagramma_attivita_risposte.png}
-		\caption{Diagramma di attività del flusso di una risposta o l'inserimento di un oggetto a modello}
-		\label{fig:DiagrammaAttivitaRisposte}
-	\end{center}
-\end{figure}
-
-Come è possibile osservare dalla \autoref{fig:DiagrammaAttivitaRisposte}, nel momento in cui un utente inserisce o modifica un'istanza di un modello oppure risponde ad una domanda, viene aggiornata la \textit{Working Memory}. \\
-Nel caso un cui venga generata o aggiornata un'istanza di modello, può essere necessario l'inserimento di alcune domande ad essa direttamente correlate.\\
-Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda in un apposito questionario generato ad ogni associazione di un estintore ad un cantiere. Se tale informazione non è specificata viene sollevato un allarme.\\
-Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o modifica di una istanza di modello, il passo successivo è rappresentato dalla valutazione delle informazioni inserite sulla base della \textit{Knowledge Base}. \\
-È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la \gls{LHS}\G\ sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. 
-Un esempio di regola è il seguente:
-
-
-\begin{verbatim}
-rule "Individuo ricopre una mansione per la quale non è formato"
-	when
-		$t: Training()
-		$d: Duty(trainings contains $t)
-		$i: Individual(duties contains $d, trainings not contains $t)
-	then
-		System.out.println($i.getFirstName() + ' ' + $i.getLastName() + "ha la mansione" +
-		$d.getName() + " ma non la formazione " + $t.getName() );
-end
-\end{verbatim}
-\begin{itemize}
-	\item \$t contiene tutte le formazioni;
-	\item \$d contiene  tutte le mansioni che necessitano della formazione \$t;
-	\item \$i contiene tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
-\end{itemize}
-Le corrispondenze di questa regola sono tutti gli individui individui che svolgono una qualunque mansione per la quale non sono correttamente formati.\\
-Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
-
-
-
-\cleardoublepage
-\section{Sviluppo}
-\hl{nuova sezione} \\
 A partire dalle specifiche fornite dal committente, è stata svolta una accurata analisi per scomporre il questionario di oltre mille domande in questionari di dimensione minore e direttamente correlati alla risorsa di pertinenza.\\
 In particolare sono state oggetto di analisi le seguenti componenti:
 \begin{itemize}
@@ -154,7 +17,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	
 	
 \subsubsection{Riprogettazione della componente: \textit{Figure di sistema}}
-\hl{Nuova sezione}\\
+
 	Con \textit{figure di sistema} si intendono tutte le cariche che hanno la responsabilità di garantire la sicurezza in azienda. \\
 	Come specificato dal testo unico della salute e sicurezza sul lavoro (D.lgs. 81/2008), esse sono: 
 	\begin{itemize}
@@ -174,11 +37,6 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	\hl{Si è resa necessaria una riprogettazione} dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
 	Un esempio di tale problema è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione si può verificare se i due cantieri sono allocati nello stesso periodo e nel primo si lavora il mattino, mentre nel secondo di pomeriggio oppure a giorni alterni.\\
 	I questionari relativi a a tutte le figure di sistema erano presentati in una pagina contenente tutte le domande. I problemi che tale soluzione procurava erano sostanzialmente due: era possibile gestire al più un individuo per ogni ruolo e le domande a cui rispondere in una sola sezione erano più di centocinquanta.
-	
-	\paragraph*{Requisiti}\mbox{} \\
-	Erano posti come requisiti l'inserimento, modifica e cancellazione di tutte le figure di sistema. Era inoltre richiesto che venisse predisposto un questionario per ogni tipologia di figura di sistema. \\
-	Ad ogni domanda deve essere possibile dare una risposta che, se non conforme alle norme vigenti, deve segnalare la situazione con un allarme.\\
-	Il diagramma dei casi d'uso per ogni figura di sistema è riconducibile a quello relativo agli RSPP (vedi  \autoref{fig:UC1_1RSPP}).
 
 	\paragraph*{Modifiche apportate}\mbox{} \\
 	L'architettura è stata riprogettata centralizzando tutti i ruoli in una apposita classe \texttt{Role} e Mantenendo la relazione molti a molti mediante una tabella intermedia \texttt{IndividualRoles}. \\
@@ -215,10 +73,10 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	Per facilitare l'inserimento delle informazioni relative alla selezione dei dipendenti, è stata utilizzata la libreria \textit{Selectize.js} per rendere i form più gradevoli dal punto di vista grafico e per permettere l'autocompletamento (vedi \autoref{fig:ScreenOrganodiVigilanza} ). \\ 
 	Una criticità si è presentata nell'inserimento dinamico delle figure che possono essere presenti con molteplicità maggiore di uno. In particolare gli RSPP e gli ASPP presentano l'ulteriore complicazione rappresentata dal fatto che possono essere sia membri interni all'azienda, sia esterni. \\
 	In entrambi i casi, la situazione è stata gestita mediante chiamate \gls{Ajax}, evitando quindi di dover ricaricare la pagina ad ogni inserimento e generando un record della classe \textit{Individual}  identificato da un particolare flag (\texttt{is\_external}) nel caso si tratti di una figura esterna all'azienda.\\
-	\newpage
+	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=12cm]{Pics/screen_organo_di_vigianza_con_autocompletamento.png}
+			\includegraphics[width=11cm]{Pics/screen_organo_di_vigianza_con_autocompletamento.png}
 			\caption{
 				Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza}
 			\label{fig:ScreenOrganodiVigilanza}
@@ -245,28 +103,174 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	Facendo Riferimento alla \autoref{fig:ScreenRSPP} e  supponendo che \textit{Aldo Bianchi} non sia attualmente presente nel database, alla pressione del tasto invio verrà generato un nuovo \textit{Individual} relativo ad \textit{Aldo Bianchi}. Successivamente verrà generato un questionario con le domande relative agli RSPP in relazione ad \textit{Aldo Bianchi}.
 	
 \newpage
-\subsubsection{Riprogettazione della componente: \textit{Dispositivi di protezione individuale}}
+\subsubsection{Riprogettazione della componente: \textit{DPI}}
+\hl{nuova sezione}
+Il termine \textit{DPI} è un acronimo di \textit{Dispositivi di Protezione Individuale}. \\
+Appartengono a questa categoria tutti i dispositivi utilizzati per la prevenzione degli infortuni dei lavoratori ad esempio guanti, occhiali e caschetti.\\
+
+\paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
+Al momento dell'arrivo in azienda, la situazione presente era la seguente:
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=10cm]{Pics/UMLClassiDPIversioneAllArrivo.png}
+			\caption{
+			Diagramma delle classi relativo ai DPI all'inizio dello stage .}
+			\label{fig:UMLClassiDPIversioneAllArrivo}
+		\end{center}
+	\end{figure}
+
+
+Come si può osservare dalla \autoref{fig:UMLClassiDPIversioneAllArrivo}, questa soluzione non impone vincoli sul nome del \gls{DPI}\G.
+È necessario però segnalare se un utente non è in possesso tutti i \gls{DPI}\G\ necessari allo svolgimento di una data mansione.\\
+Questa soluzione necessitava di essere restaurata poiché, non imponendo vincoli sul nome, rende impossibile gestire il caso sopracitato poiché lo stesso \gls{DPI}\G\ può essere descritto utilizzando stringhe diverse.\\
+Il questionario relativo ai \gls{DPI}\G\ era stato implementato riportando tutte le domande in un unico blocco, senza differenziare le domande relative ad uno specifico \gls{DPI}\G\ da quelle generiche sui \gls{DPI}\G.
+
+\paragraph*{Modifiche apportate}\mbox{} \\
+Le modifiche hanno coinvolto sia il \gls{back-end}\G\ sia  il  \gls{front-end}\G\ dell'applicazione. \\
+In particolare, nel  \gls{back-end}\G\ sono stati centralizzati i nomi dei \gls{DPI} in un unica classe. \\ 
+Questa soluzione risolve il problema dell'impossibilità di riconoscimento del \gls{DPI}\G\ perché il nome è rappresentato da un riferimento ad una lista di possibili valori definiti nel pannello di amministrazione. \\
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=14cm]{Pics/UMLClassiDPIRiprogettato.png}
+		\caption{Diagramma delle classi relativo ai DPI dopo la riprogettazione.}
+		\label{fig:UMLClassiDPIriprogettato}
+	\end{center}
+\end{figure}
+
+Dopo un'attenta analisi, è stata rivista tutta l'organizzazione delle domande relative ai \gls{DPI}\G.\\
+In particolare sono stati differenziate le domande relative ad uno specifico \gls{DPI}\G\ da quelle generali in merito alla gestione dei \gls{DPI}\G\ in azienda.\\
+Lato \gls{front-end}\G, è stato reso possibile, per un utente amministratore, la gestione delle tipologie dei \gls{DPI}\G\ da pannello di controllo. Questo passaggio è stato reso estremamente semplice e veloce da implementare dall'utilizzo della gemma \hyperref[sec:ActiveAdmin]{ActiveAdmin} di Ruby on Rails.
 \newpage
-\subsubsection{Riprogettazione della componente: \textit{Mansioni e formazioni correlate}}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Pics/ActiveAdminDPI}
+		\caption{Schermata relativa alla digestione dei DPI nel pannello di amministrazione.}
+		\label{fig:ActiveAdminDPI}
+	\end{center}
+\end{figure}
+
+E'\ stata completamente riprogettata l'interfaccia relativa alla gestione dei \gls{DPI}\G\ assegnabili ad un dipendente.\\
+In particolare è stato inserito un questionario a scomparsa contenente le domande relative alla formazione obbligatoria del datore di lavoro. \\
+L'input dei \gls{DPI}\G\ è stato facilitato mediante autocompletamento basato sui record della tabella \texttt{DpisName} .
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Pics/ScreenDPI.png}
+		\caption{Schermata relativa alla digestione dei DPI nell'interfaccia utente.}
+		\label{fig:ScreenDPI}
+	\end{center}
+\end{figure}
+
 \newpage
-\subsubsection{Riprogettazione della componente: \textit{Questionari}}
+\subsubsection{Riprogettazione di mansioni e formazioni}
+\hl{nuova sezione}\\
+Uno degli aspetti cardine del progetto è stato la gestione della relazione che intercorre tra le mansioni che svolge un dipendente e le formazioni di cui è in possesso.\\
+Questa funzionalità ha richiesto una riprogettazione delle classi relative a formazioni e mansioni oltre alla definizione delle regole relative.\\
+
+
+\paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
+	Al momento dell'inizio dello stage, le mansioni e le formazioni erano delle classi con una chiave esterna verso la classe \texttt{Employee} che rappresenta il dipendente in possesso di quella formazione oppure a cui è stata affidata quella mansione.\\
+	Anche in questo caso, la descrizione era gestita con un campo testuale provocando ambiguità nel riconoscimento di una specifica mansione o formazione.\\
+	La gestione lato \gls{front-end}\G\ era poco intuitiva poiché solo abbozzata.
+	
+\paragraph*{Modifiche apportate} \mbox{} \\
+\hl{scrivere meglio e completare}\\
+
+Le mansioni e le formazioni sono state riprogettate allo stesso modo dei \gls{DPI}\G, ovvero centralizzando la definizione del nome in una tabella definita allo scopo. \\
+Per evitare di affaticare la lettura non verranno trattati i dettagli implementativi relativi alle singole componenti. \\
+Risulta invece degna di nota l'integrazione tra le due componenti finalizzata alla verifica della presenza delle formazioni necessarie allo svolgimento di una mansione. \\
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Pics/UMLClassiFormazioniMansioni.png}
+		\caption{Diagramma delle classi di formazioni, mansioni e della relazione tra esse.}
+		\label{fig:UMLClassiFormazioniMansioni.png}
+	\end{center}
+\end{figure}
+
+Come è possibile osservare dalla \autoref{fig:UMLClassiFormazioniMansioni.png}, ogni record della tabella \texttt{DutyNeedsTraining} contiene un riferimento alla classe \texttt{Training} ed uno alla classe \texttt{Duty}.\\
+Ogni coppia identifica una relazione che, se non soddisfatta per qualche dipendente, solleverà un allarme ad esso associato.\\
+Un aspetto critico è stato dare la possibilità ad un utente amministratore di definire le regole di dipendenza tra mansioni e formazioni in modo autonomo. \\
+La tabella \texttt{DutyNeedsTraining}, introdotta per mappare le dipendenze, è stata utilizzata per generare una regola relativa la verifica della conformità tra relazioni e formazioni. La regola appena descritta è riportata nella \autoref{Drools:regolaMansioniFormazioni}.
+La gestione dal pannello di controllo  stata realizzata utilizzando la gemma \hyperref[sec:ActiveAdmin]{ActiveAdmin}, rendendo  autonomo l'utilizzatore finale nella gestione delle relazioni necessità tra mansioni e formazioni.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=14cm]{Pics/ScreenFormazioneMansioneAdmin.png}
+		\caption{Schermata relativa alla digestione delle formazioni necessarie allo svolgimento di determinate mansioni.}
+		\label{fig:ScreenFormazioneMansioneAdmin.png}
+	\end{center}
+\end{figure}
+Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei dipendenti avviene allo stesso modo dei \gls{DPI}\G. Eventuali non conformità sulle formazioni in possesso di un dipendente in relazione alla mansione che svolge saranno segnalate con un allarme. \\
+ Questo approccio sposa la filosofia generale del progetto la quale prevede che deve essere sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
+\newpage
+\subsubsection{Restyling della componente: \textit{Questionari}}
+I questionari sono stati riprogettati solo lato \gls{front-end}\G.
+Al momento dell'arrivo in azienda, le domande venivano poste in sequenza organizzate in capitoli. Questo approccio rischia di disorientare l'utente poiché al crescere del numero delle domande può trovare difficoltà nel ricordare quale sia il capitolo in questione. \\
+Per ovviare a questo problema, tutte le domande sono state inserite  in un accordion e bloccando il titolo in alto durante lo scroll. In questo modo, all'apertura della pagina sono facilmente visibili i capitoli e, durante la compilazione del questionario, il titolo del capitolo è sempre visibile.\\
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12.6cm]{Pics/ScreenQuestionarioSediApertura.png}
+		\caption{Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento dell'apertura.}
+		\label{fig:ScreenQuestionarioSediApertura.png}
+	\end{center}
+\end{figure}
+Nella figura seguente si può notare il fatto che il titolo del capitolo rimane sempre visibile quando l'accordion è aperto.\\
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Pics/ScreenQuestionarioStickyHeader.png}
+		\caption{Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento della risposta ad una domanda.}
+		\label{fig:ScreenQuestionarioStickyHeader.png}
+	\end{center}
+\end{figure}
+
+ 
+
 
 \newpage
 \subsection{Nuove componenti}
+Le componenti descritte di seguito, sono state progettate e implementate nella loro interezza durante lo stage.\\
+\hl{TODO Scrivere di più nell'introduzione}
+
 \subsubsection{\textit{Segnalazioni}}
-%parlare del fatto che sono ufficiali e che sollevano il segnalante dalla responsabilità se era sua
-	\paragraph{Requisiti}
-	\paragraph{Progettazione}
-	\paragraph{Criticità incontrate}
+Le segnalazioni sono delle comunicazioni inviate da un qualunque membro interno all'azienda ed indirizzate verso l'organo di vigilanza.\\
+Le segnalazioni hanno lo scopo di sollevare il responsabile dalle responsabilità derivanti da violazioni avvenute sotto la sua supervisione. \\
+Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e demandano ufficialmente la responsabilità delle eventuali violazioni a tale organo il quale dovrà decidere per eventuali azioni correttive.
+	
+	\paragraph*{Progettazione}\mbox{} \\
+	Come è possibile osservare dalla \autoref{fig:UMLClassiSegnalazioni}, le segnalazioni sono state implementate come una classe (\texttt{Report}) con una chiave esterna verso la classe \texttt{Individual}. \\
+	La presenza del riferimento verso un'istanza della classe \texttt{Individual} è obbligatoria, soddisfacendo quindi il vincolo di non anonimato delle segnalazioni.\\
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/UMLClassiSegnalazioni.png}
+			\caption{Diagramma delle classi relativo alle segnalazioni.}
+			\label{fig:UMLClassiSegnalazioni}
+		\end{center}
+	\end{figure}
+	Specifiche direttive del committente hanno richiesto l'inserimento di tre date rilevanti al fine della gestione delle segnalazioni:
+	\begin{itemize}
+		\item \textit{Data di invio della segnalazione all'alta direzione;}
+		\item \textit{Data di invio della segnalazione dall'alta direzione all'organo di vigilanza;}
+		\item \textit{Data di invio della risposta alla segnalazione da parte dell'organo di vigilanza al soggetto interessato.}
+	\end{itemize}
+	In accordo con la filosofia del progetto, sono state gestite la presenza e sequenzialità delle date con degli allarmi in caso di errato inserimento.\\
+	Per facilitare la gestione delle segnalazioni, nell'interfaccia utente relativa ad esse sono riportate tutte le date. Questo approccio permette di tenere sempre traccia dello stato delle segnalazioni ed agevola la verifica da parte delle autorità competenti.\\
+	Uno sviluppo futuro, prevede l'archiviazione delle segnalazioni le quali hanno data di invio della risposta alla segnalazione da parte dell'organo di vigilanza al soggetto interessato più vecchia di 30 giorni. Questa soluzione è stata progettata ma non implementata nel periodo di stage a causa dell'esaurimento del monte ore disponibile.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=12cm]{Pics/ScreenSegnalazioni.png}
+			\caption{Schermata relativa alla gestione delle segnalazioni.}
+			\label{fig:ScreenSegnalazioni}
+		\end{center}
+	\end{figure}
 \newpage
 \subsubsection{\textit{Procedure}}
-	\paragraph{Requisiti}
+
 	\paragraph{Progettazione}
 	\paragraph{Criticità incontrate}
 		%più controller e viste associate allo stessa categoria, uno ha il modello l'altro il questionario
 \newpage
 \subsubsection{\textit{Dispositivi di protezione collettivi}}
-	\paragraph{Requisiti}
+
 	\paragraph{Progettazione}
 	\paragraph{Criticità incontrate}
 		%remote true
@@ -274,13 +278,38 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 
 \newpage
 \subsection{Regole Drools}
+\label{Drools:regole}
+\hl{In questa sezione vengono riportate alcune tra le regole Drools più significative.}
+	\label{Drools:regolaMansioniFormazioni}
+	\begin{verbatim}
+	rule "Individuo ricopre una mansione per la quale non è formato"
+	when
+	$t: Training()
+	$d: Duty(trainings contains $t)
+	$i: Individual(duties contains $d, trainings not contains $t)
+	then
+	System.out.println($i.getFirstName() + ' ' + $i.getLastName() + "ha la mansione" +
+	$d.getName() + " ma non la formazione " + $t.getName() );
+	end
+	\end{verbatim}
+	\begin{itemize}
+		\item \$t contiene tutte le formazioni;
+		\item \$d contiene  tutte le mansioni che necessitano della formazione \$t;
+		\item \$i contiene tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
+	\end{itemize}
+	Le corrispondenze di questa regola sono tutti gli individui individui che svolgono una qualunque mansione per la quale non sono correttamente formati.\\
+	Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
+	
+	%{TODO regole su: CPI con superficie > N mq}
+
+
 
 \newpage
 \section{Verifica e validazione}
 \newpage
 \section{Considerazioni finali}
 	Al termine dello stage sono stati analizzati i risultati ottenuti e sul valore aggiunto che esso ha portato.\\
-	\hl{TODO fare breve introduzione alle sezioni di cui parlo}	
+	\hl{TODO }	
 
 
 

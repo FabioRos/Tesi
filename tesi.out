@@ -14,56 +14,57 @@
 \BOOKMARK [1][-]{section.2}{Il progetto di Stage}{}% 14
 \BOOKMARK [2][-]{subsection.2.1}{Il prodotto esistente}{section.2}% 15
 \BOOKMARK [2][-]{subsection.2.2}{Obiettivi dello stage}{section.2}% 16
-\BOOKMARK [1][-]{section.3}{Pianificazione del lavoro}{}% 17
-\BOOKMARK [1][-]{section.4}{Analisi dei requisiti}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Requisiti}{section.4}% 19
-\BOOKMARK [2][-]{subsection.4.2}{Definizione dei casi d'uso}{section.4}% 20
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Legenda}{subsection.4.2}% 21
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Caso d'uso UCP - Scenario Principale }{subsection.4.2}% 22
-\BOOKMARK [3][-]{subsubsection.4.2.3}{UC1 Gestione delle Figure di sistema}{subsection.4.2}% 23
-\BOOKMARK [3][-]{subsubsection.4.2.4}{UC1.1 Gestione degli RSPP}{subsection.4.2}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.5}{UC2 Gestione dei DPI}{subsection.4.2}% 25
-\BOOKMARK [3][-]{subsubsection.4.2.6}{UC3 Gestione delle mansioni}{subsection.4.2}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.7}{UC4 Gestione delle formazioni}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.8}{UC5 Gestione dei questionari}{subsection.4.2}% 28
-\BOOKMARK [3][-]{subsubsection.4.2.9}{UC6 Gestione delle procedure}{subsection.4.2}% 29
-\BOOKMARK [3][-]{subsubsection.4.2.10}{UC7 Gestione delle segnalazioni}{subsection.4.2}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.11}{UC8 Gestione dei Dispositivi di Protezione Collettivi}{subsection.4.2}% 31
-\BOOKMARK [1][-]{section.5}{Tecnologie e strumenti}{}% 32
-\BOOKMARK [2][-]{subsection.5.1}{Git}{section.5}% 33
-\BOOKMARK [3][-]{subsubsection.5.1.1}{git-flow}{subsection.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.2}{Rubymine}{section.5}% 35
-\BOOKMARK [2][-]{subsection.5.3}{Ruby on Rails}{section.5}% 36
-\BOOKMARK [3][-]{subsubsection.5.3.1}{ActiveRecord}{subsection.5.3}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.2}{ActiveAdmin}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.3}{I18n}{subsection.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.4}{JRuby}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.5}{Drools}{section.5}% 41
-\BOOKMARK [3][-]{subsubsection.5.5.1}{Architettura}{subsection.5.5}% 42
-\BOOKMARK [2][-]{subsection.5.6}{Foundation}{section.5}% 43
-\BOOKMARK [2][-]{subsection.5.7}{jQuery}{section.5}% 44
-\BOOKMARK [1][-]{section.6}{Analisi del prodotto esistente}{}% 45
-\BOOKMARK [2][-]{subsection.6.1}{Architettura del software}{section.6}% 46
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Architettura ad alto livello}{subsection.6.1}% 47
-\BOOKMARK [3][-]{subsubsection.6.1.2}{Architettura a basso livello}{subsection.6.1}% 48
-\BOOKMARK [3][-]{subsubsection.6.1.3}{Integrazione tra Ruby on Rails e Drools}{subsection.6.1}% 49
-\BOOKMARK [3][-]{subsubsection.6.1.4}{Flusso dei dati ed interazione}{subsection.6.1}% 50
-\BOOKMARK [1][-]{section.7}{Sviluppo}{}% 51
-\BOOKMARK [2][-]{subsection.7.1}{Riprogettazione delle componenti esistenti}{section.7}% 52
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Riprogettazione della componente: Figure di sistema}{subsection.7.1}% 53
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Riprogettazione della componente: Dispositivi di protezione individuale}{subsection.7.1}% 54
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Riprogettazione della componente: Mansioni e formazioni correlate}{subsection.7.1}% 55
-\BOOKMARK [3][-]{subsubsection.7.1.4}{Riprogettazione della componente: Questionari}{subsection.7.1}% 56
-\BOOKMARK [2][-]{subsection.7.2}{Nuove componenti}{section.7}% 57
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Segnalazioni}{subsection.7.2}% 58
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Procedure}{subsection.7.2}% 59
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Dispositivi di protezione collettivi}{subsection.7.2}% 60
-\BOOKMARK [2][-]{subsection.7.3}{Regole Drools}{section.7}% 61
-\BOOKMARK [1][-]{section.8}{Verifica e validazione}{}% 62
-\BOOKMARK [1][-]{section.9}{Considerazioni finali}{}% 63
-\BOOKMARK [1][-]{appendix.Alph1}{Migrazioni}{}% 64
-\BOOKMARK [1][-]{appendix.Alph2}{Inferenza e Motori di inferenza}{}% 65
-\BOOKMARK [1][-]{appendix.Alph3}{Sistemi Esperti}{}% 66
-\BOOKMARK [1][-]{appendix.Alph4}{Algoritmo RETE}{}% 67
-\BOOKMARK [1][-]{section*.80}{Glossario}{}% 68
-\BOOKMARK [1][-]{section*.81}{Riferimenti bibliografici}{}% 69
+\BOOKMARK [2][-]{subsection.2.3}{Pianificazione del lavoro}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Analisi del prodotto esistente}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Architettura del software}{section.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Architettura ad alto livello}{subsection.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Architettura a basso livello}{subsection.3.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Integrazione tra Ruby on Rails e Drools}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Flusso dei dati ed interazione}{subsection.3.1}% 23
+\BOOKMARK [1][-]{section.4}{Analisi dei requisiti}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{Definizione dei casi d'uso}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Legenda}{subsection.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Attori}{subsection.4.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Caso d'uso UCP - Scenario Principale }{subsection.4.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.1.4}{UC1 Gestione delle Figure di sistema}{subsection.4.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.5}{UC1.1 Gestione degli RSPP}{subsection.4.1}% 30
+\BOOKMARK [3][-]{subsubsection.4.1.6}{UC2 Gestione dei DPI}{subsection.4.1}% 31
+\BOOKMARK [3][-]{subsubsection.4.1.7}{UC3 Gestione delle mansioni}{subsection.4.1}% 32
+\BOOKMARK [3][-]{subsubsection.4.1.8}{UC4 Gestione delle formazioni}{subsection.4.1}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.9}{UC5 Gestione dei questionari}{subsection.4.1}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.10}{UC6 Gestione delle procedure}{subsection.4.1}% 35
+\BOOKMARK [3][-]{subsubsection.4.1.11}{UC7 Gestione delle segnalazioni}{subsection.4.1}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.12}{UC8 Gestione dei Dispositivi di Protezione Collettivi}{subsection.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.2}{Requisiti}{section.4}% 38
+\BOOKMARK [1][-]{section.5}{Tecnologie e strumenti}{}% 39
+\BOOKMARK [2][-]{subsection.5.1}{Git}{section.5}% 40
+\BOOKMARK [3][-]{subsubsection.5.1.1}{git-flow}{subsection.5.1}% 41
+\BOOKMARK [2][-]{subsection.5.2}{Rubymine}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.3}{Ruby on Rails}{section.5}% 43
+\BOOKMARK [3][-]{subsubsection.5.3.1}{ActiveRecord}{subsection.5.3}% 44
+\BOOKMARK [3][-]{subsubsection.5.3.2}{ActiveAdmin}{subsection.5.3}% 45
+\BOOKMARK [3][-]{subsubsection.5.3.3}{I18n}{subsection.5.3}% 46
+\BOOKMARK [2][-]{subsection.5.4}{JRuby}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.5}{Drools}{section.5}% 48
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Architettura}{subsection.5.5}% 49
+\BOOKMARK [2][-]{subsection.5.6}{Foundation}{section.5}% 50
+\BOOKMARK [2][-]{subsection.5.7}{jQuery}{section.5}% 51
+\BOOKMARK [1][-]{section.6}{Progettazione e codifica}{}% 52
+\BOOKMARK [2][-]{subsection.6.1}{Riprogettazione delle componenti esistenti}{section.6}% 53
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Riprogettazione della componente: Figure di sistema}{subsection.6.1}% 54
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Riprogettazione della componente: DPI}{subsection.6.1}% 55
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Riprogettazione di mansioni e formazioni}{subsection.6.1}% 56
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Restyling della componente: Questionari}{subsection.6.1}% 57
+\BOOKMARK [2][-]{subsection.6.2}{Nuove componenti}{section.6}% 58
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Segnalazioni}{subsection.6.2}% 59
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Procedure}{subsection.6.2}% 60
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Dispositivi di protezione collettivi}{subsection.6.2}% 61
+\BOOKMARK [2][-]{subsection.6.3}{Regole Drools}{section.6}% 62
+\BOOKMARK [1][-]{section.7}{Verifica e validazione}{}% 63
+\BOOKMARK [1][-]{section.8}{Considerazioni finali}{}% 64
+\BOOKMARK [1][-]{appendix.Alph1}{Migrazioni}{}% 65
+\BOOKMARK [1][-]{appendix.Alph2}{Inferenza e Motori di inferenza}{}% 66
+\BOOKMARK [1][-]{appendix.Alph3}{Sistemi Esperti}{}% 67
+\BOOKMARK [1][-]{appendix.Alph4}{Algoritmo RETE}{}% 68
+\BOOKMARK [1][-]{section*.93}{Glossario}{}% 69
+\BOOKMARK [1][-]{section*.94}{Riferimenti bibliografici}{}% 70
