@@ -387,17 +387,16 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 	end
 	\end{verbatim}
 	\begin{itemize}
-		\item \$t contiene tutte le formazioni;
-		\item \$d contiene  tutte le mansioni che necessitano della formazione \$t;
-		\item \$i contiene tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
+		\item \$t filtro sulle formazioni;
+		\item \$d filtro sulle mansioni che necessitano della formazione \$t;
+		\item \$i filtro su tutti gli individui che svolgono la mansione \$d ma non sono in possesso della formazione \$t.
 	\end{itemize}
 	Le corrispondenze di questa regola sono tutti gli individui individui che svolgono una qualunque mansione per la quale non sono correttamente formati.\\
 	Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
 	
-	%{TODO regole su: CPI con superficie > N mq}
 \subsubsection{Mancanza del CPI per sedi con superficie maggiore di trecento metri quadri}
 \label{Drools:regolaCPISuperficie}
-\hl{Finire di scrivere}
+
 	\begin{verbatim}
 		rule "CPI assente e superficie e la superficie della sede è  maggiore di 300 metri quadri"
 		when
@@ -406,16 +405,30 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 					questionCode == "location_needs_CPI", response == "no")
 		then
 					System.out.println("La sede all\'indirizzo"+ $s.getAddress() +
-					 ", ha una superficie maggiore di 100 metri quadri, richiede quindi il CPI. ");
+					 ", ha una superficie maggiore di 300 metri quadri, richiede quindi il CPI. ");
 		end
 	\end{verbatim}
 
+	\begin{itemize}
+		\item \$s filtro sulle sedi;
+		\item \$a filtro sulle risposte riferite alla sede \$s relative alla presenza del \gls{CPI}\G;
+	\end{itemize}
+	Le corrispondenze di questa regola sono tutte le risposte alle domande con risposta negativa relative alla presenza del CPI (Certificato Prevenzione Incendi) nelle sedi con più di trecento metri quadri di superficie.
 
 \newpage
 \section{Verifica e validazione}
+	\hl{TODO }	
+	Il codice prodotto è stato parzialmente sottoposto a test utizzando la gemma \textit{Minitest} di Ruby on Rails.\\
+	
+	
 \newpage
 \section{Considerazioni finali}
+\hl{TODO Rivedere e scrivere qualcosa di decente}
 	Al termine dello stage sono stati analizzati i risultati ottenuti e sul valore aggiunto che esso ha portato.\\
+	Personalmente mi ritengo soddisfatto di come si è svolto lo stage soprattutto poiché mi ha permesso di lavorare in un progetto di dimensioni molto maggiori di quelle a cui sono stato abituato finora. Ho avuto l'opportunità di dare il mio contributo ad un software il cui obiettivo è aiutare le aziende a prevenire gli infortuni e mi  piace credere che qualcuno di essi verrà evitato anche grazie al codice che ho scritto.\\
+	Mi sono trovato ad affrontare un'esperienza da full-stack developer, dovendomi assumere la responsabilità di codice sia lato back-end sia lato front-end. Ho potuto lavorare e studiare codice scritto da sviluppatori senior dal quale ho imparato molto. In particolare l'integrazione tra Drools e Ruby on Rails mi ha affascinato poiché mi ha fatto capire che anche linguaggi molto diversi e non compatibili nativamente, possono essere manipolati in modo da diventarlo.
+	
+	Questo stage mi ha fatto crescere moltissimo in ambito lavorativo che personale.
 	\hl{TODO }	
 
 	%scrivere il risultato sui requisiti soddisfatti e non

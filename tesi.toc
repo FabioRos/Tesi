@@ -41,36 +41,36 @@
 \contentsline {section}{\numberline {5}Tecnologie e strumenti}{33}{section.5}
 \contentsline {subsection}{\numberline {5.1}Git}{33}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}\texttt {git-flow}}{33}{subsubsection.5.1.1}
-\contentsline {paragraph}{Vantaggi}{34}{section*.36}
-\contentsline {paragraph}{Svantaggi}{34}{section*.37}
+\contentsline {paragraph}{Vantaggi}{34}{section*.37}
+\contentsline {paragraph}{Svantaggi}{34}{section*.38}
 \contentsline {subsection}{\numberline {5.2}Rubymine}{34}{subsection.5.2}
-\contentsline {paragraph}{Vantaggi}{34}{section*.39}
-\contentsline {paragraph}{Svantaggi}{34}{section*.40}
+\contentsline {paragraph}{Vantaggi}{34}{section*.40}
+\contentsline {paragraph}{Svantaggi}{34}{section*.41}
 \contentsline {subsection}{\numberline {5.3}Ruby on Rails}{35}{subsection.5.3}
-\contentsline {paragraph}{Vantaggi}{35}{section*.41}
-\contentsline {paragraph}{Svantaggi}{35}{section*.42}
+\contentsline {paragraph}{Vantaggi}{35}{section*.42}
+\contentsline {paragraph}{Svantaggi}{35}{section*.43}
 \contentsline {subsubsection}{\numberline {5.3.1}ActiveRecord}{35}{subsubsection.5.3.1}
-\contentsline {paragraph}{Vantaggi}{35}{section*.43}
-\contentsline {paragraph}{Svantaggi}{35}{section*.44}
+\contentsline {paragraph}{Vantaggi}{35}{section*.44}
+\contentsline {paragraph}{Svantaggi}{35}{section*.45}
 \contentsline {subsubsection}{\numberline {5.3.2}ActiveAdmin}{36}{subsubsection.5.3.2}
-\contentsline {paragraph}{Vantaggi}{36}{section*.46}
-\contentsline {paragraph}{Svantaggi}{36}{section*.47}
+\contentsline {paragraph}{Vantaggi}{36}{section*.47}
+\contentsline {paragraph}{Svantaggi}{36}{section*.48}
 \contentsline {subsubsection}{\numberline {5.3.3}I18n}{36}{subsubsection.5.3.3}
-\contentsline {paragraph}{Vantaggi}{36}{section*.49}
-\contentsline {paragraph}{Svantaggi}{37}{section*.50}
+\contentsline {paragraph}{Vantaggi}{36}{section*.50}
+\contentsline {paragraph}{Svantaggi}{37}{section*.51}
 \contentsline {subsection}{\numberline {5.4}JRuby}{37}{subsection.5.4}
-\contentsline {paragraph}{Vantaggi}{37}{section*.52}
-\contentsline {paragraph}{Svantaggi}{37}{section*.53}
+\contentsline {paragraph}{Vantaggi}{37}{section*.53}
+\contentsline {paragraph}{Svantaggi}{37}{section*.54}
 \contentsline {subsection}{\numberline {5.5}Drools}{37}{subsection.5.5}
 \contentsline {subsubsection}{\numberline {5.5.1}Architettura}{38}{subsubsection.5.5.1}
-\contentsline {paragraph}{Vantaggi}{38}{section*.56}
-\contentsline {paragraph}{Svantaggi}{39}{section*.57}
+\contentsline {paragraph}{Vantaggi}{38}{section*.57}
+\contentsline {paragraph}{Svantaggi}{39}{section*.58}
 \contentsline {subsection}{\numberline {5.6}Foundation}{39}{subsection.5.6}
-\contentsline {paragraph}{Vantaggi}{39}{section*.59}
-\contentsline {paragraph}{Svantaggi}{40}{section*.61}
+\contentsline {paragraph}{Vantaggi}{39}{section*.60}
+\contentsline {paragraph}{Svantaggi}{40}{section*.62}
 \contentsline {subsection}{\numberline {5.7}jQuery}{40}{subsection.5.7}
-\contentsline {paragraph}{Vantaggi}{40}{section*.63}
-\contentsline {paragraph}{Svantaggi}{40}{section*.64}
+\contentsline {paragraph}{Vantaggi}{40}{section*.64}
+\contentsline {paragraph}{Svantaggi}{40}{section*.65}
 \contentsline {section}{\numberline {6}Progettazione e codifica}{41}{section.6}
 \contentsline {subsection}{\numberline {6.1}Riprogettazione delle componenti esistenti}{41}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Riprogettazione della componente: \textit {Figure di sistema}}{41}{subsubsection.6.1.1}
@@ -80,7 +80,7 @@
 \contentsline {subsection}{\numberline {6.2}Nuove componenti}{50}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}\textit {Segnalazioni}}{50}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}\textit {Procedure}}{52}{subsubsection.6.2.2}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{53}{section*.93}
+\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{53}{section*.94}
 \contentsline {subsubsection}{\numberline {6.2.3}\textit {Dispositivi di protezione collettivi}}{54}{subsubsection.6.2.3}
 \contentsline {subsection}{\numberline {6.3}Regole Drools}{56}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Riconoscimento di un indoviduo che ricopre una mansione per la quale non \IeC {\`e} formato}{56}{subsubsection.6.3.1}
@@ -91,5 +91,5 @@
 \contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{61}{appendix.Alph2}
 \contentsline {section}{\numberline {C}Sistemi Esperti}{63}{appendix.Alph3}
 \contentsline {section}{\numberline {D}Algoritmo RETE}{65}{appendix.Alph4}
-\contentsline {section}{Glossario}{67}{section*.100}
-\contentsline {section}{Riferimenti bibliografici}{68}{section*.101}
+\contentsline {section}{Glossario}{67}{section*.101}
+\contentsline {section}{Riferimenti bibliografici}{68}{section*.102}
