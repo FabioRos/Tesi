@@ -177,7 +177,7 @@ Questa funzionalità ha richiesto una riprogettazione delle classi relative a fo
 
 Le mansioni e le formazioni sono state riprogettate allo stesso modo dei \gls{DPI}\G, ovvero centralizzando la definizione del nome in una tabella definita allo scopo. \\
 Per evitare di affaticare la lettura non verranno trattati i dettagli implementativi relativi alle singole componenti. \\
-Risulta invece degna di nota l'integrazione tra le due componenti finalizzata alla verifica della presenza delle formazioni necessarie allo svolgimento di una mansione. \\
+Degna di nota è invece l'integrazione tra le due componenti finalizzata alla verifica della presenza delle formazioni necessarie allo svolgimento di una mansione. \\
 
 \begin{figure}[H]
 	\begin{center}
@@ -199,7 +199,15 @@ La gestione dal pannello di controllo  stata realizzata utilizzando la gemma \hy
 		\label{fig:ScreenFormazioneMansioneAdmin.png}
 	\end{center}
 \end{figure}
-Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei dipendenti avviene allo stesso modo dei \gls{DPI}\G. Eventuali non conformità sulle formazioni in possesso di un dipendente in relazione alla mansione che svolge saranno segnalate con un allarme. \\
+Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei dipendenti avviene allo stesso modo dei \gls{DPI}\G. Un esempio dell'assegnazione delle mansioni è visibile nella figura  \autoref{fig:ScreenInserimentoMansioni.png}.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=14cm]{Pics/ScreenInserimentoMansioni.png}
+		\caption{Schermata relativa all'assegnazione delle mansioni da parte di un utente autenticato.}
+		\label{fig:ScreenInserimentoMansioni.png}
+	\end{center}
+\end{figure}
+Eventuali non conformità sulle formazioni in possesso di un dipendente in relazione alla mansione che svolge saranno segnalate con un allarme. \\
  Questo approccio sposa la filosofia generale del progetto la quale prevede che deve essere sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
 \newpage
 \subsubsection{Restyling della componente: \textit{Questionari}}
@@ -264,22 +272,108 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 	\end{figure}
 \newpage
 \subsubsection{\textit{Procedure}}
+\hl{Nuova sezione}\\
+\hl{Da rivedere}\\
+	Le procedure si distinguono in due caegorie distinte:
+	\begin{itemize}
+		\item \textit{Procedure di prassi:}	\\
+			Procedure derivanti un analisi dell'\gls{INAIL}\G\ sulla base dell'analisi degli infortuni sul lavoro avvenuti nel tempo.
+		\item \textit{Procedure di sistema:}\\
+			Procedure proprie dell'azienda. La loro composizione compone il  \gls{DVR} (Documento di Valutazione dei Rischi).
+	\end{itemize}
 
-	\paragraph{Progettazione}
+	\paragraph*{Progettazione}\mbox{}\\
+		\subparagraph*{Procedure di prassi}\mbox{}\\
+		Queste procedure sono state fornite come collezione di domande. È sembrato quindi gestirle sotto forma di questionari.\\
+		Dopo un'attenta analisi delle domande, sono stati individuati sette filoni principali che sono stati usati per spezzare un questionario composto di 189 domande.\\
+		Ad ognuno di questi è associato un questionario come è possibile osservare dalla \autoref{fig:ScreenProcedureDiPrassi}.
+		
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=14cm]{Pics/ScreenProcedureDiPrassi.png}
+				\caption{Schermata relativa alla gestione delle procedure di prassi.}
+				\label{fig:ScreenProcedureDiPrassi}
+			\end{center}
+		\end{figure}
+		Per avere un quadro generale della conformità dell'azienda rispetto alle procedure di prassi è stata implementata l'esportazione di tutte le domande in un unico documento in formato PDF.
+		
+		\subparagraph*{Procedure di sistema}\mbox{}\\
+			
+			Le procedure di sistema sono state implementate mediante un apposito modello \texttt{Procedure} direttamente collegata a \texttt{Company}. Sono state inserite le informazioni relative alle revisioni di ogni procedure.\\
+			Come è possibile osservare dalla \autoref{fig:ScreenDVR}, sono state inoltre inserite le domande relative al \gls{DVR}\G\ nell'intefaccia utente con un questionario a scomparsa.
+			
+			
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=14cm]{Pics/ScreenDVR.png}
+					\caption{Schermata relativa alla gestione delle procedure di sistema.}
+					\label{fig:ScreenDVR}
+				\end{center}
+			\end{figure}
+			Per mettere a disposizione un quadro generale delle procedure di sistema è stata implementata l'esportazione di tutte le domande in un unico documento in formato PDF.
+			
+			
+		
+	
 	\paragraph{Criticità incontrate}
+		Per mantenere una coerenza logica, tutti gli aspetti inerenti le procedure sono state gestite con un singolo controller.\\
+		Questo ha subito evidenziato numerose criticità in quanto è stato necessario realizzare due index, ma l'url \texttt{\\procedures} può corrispondere ad una sola azione (\texttt{index}).\\
+		È stato necessario creare delle apposite rotte per permettere di raggiungere entrambe le risorse.
 		%più controller e viste associate allo stessa categoria, uno ha il modello l'altro il questionario
 \newpage
 \subsubsection{\textit{Dispositivi di protezione collettivi}}
+\hl{nuova sezione}\\
+\hl{rileggere}\\
+La gestione dei \gls{DPC}\G\ richiede di tenere traccia delle informazioni relative al loro posizionamento. \\
+In particolare sono stati gestiti Estintori e cassette di primo soccorso. \\
+Le immagini \autoref{fig:ScreenIndexEstintori} e \autoref{fig:ScreenRemoteTrueEstintori}, arrecano esempi relativi agli estintori, ma la trattazione dei due modelli è analoga. La differenza è individuabile solo nella gestione della scadenza che per gli estintori è unica, mentre per le cassette di primo soccorso chiede di memorizzare quella dei due componenti più vicini alla data di scadenza.
 
-	\paragraph{Progettazione}
-	\paragraph{Criticità incontrate}
+\paragraph*{Progettazione}\mbox{}\\
+La soluzione individuata prevede la creazione di una associazione con l'interfaccia \textit{Locationable} come è possibile osservare dalla \autoref{fig:UMLClassiDPC}.\\
+Questo approccio è proprio di Ruby on Rails e permette di riferire un oggetto specificandone il nome della classe e l'id a patto che la classe interessata dichiari di essere essere un \textit{Locationable}.\\
+Nel caso di specie, le classi che dichiarano di essere raggiungibili mediante l'interfaccia \textit{Locationable} sono\texttt{Location} e \texttt{ConstructionSite}, permettendo quindi di assegnare \gls{DPC}\G\ a sedi e cantieri.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Pics/UMLClassiDPC.png}
+		\caption{Diagramma delle classi relativo ai \gls{DPC}\G.}
+		\label{fig:UMLClassiDPC}
+	\end{center}
+\end{figure}
+
+Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere, sono stati resi selezionabili solamente quelli che non risultano essere impegnati in altri luoghi.\\
+È stata implementata una pagina nella quale sono visibili tutti gli estintori (e rispettivamente per le cassette di primo soccorso) nella quale è indicata la loro allocazione al fine di facilitare la localizzazione agevolando le operazioni di manutenzione.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Pics/ScreenIndexEstintori.png}
+		\caption{Schermata relativa agli Estintori in azienda.}
+		\label{fig:ScreenIndexEstintori}
+	\end{center}
+\end{figure}
+
+
+
+
+	\paragraph*{Criticità incontrate}\mbox{}\\
+	\hl{Scrivere meglio}\\
+	Al fine di rendere agevole ed intuitiva la gestione dei \gls{DPC}\G, è stato creato un meccanismo di gestione dinamica mediante chiamate \gls{Ajax}\G. \\
+	Fare ciò è stato necessario introdurre un nuovo tipo di file di template di Rails(\textit{*.js.erb}) e strutturare i template \textit{*.html.erb} in modo tale da essere compatibili con il nuovo pattern mediante invocazioni remote.\\
+	Questo tipo di attività, essendo molto verbosa e delicata nella gestione, ha richiesto più tempo rispetto a quanto pianificato.
 		%remote true
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=12cm]{Pics/ScreenRemoteTrueEstintori.png}
+				\caption{Schermata relativa alla dotazione di estintori in un luogo .}
+				\label{fig:ScreenRemoteTrueEstintori}
+			\end{center}
+		\end{figure}
 		
 
 \newpage
 \subsection{Regole Drools}
 \label{Drools:regole}
 \hl{In questa sezione vengono riportate alcune tra le regole Drools più significative.}
+\subsubsection{Riconoscimento di un indoviduo che ricopre una mansione per la quale non è formato}
 	\label{Drools:regolaMansioniFormazioni}
 	\begin{verbatim}
 	rule "Individuo ricopre una mansione per la quale non è formato"
@@ -301,7 +395,20 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 	Al verificarsi di queste condizioni, viene generato un allarme il cui contenuto è specificato dalla stampa disposta dalla \gls{RHS}\G.
 	
 	%{TODO regole su: CPI con superficie > N mq}
-
+\subsubsection{Mancanza del CPI per sedi con superficie maggiore di trecento metri quadri}
+\label{Drools:regolaCPISuperficie}
+\hl{Finire di scrivere}
+	\begin{verbatim}
+		rule "CPI assente e superficie e la superficie della sede è  maggiore di 300 metri quadri"
+		when
+		$s: 	  Location(surfaceArea > 300)
+		$a: 	  Answer(answerableType == "Location", answerableId == $s.getId(), 
+					questionCode == "location_needs_CPI", response == "no")
+		then
+					System.out.println("La sede all\'indirizzo"+ $s.getAddress() +
+					 ", ha una superficie maggiore di 100 metri quadri, richiede quindi il CPI. ");
+		end
+	\end{verbatim}
 
 
 \newpage
@@ -311,6 +418,7 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 	Al termine dello stage sono stati analizzati i risultati ottenuti e sul valore aggiunto che esso ha portato.\\
 	\hl{TODO }	
 
+	%scrivere il risultato sui requisiti soddisfatti e non
 
 
 
