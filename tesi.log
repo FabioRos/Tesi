@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  25 MAR 2016 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  28 MAR 2016 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,7 +999,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 126.
  (./tex/titlepage.tex
-<Pics/logo-unipd.png, id=293, 943.525pt x 949.5475pt>
+<Pics/logo-unipd.png, id=297, 943.525pt x 949.5475pt>
 File: Pics/logo-unipd.png Graphic file (type png)
 
 <use Pics/logo-unipd.png>
@@ -1013,7 +1013,7 @@ Package pdftex.def Info: Pics/logo-unipd.png used on input line 24.
 logo-unipd.png>]) [2
 
 ] (./tesi.toc
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 43.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1028,23 +1028,18 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \tf@lof=\write7
 \openout7 = `tesi.lof'.
 
- (./tesi.lot)
-\tf@lot=\write8
-\openout8 = `tesi.lot'.
-
  [6] (./tex/abstract.tex) [7
 
 ] [8
 
-]
-(./tex/introduzione.tex
-<Pics/logo_moku.jpg, id=680, 383.93437pt x 155.07938pt>
+] (./tex/introduzione.tex
+<Pics/logo_moku.jpg, id=676, 383.93437pt x 155.07938pt>
 File: Pics/logo_moku.jpg Graphic file (type jpg)
 
 <use Pics/logo_moku.jpg>
 Package pdftex.def Info: Pics/logo_moku.jpg used on input line 5.
 (pdftex.def)             Requested size: 112.70311pt x 45.52458pt.
- <Pics/scrum.png, id=681, 1093.686pt x 429.2838pt>
+ <Pics/scrum.png, id=677, 1093.686pt x 429.2838pt>
 File: Pics/scrum.png Graphic file (type png)
 
 <use Pics/scrum.png>
@@ -1058,28 +1053,28 @@ l.30
       [1
 
  <./Pics/logo_moku.jpg> <./Pics/scrum.png>]
-<Pics/atlassian_logo.png, id=689, 488.82625pt x 103.38625pt>
+<Pics/atlassian_logo.png, id=685, 488.82625pt x 103.38625pt>
 File: Pics/atlassian_logo.png Graphic file (type png)
 
 <use Pics/atlassian_logo.png>
 Package pdftex.def Info: Pics/atlassian_logo.png used on input line 35.
 (pdftex.def)             Requested size: 147.98413pt x 31.2982pt.
 
-<Pics/jira_logo.png, id=690, 430.60875pt x 223.83624pt>
+<Pics/jira_logo.png, id=686, 430.60875pt x 223.83624pt>
 File: Pics/jira_logo.png Graphic file (type png)
 
 <use Pics/jira_logo.png>
 Package pdftex.def Info: Pics/jira_logo.png used on input line 45.
 (pdftex.def)             Requested size: 76.62576pt x 39.83368pt.
 
-<Pics/confluence_logo.jpeg, id=691, 594.22pt x 85.31876pt>
+<Pics/confluence_logo.jpeg, id=687, 594.22pt x 85.31876pt>
 File: Pics/confluence_logo.jpeg Graphic file (type jpg)
 
 <use Pics/confluence_logo.jpeg>
 Package pdftex.def Info: Pics/confluence_logo.jpeg used on input line 59.
 (pdftex.def)             Requested size: 138.70781pt x 19.91684pt.
 
-<Pics/bitbucket_logo.png, id=692, 479.7925pt x 105.39375pt>
+<Pics/bitbucket_logo.png, id=688, 479.7925pt x 105.39375pt>
 File: Pics/bitbucket_logo.png Graphic file (type png)
 
 <use Pics/bitbucket_logo.png>
@@ -1091,52 +1086,40 @@ been already used, duplicate ignored
                    \relax 
 l.73 
       [2 <./Pics/atlassian_logo.png> <./Pics/jira_logo.png (PNG copy)> <./Pics/
-confluence_logo.jpeg>] <Pics/slack_logo.png, id=697, 421.575pt x 120.45pt>
+confluence_logo.jpeg>] <Pics/slack_logo.png, id=693, 421.575pt x 120.45pt>
 File: Pics/slack_logo.png Graphic file (type png)
 
 <use Pics/slack_logo.png>
 Package pdftex.def Info: Pics/slack_logo.png used on input line 81.
 (pdftex.def)             Requested size: 99.58475pt x 28.45274pt.
- <Pics/errbit_logo.png, id=698, 256.96pt x 256.96pt>
-File: Pics/errbit_logo.png Graphic file (type png)
 
-<use Pics/errbit_logo.png>
-Package pdftex.def Info: Pics/errbit_logo.png used on input line 94.
-(pdftex.def)             Requested size: 39.8323pt x 39.83368pt.
-
-<Pics/airbrake_logo.png, id=699, 415.5525pt x 132.495pt>
+<Pics/airbrake_logo.png, id=694, 415.5525pt x 132.495pt>
 File: Pics/airbrake_logo.png Graphic file (type png)
 
 <use Pics/airbrake_logo.png>
-Package pdftex.def Info: Pics/airbrake_logo.png used on input line 108.
+Package pdftex.def Info: Pics/airbrake_logo.png used on input line 96.
 (pdftex.def)             Requested size: 142.78241pt x 45.52458pt.
- [3 <./Pics/bitbucket_logo.png> <./Pics/slack_logo.png> <./Pics/errbit_logo.png
-> <./Pics/airbrake_logo.png>] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 148.
+ [3 <./Pics/bitbucket_logo.png> <./Pics/slack_logo.png> <./Pics/airbrake_logo.p
+ng>] [4
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 134.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
-) [5
-
-] [6
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
+) [5] [6
 
 ]
 (./tex/pianificazione_del_lavoro.tex
-<Pics/gantt.png, id=728, 1086.0575pt x 262.9825pt>
-File: Pics/gantt.png Graphic file (type png)
- <use Pics/gantt.png>
-Package pdftex.def Info: Pics/gantt.png used on input line 5.
-(pdftex.def)             Requested size: 455.24408pt x 110.2352pt.
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 5--6
- [] 
  []
 
-) [7 <./Pics/gantt.png (PNG copy)>] [8
+) [7] [8
 
 ] (./tex/analisi_prodotto_esistente.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--20
@@ -1184,7 +1167,7 @@ File: Pics/diagramma_attivita_risposte.png Graphic file (type png)
 
 <use Pics/diagramma_attivita_risposte.png>
 Package pdftex.def Info: Pics/diagramma_attivita_risposte.png used on input lin
-e 106.
+e 98.
 (pdftex.def)             Requested size: 227.62204pt x 537.85942pt.
  [13 <./Pics/diagramma_attivita_risposte.png>]) [14] (./tex/requisiti_e_casi_d_
 uso.tex
@@ -1206,7 +1189,7 @@ Package pdftex.def Info: Pics/UCRestaurato.png used on input line 22.
 .3603pt x 230.36063pt>
 File: Pics/Attori.png Graphic file (type png)
  <use Pics/Attori.png>
-Package pdftex.def Info: Pics/Attori.png used on input line 33.
+Package pdftex.def Info: Pics/Attori.png used on input line 32.
 (pdftex.def)             Requested size: 142.26378pt x 200.60895pt.
 
 [16 <./Pics/Attori.png>]
@@ -1215,227 +1198,222 @@ File: Pics/Diagramma_generale_dei_casi_d_uso.png Graphic file (type png)
 
 <use Pics/Diagramma_generale_dei_casi_d_uso.png>
 Package pdftex.def Info: Pics/Diagramma_generale_dei_casi_d_uso.png used on inp
-ut line 50.
+ut line 49.
 (pdftex.def)             Requested size: 312.9803pt x 372.52878pt.
 
-<Pics/UC1GestioneFigureDiSistema.png, id=848, 590.95781pt x 575.14874pt>
+<Pics/UC1GestioneFigureDiSistema.png, id=847, 590.95781pt x 575.14874pt>
 File: Pics/UC1GestioneFigureDiSistema.png Graphic file (type png)
 
 <use Pics/UC1GestioneFigureDiSistema.png>
 Package pdftex.def Info: Pics/UC1GestioneFigureDiSistema.png used on input line
- 80.
+ 78.
 (pdftex.def)             Requested size: 341.43306pt x 332.30519pt.
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
  [17 <./Pics/Diagramma_generale_dei_casi_d_uso.png>]
-Overfull \hbox (6.55052pt too wide) in paragraph at lines 97--98
+Overfull \hbox (6.55052pt too wide) in paragraph at lines 95--96
 []\T1/cmr/m/it/9 L'utente au-ten-ti-ca-to ge-sti-sce gli [][][][]Rap-pre-sen-ta
 n-te dei La-vo-ra-to-ri per la si-cu-rez-za (RLS)[][][]$[]$
  []
 
 [18 <./Pics/UC1GestioneFigureDiSistema.png>]
-<Pics/UC1_1_FigureDiSistema_RSPP.png, id=872, 612.78937pt x 864.22874pt>
+<Pics/UC1_1_FigureDiSistema_RSPP.png, id=871, 612.78937pt x 864.22874pt>
 File: Pics/UC1_1_FigureDiSistema_RSPP.png Graphic file (type png)
 
 <use Pics/UC1_1_FigureDiSistema_RSPP.png>
 Package pdftex.def Info: Pics/UC1_1_FigureDiSistema_RSPP.png used on input line
- 107.
+ 105.
 (pdftex.def)             Requested size: 341.43306pt x 481.52519pt.
  [19 <./Pics/UC1_1_FigureDiSistema_RSPP.png>]
-Overfull \hbox (11.21011pt too wide) in paragraph at lines 122--123
+Overfull \hbox (11.21011pt too wide) in paragraph at lines 120--121
 []\T1/cmr/m/it/9 L'utente au-ten-ti-ca-to in-se-ri-sce una ri-spo-sta ad una do
 -man-da del que-stio-na-rio (UC1.1.5); 
  []
 
 [20]
 <Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministrazion
-e.png, id=894, 503.63156pt x 511.9125pt>
+e.png, id=893, 503.63156pt x 511.9125pt>
 File: Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministr
 azione.png Graphic file (type png)
 
 <use Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmministra
 zione.png>
 Package pdftex.def Info: Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDa
-PannelloDiAmministrazione.png used on input line 137.
+PannelloDiAmministrazione.png used on input line 135.
 (pdftex.def)             Requested size: 341.43306pt x 347.04921pt.
- <Pics/UC2_2DPIDipendenti.png, id=902, 578.16pt x 482.55281pt>
+ <Pics/UC2_2DPIDipendenti.png, id=901, 578.16pt x 482.55281pt>
 File: Pics/UC2_2DPIDipendenti.png Graphic file (type png)
 
 <use Pics/UC2_2DPIDipendenti.png>
-Package pdftex.def Info: Pics/UC2_2DPIDipendenti.png used on input line 159.
+Package pdftex.def Info: Pics/UC2_2DPIDipendenti.png used on input line 157.
 (pdftex.def)             Requested size: 341.43306pt x 284.96875pt.
  [21 <./Pics/UC2_1GestioneDispositiviDiProtezioneIndividualeDaPannelloDiAmminis
 trazione.png>] [22 <./Pics/UC2_2DPIDipendenti.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--184
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
  []
 
-[23] <Pics/UC4_2GestioneFormazioni.png, id=938, 819.8128pt x 557.83406pt>
+[23] <Pics/UC4_2GestioneFormazioni.png, id=937, 819.8128pt x 557.83406pt>
 File: Pics/UC4_2GestioneFormazioni.png Graphic file (type png)
 
 <use Pics/UC4_2GestioneFormazioni.png>
 Package pdftex.def Info: Pics/UC4_2GestioneFormazioni.png used on input line 19
-9.
+7.
 (pdftex.def)             Requested size: 455.24408pt x 309.77179pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 199--200
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 197--198
  [] 
  []
 
 [24 <./Pics/UC4_2GestioneFormazioni.png>] [25]
-<Pics/UC5QuestionarioUtenteAutenticato.png, id=951, 888.31876pt x 377.91188pt>
-File: Pics/UC5QuestionarioUtenteAutenticato.png Graphic file (type png)
+<Pics/UC5GestioneProcedure.png, id=953, 503.63156pt x 277.035pt>
+File: Pics/UC5GestioneProcedure.png Graphic file (type png)
 
-<use Pics/UC5QuestionarioUtenteAutenticato.png>
-Package pdftex.def Info: Pics/UC5QuestionarioUtenteAutenticato.png used on inpu
-t line 228.
-(pdftex.def)             Requested size: 426.79134pt x 181.56287pt.
- [26 <./Pics/UC5QuestionarioUtenteAutenticato.png>]
-<Pics/UC6GestioneProcedure.png, id=962, 503.63156pt x 277.035pt>
-File: Pics/UC6GestioneProcedure.png Graphic file (type png)
-
-<use Pics/UC6GestioneProcedure.png>
-Package pdftex.def Info: Pics/UC6GestioneProcedure.png used on input line 262.
+<use Pics/UC5GestioneProcedure.png>
+Package pdftex.def Info: Pics/UC5GestioneProcedure.png used on input line 260.
 (pdftex.def)             Requested size: 341.43306pt x 187.81485pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-[27 <./Pics/UC6GestioneProcedure.png>]
-<Pics/UC7Segnalazioni.png, id=973, 636.87938pt x 472.76625pt>
-File: Pics/UC7Segnalazioni.png Graphic file (type png)
+[26 <./Pics/UC5GestioneProcedure.png>]
+<Pics/UC6Segnalazioni.png, id=963, 636.87938pt x 472.76625pt>
+File: Pics/UC6Segnalazioni.png Graphic file (type png)
 
-<use Pics/UC7Segnalazioni.png>
-Package pdftex.def Info: Pics/UC7Segnalazioni.png used on input line 300.
+<use Pics/UC6Segnalazioni.png>
+Package pdftex.def Info: Pics/UC6Segnalazioni.png used on input line 298.
 (pdftex.def)             Requested size: 341.43306pt x 253.45044pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--304
+Underfull \hbox (badness 10000) in paragraph at lines 295--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-[28 <./Pics/UC7Segnalazioni.png>]
-<Pics/UC8GestioneDispositiviProtezioneCollettivi.png, id=980, 507.39563pt x 230
+[27 <./Pics/UC6Segnalazioni.png>]
+<Pics/UC7GestioneDispositiviProtezioneCollettivi.png, id=970, 507.39563pt x 230
 .36063pt>
-File: Pics/UC8GestioneDispositiviProtezioneCollettivi.png Graphic file (type pn
+File: Pics/UC7GestioneDispositiviProtezioneCollettivi.png Graphic file (type pn
 g)
- <use Pics/UC8GestioneDispositiviProtezioneCollettivi.png>
-Package pdftex.def Info: Pics/UC8GestioneDispositiviProtezioneCollettivi.png us
-ed on input line 323.
+ <use Pics/UC7GestioneDispositiviProtezioneCollettivi.png>
+Package pdftex.def Info: Pics/UC7GestioneDispositiviProtezioneCollettivi.png us
+ed on input line 321.
 (pdftex.def)             Requested size: 341.43306pt x 155.01569pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
-[29 <./Pics/UC8GestioneDispositiviProtezioneCollettivi.png>]
-Underfull \hbox (badness 2435) in paragraph at lines 396--396
+[28 <./Pics/UC7GestioneDispositiviProtezioneCollettivi.png>]
+Underfull \hbox (badness 2435) in paragraph at lines 394--394
 []|\T1/cmr/m/n/9 Per ogni ca-ri-ca di ogni di-pen-den-te de-vo-no es-se-re
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 396--396
+Underfull \hbox (badness 1189) in paragraph at lines 394--394
 \T1/cmr/m/n/9 se-gna-la-te even-tua-li for-ma-zio-ni man-can-ti per po-ter-la
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 409--409
+Underfull \hbox (badness 4686) in paragraph at lines 407--407
 []|\T1/cmr/m/n/9 Un uten-te au-ten-ti-ca-to de-ve po-ter ag-giun-ge-re un
  []
 
 
-Overfull \hbox (2.24173pt too wide) in paragraph at lines 377--428
+Overfull \hbox (2.24173pt too wide) in paragraph at lines 374--426
 []  
  []
 
-[30]
-Underfull \hbox (badness 5161) in paragraph at lines 448--448
+[29]
+Underfull \hbox (badness 5161) in paragraph at lines 446--446
 []|\T1/cmr/m/n/9 Un uten-te am-mi-ni-stra-to-re de-ve po-ter in-se-ri-re le
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 448--448
+Underfull \hbox (badness 1852) in paragraph at lines 446--446
 \T1/cmr/m/n/9 for-ma-zio-ni ne-ces-sa-rie al-lo svol-gi-men-to di una da-ta
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 452--452
+Underfull \hbox (badness 1655) in paragraph at lines 450--450
 []|\T1/cmr/m/n/9 La man-can-za del-le for-ma-zio-ni ne-ces-sa-rie per po-ter
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 458--458
+Underfull \hbox (badness 3271) in paragraph at lines 456--456
 []|\T1/cmr/m/n/9 Devono es-se-re ge-sti-te in una ap-po-si-ta se-zio-ne le
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 476--476
+Underfull \hbox (badness 2103) in paragraph at lines 474--474
 []|\T1/cmr/m/n/9 Devono es-se-re di-spo-ni-bi-li de-gli script che ca-ri-ca-no
  []
 
 
-Overfull \hbox (2.24173pt too wide) in paragraph at lines 432--485
+Overfull \hbox (2.24173pt too wide) in paragraph at lines 430--483
 []  
  []
 
-) [31] [32
-
-] (./tex/tecnologie_e_strumenti.tex
+) [30] (./tex/tecnologie_e_strumenti.tex
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 8.
 
-<Pics/gitflow.png, id=1032, 660.4675pt x 465.74pt>
+<Pics/gitflow.png, id=1018, 660.4675pt x 465.74pt>
 File: Pics/gitflow.png Graphic file (type png)
  <use Pics/gitflow.png>
 Package pdftex.def Info: Pics/gitflow.png used on input line 11.
 (pdftex.def)             Requested size: 341.43306pt x 240.77197pt.
 
-[33 <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=1039, 401.5pt x 401.5pt>
+[31
+
+ <./Pics/gitflow.png>] <Pics/rubymine_logo.png, id=1025, 401.5pt x 401.5pt>
 File: Pics/rubymine_logo.png Graphic file (type png)
 
 <use Pics/rubymine_logo.png>
 Package pdftex.def Info: Pics/rubymine_logo.png used on input line 43.
 (pdftex.def)             Requested size: 113.81102pt x 113.80992pt.
- [34 <./Pics/rubymine_logo.png (PNG copy)>]
-<Pics/ActiveAdmin_logo.png, id=1055, 469.755pt x 114.4275pt>
+ [32 <./Pics/rubymine_logo.png (PNG copy)>]
+<Pics/ActiveAdmin_logo.png, id=1041, 469.755pt x 114.4275pt>
 File: Pics/ActiveAdmin_logo.png Graphic file (type png)
 
 <use Pics/ActiveAdmin_logo.png>
 Package pdftex.def Info: Pics/ActiveAdmin_logo.png used on input line 112.
 (pdftex.def)             Requested size: 170.71652pt x 41.58496pt.
- [35]
-<Pics/i8n-logo.png, id=1071, 501.875pt x 503.8825pt>
+ [33]
+<Pics/i8n-logo.png, id=1056, 501.875pt x 503.8825pt>
 File: Pics/i8n-logo.png Graphic file (type png)
  <use Pics/i8n-logo.png>
 Package pdftex.def Info: Pics/i8n-logo.png used on input line 130.
 (pdftex.def)             Requested size: 113.81102pt x 114.26054pt.
 
-[36 <./Pics/ActiveAdmin_logo.png> <./Pics/i8n-logo.png>]
-<Pics/jruby-logo.png, id=1081, 501.875pt x 501.875pt>
+[34 <./Pics/ActiveAdmin_logo.png> <./Pics/i8n-logo.png>]
+<Pics/jruby-logo.png, id=1066, 501.875pt x 501.875pt>
 File: Pics/jruby-logo.png Graphic file (type png)
 
 <use Pics/jruby-logo.png>
 Package pdftex.def Info: Pics/jruby-logo.png used on input line 154.
 (pdftex.def)             Requested size: 113.81102pt x 113.80533pt.
 
-<Pics/drools-logo.png, id=1082, 602.25pt x 180.675pt>
+<Pics/drools-logo.png, id=1067, 602.25pt x 180.675pt>
 File: Pics/drools-logo.png Graphic file (type png)
 
 <use Pics/drools-logo.png>
 Package pdftex.def Info: Pics/drools-logo.png used on input line 174.
 (pdftex.def)             Requested size: 199.16928pt x 59.74974pt.
- [37 <./Pics/jruby-logo.png> <./Pics/drools-logo.png>] <Pics/drools_abstract_st
-ructure.png, id=1095, 433.62pt x 240.9pt>
+ [35 <./Pics/jruby-logo.png> <./Pics/drools-logo.png>] <Pics/drools_abstract_st
+ructure.png, id=1080, 433.62pt x 240.9pt>
 File: Pics/drools_abstract_structure.png Graphic file (type png)
 
 <use Pics/drools_abstract_structure.png>
 Package pdftex.def Info: Pics/drools_abstract_structure.png used on input line 
 185.
 (pdftex.def)             Requested size: 341.43306pt x 189.69504pt.
- [38 <./Pics/drools_abstract_structure.png>] <Pics/logo-foundation.png, id=1108
+ [36 <./Pics/drools_abstract_structure.png>] <Pics/logo-foundation.png, id=1094
 , 395.4775pt x 127.47626pt>
 File: Pics/logo-foundation.png Graphic file (type png)
 
@@ -1443,27 +1421,27 @@ File: Pics/logo-foundation.png Graphic file (type png)
 Package pdftex.def Info: Pics/logo-foundation.png used on input line 214.
 (pdftex.def)             Requested size: 199.16928pt x 64.19896pt.
 
-<Pics/foundation5_compatibilita.png, id=1121, 843.15pt x 571.13374pt>
+<Pics/foundation5_compatibilita.png, id=1107, 843.15pt x 571.13374pt>
 File: Pics/foundation5_compatibilita.png Graphic file (type png)
 
 <use Pics/foundation5_compatibilita.png>
 Package pdftex.def Info: Pics/foundation5_compatibilita.png used on input line 
 241.
 (pdftex.def)             Requested size: 426.79134pt x 289.10437pt.
- [39 <./Pics/logo-foundation.png>]
-<Pics/jquery_logo.png, id=1135, 2073.7475pt x 547.04375pt>
+ [37 <./Pics/logo-foundation.png>]
+<Pics/jquery_logo.png, id=1121, 2073.7475pt x 547.04375pt>
 File: Pics/jquery_logo.png Graphic file (type png)
 
 <use Pics/jquery_logo.png>
 Package pdftex.def Info: Pics/jquery_logo.png used on input line 253.
 (pdftex.def)             Requested size: 199.16928pt x 52.5373pt.
-) [40 <./Pics/foundation5_compatibilita.png> <./Pics/jquery_logo.png>] (./tex/s
+) [38 <./Pics/foundation5_compatibilita.png> <./Pics/jquery_logo.png>] (./tex/s
 viluppo.tex
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-<Pics/UMLClassiFigureDiSistema.png, id=1157, 620.3175pt x 204.765pt>
+<Pics/UMLClassiFigureDiSistema.png, id=1143, 620.3175pt x 204.765pt>
 File: Pics/UMLClassiFigureDiSistema.png Graphic file (type png)
 
 <use Pics/UMLClassiFigureDiSistema.png>
@@ -1475,9 +1453,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--52
 
  []
 
-[41
+[39
 
-] <Pics/ScreenFigureDiSistemaProspetto.png, id=1167, 772.8875pt x 546.04pt>
+] <Pics/ScreenFigureDiSistemaProspetto.png, id=1152, 772.8875pt x 546.04pt>
 File: Pics/ScreenFigureDiSistemaProspetto.png Graphic file (type png)
 
 <use Pics/ScreenFigureDiSistemaProspetto.png>
@@ -1489,7 +1467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--62
 
  []
 
-<Pics/ScreenfigureDiCantiere.png, id=1168, 651.43375pt x 334.24875pt>
+<Pics/ScreenfigureDiCantiere.png, id=1153, 651.43375pt x 334.24875pt>
 File: Pics/ScreenfigureDiCantiere.png Graphic file (type png)
 
 <use Pics/ScreenfigureDiCantiere.png>
@@ -1504,14 +1482,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./Pics/UMLClassiFigureDiSistema.png> <./Pics/ScreenFigureDiSistemaProspet
+ [40 <./Pics/UMLClassiFigureDiSistema.png> <./Pics/ScreenFigureDiSistemaProspet
 to.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--76
 
  []
 
 
-<Pics/screen_organo_di_vigianza_con_autocompletamento.png, id=1177, 716.6775pt 
+<Pics/screen_organo_di_vigianza_con_autocompletamento.png, id=1162, 716.6775pt 
 x 573.14125pt>
 File: Pics/screen_organo_di_vigianza_con_autocompletamento.png Graphic file (ty
 pe png)
@@ -1520,7 +1498,7 @@ Package pdftex.def Info: Pics/screen_organo_di_vigianza_con_autocompletamento.p
 ng used on input line 79.
 (pdftex.def)             Requested size: 312.9803pt x 250.30266pt.
 
-<Pics/RemoteTrueRSPP.png, id=1178, 741.77126pt x 395.4775pt>
+<Pics/RemoteTrueRSPP.png, id=1163, 741.77126pt x 395.4775pt>
 File: Pics/RemoteTrueRSPP.png Graphic file (type png)
 
 <use Pics/RemoteTrueRSPP.png>
@@ -1529,13 +1507,13 @@ Package pdftex.def Info: Pics/RemoteTrueRSPP.png used on input line 89.
 
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
- [43 <./Pics/ScreenfigureDiCantiere.png> <./Pics/screen_organo_di_vigianza_con_
-autocompletamento.png>] [44 <./Pics/RemoteTrueRSPP.png>]
+ [41 <./Pics/ScreenfigureDiCantiere.png> <./Pics/screen_organo_di_vigianza_con_
+autocompletamento.png>] [42 <./Pics/RemoteTrueRSPP.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
-<Pics/UMLClassiDPIversioneAllArrivo.png, id=1191, 480.29437pt x 75.28125pt>
+<Pics/UMLClassiDPIversioneAllArrivo.png, id=1177, 480.29437pt x 75.28125pt>
 File: Pics/UMLClassiDPIversioneAllArrivo.png Graphic file (type png)
 
 <use Pics/UMLClassiDPIversioneAllArrivo.png>
@@ -1543,7 +1521,7 @@ Package pdftex.def Info: Pics/UMLClassiDPIversioneAllArrivo.png used on input l
 ine 115.
 (pdftex.def)             Requested size: 284.52756pt x 44.59703pt.
 
-<Pics/UMLClassiDPIRiprogettato.png, id=1204, 725.71124pt x 75.28125pt>
+<Pics/UMLClassiDPIRiprogettato.png, id=1190, 725.71124pt x 75.28125pt>
 File: Pics/UMLClassiDPIRiprogettato.png Graphic file (type png)
 
 <use Pics/UMLClassiDPIRiprogettato.png>
@@ -1555,172 +1533,171 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--138
 
  []
 
-[45 <./Pics/UMLClassiDPIversioneAllArrivo.png> <./Pics/UMLClassiDPIRiprogettato
-.png>] <Pics/ActiveAdminDPI.png, id=1221, 799.98875pt x 572.1375pt>
+[43 <./Pics/UMLClassiDPIversioneAllArrivo.png> <./Pics/UMLClassiDPIRiprogettato
+.png>] <Pics/ActiveAdminDPI.png, id=1206, 799.98875pt x 572.1375pt>
 File: Pics/ActiveAdminDPI.png Graphic file (type png)
 
 <use Pics/ActiveAdminDPI.png>
 Package pdftex.def Info: Pics/ActiveAdminDPI.png used on input line 146.
 (pdftex.def)             Requested size: 341.43306pt x 244.18973pt.
 
-<Pics/ScreenDPI.png, id=1224, 753.81625pt x 594.22pt>
+<Pics/ScreenDPI.png, id=1209, 753.81625pt x 594.22pt>
 File: Pics/ScreenDPI.png Graphic file (type png)
  <use Pics/ScreenDPI.png>
 Package pdftex.def Info: Pics/ScreenDPI.png used on input line 157.
 (pdftex.def)             Requested size: 341.43306pt x 269.1374pt.
 
-[46 <./Pics/ActiveAdminDPI.png> <./Pics/ScreenDPI.png>]
+[44 <./Pics/ActiveAdminDPI.png> <./Pics/ScreenDPI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
+Underfull \hbox (badness 10000) in paragraph at lines 175--179
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
-
- []
-
-<Pics/UMLClassiFormazioniMansioni.png, id=1233, 615.80063pt x 289.08pt>
+<Pics/UMLClassiFormazioniMansioni.png, id=1218, 615.80063pt x 289.08pt>
 File: Pics/UMLClassiFormazioniMansioni.png Graphic file (type png)
 
 <use Pics/UMLClassiFormazioniMansioni.png>
 Package pdftex.def Info: Pics/UMLClassiFormazioniMansioni.png used on input lin
-e 184.
+e 182.
 (pdftex.def)             Requested size: 341.43306pt x 160.28249pt.
 
-<Pics/ScreenFormazioneMansioneAdmin.png, id=1237, 951.555pt x 269.005pt>
+<Pics/ScreenFormazioneMansioneAdmin.png, id=1222, 951.555pt x 269.005pt>
 File: Pics/ScreenFormazioneMansioneAdmin.png Graphic file (type png)
 
 <use Pics/ScreenFormazioneMansioneAdmin.png>
 Package pdftex.def Info: Pics/ScreenFormazioneMansioneAdmin.png used on input l
-ine 197.
+ine 195.
 (pdftex.def)             Requested size: 398.33858pt x 112.6119pt.
 
-Underfull \vbox (badness 1810) has occurred while \output is active []
+Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [47 <./Pics/UMLClassiFormazioniMansioni.png>]
-<Pics/ScreenInserimentoMansioni.png, id=1248, 784.9325pt x 374.39874pt>
+ [45 <./Pics/UMLClassiFormazioniMansioni.png>]
+<Pics/ScreenInserimentoMansioni.png, id=1233, 784.9325pt x 374.39874pt>
 File: Pics/ScreenInserimentoMansioni.png Graphic file (type png)
 
 <use Pics/ScreenInserimentoMansioni.png>
 Package pdftex.def Info: Pics/ScreenInserimentoMansioni.png used on input line 
-205.
+203.
 (pdftex.def)             Requested size: 398.33858pt x 190.00392pt.
- [48 <./Pics/ScreenFormazioneMansioneAdmin.png> <./Pics/ScreenInserimentoMansio
+ [46 <./Pics/ScreenFormazioneMansioneAdmin.png> <./Pics/ScreenInserimentoMansio
 ni.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 214--217
+Underfull \hbox (badness 10000) in paragraph at lines 212--216
 
  []
 
-<Pics/ScreenQuestionarioSediApertura.png, id=1256, 1284.8pt x 623.32875pt>
+<Pics/ScreenQuestionarioSediApertura.png, id=1241, 1284.8pt x 623.32875pt>
 File: Pics/ScreenQuestionarioSediApertura.png Graphic file (type png)
 
 <use Pics/ScreenQuestionarioSediApertura.png>
 Package pdftex.def Info: Pics/ScreenQuestionarioSediApertura.png used on input 
-line 220.
-(pdftex.def)             Requested size: 358.5049pt x 173.93164pt.
+line 219.
+(pdftex.def)             Requested size: 369.88582pt x 179.44815pt.
 
-<Pics/ScreenQuestionarioStickyHeader.png, id=1257, 963.6pt x 706.64pt>
+<Pics/ScreenQuestionarioStickyHeader.png, id=1242, 963.6pt x 706.64pt>
 File: Pics/ScreenQuestionarioStickyHeader.png Graphic file (type png)
 
 <use Pics/ScreenQuestionarioStickyHeader.png>
 Package pdftex.def Info: Pics/ScreenQuestionarioStickyHeader.png used on input 
-line 228.
-(pdftex.def)             Requested size: 341.43306pt x 250.37914pt.
+line 227.
+(pdftex.def)             Requested size: 312.9803pt x 229.5151pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--232
+Underfull \hbox (badness 10000) in paragraph at lines 224--231
 
  []
 
-[49 <./Pics/ScreenQuestionarioSediApertura.png> <./Pics/ScreenQuestionarioStick
+[47 <./Pics/ScreenQuestionarioSediApertura.png> <./Pics/ScreenQuestionarioStick
 yHeader.png>]
-<Pics/UMLClassiSegnalazioni.png, id=1265, 456.20438pt x 75.28125pt>
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+<Pics/UMLClassiSegnalazioni.png, id=1251, 456.20438pt x 75.28125pt>
 File: Pics/UMLClassiSegnalazioni.png Graphic file (type png)
 
 <use Pics/UMLClassiSegnalazioni.png>
-Package pdftex.def Info: Pics/UMLClassiSegnalazioni.png used on input line 252.
+Package pdftex.def Info: Pics/UMLClassiSegnalazioni.png used on input line 251.
 
 (pdftex.def)             Requested size: 341.43306pt x 56.34361pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
+Underfull \hbox (badness 10000) in paragraph at lines 246--255
 
  []
 
-<Pics/ScreenSegnalazioni.png, id=1266, 962.59625pt x 585.18625pt>
+<Pics/ScreenSegnalazioni.png, id=1252, 962.59625pt x 585.18625pt>
 File: Pics/ScreenSegnalazioni.png Graphic file (type png)
 
 <use Pics/ScreenSegnalazioni.png>
-Package pdftex.def Info: Pics/ScreenSegnalazioni.png used on input line 268.
+Package pdftex.def Info: Pics/ScreenSegnalazioni.png used on input line 267.
 (pdftex.def)             Requested size: 341.43306pt x 207.55952pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./Pics/UMLClassiSegnalazioni.png>] [51 <./Pics/ScreenSegnalazioni.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+ [48 <./Pics/UMLClassiSegnalazioni.png>] [49 <./Pics/ScreenSegnalazioni.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
-<Pics/ScreenProcedureDiPrassi.png, id=1281, 966.61125pt x 534.99875pt>
+<Pics/ScreenProcedureDiPrassi.png, id=1267, 966.61125pt x 534.99875pt>
 File: Pics/ScreenProcedureDiPrassi.png Graphic file (type png)
 
 <use Pics/ScreenProcedureDiPrassi.png>
 Package pdftex.def Info: Pics/ScreenProcedureDiPrassi.png used on input line 29
-3.
+1.
 (pdftex.def)             Requested size: 398.33858pt x 220.46928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-<Pics/ScreenDVR.png, id=1284, 968.61874pt x 626.34pt>
+<Pics/ScreenDVR.png, id=1270, 968.61874pt x 626.34pt>
 File: Pics/ScreenDVR.png Graphic file (type png)
  <use Pics/ScreenDVR.png>
-Package pdftex.def Info: Pics/ScreenDVR.png used on input line 308.
+Package pdftex.def Info: Pics/ScreenDVR.png used on input line 305.
 (pdftex.def)             Requested size: 398.33858pt x 257.57518pt.
 
-[52 <./Pics/ScreenProcedureDiPrassi.png>] [53 <./Pics/ScreenDVR.png>]
-<Pics/UMLClassiDPC.png, id=1305, 505.89pt x 93.34875pt>
+[50 <./Pics/ScreenProcedureDiPrassi.png>] [51 <./Pics/ScreenDVR.png>]
+<Pics/UMLClassiDPC.png, id=1290, 505.89pt x 93.34875pt>
 File: Pics/UMLClassiDPC.png Graphic file (type png)
 
 <use Pics/UMLClassiDPC.png>
-Package pdftex.def Info: Pics/UMLClassiDPC.png used on input line 337.
+Package pdftex.def Info: Pics/UMLClassiDPC.png used on input line 330.
 (pdftex.def)             Requested size: 341.43306pt x 63.0034pt.
 
-<Pics/ScreenIndexEstintori.png, id=1309, 975.645pt x 366.36874pt>
+<Pics/ScreenIndexEstintori.png, id=1294, 975.645pt x 366.36874pt>
 File: Pics/ScreenIndexEstintori.png Graphic file (type png)
 
 <use Pics/ScreenIndexEstintori.png>
-Package pdftex.def Info: Pics/ScreenIndexEstintori.png used on input line 348.
+Package pdftex.def Info: Pics/ScreenIndexEstintori.png used on input line 341.
 (pdftex.def)             Requested size: 426.79134pt x 160.26915pt.
 
-<Pics/ScreenRemoteTrueEstintori.png, id=1312, 735.74875pt x 486.81876pt>
+<Pics/ScreenRemoteTrueEstintori.png, id=1297, 735.74875pt x 486.81876pt>
 File: Pics/ScreenRemoteTrueEstintori.png Graphic file (type png)
 
 <use Pics/ScreenRemoteTrueEstintori.png>
 Package pdftex.def Info: Pics/ScreenRemoteTrueEstintori.png used on input line 
-365.
+357.
 (pdftex.def)             Requested size: 341.43306pt x 225.92268pt.
- [54 <./Pics/UMLClassiDPC.png> <./Pics/ScreenIndexEstintori.png>] [55 <./Pics/S
+ [52 <./Pics/UMLClassiDPC.png> <./Pics/ScreenIndexEstintori.png>] [53 <./Pics/S
 creenRemoteTrueEstintori.png>]
-Overfull \hbox (23.35486pt too wide) in paragraph at lines 410--410
+Overfull \hbox (23.35486pt too wide) in paragraph at lines 403--403
  []\T1/cmtt/m/n/9 rule "CPI assente e superficie e la superficie della sede è  
 maggiore di 300 metri quadri"[] 
  []
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 420--422
+[54] [55]
+Underfull \hbox (badness 10000) in paragraph at lines 429--436
 
  []
 
-[57]) [58] (./tex/appendice_migrazioni.tex) [59
+) [56] (./tex/appendice_migrazioni.tex) [57
 
 
 
-] [60
+] [58
 
 ]
 (./tex/appendice_inference.tex
@@ -1737,38 +1714,38 @@ l \T1/cmr/m/it/9 con-se-quent\T1/cmr/m/n/9 , in que-sto ca-so \T1/cmtt/m/n/9 "a
 pro l'ombrello"\T1/cmr/m/n/9 .
  []
 
-) [61] [62
+) [59] [60
 
-] (./tex/appendice_sistemi_esperti.tex) [63] [64
+] (./tex/appendice_sistemi_esperti.tex) [61] [62
 
 ]
 (./tex/appendice_algoritmo_rete.tex
-<Pics/drools_rule_flow_example.png, id=1392, 445.665pt x 741.77126pt>
+<Pics/drools_rule_flow_example.png, id=1385, 445.665pt x 741.77126pt>
 File: Pics/drools_rule_flow_example.png Graphic file (type png)
 
 <use Pics/drools_rule_flow_example.png>
 Package pdftex.def Info: Pics/drools_rule_flow_example.png used on input line 2
 0.
 (pdftex.def)             Requested size: 205.13759pt x 341.43398pt.
- [65 <./Pics/drools_rule_flow_example.png>]) [66] (./tesi.gls [67
+ [63 <./Pics/drools_rule_flow_example.png>]) [64] (./tesi.gls [65
 
 
 ]) 
 AED: lastpage setting LastPage
-[68]
+[66]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 9D81695AB9BBD819A20340A9F212FCAC;5537.
+(rerunfilecheck)             Checksum: D539DA475B7CE9D00DF023C59D80EC1A;5593.
  ) 
 Here is how much of TeX's memory you used:
- 20601 strings out of 493089
- 323426 string characters out of 6134841
- 513596 words of memory out of 5000000
- 23340 multiletter control sequences out of 15000+600000
+ 20582 strings out of 493089
+ 322921 string characters out of 6134841
+ 491727 words of memory out of 5000000
+ 23325 multiletter control sequences out of 15000+600000
  23283 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,75p,1828b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1796,10 +1773,10 @@ nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (76 pages, 3556202 bytes).
+Output written on tesi.pdf (74 pages, 3434707 bytes).
 PDF statistics:
- 1559 PDF objects out of 1728 (max. 8388607)
+ 1552 PDF objects out of 1728 (max. 8388607)
  1331 compressed objects within 14 object streams
- 316 named destinations out of 1000 (max. 500000)
- 872 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 named destinations out of 1000 (max. 500000)
+ 865 words of extra memory for PDF output out of 10000 (max. 10000000)
 

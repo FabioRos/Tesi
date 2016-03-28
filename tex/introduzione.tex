@@ -89,36 +89,22 @@ Slack mette a disposizione anche un meccanismo di condivisione di file e, caratt
 È fornita dal software anche una efficiente funzionalità di ricerca per recuperare le comunicazioni o i contenuti condivisi.
 \subsubsection{Errbit - Rilevazione degli errori }
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[height=1.4cm]{Pics/errbit_logo.png}
-\caption{Logo di Errbit}
-\end{center}
-\end{figure}
-
-Errbit è uno strumento per la rilevazione e gestione degli errori. Esso ha bisogno di un server dove girare e mantiene dei listener in ascolto dei messaggi di errore provenienti dall'applicazione alla quale è collegato.
-Per ogni errore rilevato, vengono resi disponibili su una pagina web le informazioni relative alla tipologia dell'errore, il backTrace, l'utente per il quale è avvenuto, ed i parametri sottomessi alla pagina in analisi.
-Sono inoltre esposte da questo framework delle API per AirBrake e Jira, in modo da favorirne l'integrazione.
-Nello stage è stato fatto uso di questo framework nel server in produzione per essere a conoscenza con esattezza delle criticità del prodotto realizzato in modo da essere reattivi nella risoluzione dei bug rilevati.
-
-\subsubsection{Airbrake - Gestione e notifica degli errori}
+\subsubsection{Airbrake - Rilevazione e notifica degli errori}
 
 \begin{figure}[htbp]
-\begin{center}
-\includegraphics[height=1.6cm]{Pics/airbrake_logo.png}
-\caption{Logo di Airbrake}
-\end{center}
+	\begin{center}
+		\includegraphics[height=1.6cm]{Pics/airbrake_logo.png}
+		\caption{Logo di Airbrake}
+	\end{center}
 \end{figure}
+\hl{todo rivedere}
+Airbrake è uno strumento per la rilevazione e gestione degli errori dotato di un sistema di notifiche push centralizzato. \\
+La sua caratteristica principale è quella di centralizzare la gestione delle notifiche permettendo un'accurata gestione dei flussi di spedizione dei messaggi e degli ambienti monitorati (sviluppo, staging, produzione). \\ 
+Esso ha bisogno di essere installato su un server dove mantiene dei listener pronti a catturare i messaggi di errore provenienti dall'applicazione alla quale è collegato.\\
+Per ogni errore rilevato, vengono resi disponibili su una pagina web le informazioni relative alla tipologia dell'errore, il backTrace, l'utente per il quale è avvenuto, ed i parametri sottomessi alla pagina in analisi.\\
+Nello stage è stato fatto uso di questo framework nel server in produzione per essere a conoscenza con esattezza delle criticità del prodotto realizzato in modo da essere reattivi nella risoluzione dei bug rilevati.\\
+Airbrake è stato configurato in modo tale che le notifiche provenienti dal monitoraggio dell'ambiente di produzione siano spedite ad un canale di Slack appositamente creato.
 
-Airbrake fornisce un sistema di notifiche push centralizzato. La sua caratteristica principale è quella di centralizzare la gestione delle notifiche permettendo un'accurata gestione dei flussi di spedizione dei messaggi e degli ambienti monitorati (sviluppo, staging, produzione). \\ 
-È stato collegato Airbrake ad Errbit mediante le apposite API. 
-Ad ogni eccezione catturata da ErrBit, AirBrake permette di visualizzare in una dashboard tutte le informazioni relative all'eccezione ed al contesto in cui essa è stata sollevata.  È inoltre possibile collegare Airbrake ad altri strumenti ad esempio per la gestione di report periodici. \\ 
- In questo progetto Airbrake è stato configurato in modo tale che le notifiche provenienti dal monitoraggio dell'ambiente di produzione siano spedite ad un canale di Slack appositamente creato.
-
-%\st{
-%Esso raccoglie tutti i messaggi provenienti dai sistemi cui è cui è associato (ad Esempio Errbit) e li inoltra nei flussi indicati nel pannello di configurazione mediante notifiche push. Nel caso di specie, sono sono stati associati i messaggi di errore provenienti dal server di produzione di ogni progetto, ad un canale di slack ad esso relativo.
-%Ogni messaggio contiene le informazioni generali dell'errore oltre ad un collegamento ad una dashboard la quale, grazie al collegamento con Errbit, permette di analizzare i dettagli dell'errore e del contesto in cui è avvenuto.
-%}
 
 \cleardoublepage
 \section{Il progetto di Stage}
@@ -130,7 +116,7 @@ Dal punto di vista tecnico viene utilizzato un sistema esperto per mappare le no
 Il sistema ha una funzione proattiva e dinamica, variando gli allarmi in base alla variazione delle norme e allo stato dell’azienda (es. al crescere o diminuire del numero dei dipendenti, al variare della superficie delle sedi aziendali, dei cantieri...). La webapp si comporta quindi come un consulente digitale per l’azienda, aiutandola a mantenere aggiornato il suo modello di sicurezza e a rispettarlo.
 Questo le permette all’azienda asseverata di accedere a significativi premi INAIL, di ottenere punti in graduatoria in bandi pubblici e di sollevare il datore di lavoro da responsabilità penali in caso di infortuni legati ad una mala gestione della sicurezza.\\
 \hl{
-La filosofia generale del progetto prevede sia  sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
+La filosofia generale del progetto prevede che sia  sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
 }
 \subsection{Il prodotto esistente}
 

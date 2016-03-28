@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.3.4}Bitbucket - Versionamento}{3}{subsubsection.1.3.4}
 \contentsline {subsubsection}{\numberline {1.3.5}Slack - Comunicazione}{3}{subsubsection.1.3.5}
 \contentsline {subsubsection}{\numberline {1.3.6}Errbit - Rilevazione degli errori }{3}{subsubsection.1.3.6}
-\contentsline {subsubsection}{\numberline {1.3.7}Airbrake - Gestione e notifica degli errori}{3}{subsubsection.1.3.7}
+\contentsline {subsubsection}{\numberline {1.3.7}Airbrake - Rilevazione e notifica degli errori}{3}{subsubsection.1.3.7}
 \contentsline {section}{\numberline {2}Il progetto di Stage}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Il prodotto esistente}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Obiettivi dello stage}{5}{subsection.2.2}
@@ -33,63 +33,63 @@
 \contentsline {subsubsection}{\numberline {4.1.6}UC2 Gestione dei DPI}{21}{subsubsection.4.1.6}
 \contentsline {subsubsection}{\numberline {4.1.7}UC3 Gestione delle mansioni}{23}{subsubsection.4.1.7}
 \contentsline {subsubsection}{\numberline {4.1.8}UC4 Gestione delle formazioni}{24}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}UC5 Gestione dei questionari}{26}{subsubsection.4.1.9}
-\contentsline {subsubsection}{\numberline {4.1.10}UC6 Gestione delle procedure}{27}{subsubsection.4.1.10}
-\contentsline {subsubsection}{\numberline {4.1.11}UC7 Gestione delle segnalazioni}{28}{subsubsection.4.1.11}
-\contentsline {subsubsection}{\numberline {4.1.12}UC8 Gestione dei Dispositivi di Protezione Collettivi}{29}{subsubsection.4.1.12}
-\contentsline {subsection}{\numberline {4.2}Requisiti}{30}{subsection.4.2}
-\contentsline {section}{\numberline {5}Tecnologie e strumenti}{33}{section.5}
-\contentsline {subsection}{\numberline {5.1}Git}{33}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}\texttt {git-flow}}{33}{subsubsection.5.1.1}
-\contentsline {paragraph}{Vantaggi}{34}{section*.37}
-\contentsline {paragraph}{Svantaggi}{34}{section*.38}
-\contentsline {subsection}{\numberline {5.2}Rubymine}{34}{subsection.5.2}
-\contentsline {paragraph}{Vantaggi}{34}{section*.40}
-\contentsline {paragraph}{Svantaggi}{34}{section*.41}
-\contentsline {subsection}{\numberline {5.3}Ruby on Rails}{35}{subsection.5.3}
-\contentsline {paragraph}{Vantaggi}{35}{section*.42}
-\contentsline {paragraph}{Svantaggi}{35}{section*.43}
-\contentsline {subsubsection}{\numberline {5.3.1}ActiveRecord}{35}{subsubsection.5.3.1}
-\contentsline {paragraph}{Vantaggi}{35}{section*.44}
-\contentsline {paragraph}{Svantaggi}{35}{section*.45}
-\contentsline {subsubsection}{\numberline {5.3.2}ActiveAdmin}{36}{subsubsection.5.3.2}
-\contentsline {paragraph}{Vantaggi}{36}{section*.47}
-\contentsline {paragraph}{Svantaggi}{36}{section*.48}
-\contentsline {subsubsection}{\numberline {5.3.3}I18n}{36}{subsubsection.5.3.3}
-\contentsline {paragraph}{Vantaggi}{36}{section*.50}
-\contentsline {paragraph}{Svantaggi}{37}{section*.51}
-\contentsline {subsection}{\numberline {5.4}JRuby}{37}{subsection.5.4}
-\contentsline {paragraph}{Vantaggi}{37}{section*.53}
+\contentsline {subsubsection}{\numberline {4.1.9}UC5 Gestione delle procedure}{26}{subsubsection.4.1.9}
+\contentsline {subsubsection}{\numberline {4.1.10}UC6 Gestione delle segnalazioni}{27}{subsubsection.4.1.10}
+\contentsline {subsubsection}{\numberline {4.1.11}UC7 Gestione dei Dispositivi di Protezione Collettivi}{28}{subsubsection.4.1.11}
+\contentsline {subsection}{\numberline {4.2}Requisiti}{29}{subsection.4.2}
+\contentsline {section}{\numberline {5}Tecnologie e strumenti}{31}{section.5}
+\contentsline {subsection}{\numberline {5.1}Git}{31}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}\texttt {git-flow}}{31}{subsubsection.5.1.1}
+\contentsline {paragraph}{Vantaggi}{32}{section*.33}
+\contentsline {paragraph}{Svantaggi}{32}{section*.34}
+\contentsline {subsection}{\numberline {5.2}Rubymine}{32}{subsection.5.2}
+\contentsline {paragraph}{Vantaggi}{32}{section*.36}
+\contentsline {paragraph}{Svantaggi}{32}{section*.37}
+\contentsline {subsection}{\numberline {5.3}Ruby on Rails}{33}{subsection.5.3}
+\contentsline {paragraph}{Vantaggi}{33}{section*.38}
+\contentsline {paragraph}{Svantaggi}{33}{section*.39}
+\contentsline {subsubsection}{\numberline {5.3.1}ActiveRecord}{33}{subsubsection.5.3.1}
+\contentsline {paragraph}{Vantaggi}{33}{section*.40}
+\contentsline {paragraph}{Svantaggi}{33}{section*.41}
+\contentsline {subsubsection}{\numberline {5.3.2}ActiveAdmin}{34}{subsubsection.5.3.2}
+\contentsline {paragraph}{Vantaggi}{34}{section*.43}
+\contentsline {paragraph}{Svantaggi}{34}{section*.44}
+\contentsline {subsubsection}{\numberline {5.3.3}I18n}{34}{subsubsection.5.3.3}
+\contentsline {paragraph}{Vantaggi}{34}{section*.46}
+\contentsline {paragraph}{Svantaggi}{35}{section*.47}
+\contentsline {subsection}{\numberline {5.4}JRuby}{35}{subsection.5.4}
+\contentsline {paragraph}{Vantaggi}{35}{section*.49}
+\contentsline {paragraph}{Svantaggi}{35}{section*.50}
+\contentsline {subsection}{\numberline {5.5}Drools}{35}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Architettura}{36}{subsubsection.5.5.1}
+\contentsline {paragraph}{Vantaggi}{36}{section*.53}
 \contentsline {paragraph}{Svantaggi}{37}{section*.54}
-\contentsline {subsection}{\numberline {5.5}Drools}{37}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Architettura}{38}{subsubsection.5.5.1}
-\contentsline {paragraph}{Vantaggi}{38}{section*.57}
-\contentsline {paragraph}{Svantaggi}{39}{section*.58}
-\contentsline {subsection}{\numberline {5.6}Foundation}{39}{subsection.5.6}
-\contentsline {paragraph}{Vantaggi}{39}{section*.60}
-\contentsline {paragraph}{Svantaggi}{40}{section*.62}
-\contentsline {subsection}{\numberline {5.7}jQuery}{40}{subsection.5.7}
-\contentsline {paragraph}{Vantaggi}{40}{section*.64}
-\contentsline {paragraph}{Svantaggi}{40}{section*.65}
-\contentsline {section}{\numberline {6}Progettazione e codifica}{41}{section.6}
-\contentsline {subsection}{\numberline {6.1}Riprogettazione delle componenti esistenti}{41}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Riprogettazione della componente: \textit {Figure di sistema}}{41}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Riprogettazione della componente: \textit {DPI}}{45}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Riprogettazione di mansioni e formazioni}{47}{subsubsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.4}Restyling della componente: \textit {Questionari}}{49}{subsubsection.6.1.4}
-\contentsline {subsection}{\numberline {6.2}Nuove componenti}{50}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}\textit {Segnalazioni}}{50}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}\textit {Procedure}}{52}{subsubsection.6.2.2}
-\contentsline {paragraph}{Criticit\IeC {\`a} incontrate}{53}{section*.94}
-\contentsline {subsubsection}{\numberline {6.2.3}\textit {Dispositivi di protezione collettivi}}{54}{subsubsection.6.2.3}
-\contentsline {subsection}{\numberline {6.3}Regole Drools}{56}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Riconoscimento di un indoviduo che ricopre una mansione per la quale non \IeC {\`e} formato}{56}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Mancanza del CPI per sedi con superficie maggiore di trecento metri quadri}{56}{subsubsection.6.3.2}
-\contentsline {section}{\numberline {7}Verifica e validazione}{57}{section.7}
-\contentsline {section}{\numberline {8}Considerazioni finali}{58}{section.8}
-\contentsline {section}{\numberline {A}Migrazioni}{59}{appendix.Alph1}
-\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{61}{appendix.Alph2}
-\contentsline {section}{\numberline {C}Sistemi Esperti}{63}{appendix.Alph3}
-\contentsline {section}{\numberline {D}Algoritmo RETE}{65}{appendix.Alph4}
-\contentsline {section}{Glossario}{67}{section*.101}
-\contentsline {section}{Riferimenti bibliografici}{68}{section*.102}
+\contentsline {subsection}{\numberline {5.6}Foundation}{37}{subsection.5.6}
+\contentsline {paragraph}{Vantaggi}{37}{section*.56}
+\contentsline {paragraph}{Svantaggi}{38}{section*.58}
+\contentsline {subsection}{\numberline {5.7}jQuery}{38}{subsection.5.7}
+\contentsline {paragraph}{Vantaggi}{38}{section*.60}
+\contentsline {paragraph}{Svantaggi}{38}{section*.61}
+\contentsline {section}{\numberline {6}Progettazione e codifica}{39}{section.6}
+\contentsline {subsection}{\numberline {6.1}Riprogettazione delle componenti esistenti}{39}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Riprogettazione della componente: \textit {Figure di sistema}}{39}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Riprogettazione della componente: \textit {DPI}}{43}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Riprogettazione di mansioni e formazioni}{45}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Restyling della componente: \textit {Questionari}}{47}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}Nuove componenti}{48}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}\textit {Segnalazioni}}{48}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}\textit {Procedure}}{50}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}\textit {Dispositivi di protezione collettivi}}{52}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Regole Drools}{54}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Riconoscimento di un indoviduo che ricopre una mansione per la quale non \IeC {\`e} formato}{54}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Mancanza del CPI per sedi con superficie maggiore di trecento metri quadri}{54}{subsubsection.6.3.2}
+\contentsline {section}{\numberline {7}Verifica e validazione}{55}{section.7}
+\contentsline {section}{\numberline {8}Considerazioni finali}{56}{section.8}
+\contentsline {subsection}{\numberline {8.1}Conoscenze acquisite}{56}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Considerazioni personali}{56}{subsection.8.2}
+\contentsline {section}{\numberline {A}Migrazioni}{57}{appendix.Alph1}
+\contentsline {section}{\numberline {B}Inferenza e Motori di inferenza}{59}{appendix.Alph2}
+\contentsline {section}{\numberline {C}Sistemi Esperti}{61}{appendix.Alph3}
+\contentsline {section}{\numberline {D}Algoritmo RETE}{63}{appendix.Alph4}
+\contentsline {section}{Glossario}{65}{section*.97}
+\contentsline {section}{Riferimenti bibliografici}{66}{section*.98}

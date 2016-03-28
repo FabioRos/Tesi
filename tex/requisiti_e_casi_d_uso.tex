@@ -1,12 +1,12 @@
 \section{Analisi dei requisiti}
 
 \subsection{Definizione dei casi d'uso}
-	\hl{Al momento dell'arrivo in azienda, molte componenti e funzionalità erano già parzialmente sviluppate. Alcune di esse necessitavano di adattamenti strutturali per rendere il software aderente alle norme vigenti, altre invece necessitavano di una ristrutturazione dell'interfaccia utente. \\ 
-	Per la maggior parte del tempo si è sviluppato lato back-end  ma, dal momento che l'obiettivo dello stage  stato consolidare il sistema per permettere il rilascio di una versione alpha, sono stati trattati anche aspetti sia lato front-end. 
+	Al momento dell'arrivo in azienda, molte componenti e funzionalità erano già parzialmente sviluppate. Alcune di esse necessitavano di adattamenti strutturali per rendere il software aderente alle norme vigenti, altre invece necessitavano di una ristrutturazione dell'interfaccia utente. \\ 
+	Per la maggior parte del tempo si è sviluppato lato back-end  ma, dal momento che l'obiettivo dello stage è stato consolidare il sistema per permettere il rilascio di una versione alpha, sono stati trattati anche aspetti lato front-end. 
 	Sono stati dunque riportati nei casi d'uso tutti gli aspetti toccati durante lo stage,  specificando nella descrizione le modifiche che sono state apportate alla componente interessata. \\ 
-	I casi  d'uso per i quali è stata eseguita un riprogettazione sono stati differenziati da quelli per i quali era necessaria una soluzione da zero mediante il colore di sfondo.}
+	I casi  d'uso per i quali è stata eseguita un riprogettazione sono stati differenziati da quelli per i quali era necessaria una soluzione da zero mediante il colore di sfondo.
 	\subsubsection{Legenda}
-	\hl{Sono stati rappresentati con sfondo azzurro i casi d'uso per i quali è stato eseguita una riprogettazione; quelli su sfondo bianco  invece hanno richiesto progettazione e sviluppo di una soluzione da zero.}
+	Sono stati rappresentati con sfondo azzurro i casi d'uso per i quali è stato eseguita una riprogettazione; quelli su sfondo bianco  invece hanno richiesto progettazione e sviluppo di una soluzione da zero.
 	\begin{itemize}
 		\item \textit{Notazione di caso d'uso relativo a  componenti progettate da zero:}
 		\begin{figure}[H]
@@ -16,7 +16,7 @@
 				\label{fig:DiagrammaUCDaZero}
 			\end{center}
 		\end{figure}
-		\item \textit{Caso d'uso relatico a vomponenti riprogettate dal punto di vista strutturale o dell'interfaccia utente:}
+		\item \textit{Caso d'uso relativo a componenti riprogettate dal punto di vista strutturale o dell'interfaccia utente:}
 				 	\begin{figure}[H]
 				 		\begin{center}
 				 			\includegraphics[width=8cm]{Pics/UCRestaurato.png}
@@ -27,7 +27,6 @@
 	\end{itemize}
 	\newpage
 	\subsubsection{Attori}
-	\hl{nuova sezione}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=5cm]{Pics/Attori.png}
@@ -65,10 +64,9 @@
 				\item \textit{L'utente autenticato gestisce i Dispositivi di Protezione Individuale (\hyperref[section:UC2]{UC2});}
 				\item \textit{L'utente autenticato gestisce le mansioni (\hyperref[section:UC3]{UC3});}
 				\item \textit{L'utente autenticato gestisce le formazioni (\hyperref[section:UC4]{UC4});}
-				\item \textit{L'utente autenticato gestisce i questionari (\hyperref[section:UC5]{UC5});}
-				\item \textit{L'utente autenticato gestisce le procedure (\hyperref[section:UC6]{UC6});}
-				\item \textit{L'utente autenticato gestisce le segnalazioni (\hyperref[section:UC7]{UC7})}
-				\item \textit{L'utente autenticato gestisce i Dispositivi di Protezione Collettivi (\hyperref[section:UC8]{UC8}).}
+				\item \textit{L'utente autenticato gestisce le procedure (\hyperref[section:UC5]{UC5});}
+				\item \textit{L'utente autenticato gestisce le segnalazioni (\hyperref[section:UC6]{UC6})}
+				\item \textit{L'utente autenticato gestisce i Dispositivi di Protezione Collettivi (\hyperref[section:UC7]{UC7}).}
 			\end{itemize}
 	\end{itemize}
 	
@@ -252,98 +250,98 @@
 
 
 	\newpage		
-	\subsubsection{UC6 Gestione delle procedure}
-		\label{section:UC6}
+	\subsubsection{UC5 Gestione delle procedure}
+		\label{section:UC5}
 		Le procedure rappresentano un aspetto di primaria importanza e si suddividono in due categorie: di prassi e di sistema. \\
 		Le procedure di prassi derivano direttamente da un documento fornito dall'\gls{INAIL}\G. Queste procedure sono state individuate dall'analisi delle cause di infortunio maggiormente frequenti rilevate dall'\gls{INAIL}\G\ nel tempo allo scopo di migliorare la sicurezza dei lavoratori.
 		Le procedure di sistema, invece, sono stese dall'azienda e fanno parte del \gls{DVR}\G. 
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=12cm]{Pics/UC6GestioneProcedure.png}
+				\includegraphics[width=12cm]{Pics/UC5GestioneProcedure.png}
 				\caption{Diagramma dei casi d'uso relativo alla gestione delle procedure.}
-				\label{fig:UC6_Procedure}
+				\label{fig:UC5_Procedure}
 			\end{center}
 		\end{figure}
 		
 			\begin{itemize}
-				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC6_Procedure}, ha lo scopo di rappresentare i casi d'uso necessari alla gestione delle procedure all'interno dell'azienda. \\ 
+				\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC5_Procedure}, ha lo scopo di rappresentare i casi d'uso necessari alla gestione delle procedure all'interno dell'azienda. \\ 
 				
 				Un utente autenticato deve poter gestire le procedure di ogni dipendente dell'azienda. \\
 				Ogni procedura, di sistema, deve essere dotata di descrizione, codifica ed informazioni relative alle revisioni delle quali è stata oggetto nel tempo.\\
-				Le procedure di prassi sono state gestite con un questionario (vedi sezione: \ref{section:UC5}) in quanto derivanti direttamente da una lista di domande proveniente dall'\gls{INAIL}\G;
+				Le procedure di prassi sono state gestite con un questionario in quanto derivanti direttamente da una lista di domande proveniente dall'\gls{INAIL}\G;
 				\item \textbf{Attori Coinvolti:} Utente Autenticato;
 				\item \textbf{Flusso principale degli eventi:} 
 				\begin{itemize}
-					\item \textit{L'utente autenticato gestisce le procedure di sistema(UC6.1);}
+					\item \textit{L'utente autenticato gestisce le procedure di sistema(UC5.1);}
 					\begin{itemize}
-						\item \textit{L'utente autenticato inserisce una nuova procedura di sistema(UC6.1.1);}
-						\item \textit{L'utente autenticato modifica una procedura di sistema(UC6.1.2);}
-						\item \textit{L'utente autenticato rimuove una procedura di sistema(UC6.1.3);}
-						\item \textit{L'utente autenticato visualizza tutte le procedure di sistema(UC6.1.4).}
+						\item \textit{L'utente autenticato inserisce una nuova procedura di sistema(UC5.1.1);}
+						\item \textit{L'utente autenticato modifica una procedura di sistema(UC5.1.2);}
+						\item \textit{L'utente autenticato rimuove una procedura di sistema(UC5.1.3);}
+						\item \textit{L'utente autenticato visualizza tutte le procedure di sistema(UC5.1.4).}
 					\end{itemize}
-					\item \textit{L'utente autenticato gestisce le procedure di prassi (UC6.2);}
+					\item \textit{L'utente autenticato gestisce le procedure di prassi (UC5.2);}
 					\begin{itemize}
-						\item \textit{L'utente autenticato inserisce una nuova procedura di prassi (UC6.2.1);}
-						\item \textit{L'utente autenticato modifica una procedura di prassi (UC6.2.2);}
-						\item \textit{L'utente autenticato rimuove una procedura di prassi (UC6.2.3);}
-						\item \textit{L'utente autenticato visualizza tutte le procedure di prassi (UC6.2.4).}
+						\item \textit{L'utente autenticato inserisce una nuova procedura di prassi (UC5.2.1);}
+						\item \textit{L'utente autenticato modifica una procedura di prassi (UC5.2.2);}
+						\item \textit{L'utente autenticato rimuove una procedura di prassi (UC5.2.3);}
+						\item \textit{L'utente autenticato visualizza tutte le procedure di prassi (UC5.2.4).}
 					\end{itemize}
 				\end{itemize}
 			\end{itemize}
 			
 	\newpage
-	\subsubsection{UC7 Gestione delle segnalazioni}
-		\label{section:UC7}	
+	\subsubsection{UC6 Gestione delle segnalazioni}
+		\label{section:UC6}	
 		Le segnalazioni sono delle comunicazioni ufficiali indirizzate all'organo di vigilanza. Esse sono dotate di: descrizione, segnalante, data di comunicazione del segnalante all'alta direzione, data di comunicazione dall'alta direzione all'organo di vigilanza, data di risposta dell'organo di vigilanza al soggetto interessato.\\
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=12cm]{Pics/UC7Segnalazioni.png}
+				\includegraphics[width=12cm]{Pics/UC6Segnalazioni.png}
 				\caption{Diagramma dei casi d'uso relativo alla gestione delle segnalazioni.}
-				\label{fig:UC7_Segnalazioni}
+				\label{fig:UC6_Segnalazioni}
 			\end{center}
 		\end{figure}
 		
 		\begin{itemize}
-			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC7_Segnalazioni}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle segnalazioni all'interno dell'azienda. \\ 
+			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC6_Segnalazioni}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione delle segnalazioni all'interno dell'azienda. \\ 
 			\item \textbf{Attori Coinvolti:} Utente Autenticato;
 			\item \textbf{Flusso principale degli eventi:} 
 			\begin{itemize}
-				\item \textit{L'utente autenticato inserisce una segnalazione (UC7.1);}
-				\item \textit{L'utente autenticato rimuove una segnalazione (UC7.2);}
-				\item \textit{L'utente autenticato modifica una segnalazione (UC7.3);}
-				\item \textit{L'utente autenticato visualizza tutte le segnalazioni (UC7.4);}
+				\item \textit{L'utente autenticato inserisce una segnalazione (UC6.1);}
+				\item \textit{L'utente autenticato rimuove una segnalazione (UC6.2);}
+				\item \textit{L'utente autenticato modifica una segnalazione (UC6.3);}
+				\item \textit{L'utente autenticato visualizza tutte le segnalazioni (UC6.4);}
 			\end{itemize}
 		\end{itemize}
 		
 	\newpage	
-	\subsubsection{UC8 Gestione dei Dispositivi di Protezione Collettivi}
-		\label{section:UC8}
+	\subsubsection{UC7 Gestione dei Dispositivi di Protezione Collettivi}
+		\label{section:UC7}
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=12cm]{Pics/UC8GestioneDispositiviProtezioneCollettivi.png}
+				\includegraphics[width=12cm]{Pics/UC7GestioneDispositiviProtezioneCollettivi.png}
 				\caption{Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).}
-				\label{fig:UC8_DPC}
+				\label{fig:UC7_DPC}
 			\end{center}
 		\end{figure}
 		
 		\begin{itemize}
-			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC8_DPC}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione dei \gls{DPC}\G\ all'interno dell'azienda. \\ 
+			\item \textbf{Scopo:} Il diagramma presentato nella \autoref{fig:UC7_DPC}, ha lo scopo di rappresentare i casi d'uso necessari al soddisfacimento di tutti i requisiti riguardanti la gestione dei \gls{DPC}\G\ all'interno dell'azienda. \\ 
 			\item \textbf{Attori Coinvolti:} Utente Autenticato;
 			\item \textbf{Flusso principale degli eventi:} 
 			\begin{itemize}
-				\item \textit{L'utente autenticato gestisce gli estintori(UC8.1);}
+				\item \textit{L'utente autenticato gestisce gli estintori(UC7.1);}
 				\begin{itemize}
-					\item \textit{L'utente autenticato inserisce un nuovo estintore (UC8.1.1);}
-					\item \textit{L'utente autenticato modifica un estintore(UC8.1.2);}
-					\item \textit{L'utente autenticato rimuove un estintore (UC8.1.3);}
-					\item \textit{L'utente autenticato visualizza tutti gli estintori (UC8.1.4).}
+					\item \textit{L'utente autenticato inserisce un nuovo estintore (UC7.1.1);}
+					\item \textit{L'utente autenticato modifica un estintore(UC7.1.2);}
+					\item \textit{L'utente autenticato rimuove un estintore (UC7.1.3);}
+					\item \textit{L'utente autenticato visualizza tutti gli estintori (UC7.1.4).}
 				\end{itemize}
-				\item \textit{L'utente autenticato gestisce le cassette di primo soccorso (UC8.2);}
+				\item \textit{L'utente autenticato gestisce le cassette di primo soccorso (UC7.2);}
 				\begin{itemize}
-					\item \textit{L'utente autenticato inserisce una nuova cassetta di primo soccorso (UC8.2.1);}
-					\item \textit{L'utente autenticato modifica una cassetta di primo soccorso (UC8.2.2);}
-					\item \textit{L'utente autenticato rimuove una cassetta di primo soccorso (UC8.2.3);}
-					\item \textit{L'utente autenticato visualizza tutte le cassette di primo soccorso (UC8.2.4).}
+					\item \textit{L'utente autenticato inserisce una nuova cassetta di primo soccorso (UC7.2.1);}
+					\item \textit{L'utente autenticato modifica una cassetta di primo soccorso (UC7.2.2);}
+					\item \textit{L'utente autenticato rimuove una cassetta di primo soccorso (UC7.2.3);}
+					\item \textit{L'utente autenticato visualizza tutte le cassette di primo soccorso (UC7.2.4).}
 				\end{itemize}
 			\end{itemize}
 		\end{itemize}
@@ -351,7 +349,6 @@
 \newpage
 
 \subsection{Requisiti}
-\hl{nuova sezione}
 Al fine di chiarire ciò che si è svolto durante lo stage, è riportata la seguente tabella relativa ai requisiti che devono essere soddisfatti.\\
 I requisiti sono stati stesi sulla base di diversi colloqui con il committente e da vincoli interni all'azienda. Dopo ogni  colloquio, è stato steso il relativo verbale.\\ Tutti i requisiti provenienti dai verbali che fanno seguito ai colloqui sono stati catalogati come fonte interna.\\
 La codifica di ogni requisito è così composta:
@@ -375,6 +372,7 @@ La codifica di ogni requisito è così composta:
 \newcolumntype{l}[1]{m{#1}}
 \begin{flushleft}
 	\begin{tabular}{|l{2cm}|l{8cm}|l{2cm}|}
+
 		\hline
 		\textbf{Codice} & \textbf{Descrizione} & \textbf{Fonti} \\
 		\hline
@@ -455,16 +453,16 @@ La codifica di ogni requisito è così composta:
 		\textit{RdesQ5} & Deve essere previsto un aiuto all'utente nella compilazione di un  questionario con una quantità rilevante di domande. & Azienda \\
 		\hline
 		\label{RobbF6}
-		\textit{RobbF6} & Devono essere gestite in una apposita sezione le procedure aziendali che compongono il \gls{DVR}\G. & fonte interna, \hyperref[section:UC6]{UC6}\\
+		\textit{RobbF6} & Devono essere gestite in una apposita sezione le procedure aziendali che compongono il \gls{DVR}\G. & fonte interna, \hyperref[section:UC5]{UC5}\\
 		\hline
 		\label{RobbF6.1}
-		\textit{RobbF6.1} & Devono essere poste tutte le domande che compongono le procedure di prassi fornite dall'\gls{INAIL}\ agli asseveratori. &  fonte interna, \hyperref[section:UC6]{UC6}\\
+		\textit{RobbF6.1} & Devono essere poste tutte le domande che compongono le procedure di prassi fornite dall'\gls{INAIL}\ agli asseveratori. &  fonte interna, \hyperref[section:UC5]{UC5}\\
 		\hline
 		\label{RdesF7}
-		\textit{RobbF7} & Un utente autenticato deve poter gestire le segnalazioni all'organo di vigilanza. & fonte interna,  \hyperref[section:UC7]{UC7}\\
+		\textit{RobbF7} & Un utente autenticato deve poter gestire le segnalazioni all'organo di vigilanza. & fonte interna,  \hyperref[section:UC6]{UC6}\\
 		\hline
 		\label{RobbF8}
-		\textit{RobbF8} & Deve essere possibile gestire i  \gls{DPC} aziendali indicati in estintori e cassette di primo soccorso. & fonte interna, \hyperref[section:UC8]{UC8}\\
+		\textit{RobbF8} & Deve essere possibile gestire i  \gls{DPC} aziendali indicati in estintori e cassette di primo soccorso. & fonte interna, \hyperref[section:UC7]{UC7}\\
 		\hline
 		\label{RobbF8.1}
 		\textit{RobbF8.1} & Deve essere possibile associare un \gls{DPC} ad una sede o ad un cantiere. & fonte interna\\

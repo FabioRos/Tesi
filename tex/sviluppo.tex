@@ -34,7 +34,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 	\paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
 	
 	La situazione iniziale prevedeva che la classe \textit{Individual} avesse  un attributo booleano per ogni tipologia di figura di sistema. \\
-	\hl{Si è resa necessaria una riprogettazione} dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
+	Si è resa necessaria una riprogettazione dal momento che alcune figure dovevano ricoprire lo stesso ruolo contemporaneamente in più contesti e questa situazione non poteva essere gestita con l'architettura esistente. \\
 	Un esempio di tale problema è rappresentato da un ASPP assegnato a due cantieri contemporaneamente. Tale situazione si può verificare se i due cantieri sono allocati nello stesso periodo e nel primo si lavora il mattino, mentre nel secondo di pomeriggio oppure a giorni alterni.\\
 	I questionari relativi a a tutte le figure di sistema erano presentati in una pagina contenente tutte le domande. I problemi che tale soluzione procurava erano sostanzialmente due: era possibile gestire al più un individuo per ogni ruolo e le domande a cui rispondere in una sola sezione erano più di centocinquanta.
 
@@ -50,7 +50,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 				\label{fig:DiagrammaDelleClassiIndividualRoles}
 			\end{center}
 		\end{figure}
-	Obiettivo primario del\hl{la riprogettazione} è stato centralizzare tutte le informazioni relative alle figure di sistema ed i loro questionari in un unica sezione. 
+	Obiettivo primario della riprogettazione è stato centralizzare tutte le informazioni relative alle figure di sistema ed i loro questionari in un unica sezione. 
 	La schermata presente nella  \autoref{fig:ScreenPrincipaleFigureDiSistema} vuole rappresentare il risultato del lavoro svolto per le figure riguardanti l'azienda. \\
 		\begin{figure}[H]
 			\begin{center}
@@ -106,7 +106,7 @@ Per ogni componente, è stato realizzato o restaurato il modello corrispondente,
 \subsubsection{Riprogettazione della componente: \textit{DPI}}
 \hl{nuova sezione}
 Il termine \textit{DPI} è un acronimo di \textit{Dispositivi di Protezione Individuale}. \\
-Appartengono a questa categoria tutti i dispositivi utilizzati per la prevenzione degli infortuni dei lavoratori ad esempio guanti, occhiali e caschetti.\\
+Appartengono a questa categoria tutti i dispositivi utilizzati per la prevenzione degli infortuni dei lavoratori, come ad esempio guanti, occhiali e caschetti.\\
 
 \paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
 Al momento dell'arrivo in azienda, la situazione presente era la seguente:
@@ -121,8 +121,8 @@ Al momento dell'arrivo in azienda, la situazione presente era la seguente:
 
 
 Come si può osservare dalla \autoref{fig:UMLClassiDPIversioneAllArrivo}, questa soluzione non impone vincoli sul nome del \gls{DPI}\G.
-È necessario però segnalare se un utente non è in possesso tutti i \gls{DPI}\G\ necessari allo svolgimento di una data mansione.\\
-Questa soluzione necessitava di essere restaurata poiché, non imponendo vincoli sul nome, rende impossibile gestire il caso sopracitato poiché lo stesso \gls{DPI}\G\ può essere descritto utilizzando stringhe diverse.\\
+È necessario però segnalare se un utente non è in possesso di tutti i \gls{DPI}\G\ necessari allo svolgimento di una data mansione.\\
+Questa soluzione necessitava di essere rivista poiché, non imponendo vincoli sul nome, rende impossibile gestire il caso sopracitato poiché lo stesso \gls{DPI}\G\ può essere descritto utilizzando stringhe diverse.\\
 Il questionario relativo ai \gls{DPI}\G\ era stato implementato riportando tutte le domande in un unico blocco, senza differenziare le domande relative ad uno specifico \gls{DPI}\G\ da quelle generiche sui \gls{DPI}\G.
 
 \paragraph*{Modifiche apportate}\mbox{} \\
@@ -139,23 +139,23 @@ Questa soluzione risolve il problema dell'impossibilità di riconoscimento del \
 
 Dopo un'attenta analisi, è stata rivista tutta l'organizzazione delle domande relative ai \gls{DPI}\G.\\
 In particolare sono stati differenziate le domande relative ad uno specifico \gls{DPI}\G\ da quelle generali in merito alla gestione dei \gls{DPI}\G\ in azienda.\\
-Lato \gls{front-end}\G, è stato reso possibile, per un utente amministratore, la gestione delle tipologie dei \gls{DPI}\G\ da pannello di controllo. Questo passaggio è stato reso estremamente semplice e veloce da implementare dall'utilizzo della gemma \hyperref[sec:ActiveAdmin]{ActiveAdmin} di Ruby on Rails.
+Lato \gls{front-end}\G, è stato reso possibile, per un utente amministratore, la gestione delle tipologie dei \gls{DPI}\G\ da pannello di controllo. Questo passaggio è stato reso estremamente semplice e veloce da implementare grazie all'utilizzo della gemma \hyperref[sec:ActiveAdmin]{ActiveAdmin} di Ruby on Rails.
 \newpage
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=12cm]{Pics/ActiveAdminDPI}
-		\caption{Schermata relativa alla digestione dei DPI nel pannello di amministrazione.}
+		\caption{Schermata relativa alla gestione dei DPI nel pannello di amministrazione.}
 		\label{fig:ActiveAdminDPI}
 	\end{center}
 \end{figure}
 
 E'\ stata completamente riprogettata l'interfaccia relativa alla gestione dei \gls{DPI}\G\ assegnabili ad un dipendente.\\
 In particolare è stato inserito un questionario a scomparsa contenente le domande relative alla formazione obbligatoria del datore di lavoro. \\
-L'input dei \gls{DPI}\G\ è stato facilitato mediante autocompletamento basato sui record della tabella \texttt{DpisName} .
+L'input dei \gls{DPI}\G\ è stato facilitato mediante autocompletamento basato sui record della tabella \texttt{DpisName}.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=12cm]{Pics/ScreenDPI.png}
-		\caption{Schermata relativa alla digestione dei DPI nell'interfaccia utente.}
+		\caption{Schermata relativa alla gestione dei DPI nell'interfaccia utente.}
 		\label{fig:ScreenDPI}
 	\end{center}
 \end{figure}
@@ -164,17 +164,15 @@ L'input dei \gls{DPI}\G\ è stato facilitato mediante autocompletamento basato s
 \subsubsection{Riprogettazione di mansioni e formazioni}
 \hl{nuova sezione}\\
 Uno degli aspetti cardine del progetto è stato la gestione della relazione che intercorre tra le mansioni che svolge un dipendente e le formazioni di cui è in possesso.\\
-Questa funzionalità ha richiesto una riprogettazione delle classi relative a formazioni e mansioni oltre alla definizione delle regole relative.\\
+Questa funzionalità ha richiesto una riprogettazione delle classi relative a formazioni e mansioni, oltre alla definizione delle regole relative.\\
 
 
 \paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
 	Al momento dell'inizio dello stage, le mansioni e le formazioni erano delle classi con una chiave esterna verso la classe \texttt{Employee} che rappresenta il dipendente in possesso di quella formazione oppure a cui è stata affidata quella mansione.\\
 	Anche in questo caso, la descrizione era gestita con un campo testuale provocando ambiguità nel riconoscimento di una specifica mansione o formazione.\\
-	La gestione lato \gls{front-end}\G\ era poco intuitiva poiché solo abbozzata.
+	La gestione lato \gls{front-end}\G, sebbene fosse perfettamente funzionante, risultava essere poco intuitiva.
 	
 \paragraph*{Modifiche apportate} \mbox{} \\
-\hl{scrivere meglio e completare}\\
-
 Le mansioni e le formazioni sono state riprogettate allo stesso modo dei \gls{DPI}\G, ovvero centralizzando la definizione del nome in una tabella definita allo scopo. \\
 Per evitare di affaticare la lettura non verranno trattati i dettagli implementativi relativi alle singole componenti. \\
 Degna di nota è invece l'integrazione tra le due componenti finalizzata alla verifica della presenza delle formazioni necessarie allo svolgimento di una mansione. \\
@@ -190,16 +188,16 @@ Degna di nota è invece l'integrazione tra le due componenti finalizzata alla ve
 Come è possibile osservare dalla \autoref{fig:UMLClassiFormazioniMansioni.png}, ogni record della tabella \texttt{DutyNeedsTraining} contiene un riferimento alla classe \texttt{Training} ed uno alla classe \texttt{Duty}.\\
 Ogni coppia identifica una relazione che, se non soddisfatta per qualche dipendente, solleverà un allarme ad esso associato.\\
 Un aspetto critico è stato dare la possibilità ad un utente amministratore di definire le regole di dipendenza tra mansioni e formazioni in modo autonomo. \\
-La tabella \texttt{DutyNeedsTraining}, introdotta per mappare le dipendenze, è stata utilizzata per generare una regola relativa la verifica della conformità tra relazioni e formazioni. La regola appena descritta è riportata nella \autoref{Drools:regolaMansioniFormazioni}.
+La tabella \texttt{DutyNeedsTraining}, introdotta per mappare le dipendenze, è stata utilizzata per generare una regola relativa alla verifica della conformità tra relazioni e formazioni. La regola appena descritta è riportata nella \autoref{Drools:regolaMansioniFormazioni}.
 La gestione dal pannello di controllo  stata realizzata utilizzando la gemma \hyperref[sec:ActiveAdmin]{ActiveAdmin}, rendendo  autonomo l'utilizzatore finale nella gestione delle relazioni necessità tra mansioni e formazioni.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=14cm]{Pics/ScreenFormazioneMansioneAdmin.png}
-		\caption{Schermata relativa alla digestione delle formazioni necessarie allo svolgimento di determinate mansioni.}
+		\caption{Schermata relativa alla gestione delle formazioni necessarie allo svolgimento di determinate mansioni.}
 		\label{fig:ScreenFormazioneMansioneAdmin.png}
 	\end{center}
 \end{figure}
-Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei dipendenti avviene allo stesso modo dei \gls{DPI}\G. Un esempio dell'assegnazione delle mansioni è visibile nella figura  \autoref{fig:ScreenInserimentoMansioni.png}.
+Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei dipendenti avviene allo stesso modo dei \gls{DPI}\G. Un esempio dell'assegnazione delle mansioni è visibile in  \autoref{fig:ScreenInserimentoMansioni.png}.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=14cm]{Pics/ScreenInserimentoMansioni.png}
@@ -208,16 +206,17 @@ Per un utente autenticato, l'immissione delle mansioni e delle formazioni dei di
 	\end{center}
 \end{figure}
 Eventuali non conformità sulle formazioni in possesso di un dipendente in relazione alla mansione che svolge saranno segnalate con un allarme. \\
- Questo approccio sposa la filosofia generale del progetto la quale prevede che deve essere sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
+ Questo approccio sposa la filosofia generale del progetto, la quale prevede che deve essere sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
 \newpage
 \subsubsection{Restyling della componente: \textit{Questionari}}
+\hl{nuova sezione}
 I questionari sono stati riprogettati solo lato \gls{front-end}\G.
 Al momento dell'arrivo in azienda, le domande venivano poste in sequenza organizzate in capitoli. Questo approccio rischia di disorientare l'utente poiché al crescere del numero delle domande può trovare difficoltà nel ricordare quale sia il capitolo in questione. \\
-Per ovviare a questo problema, tutte le domande sono state inserite  in un accordion e bloccando il titolo in alto durante lo scroll. In questo modo, all'apertura della pagina sono facilmente visibili i capitoli e, durante la compilazione del questionario, il titolo del capitolo è sempre visibile.\\
+Per ovviare a questo problema, tutte le domande sono state inserite  in un accordion e durante lo scroll il titolo viene fissato in alto . In questo modo, all'apertura della pagina sono facilmente visibili i capitoli e, durante la compilazione del questionario, il titolo del capitolo è sempre visibile.\\
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12.6cm]{Pics/ScreenQuestionarioSediApertura.png}
+		\includegraphics[width=13cm]{Pics/ScreenQuestionarioSediApertura.png}
 		\caption{Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento dell'apertura.}
 		\label{fig:ScreenQuestionarioSediApertura.png}
 	\end{center}
@@ -225,7 +224,7 @@ Per ovviare a questo problema, tutte le domande sono state inserite  in un accor
 Nella figura seguente si può notare il fatto che il titolo del capitolo rimane sempre visibile quando l'accordion è aperto.\\
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{Pics/ScreenQuestionarioStickyHeader.png}
+		\includegraphics[width=11cm]{Pics/ScreenQuestionarioStickyHeader.png}
 		\caption{Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento della risposta ad una domanda.}
 		\label{fig:ScreenQuestionarioStickyHeader.png}
 	\end{center}
@@ -237,10 +236,10 @@ Nella figura seguente si può notare il fatto che il titolo del capitolo rimane 
 \newpage
 \subsection{Nuove componenti}
 Le componenti descritte di seguito, sono state progettate e implementate nella loro interezza durante lo stage.\\
-\hl{TODO Scrivere di più nell'introduzione}
 
 \subsubsection{\textit{Segnalazioni}}
-Le segnalazioni sono delle comunicazioni inviate da un qualunque membro interno all'azienda ed indirizzate verso l'organo di vigilanza.\\
+\hl{nuova sezione}
+Le segnalazioni sono delle comunicazioni inviate da un qualunque membro interno all'azienda ed indirizzate all'organo di vigilanza.\\
 Le segnalazioni hanno lo scopo di sollevare il responsabile dalle responsabilità derivanti da violazioni avvenute sotto la sua supervisione. \\
 Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e demandano ufficialmente la responsabilità delle eventuali violazioni a tale organo il quale dovrà decidere per eventuali azioni correttive.
 	
@@ -262,7 +261,7 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 	\end{itemize}
 	In accordo con la filosofia del progetto, sono state gestite la presenza e sequenzialità delle date con degli allarmi in caso di errato inserimento.\\
 	Per facilitare la gestione delle segnalazioni, nell'interfaccia utente relativa ad esse sono riportate tutte le date. Questo approccio permette di tenere sempre traccia dello stato delle segnalazioni ed agevola la verifica da parte delle autorità competenti.\\
-	Uno sviluppo futuro, prevede l'archiviazione delle segnalazioni le quali hanno data di invio della risposta alla segnalazione da parte dell'organo di vigilanza al soggetto interessato più vecchia di 30 giorni. Questa soluzione è stata progettata ma non implementata nel periodo di stage a causa dell'esaurimento del monte ore disponibile.
+	Uno sviluppo futuro, prevede l'archiviazione delle segnalazioni le quali hanno data di invio della risposta alla segnalazione da parte dell'organo di vigilanza al soggetto interessato più vecchia di 30 giorni. Questa soluzione è stata progettata, ma non implementata nel periodo di stage a causa dell'esaurimento del monte ore disponibile.
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=12cm]{Pics/ScreenSegnalazioni.png}
@@ -273,20 +272,19 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 \newpage
 \subsubsection{\textit{Procedure}}
 \hl{Nuova sezione}\\
-\hl{Da rivedere}\\
-	Le procedure si distinguono in due caegorie distinte:
+	Le procedure si distinguono in due categorie distinte:
 	\begin{itemize}
 		\item \textit{Procedure di prassi:}	\\
-			Procedure derivanti un analisi dell'\gls{INAIL}\G\ sulla base dell'analisi degli infortuni sul lavoro avvenuti nel tempo.
+			Procedure derivanti da uno studio eseguito dall'\gls{INAIL}\G\ sulla base dell'analisi degli infortuni sul lavoro avvenuti nel tempo.
 		\item \textit{Procedure di sistema:}\\
 			Procedure proprie dell'azienda. La loro composizione compone il  \gls{DVR} (Documento di Valutazione dei Rischi).
 	\end{itemize}
 
 	\paragraph*{Progettazione}\mbox{}\\
 		\subparagraph*{Procedure di prassi}\mbox{}\\
-		Queste procedure sono state fornite come collezione di domande. È sembrato quindi gestirle sotto forma di questionari.\\
+		Queste procedure sono state fornite come collezione di domande. È risultato naturale quindi gestirle mediante dei questionari.\\
 		Dopo un'attenta analisi delle domande, sono stati individuati sette filoni principali che sono stati usati per spezzare un questionario composto di 189 domande.\\
-		Ad ognuno di questi è associato un questionario come è possibile osservare dalla \autoref{fig:ScreenProcedureDiPrassi}.
+		Ad ognuno di questi è associato un questionario come è possibile osservare nella \autoref{fig:ScreenProcedureDiPrassi}.
 		
 		\begin{figure}[H]
 			\begin{center}
@@ -299,9 +297,8 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 		
 		\subparagraph*{Procedure di sistema}\mbox{}\\
 			
-			Le procedure di sistema sono state implementate mediante un apposito modello \texttt{Procedure} direttamente collegata a \texttt{Company}. Sono state inserite le informazioni relative alle revisioni di ogni procedure.\\
-			Come è possibile osservare dalla \autoref{fig:ScreenDVR}, sono state inoltre inserite le domande relative al \gls{DVR}\G\ nell'intefaccia utente con un questionario a scomparsa.
-			
+			Le procedure di sistema sono state implementate mediante un apposito modello \texttt{Procedure} direttamente collegato a \texttt{Company}. Sono state inserite le informazioni relative alle revisioni di ogni procedura.\\
+			Come è possibile osservare dalla \autoref{fig:ScreenDVR}, sono state inserite le domande relative al \gls{DVR}\G\ nell'interfaccia utente con un questionario a scomparsa.
 			
 			\begin{figure}[H]
 				\begin{center}
@@ -311,19 +308,15 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 				\end{center}
 			\end{figure}
 			Per mettere a disposizione un quadro generale delle procedure di sistema è stata implementata l'esportazione di tutte le domande in un unico documento in formato PDF.
-			
-			
-		
-	
-	\paragraph{Criticità incontrate}
+
+	\paragraph*{Criticità incontrate}\mbox{}\\
 		Per mantenere una coerenza logica, tutti gli aspetti inerenti le procedure sono state gestite con un singolo controller.\\
-		Questo ha subito evidenziato numerose criticità in quanto è stato necessario realizzare due index, ma l'url \texttt{\\procedures} può corrispondere ad una sola azione (\texttt{index}).\\
+		Questo ha subito evidenziato numerose criticità in quanto è stato necessario realizzare due index, ma l'URL \texttt{\textbackslash procedures} può corrispondere ad una sola azione (\texttt{index}).\\
 		È stato necessario creare delle apposite rotte per permettere di raggiungere entrambe le risorse.
 		%più controller e viste associate allo stessa categoria, uno ha il modello l'altro il questionario
 \newpage
 \subsubsection{\textit{Dispositivi di protezione collettivi}}
 \hl{nuova sezione}\\
-\hl{rileggere}\\
 La gestione dei \gls{DPC}\G\ richiede di tenere traccia delle informazioni relative al loro posizionamento. \\
 In particolare sono stati gestiti Estintori e cassette di primo soccorso. \\
 Le immagini \autoref{fig:ScreenIndexEstintori} e \autoref{fig:ScreenRemoteTrueEstintori}, arrecano esempi relativi agli estintori, ma la trattazione dei due modelli è analoga. La differenza è individuabile solo nella gestione della scadenza che per gli estintori è unica, mentre per le cassette di primo soccorso chiede di memorizzare quella dei due componenti più vicini alla data di scadenza.
@@ -355,7 +348,6 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 
 
 	\paragraph*{Criticità incontrate}\mbox{}\\
-	\hl{Scrivere meglio}\\
 	Al fine di rendere agevole ed intuitiva la gestione dei \gls{DPC}\G, è stato creato un meccanismo di gestione dinamica mediante chiamate \gls{Ajax}\G. \\
 	Fare ciò è stato necessario introdurre un nuovo tipo di file di template di Rails(\textit{*.js.erb}) e strutturare i template \textit{*.html.erb} in modo tale da essere compatibili con il nuovo pattern mediante invocazioni remote.\\
 	Questo tipo di attività, essendo molto verbosa e delicata nella gestione, ha richiesto più tempo rispetto a quanto pianificato.
@@ -371,6 +363,7 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 
 \newpage
 \subsection{Regole Drools}
+\hl{nuova sezione}
 \label{Drools:regole}
 \hl{In questa sezione vengono riportate alcune tra le regole Drools più significative.}
 \subsubsection{Riconoscimento di un indoviduo che ricopre una mansione per la quale non è formato}
@@ -417,42 +410,35 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 
 \newpage
 \section{Verifica e validazione}
-	\hl{TODO }	
-	Il codice prodotto è stato parzialmente sottoposto a test utizzando la gemma \textit{Minitest} di Ruby on Rails.\\
+	\hl{nuova sezione}	
+	Al termine della fase di sviluppo di ogni modulo del progetto, si è proceduto con l'attività di verifica, per assicurarsi che il prodotto fosse privo di bug e conforme ai requisiti.\\
+	Il codice relativo ai modelli prodotto durante lo stage è stato sottoposto a test d'unità man mano che veniva implementato. Dal punto di vista implementativo, i test sono stati realizzati utilizzando la gemma \textit{Minitest} di Ruby on Rails.\\
+	Nel caso delle segnalazioni, è stato utilizzato l'approccio \textit{Test Driven Devolpment (TDD)} allo scopo di familiarizzare con esso. Sono stati quindi progettati ed implementati prima i test e poi il codice dell'applicazione che gestisce le segnalazioni.\\
+	Al termine dello stage è stata svolta la validazione del prodotto realizzato per assicurarsi del soddisfacimento di tutti i requisiti obbligatori. I requisiti obbligatori come quelli desiderabili sono stati tutti soddisfatti.\\
+	I requisiti opzionali, tuttavia,  non sono stati soddisfatti. 
+	
 	
 	
 \newpage
 \section{Considerazioni finali}
-\hl{TODO Rivedere e scrivere qualcosa di decente}
-	Al termine dello stage sono stati analizzati i risultati ottenuti e sul valore aggiunto che esso ha portato.\\
-	Personalmente mi ritengo soddisfatto di come si è svolto lo stage soprattutto poiché mi ha permesso di lavorare in un progetto di dimensioni molto maggiori di quelle a cui sono stato abituato finora. Ho avuto l'opportunità di dare il mio contributo ad un software il cui obiettivo è aiutare le aziende a prevenire gli infortuni e mi  piace credere che qualcuno di essi verrà evitato anche grazie al codice che ho scritto.\\
-	Mi sono trovato ad affrontare un'esperienza da full-stack developer, dovendomi assumere la responsabilità di codice sia lato back-end sia lato front-end. Ho potuto lavorare e studiare codice scritto da sviluppatori senior dal quale ho imparato molto. In particolare l'integrazione tra Drools e Ruby on Rails mi ha affascinato poiché mi ha fatto capire che anche linguaggi molto diversi e non compatibili nativamente, possono essere manipolati in modo da diventarlo.
+\hl{nuova sezione}\\
+	Al termine dello stage sono stati raggiunti tutti gli obiettivi minimi previsti dal piano di lavoro.\\
+	Il software realizzato è stato fornito ad una azienda che si è offerta di effettuare il primo test dell'applicazione. I feedback provenienti dal test verranno utilizzati per rilevare lacune e punti di forza dell'applicazione, permettendo di produrre una versione commerciale entro la fine del 2016.
 	
-	Questo stage mi ha fatto crescere moltissimo in ambito lavorativo che personale.
-	\hl{TODO }	
-
-	%scrivere il risultato sui requisiti soddisfatti e non
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{Conoscenze acquisite}
+\hl{Nuova sezione}\\
+	Al termine dell'esperienza di stage, sono state acquisite numerose competenze.\\
+	In particolare si è imparato a lavorare agevolmente in progetti che vedono coinvolte numerose persone nello stesso momento, utilizzando strumenti professionali per la gestione del lavoro.\\
+	Sono state apprese le caratteristiche principali di Ruby on Rails e Drools e le modalità di comunicazione tra Ruby on Rails e Java.\\
+	Sviluppare contemporaneamente sia lato \gls{front-end}\G\ sia lato \gls{back-end}\G,  ha permesso di avere una visione generale del codice in qualunque momento, rendendo possibile riconoscere in anticipo eventuali ricadute che le scelte implementative lato \gls{back-end}\G\ hanno nel \gls{front-end}\G\ e viceversa.\\
+	L'utilizzo di Drools ha permesso di imparare a gestire la verità mediante l'utilizzo di fatti e regole al posto di una codifica ad-hoc per ogni vincolo. Questo è stato ritenuto di notevole importanza poiché in progetti dotati di un gran numero di vincoli, è possibile gestire il mantenimento della verità in modo notevolmente più leggibile e manutenibile.\\
+	L'utilizzo intensivo di chiamate \gls{Ajax}\G\ ha reso possibile prendere consapevolezza del grado di complicazione che questa tecnologia può portare al codice ed alla leggibilità dello stesso.\\
+	
+\subsection{Considerazioni personali}
+\hl{nuova sezione}\\
+	Mi ritengo molto soddisfatto di come si è svolto lo stage.\\
+	Le ragioni della mia opinione positiva sono molteplici, per cominciare lo stage mi ha messo a confronto con un progetto di dimensioni molto maggiori di quelle a cui sono stato abituato fino ad ora. \\
+	Ho curato sia gli aspetti riguardanti il \gls{front-end}\G\ sia il \gls{back-end}\G\ dell'applicazione. Sviluppando in modo  \textit{full stack} ho avuto l'opportunità di applicare in un software commerciale numerose soluzioni derivanti da nozioni accademiche. \\
+	Ho avuto l'opportunità di studiare ed estendere codice prodotto da sviluppatori senior dal quale ho imparato molto.\\
+	Una delle cose che mi ha affascinato maggiormente è stato il modo con cui è stata realizzato il layer che gestisce la comunicazione tra  Ruby on Rails e Drools. Questo particolare modulo del software mi ha fatto capire che spesso due linguaggi non compatibili a livello nativo, possono essere messi nelle condizioni di dialogare tra loro. \\
+	Ho lavorato a stretto contatto con il committente del progetto, un professionista in merito di sicurezza sul lavoro. Il costante dialogo con il committente mi ha costretto a padroneggiare concetti di un contesto a me quasi sconosciuto, facendomi apprendere molto in ambito di sicurezza sul lavoro.

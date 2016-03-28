@@ -64,8 +64,8 @@ Per ciascun modello, sono stati realizzati opportuni \textit{controller} e \text
 Sono stati implementati, inoltre numerosi \gls{concern}\G\ per modularizzare le funzionalità indipendenti dalla singola classe ed allo stesso tempo riutilizzabili da altre classi. Ad esempio, ogni modello che, se istanziato, provoca un aumento del numero delle domande in attesa di risposta, include un apposito \gls{concern}\G\ per l'aggiornamento di un contatore dedicato a tale scopo. Per il calcolo del valore, il \gls{concern}\G\ ricava il nome della classe dell'oggetto corrente mediante \gls{reflection}\G\ ed incrementa automaticamente il valore del numero di domande correlate al tipo individuato.\\
 
 \paragraph*{Relazioni tra domande, risposte ed allarmi}\mbox{} \\
-\hl{Per facilitare la comprensione di alcune delle soluzioni descritte di seguito è importante essere a conoscenza delle relazioni presenti tra domande, risposte ed allarmi.}\\
-Le risposte sono direttamente collegate alle domande ed ad una entità. \\Quando un utente risponde ad una domanda, viene aggiornato il recod relativo a quella risposta.\\
+Per facilitare la comprensione di alcune delle soluzioni descritte di seguito è importante essere a conoscenza delle relazioni presenti tra domande, risposte ed allarmi.\\
+Le risposte sono direttamente collegate alle domande ed ad una entità. \\Quando un utente risponde ad una domanda, viene aggiornato il record relativo a quella risposta.\\
 A seguito di un inserimento o aggiornamento di una risposta, interviene Drools che valuta se le informazioni inserite rispettano tutti i vincoli previsti, altrimenti viene sollevato un allarme. \\ 
 Per questioni di efficienza, gli allarmi relativi al vincolo di presenza  di una risposta, vengono gestiti direttamente dalle funzionalità di validazione di Rails.\\
 Come per le risposte, anche gli allarmi sono sempre collegati ad una risorsa, che di default è l'azienda corrente, ma può assumere come valore una qualsiasi istanza di un modello, purché non sia nulla.
@@ -106,7 +106,7 @@ Nel caso un cui venga generata o aggiornata un'istanza di modello, può essere n
 Un esempio è rappresentato dall'aggiunta di un estintore ad un cantiere. Ad ogni estintore in ogni cantiere deve essere associata una posizione specifica che deve essere riportata nel layout di cantiere per permetterne il facile reperimento in caso di incendio. La posizione nel layout di un estintore è rappresentata dal software come una risposta ad una domanda in un apposito questionario generato ad ogni associazione di un estintore ad un cantiere. Se tale informazione non è specificata viene sollevato un allarme.\\
 Sia per l'inserimento o aggiornamento di una risposta, sia per la generazione o modifica di una istanza di modello, il passo successivo è rappresentato dalla valutazione delle informazioni inserite sulla base della \textit{Knowledge Base}. \\
 È in questo momento che agisce il rule engine Drools che per ogni regola presente nella \textit{Knowledge Base} valuta la \gls{LHS}\G\ sulle nuove informazioni inserite e, se soddisfatta, solleva gli allarmi corrispondenti. \\
-\hl{Per maggiori dettagli sulle regole, si rimanda alla sezione} \ref{Drools:regole}.
+Per maggiori dettagli sulle regole, si rimanda alla sezione \ref{Drools:regole}.
 
 
 

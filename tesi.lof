@@ -1,60 +1,57 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {figure}{\numberline {1}{\ignorespaces Logo dell'azienda ospitante - Moku S.r.l.\relax }}{1}{figure.caption.5}
-\contentsline {figure}{\numberline {2}{\ignorespaces Metodo agile scrum.\relax }}{1}{figure.caption.6}
-\contentsline {figure}{\numberline {3}{\ignorespaces Logo della suite Atlassian\relax }}{2}{figure.caption.7}
-\contentsline {figure}{\numberline {4}{\ignorespaces Logo di Jira\relax }}{2}{figure.caption.8}
-\contentsline {figure}{\numberline {5}{\ignorespaces Logo di Confluence\relax }}{2}{figure.caption.9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Logo di Bitbucket\relax }}{3}{figure.caption.10}
-\contentsline {figure}{\numberline {7}{\ignorespaces Logo di Slack\relax }}{3}{figure.caption.11}
-\contentsline {figure}{\numberline {8}{\ignorespaces Logo di Errbit\relax }}{3}{figure.caption.12}
-\contentsline {figure}{\numberline {9}{\ignorespaces Logo di Airbrake\relax }}{3}{figure.caption.13}
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagramma di Gantt.\relax }}{7}{figure.caption.14}
-\contentsline {figure}{\numberline {11}{\ignorespaces Architettura del sistema\relax }}{10}{figure.caption.15}
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagramma delle classi delle associazioni polimorfe di Risposte ed Allarmi.\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagramma di attivit\IeC {\`a} del flusso di una risposta o l'inserimento di un oggetto a modello\relax }}{13}{figure.caption.18}
-\contentsline {figure}{\numberline {14}{\ignorespaces Notazione di caso d'uso relativo ad una componenti progettate da zero;\relax }}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {15}{\ignorespaces Notazione di caso d'uso relativo a componenti riprogettate.\relax }}{15}{figure.caption.20}
-\contentsline {figure}{\numberline {16}{\ignorespaces Attori coinvolti.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {17}{\ignorespaces Diagramma dei casi d'uso generale.\relax }}{17}{figure.caption.22}
-\contentsline {figure}{\numberline {18}{\ignorespaces Diagramma dei casi d'uso UC1 - Figure di sistema.\relax }}{18}{figure.caption.23}
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagramma dei casi d'uso relativo all'inserimento degli RSPP\relax }}{19}{figure.caption.24}
-\contentsline {figure}{\numberline {20}{\ignorespaces Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.\relax }}{21}{figure.caption.26}
-\contentsline {figure}{\numberline {21}{\ignorespaces Diagramma dei casi d'uso UC2.2 - Gestione dei DPI relativi ad un dipendente.\relax }}{22}{figure.caption.28}
-\contentsline {figure}{\numberline {22}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle formazioni di un dipendente.\relax }}{24}{figure.caption.31}
-\contentsline {figure}{\numberline {23}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione di un questionario.\relax }}{26}{figure.caption.32}
-\contentsline {figure}{\numberline {24}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle procedure.\relax }}{27}{figure.caption.33}
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle segnalazioni.\relax }}{28}{figure.caption.34}
-\contentsline {figure}{\numberline {26}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).\relax }}{29}{figure.caption.35}
-\contentsline {figure}{\numberline {27}{\ignorespaces Grafico dei branch di \texttt {git-flow}\relax }}{33}{figure.caption.36}
-\contentsline {figure}{\numberline {28}{\ignorespaces Logo di RubyMine\relax }}{34}{figure.caption.39}
-\contentsline {figure}{\numberline {29}{\ignorespaces Logo di ActiveAdmin\relax }}{36}{figure.caption.46}
-\contentsline {figure}{\numberline {30}{\ignorespaces Logo di I18n\relax }}{36}{figure.caption.49}
-\contentsline {figure}{\numberline {31}{\ignorespaces Logo di JRuby\relax }}{37}{figure.caption.52}
-\contentsline {figure}{\numberline {32}{\ignorespaces Logo di Drools\relax }}{37}{figure.caption.55}
-\contentsline {figure}{\numberline {33}{\ignorespaces Architettura di Drools\relax }}{38}{figure.caption.56}
-\contentsline {figure}{\numberline {34}{\ignorespaces Logo di Foundation\relax }}{39}{figure.caption.59}
-\contentsline {figure}{\numberline {35}{\ignorespaces Compatibilit\IeC {\`a} di Foundation 5.5\relax }}{40}{figure.caption.61}
-\contentsline {figure}{\numberline {36}{\ignorespaces Logo di jQuery\relax }}{40}{figure.caption.63}
-\contentsline {figure}{\numberline {37}{\ignorespaces Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.\relax }}{42}{figure.caption.68}
-\contentsline {figure}{\numberline {38}{\ignorespaces Schermata iniziale della sezione \textit {Figure di sistema}.\relax }}{42}{figure.caption.69}
-\contentsline {figure}{\numberline {39}{\ignorespaces Schermata iniziale della sezione \textit {Pannnello di gestione delle figure impegnate in sedi e cantieri.}.\relax }}{43}{figure.caption.70}
-\contentsline {figure}{\numberline {40}{\ignorespaces Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza\relax }}{43}{figure.caption.71}
-\contentsline {figure}{\numberline {41}{\ignorespaces Schermata relativa all'inserimento di un RSPP.\relax }}{44}{figure.caption.72}
-\contentsline {figure}{\numberline {42}{\ignorespaces Diagramma delle classi relativo ai DPI all'inizio dello stage .\relax }}{45}{figure.caption.74}
-\contentsline {figure}{\numberline {43}{\ignorespaces Diagramma delle classi relativo ai DPI dopo la riprogettazione.\relax }}{45}{figure.caption.76}
-\contentsline {figure}{\numberline {44}{\ignorespaces Schermata relativa alla digestione dei DPI nel pannello di amministrazione.\relax }}{46}{figure.caption.77}
-\contentsline {figure}{\numberline {45}{\ignorespaces Schermata relativa alla digestione dei DPI nell'interfaccia utente.\relax }}{46}{figure.caption.78}
-\contentsline {figure}{\numberline {46}{\ignorespaces Diagramma delle classi di formazioni, mansioni e della relazione tra esse.\relax }}{47}{figure.caption.81}
-\contentsline {figure}{\numberline {47}{\ignorespaces Schermata relativa alla digestione delle formazioni necessarie allo svolgimento di determinate mansioni.\relax }}{48}{figure.caption.82}
-\contentsline {figure}{\numberline {48}{\ignorespaces Schermata relativa all'assegnazione delle mansioni da parte di un utente autenticato.\relax }}{48}{figure.caption.83}
-\contentsline {figure}{\numberline {49}{\ignorespaces Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento dell'apertura.\relax }}{49}{figure.caption.84}
-\contentsline {figure}{\numberline {50}{\ignorespaces Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento della risposta ad una domanda.\relax }}{49}{figure.caption.85}
-\contentsline {figure}{\numberline {51}{\ignorespaces Diagramma delle classi relativo alle segnalazioni.\relax }}{50}{figure.caption.87}
-\contentsline {figure}{\numberline {52}{\ignorespaces Schermata relativa alla gestione delle segnalazioni.\relax }}{51}{figure.caption.88}
-\contentsline {figure}{\numberline {53}{\ignorespaces Schermata relativa alla gestione delle procedure di prassi.\relax }}{52}{figure.caption.91}
-\contentsline {figure}{\numberline {54}{\ignorespaces Schermata relativa alla gestione delle procedure di sistema.\relax }}{53}{figure.caption.93}
-\contentsline {figure}{\numberline {55}{\ignorespaces Diagramma delle classi relativo ai \gls {DPC}{\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip $_G$}.\relax }}{54}{figure.caption.96}
-\contentsline {figure}{\numberline {56}{\ignorespaces Schermata relativa agli Estintori in azienda.\relax }}{54}{figure.caption.97}
-\contentsline {figure}{\numberline {57}{\ignorespaces Schermata relativa alla dotazione di estintori in un luogo .\relax }}{55}{figure.caption.99}
-\contentsline {figure}{\numberline {58}{\ignorespaces Esempio di flusso di valutazione di una regola Drools.\relax }}{65}{figure.caption.100}
+\contentsline {figure}{\numberline {1}{\ignorespaces Logo dell'azienda ospitante - Moku S.r.l.\relax }}{1}{figure.caption.4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Metodo agile scrum.\relax }}{1}{figure.caption.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Logo della suite Atlassian\relax }}{2}{figure.caption.6}
+\contentsline {figure}{\numberline {4}{\ignorespaces Logo di Jira\relax }}{2}{figure.caption.7}
+\contentsline {figure}{\numberline {5}{\ignorespaces Logo di Confluence\relax }}{2}{figure.caption.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Logo di Bitbucket\relax }}{3}{figure.caption.9}
+\contentsline {figure}{\numberline {7}{\ignorespaces Logo di Slack\relax }}{3}{figure.caption.10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Logo di Airbrake\relax }}{3}{figure.caption.11}
+\contentsline {figure}{\numberline {9}{\ignorespaces Architettura del sistema\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagramma delle classi delle associazioni polimorfe di Risposte ed Allarmi.\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagramma di attivit\IeC {\`a} del flusso di una risposta o l'inserimento di un oggetto a modello\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {12}{\ignorespaces Notazione di caso d'uso relativo ad una componenti progettate da zero;\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {13}{\ignorespaces Notazione di caso d'uso relativo a componenti riprogettate.\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {14}{\ignorespaces Attori coinvolti.\relax }}{16}{figure.caption.18}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagramma dei casi d'uso generale.\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagramma dei casi d'uso UC1 - Figure di sistema.\relax }}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagramma dei casi d'uso relativo all'inserimento degli RSPP\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagramma dei casi d'uso UC2.1 - Gestione tipologie di DPI dal pannello di amministrazione.\relax }}{21}{figure.caption.23}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagramma dei casi d'uso UC2.2 - Gestione dei DPI relativi ad un dipendente.\relax }}{22}{figure.caption.25}
+\contentsline {figure}{\numberline {20}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle formazioni di un dipendente.\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {21}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle procedure.\relax }}{26}{figure.caption.29}
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione delle segnalazioni.\relax }}{27}{figure.caption.30}
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagramma dei casi d'uso relativo alla gestione dei Dispositivi di Protezione Collettiva (DPC).\relax }}{28}{figure.caption.31}
+\contentsline {figure}{\numberline {24}{\ignorespaces Grafico dei branch di \texttt {git-flow}\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {25}{\ignorespaces Logo di RubyMine\relax }}{32}{figure.caption.35}
+\contentsline {figure}{\numberline {26}{\ignorespaces Logo di ActiveAdmin\relax }}{34}{figure.caption.42}
+\contentsline {figure}{\numberline {27}{\ignorespaces Logo di I18n\relax }}{34}{figure.caption.45}
+\contentsline {figure}{\numberline {28}{\ignorespaces Logo di JRuby\relax }}{35}{figure.caption.48}
+\contentsline {figure}{\numberline {29}{\ignorespaces Logo di Drools\relax }}{35}{figure.caption.51}
+\contentsline {figure}{\numberline {30}{\ignorespaces Architettura di Drools\relax }}{36}{figure.caption.52}
+\contentsline {figure}{\numberline {31}{\ignorespaces Logo di Foundation\relax }}{37}{figure.caption.55}
+\contentsline {figure}{\numberline {32}{\ignorespaces Compatibilit\IeC {\`a} di Foundation 5.5\relax }}{38}{figure.caption.57}
+\contentsline {figure}{\numberline {33}{\ignorespaces Logo di jQuery\relax }}{38}{figure.caption.59}
+\contentsline {figure}{\numberline {34}{\ignorespaces Diagramma delle classi per la gestione delle figure di sistema ed i relativi questionari.\relax }}{40}{figure.caption.64}
+\contentsline {figure}{\numberline {35}{\ignorespaces Schermata iniziale della sezione \textit {Figure di sistema}.\relax }}{40}{figure.caption.65}
+\contentsline {figure}{\numberline {36}{\ignorespaces Schermata iniziale della sezione \textit {Pannnello di gestione delle figure impegnate in sedi e cantieri.}.\relax }}{41}{figure.caption.66}
+\contentsline {figure}{\numberline {37}{\ignorespaces Schermata relativa all'inserimento di alcune informazioni in merito all'organo di vigilanza\relax }}{41}{figure.caption.67}
+\contentsline {figure}{\numberline {38}{\ignorespaces Schermata relativa all'inserimento di un RSPP.\relax }}{42}{figure.caption.68}
+\contentsline {figure}{\numberline {39}{\ignorespaces Diagramma delle classi relativo ai DPI all'inizio dello stage .\relax }}{43}{figure.caption.70}
+\contentsline {figure}{\numberline {40}{\ignorespaces Diagramma delle classi relativo ai DPI dopo la riprogettazione.\relax }}{43}{figure.caption.72}
+\contentsline {figure}{\numberline {41}{\ignorespaces Schermata relativa alla gestione dei DPI nel pannello di amministrazione.\relax }}{44}{figure.caption.73}
+\contentsline {figure}{\numberline {42}{\ignorespaces Schermata relativa alla gestione dei DPI nell'interfaccia utente.\relax }}{44}{figure.caption.74}
+\contentsline {figure}{\numberline {43}{\ignorespaces Diagramma delle classi di formazioni, mansioni e della relazione tra esse.\relax }}{45}{figure.caption.77}
+\contentsline {figure}{\numberline {44}{\ignorespaces Schermata relativa alla gestione delle formazioni necessarie allo svolgimento di determinate mansioni.\relax }}{46}{figure.caption.78}
+\contentsline {figure}{\numberline {45}{\ignorespaces Schermata relativa all'assegnazione delle mansioni da parte di un utente autenticato.\relax }}{46}{figure.caption.79}
+\contentsline {figure}{\numberline {46}{\ignorespaces Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento dell'apertura.\relax }}{47}{figure.caption.80}
+\contentsline {figure}{\numberline {47}{\ignorespaces Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento della risposta ad una domanda.\relax }}{47}{figure.caption.81}
+\contentsline {figure}{\numberline {48}{\ignorespaces Diagramma delle classi relativo alle segnalazioni.\relax }}{48}{figure.caption.83}
+\contentsline {figure}{\numberline {49}{\ignorespaces Schermata relativa alla gestione delle segnalazioni.\relax }}{49}{figure.caption.84}
+\contentsline {figure}{\numberline {50}{\ignorespaces Schermata relativa alla gestione delle procedure di prassi.\relax }}{50}{figure.caption.87}
+\contentsline {figure}{\numberline {51}{\ignorespaces Schermata relativa alla gestione delle procedure di sistema.\relax }}{51}{figure.caption.89}
+\contentsline {figure}{\numberline {52}{\ignorespaces Diagramma delle classi relativo ai \gls {DPC}{\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip $_G$}.\relax }}{52}{figure.caption.92}
+\contentsline {figure}{\numberline {53}{\ignorespaces Schermata relativa agli Estintori in azienda.\relax }}{52}{figure.caption.93}
+\contentsline {figure}{\numberline {54}{\ignorespaces Schermata relativa alla dotazione di estintori in un luogo .\relax }}{53}{figure.caption.95}
+\contentsline {figure}{\numberline {55}{\ignorespaces Esempio di flusso di valutazione di una regola Drools.\relax }}{63}{figure.caption.96}
