@@ -109,7 +109,7 @@ Il termine \textit{DPI} è un acronimo di \textit{Dispositivi di Protezione Indi
 Appartengono a questa categoria tutti i dispositivi utilizzati per la prevenzione degli infortuni dei lavoratori, come ad esempio guanti, occhiali e caschetti.\\
 
 \paragraph*{Situazione precedente alla riprogettazione} \mbox{} \\
-Al momento dell'arrivo in azienda, la situazione presente era la seguente:
+Al momento dell'arrivo in azienda, la situazione presente era quella descritta in \autoref{fig:UMLClassiDPIversioneAllArrivo}.
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=10cm]{Pics/UMLClassiDPIversioneAllArrivo.png}
@@ -162,7 +162,6 @@ L'input dei \gls{DPI}\G\ è stato facilitato mediante autocompletamento basato s
 
 \newpage
 \subsubsection{Riprogettazione di mansioni e formazioni}
-\hl{nuova sezione}\\
 Uno degli aspetti cardine del progetto è stato la gestione della relazione che intercorre tra le mansioni che svolge un dipendente e le formazioni di cui è in possesso.\\
 Questa funzionalità ha richiesto una riprogettazione delle classi relative a formazioni e mansioni, oltre alla definizione delle regole relative.\\
 
@@ -209,10 +208,9 @@ Eventuali non conformità sulle formazioni in possesso di un dipendente in relaz
  Questo approccio sposa la filosofia generale del progetto, la quale prevede che deve essere sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
 \newpage
 \subsubsection{Restyling della componente: \textit{Questionari}}
-\hl{nuova sezione}
 I questionari sono stati riprogettati solo lato \gls{front-end}\G.
 Al momento dell'arrivo in azienda, le domande venivano poste in sequenza organizzate in capitoli. Questo approccio rischia di disorientare l'utente poiché al crescere del numero delle domande può trovare difficoltà nel ricordare quale sia il capitolo in questione. \\
-Per ovviare a questo problema, tutte le domande sono state inserite  in un accordion e durante lo scroll il titolo viene fissato in alto . In questo modo, all'apertura della pagina sono facilmente visibili i capitoli e, durante la compilazione del questionario, il titolo del capitolo è sempre visibile.\\
+Per ovviare a questo problema, tutte le domande sono state inserite  in un \gls{accordion}\G\ e durante lo scroll il titolo viene fissato in alto . In questo modo, all'apertura della pagina sono facilmente visibili i capitoli e, durante la compilazione del questionario, il titolo del capitolo è sempre visibile.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -221,12 +219,12 @@ Per ovviare a questo problema, tutte le domande sono state inserite  in un accor
 		\label{fig:ScreenQuestionarioSediApertura.png}
 	\end{center}
 \end{figure}
-Nella figura seguente si può notare il fatto che il titolo del capitolo rimane sempre visibile quando l'accordion è aperto.\\
+Nella \autoref{fig:ScreenQuestionarioStickyHeader} si può notare il fatto che il titolo del capitolo rimane sempre visibile quando l'\gls{accordion}\G\  è aperto.\\
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=11cm]{Pics/ScreenQuestionarioStickyHeader.png}
 		\caption{Schermata relativa al questionario relativo alla sicurezza nelle sedi al momento della risposta ad una domanda.}
-		\label{fig:ScreenQuestionarioStickyHeader.png}
+		\label{fig:ScreenQuestionarioStickyHeader}
 	\end{center}
 \end{figure}
 
@@ -238,7 +236,6 @@ Nella figura seguente si può notare il fatto che il titolo del capitolo rimane 
 Le componenti descritte di seguito, sono state progettate e implementate nella loro interezza durante lo stage.\\
 
 \subsubsection{\textit{Segnalazioni}}
-\hl{nuova sezione}
 Le segnalazioni sono delle comunicazioni inviate da un qualunque membro interno all'azienda ed indirizzate all'organo di vigilanza.\\
 Le segnalazioni hanno lo scopo di sollevare il responsabile dalle responsabilità derivanti da violazioni avvenute sotto la sua supervisione. \\
 Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e demandano ufficialmente la responsabilità delle eventuali violazioni a tale organo il quale dovrà decidere per eventuali azioni correttive.
@@ -271,7 +268,6 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 	\end{figure}
 \newpage
 \subsubsection{\textit{Procedure}}
-\hl{Nuova sezione}\\
 	Le procedure si distinguono in due categorie distinte:
 	\begin{itemize}
 		\item \textit{Procedure di prassi:}	\\
@@ -316,7 +312,6 @@ Le comunicazioni all'organo di vigilanza infatti, non possono essere anonime e d
 		%più controller e viste associate allo stessa categoria, uno ha il modello l'altro il questionario
 \newpage
 \subsubsection{\textit{Dispositivi di protezione collettivi}}
-\hl{nuova sezione}\\
 La gestione dei \gls{DPC}\G\ richiede di tenere traccia delle informazioni relative al loro posizionamento. \\
 In particolare sono stati gestiti Estintori e cassette di primo soccorso. \\
 Le immagini \autoref{fig:ScreenIndexEstintori} e \autoref{fig:ScreenRemoteTrueEstintori}, arrecano esempi relativi agli estintori, ma la trattazione dei due modelli è analoga. La differenza è individuabile solo nella gestione della scadenza che per gli estintori è unica, mentre per le cassette di primo soccorso chiede di memorizzare quella dei due componenti più vicini alla data di scadenza.
@@ -324,7 +319,7 @@ Le immagini \autoref{fig:ScreenIndexEstintori} e \autoref{fig:ScreenRemoteTrueEs
 \paragraph*{Progettazione}\mbox{}\\
 La soluzione individuata prevede la creazione di una associazione con l'interfaccia \textit{Locationable} come è possibile osservare dalla \autoref{fig:UMLClassiDPC}.\\
 Questo approccio è proprio di Ruby on Rails e permette di riferire un oggetto specificandone il nome della classe e l'id a patto che la classe interessata dichiari di essere essere un \textit{Locationable}.\\
-Nel caso di specie, le classi che dichiarano di essere raggiungibili mediante l'interfaccia \textit{Locationable} sono\texttt{Location} e \texttt{ConstructionSite}, permettendo quindi di assegnare \gls{DPC}\G\ a sedi e cantieri.
+Le classi che dichiarano di essere raggiungibili mediante l'interfaccia \textit{Locationable} sono \texttt{Location} e \texttt{ConstructionSite}, permettendo quindi di assegnare \gls{DPC}\G\ a sedi e cantieri.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=12cm]{Pics/UMLClassiDPC.png}
@@ -363,10 +358,9 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 
 \newpage
 \subsection{Regole Drools}
-\hl{nuova sezione}
 \label{Drools:regole}
 \hl{In questa sezione vengono riportate alcune tra le regole Drools più significative.}
-\subsubsection{Riconoscimento di un indoviduo che ricopre una mansione per la quale non è formato}
+\subsubsection{Riconoscimento di un individuo che ricopre una mansione per la quale non è formato}
 	\label{Drools:regolaMansioniFormazioni}
 	\begin{verbatim}
 	rule "Individuo ricopre una mansione per la quale non è formato"
@@ -410,7 +404,6 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 
 \newpage
 \section{Verifica e validazione}
-	\hl{nuova sezione}	
 	Al termine della fase di sviluppo di ogni modulo del progetto, si è proceduto con l'attività di verifica, per assicurarsi che il prodotto fosse privo di bug e conforme ai requisiti.\\
 	Il codice relativo ai modelli prodotto durante lo stage è stato sottoposto a test d'unità man mano che veniva implementato. Dal punto di vista implementativo, i test sono stati realizzati utilizzando la gemma \textit{Minitest} di Ruby on Rails.\\
 	Nel caso delle segnalazioni, è stato utilizzato l'approccio \textit{Test Driven Devolpment (TDD)} allo scopo di familiarizzare con esso. Sono stati quindi progettati ed implementati prima i test e poi il codice dell'applicazione che gestisce le segnalazioni.\\
@@ -420,13 +413,20 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 	
 	
 \newpage
-\section{Considerazioni finali}
-\hl{nuova sezione}\\
-	Al termine dello stage sono stati raggiunti tutti gli obiettivi minimi previsti dal piano di lavoro.\\
-	Il software realizzato è stato fornito ad una azienda che si è offerta di effettuare il primo test dell'applicazione. I feedback provenienti dal test verranno utilizzati per rilevare lacune e punti di forza dell'applicazione, permettendo di produrre una versione commerciale entro la fine del 2016.
+\section{Conclusioni}
+\hl{TODO Le conclusioni devono sempre iniziare con il riassunto del lavoro svolto. }\\
+
+	\hl{Al termine dello stage, è stata effettuata una analisi dei risultati ottenuti in relazione agli obiettivi.}
 	
+	\subsection{Risultati ottenuti}
+	\hl{Al termine dello stage sono stati raggiunti tutti gli obiettivi minimi previsti dal piano di lavoro.\\
+		Obiettivo primario dello stage è stato il consolidamento di un sistema esperto esistente. \\
+		Sono state progettate, implementate e gestite le strutture dati relative a segnalazioni, procedure e dispositivi di protezione collettivi. \\
+		È stato eseguito un consolidamento generale delle componenti esistenti curando l'integrazione con Drools, l'interfaccia web e l'aspetto strutturale.\\
+		Sono state implementate le regole Drools per la gesione di tutti i vincoli di legge indicati dal committente del progetto.\\
+		Il software realizzato è stato fornito ad una azienda che si è offerta di effettuare il primo test dell'applicazione. I feedback provenienti dal test verranno utilizzati per rilevare lacune e punti di forza dell'applicazione, permettendo il rilascio una versione commerciale entro la fine del 2016.
+}
 \subsection{Conoscenze acquisite}
-\hl{Nuova sezione}\\
 	Al termine dell'esperienza di stage, sono state acquisite numerose competenze.\\
 	In particolare si è imparato a lavorare agevolmente in progetti che vedono coinvolte numerose persone nello stesso momento, utilizzando strumenti professionali per la gestione del lavoro.\\
 	Sono state apprese le caratteristiche principali di Ruby on Rails e Drools e le modalità di comunicazione tra Ruby on Rails e Java.\\
@@ -435,7 +435,6 @@ Al momento dell'assegnazione dei \gls{DPC}\G\ ad una sede oppure ad un cantiere,
 	L'utilizzo intensivo di chiamate \gls{Ajax}\G\ ha reso possibile prendere consapevolezza del grado di complicazione che questa tecnologia può portare al codice ed alla leggibilità dello stesso.\\
 	
 \subsection{Considerazioni personali}
-\hl{nuova sezione}\\
 	Mi ritengo molto soddisfatto di come si è svolto lo stage.\\
 	Le ragioni della mia opinione positiva sono molteplici, per cominciare lo stage mi ha messo a confronto con un progetto di dimensioni molto maggiori di quelle a cui sono stato abituato fino ad ora. \\
 	Ho curato sia gli aspetti riguardanti il \gls{front-end}\G\ sia il \gls{back-end}\G\ dell'applicazione. Sviluppando in modo  \textit{full stack} ho avuto l'opportunità di applicare in un software commerciale numerose soluzioni derivanti da nozioni accademiche. \\

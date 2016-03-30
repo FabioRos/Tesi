@@ -87,7 +87,6 @@ Per quanto riguarda la comunicazione interna ai membri dell'azienda è stato sce
 Si tratta di un sistema di messaggistica che distingue le comunicazioni dirette a persone da quelle dirette a canali inerenti ad un particolare argomento. Le norme aziendali prevedono la creazione di un canale per ogni progetto.
 Slack mette a disposizione anche un meccanismo di condivisione di file e, caratteristica essenziale, mantiene uno storico di tutti i messaggi di tutte le conversazioni al fine di mantenere un tracciamento delle comunicazioni interne. 
 È fornita dal software anche una efficiente funzionalità di ricerca per recuperare le comunicazioni o i contenuti condivisi.
-\subsubsection{Errbit - Rilevazione degli errori }
 
 \subsubsection{Airbrake - Rilevazione e notifica degli errori}
 
@@ -97,7 +96,6 @@ Slack mette a disposizione anche un meccanismo di condivisione di file e, caratt
 		\caption{Logo di Airbrake}
 	\end{center}
 \end{figure}
-\hl{todo rivedere}
 Airbrake è uno strumento per la rilevazione e gestione degli errori dotato di un sistema di notifiche push centralizzato. \\
 La sua caratteristica principale è quella di centralizzare la gestione delle notifiche permettendo un'accurata gestione dei flussi di spedizione dei messaggi e degli ambienti monitorati (sviluppo, staging, produzione). \\ 
 Esso ha bisogno di essere installato su un server dove mantiene dei listener pronti a catturare i messaggi di errore provenienti dall'applicazione alla quale è collegato.\\
@@ -108,16 +106,15 @@ Airbrake è stato configurato in modo tale che le notifiche provenienti dal moni
 
 \cleardoublepage
 \section{Il progetto di Stage}
-Il progetto di stage consiste nell'estensione di un software web based, già sviluppato in azienda, a supporto delle aziende che intendono avvalersi dell’asseverazione in ambito della sicurezza sul lavoro, in particolare nel settore edilizio. \\
-Con asseverazione si intende una scelta volontaria di una impresa edile al fine di dimostrare l'impegno per la prevenzione, salute e sicurezza nei luoghi di lavoro. Opera mediante la certificazione di conformità dei modelli di organizzazione e gestione aziendali e mediante visite a campione nei cantieri. L'asseverazione offre benefici economici alle aziende che la richiedono e garantisce efficacia esimente rispetto alla responsabilità amministrativa delle imprese.\\
+Il progetto di stage consiste nell'estensione di un software web based, già sviluppato in azienda, a supporto delle aziende che intendono avvalersi dell’\gls{asseverazione}\G\ in ambito della sicurezza sul lavoro, in particolare nel settore edilizio. \\
+Con \gls{asseverazione}\G\ si intende una scelta volontaria di una impresa edile al fine di dimostrare l'impegno per la prevenzione, salute e sicurezza nei luoghi di lavoro. Opera mediante la certificazione di conformità dei modelli di organizzazione e gestione aziendali e mediante visite a campione nei cantieri. L'\gls{asseverazione}\G\ offre benefici economici alle aziende che la richiedono e garantisce efficacia esimente rispetto alla responsabilità amministrativa delle imprese.\\
 Il software si pone come obiettivo la possibilità di fornire in ogni momento una fotografia dello stato della sicurezza in azienda, al fine di agevolarne il mantenimento nel tempo.\\
 All'inserimento di nuove informazioni, verranno generate nuove domande, scadenze o vincoli. Se i risultati non sono conformi alle norme vigenti, verranno generati degli allarmi, che scompariranno solo nel momento in cui la violazione del vincolo che rappresentano non sia più verificata. \\
 Dal punto di vista tecnico viene utilizzato un sistema esperto per mappare le norme in tema di sicurezza, individuare i punti deboli dell’azienda, ricordare al responsabile le scadenze, conservare ed indicizzare il patrimonio documentale in ambito sicurezza.
 Il sistema ha una funzione proattiva e dinamica, variando gli allarmi in base alla variazione delle norme e allo stato dell’azienda (es. al crescere o diminuire del numero dei dipendenti, al variare della superficie delle sedi aziendali, dei cantieri...). La webapp si comporta quindi come un consulente digitale per l’azienda, aiutandola a mantenere aggiornato il suo modello di sicurezza e a rispettarlo.
 Questo le permette all’azienda asseverata di accedere a significativi premi INAIL, di ottenere punti in graduatoria in bandi pubblici e di sollevare il datore di lavoro da responsabilità penali in caso di infortuni legati ad una mala gestione della sicurezza.\\
-\hl{
 La filosofia generale del progetto prevede che sia  sempre possibile inserire i dati senza blocchi dettati dai vincoli di legge, in modo da evidenziare eventuali non conformità con allarmi al fine di risolverle.
-}
+
 \subsection{Il prodotto esistente}
 
 Il progetto è in una fase di sviluppo avanzato (versione alpha).
