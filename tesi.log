@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  30 MAR 2016 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.25)  31 MAR 2016 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1708,11 +1708,6 @@ maggiore di 300 metri quadri"[]
  []
 
 [54] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 430--436
 
  []
@@ -1768,7 +1763,7 @@ Package rerunfilecheck Info: File `tesi.out' has not changed.
 Here is how much of TeX's memory you used:
  20617 strings out of 493089
  323587 string characters out of 6134841
- 517361 words of memory out of 5000000
+ 493327 words of memory out of 5000000
  23354 multiletter control sequences out of 15000+600000
  23056 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1797,7 +1792,7 @@ nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (76 pages, 3442769 bytes).
+Output written on tesi.pdf (76 pages, 3426727 bytes).
 PDF statistics:
  1572 PDF objects out of 1728 (max. 8388607)
  1349 compressed objects within 14 object streams
